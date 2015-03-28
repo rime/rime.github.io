@@ -363,7 +363,8 @@ img {
 .downloads {
   background-color: #f0f0f0;
   text-align: center;
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
   width: 100%;
 }
 
@@ -375,6 +376,8 @@ img {
 .downloads .footnote {
   margin-top: 24px;
 }
+
+@media (min-width: 860px) {
 
 .features {
   width: 860px;
@@ -423,6 +426,14 @@ img {
 
 .feature.delta .illustration {
   background-image: url(/images/home-feature-4.png);
+}
+
+}
+
+@media (max-width: 859px) {
+  .features {
+    width: 100%;
+  }
 }
 
 .user-quotes {
