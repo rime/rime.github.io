@@ -33,9 +33,10 @@
   <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
-  <script src="/js/jquery-2.0.3.min.js"></script>
+  <script src="/js/jquery-1.12.4.min.js"></script>
   <script src="/js/jquery.cookie.js"></script>
   <script src="/js/jquery.t2s.js"></script>
+  <script src="/js/modernizr.js"></script>
 
   <!-- analytics -->
   <!-- _partial/post/google_analytics -->
@@ -132,43 +133,40 @@
 
 	<!-- content -->
 	<div class="mypage">
-	    <p>RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。<br>基於這一框架，Rime 開發者與其他開源社區的參與者在 Windows、Mac OS X、Linux、Android 平臺上創造了不同的輸入法前端實現。</p>
+	    <p>RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。<br>基於這一框架，Rime 開發者與其他開源社區的參與者在 Windows、macOS、Linux、Android 等平臺上創造了不同的輸入法前端實現。</p>
 <h1 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a><a name="windows">Windows</a></h1><h2 id="小狼毫-Weasel"><a href="#小狼毫-Weasel" class="headerlink" title="小狼毫 Weasel"></a>小狼毫 <small>Weasel</small></h2><ul>
-<li><a href="https://bintray.com/lotem/rime/Weasel" target="_blank" rel="external">小狼毫 0.9.30</a>〔<a href="http://dl.bintray.com/lotem/rime/weasel-0.9.30.0-installer.exe?direct" target="_blank" rel="external">下載</a>〕〔<a href="/release/weasel/">更新日誌</a>〕，適用於 Windows XP SP3, 32/64位 Windows 7</li>
-<li><a href="https://bintray.com/lotem/rime/weasel-expansion" target="_blank" rel="external">小狼毫擴展方案集</a>〔<a href="http://dl.bintray.com/lotem/rime/weasel-expansion-0.9.18.0.exe?direct" target="_blank" rel="external">下載</a>〕</li>
+<li><a href="https://bintray.com/rime/weasel/release" target="_blank" rel="noopener">小狼毫 0.10.0</a>〔<a href="http://dl.bintray.com/rime/weasel/weasel-0.10.0.0-installer.exe" target="_blank" rel="noopener">下載</a>〕〔<a href="/release/weasel/">更新日誌</a>〕，適用於 Windows XP SP3, Windows 7, Windows 8/8.1, Windows 10</li>
 </ul>
-<h1 id="Mac-OS-X"><a href="#Mac-OS-X" class="headerlink" title="Mac OS X"></a><a name="mac">Mac OS X</a></h1><h2 id="鼠鬚管-Squirrel"><a href="#鼠鬚管-Squirrel" class="headerlink" title="鼠鬚管 Squirrel"></a>鼠鬚管 <small>Squirrel</small></h2><ul>
-<li><a href="https://bintray.com/lotem/rime/Squirrel" target="_blank" rel="external">鼠鬚管 0.9.26.2</a>〔<a href="http://dl.bintray.com/lotem/rime/Squirrel-0.9.26.2.zip" target="_blank" rel="external">下載</a>〕〔<a href="/release/squirrel/">更新日誌</a>〕，適用於64位 Mac OS X 10.7+</li>
-<li><a href="https://github.com/neolee/SCU" target="_blank" rel="external">neolee/SCU</a> 是由 <a href="https://github.com/neolee" target="_blank" rel="external">Neo Lee</a> 開發的圖形化配置工具。</li>
+<h1 id="macOS"><a href="#macOS" class="headerlink" title="macOS"></a><a name="mac">macOS</a></h1><h2 id="鼠鬚管-Squirrel"><a href="#鼠鬚管-Squirrel" class="headerlink" title="鼠鬚管 Squirrel"></a>鼠鬚管 <small>Squirrel</small></h2><ul>
+<li><a href="https://bintray.com/lotem/rime/Squirrel" target="_blank" rel="noopener">鼠鬚管 0.9.26.2</a>〔<a href="http://dl.bintray.com/lotem/rime/Squirrel-0.9.26.2.zip" target="_blank" rel="noopener">下載</a>〕〔<a href="/release/squirrel/">更新日誌</a>〕，適用於64位 macOS 10.7+</li>
 </ul>
 <p>其他安裝方式：</p>
 <ul>
-<li>Install via <a href="http://caskroom.io/" target="_blank" rel="external">Homebrew Cask</a>: <code>brew cask install squirrel</code></li>
-<li>Install via <a href="https://boxen.github.com/" target="_blank" rel="external">Boxen</a>: <a href="https://github.com/boxen/puppet-squirrel" target="_blank" rel="external">boxen/puppet-squirrel</a></li>
+<li>Install via <a href="https://brew.sh" target="_blank" rel="noopener">Homebrew</a>: <code>brew cask install squirrel</code></li>
+<li>Install via <a href="https://github.com/boxen/our-boxen/#our-boxen" target="_blank" rel="noopener">Boxen</a>: <a href="https://github.com/boxen/puppet-squirrel" target="_blank" rel="noopener">boxen/puppet-squirrel</a></li>
 </ul>
-<h2 id="XIME-XIME-Input-Method-Editor"><a href="#XIME-XIME-Input-Method-Editor" class="headerlink" title="XIME XIME Input Method Editor"></a>XIME <small>XIME Input Method Editor</small></h2><p><a href="https://github.com/stackia/XIME" target="_blank" rel="external">stackia/XIME</a> 是由 <a href="https://github.com/stackia" target="_blank" rel="external">Stackie Jia</a> 創作的基於 Rime 引擎的 OS X 輸入法。</p>
-<h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a><a name="linux">Linux</a></h1><h2 id="ibus-rime"><a href="#ibus-rime" class="headerlink" title="ibus-rime"></a>ibus-rime</h2><p>基於 IBus 輸入法框架。<br>請查看各 Linux 發行版 <a href="https://github.com/rime/home/wiki/RimeWithIBus" target="_blank" rel="external">安裝說明</a>，或下載 tar 包從源碼編譯安裝：</p>
+<p>相關軟件：</p>
 <ul>
-<li><a href="http://dl.bintray.com/lotem/rime/ibus-rime-1.2.tar.gz" target="_blank" rel="external">ibus-rime 1.2</a></li>
-<li><a href="http://dl.bintray.com/lotem/rime/librime-1.2.tar.gz" target="_blank" rel="external">librime 1.2</a></li>
-<li><a href="http://dl.bintray.com/lotem/rime/brise-0.35.tar.gz" target="_blank" rel="external">brise 0.35</a></li>
+<li><a href="https://github.com/neolee/SCU" target="_blank" rel="noopener">neolee/SCU</a> 是由 <a href="https://github.com/neolee" target="_blank" rel="noopener">Neo Lee</a> 開發的圖形化配置工具。</li>
 </ul>
-<p>舊版本：適用於不支持 C++11 的編譯器（gcc&lt;4.8）</p>
+<h2 id="XIME-XIME-Input-Method-Editor"><a href="#XIME-XIME-Input-Method-Editor" class="headerlink" title="XIME XIME Input Method Editor"></a>XIME <small>XIME Input Method Editor</small></h2><p><a href="https://github.com/stackia/XIME" target="_blank" rel="noopener">stackia/XIME</a> 是由 <a href="https://github.com/stackia" target="_blank" rel="noopener">Stackie Jia</a> 創作的基於 Rime 引擎的 macOS 輸入法。</p>
+<h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a><a name="linux">Linux</a></h1><h2 id="ibus-rime"><a href="#ibus-rime" class="headerlink" title="ibus-rime"></a>ibus-rime</h2><p>基於 IBus 輸入法框架。<br>請查看各 Linux 發行版 <a href="https://github.com/rime/home/wiki/RimeWithIBus" target="_blank" rel="noopener">安裝說明</a>，或下載 tar 包從源碼編譯安裝：</p>
 <ul>
-<li><a href="http://dl.bintray.com/lotem/rime/ibus-rime-1.0.tar.gz" target="_blank" rel="external">ibus-rime 1.0</a></li>
-<li><a href="http://dl.bintray.com/lotem/rime/librime-1.0.tar.gz" target="_blank" rel="external">librime 1.0</a></li>
-<li><a href="http://dl.bintray.com/lotem/rime/brise-0.30.tar.gz" target="_blank" rel="external">brise 0.30</a></li>
+<li><a href="https://github.com/rime/ibus-rime/releases" target="_blank" rel="noopener">ibus-rime</a></li>
+<li><a href="https://github.com/rime/librime/releases" target="_blank" rel="noopener">librime</a></li>
+<li><a href="https://github.com/rime/brise/releases" target="_blank" rel="noopener">brise</a></li>
 </ul>
-<h2 id="fcitx-rime"><a href="#fcitx-rime" class="headerlink" title="fcitx-rime"></a>fcitx-rime</h2><p>基於 Fcitx 輸入法框架的 <a href="https://github.com/fcitx/fcitx-rime" target="_blank" rel="external">fcitx-rime</a>，由 Fcitx 團隊開發和維護。</p>
-<h1 id="Android"><a href="#Android" class="headerlink" title="Android"></a><a name="android">Android</a></h1><h2 id="同文-Tongwen-Rime-Input-Method-Editor"><a href="#同文-Tongwen-Rime-Input-Method-Editor" class="headerlink" title="同文 Tongwen Rime Input Method Editor"></a>同文 <small>Tongwen Rime Input Method Editor</small></h2><p><a href="https://github.com/osfans/trime" target="_blank" rel="external">同文安卓輸入法平臺</a> 〔<a href="https://github.com/osfans/trime/releases" target="_blank" rel="external">下載</a>〕是由 <a href="https://github.com/osfans" target="_blank" rel="external">osfans</a> 創作的基於 Rime 引擎的 Android 輸入法。</p>
+<h2 id="fcitx-rime"><a href="#fcitx-rime" class="headerlink" title="fcitx-rime"></a>fcitx-rime</h2><p>基於 Fcitx 輸入法框架的 <a href="https://github.com/fcitx/fcitx-rime" target="_blank" rel="noopener">fcitx-rime</a>，由 Fcitx 團隊開發和維護。</p>
+<h1 id="Android"><a href="#Android" class="headerlink" title="Android"></a><a name="android">Android</a></h1><h2 id="同文-Tongwen-Rime-Input-Method-Editor"><a href="#同文-Tongwen-Rime-Input-Method-Editor" class="headerlink" title="同文 Tongwen Rime Input Method Editor"></a>同文 <small>Tongwen Rime Input Method Editor</small></h2><p><a href="https://github.com/osfans/trime" target="_blank" rel="noopener">同文安卓輸入法平臺</a> 〔<a href="https://github.com/osfans/trime/releases" target="_blank" rel="noopener">下載</a>〕是由 <a href="https://github.com/osfans" target="_blank" rel="noopener">osfans</a> 創作的基於 Rime 引擎的 Android 輸入法。</p>
 <hr>
 
-<h2 id="下一步：使用方案選單"><a href="#下一步：使用方案選單" class="headerlink" title="下一步：使用方案選單"></a>下一步：使用方案選單</h2><p>下載、安裝完成後，試試：<br>按組合鍵 <code>Ctrl+`</code> 喚出輸入方案選單，由此調整 Rime 輸入法最常用的選項。</p>
-<p>與 Rime 一同發行的輸入方案有：<br>朙月拼音、語句流、倉頡、地球拼音、注音、速成、五筆、雙拼、粵拼、吳語、中古漢語拼音、五筆畫、Emoji、國際音標、宮保拼音……<br>您可從方案選單切換到朙月拼音、倉頡等默認啓用的輸入方案。〔<a href="https://github.com/rime/home/wiki/UserGuide" target="_blank" rel="external">說明書</a>〕</p>
+<h2 id="下一步：使用方案選單"><a href="#下一步：使用方案選單" class="headerlink" title="下一步：使用方案選單"></a>下一步：使用方案選單</h2><p>下載、安裝完成後，試試：<br>按組合鍵 <code>Ctrl+`</code> 或 <code>F4</code> 鍵喚出輸入方案選單，由此調整 Rime 輸入法最常用的選項。</p>
+<p>與 Rime 一同發行的輸入方案有：朙月拼音、注音、倉頡、五筆畫、地球拼音等。<br>您可通過方案選單切換輸入方案。〔<a href="https://github.com/rime/home/wiki/UserGuide" target="_blank" rel="noopener">說明書</a>〕</p>
+<p>還可以從 <a href="https://github.com/rime/brise" target="_blank" rel="noopener">Rime 輸入方案倉庫</a> 安裝：速成、五筆、雙拼、宮保拼音、粵拼、吳語、中古漢語拼音、Emoji、國際音標……</p>
 <hr>
 
-<h2 id="再一步：學習如何-DIY"><a href="#再一步：學習如何-DIY" class="headerlink" title="再一步：學習如何 DIY"></a>再一步：學習如何 DIY</h2><p>這篇《<a href="https://github.com/rime/home/wiki/CustomizationGuide" target="_blank" rel="external">定製指南</a>》，相信能解答您的不少疑問。</p>
-<p>熟悉了基本的定製方法以後，如果需要製作自己的輸入方案，請進階閱讀《<a href="https://github.com/rime/home/wiki/RimeWithSchemata" target="_blank" rel="external">Rime 輸入方案設計書</a>》。</p>
+<h2 id="再一步：學習如何-DIY"><a href="#再一步：學習如何-DIY" class="headerlink" title="再一步：學習如何 DIY"></a>再一步：學習如何 DIY</h2><p>這篇《<a href="https://github.com/rime/home/wiki/CustomizationGuide" target="_blank" rel="noopener">定製指南</a>》，相信能解答您的不少疑問。</p>
+<p>熟悉了基本的定製方法以後，如果需要製作自己的輸入方案，請進階閱讀《<a href="https://github.com/rime/home/wiki/RimeWithSchemata" target="_blank" rel="noopener">Rime 輸入方案設計書</a>》。</p>
 <hr>
 
 <h2 id="敬告-Rime-用家"><a href="#敬告-Rime-用家" class="headerlink" title="敬告 Rime 用家"></a>敬告 Rime 用家</h2><p>請您知曉：</p>
@@ -194,7 +192,7 @@
     
     <!-- _partial/footer -->
 <p>
-  &copy; 2016 by 佛振@式恕堂
+  &copy; 2018 by 佛振@式恕堂
   &nbsp;
   <span class="text-muted">Powered by:
     <a class="text-muted" href="http://hexo.io/" target="_blank">Hexo</a>,

@@ -33,9 +33,10 @@
   <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
-  <script src="/js/jquery-2.0.3.min.js"></script>
+  <script src="/js/jquery-1.12.4.min.js"></script>
   <script src="/js/jquery.cookie.js"></script>
   <script src="/js/jquery.t2s.js"></script>
+  <script src="/js/modernizr.js"></script>
 
   <!-- analytics -->
   <!-- _partial/post/google_analytics -->
@@ -103,18 +104,18 @@
 
   
     <div class="front-matter page-header">
-  <img src="/images/home-title.png" />
-  <img src="/images/home-slogan.png" />
+  <img src="/images/home-title.svg" data-png-fallback="/images/home-title.png" />
+  <img src="/images/home-slogan.svg" data-png-fallback="/images/home-slogan.png" />
 </div>
 
     <div class="home">
       <!-- index -->
 <div class="downloads container">
   <div class="download os-windows hidden">
-    <a class="btn btn-lg btn-primary" href="http://dl.bintray.com/lotem/rime/weasel-0.9.30.0-installer.exe"><i class="fa fa-windows"></i>小狼毫 <small>0.9.30</small></a>
+    <a class="btn btn-lg btn-primary" href="https://dl.bintray.com/rime/weasel/weasel-0.10.0.0-installer.exe"><i class="fa fa-windows"></i>小狼毫 <small>0.10.0</small></a>
   </div>
   <div class="download os-mac hidden">
-    <a class="btn btn-lg btn-primary" href="http://dl.bintray.com/lotem/rime/Squirrel-0.9.26.2.zip"><i class="fa fa-apple"></i>鼠鬚管 <small>0.9.26.2</small></a>
+    <a class="btn btn-lg btn-primary" href="https://dl.bintray.com/lotem/rime/Squirrel-0.9.26.2.zip"><i class="fa fa-apple"></i>鼠鬚管 <small>0.9.26.2</small></a>
   </div>
   <div class="download os-linux hidden">
     <a class="btn btn-lg btn-primary" href="/download#linux"><i class="fa fa-linux"></i>安裝到 Linux</a>
@@ -129,7 +130,7 @@
     <a class="btn btn-lg btn-default" href="/code"><i class="fa fa-code-fork"></i>複刻源碼</a>
   </div>
   <div class="footnote text-muted">
-    支持 Windows XP sp3, Windows 7+, Mac OS X 10.7+, Linux (IBus, Fcitx)
+    支持 Windows XP SP3, Windows 7+, macOS 10.7+, Linux (IBus, Fcitx)
 
     <span class="hidden">&nbsp;&nbsp;<a href="/download">下載更多版本 »</a></span>
   </div>
@@ -143,7 +144,7 @@
         擊響中文之韻<br />
         <small>Rime Input Method Engine, rimes with your keystrokes.</small>
       </h3>
-      <p>下載、安裝完成後，切換到 Rime 輸入法，立即擊響中文之韻。<br>按組合鍵 <code>Ctrl+`</code> 喚出輸入方案選單，由此切換到朙月拼音、倉頡等已啓用的輸入方案。<br>亦可調整 Rime 輸入法最常用的選項。〔<a href="https://github.com/rime/home/wiki/UserGuide">說明書</a>〕</p>
+      <p>下載、安裝完成後，切換到 Rime 輸入法，立即擊響中文之韻。<br>按組合鍵 <code>Ctrl+`</code> 或 <code>F4</code> 鍵喚出輸入方案選單，由此切換到朙月拼音、注音、倉頡等已啓用的輸入方案。<br>亦可調整 Rime 輸入法最常用的選項。〔<a href="https://github.com/rime/home/wiki/UserGuide">說明書</a>〕</p>
 
     </div>
   </div>
@@ -154,7 +155,7 @@
         設計輸入方案<br />
         <small>Rime with input schemata, and innovate.</small>
       </h3>
-      <p>Rime 輸入方案貴在原創。<br>不止於拼音、注音、倉頡、速成、五筆、雙拼、粵拼、吳語、中古漢語拼音、五筆畫、Emoji、國際音標、宮保拼音……<br>讀《<a href="https://github.com/rime/home/wiki/RimeWithSchemata">方案設計書</a>》，親手來創作，把輸入法變成理想的模樣。</p>
+      <p>Rime 輸入方案貴在原創。<br>不止於拼音、注音、倉頡、速成、五筆、雙拼、宮保拼音、粵拼、吳語、中古漢語拼音、五筆畫、Emoji、國際音標……<br>讀《<a href="https://github.com/rime/home/wiki/RimeWithSchemata">方案設計書</a>》，親手來創作，把輸入法變成理想的模樣。</p>
 
     </div>
     <div class="right illustration"></div>
@@ -229,7 +230,7 @@
     
     <!-- _partial/footer -->
 <p>
-  &copy; 2016 by 佛振@式恕堂
+  &copy; 2018 by 佛振@式恕堂
   &nbsp;
   <span class="text-muted">Powered by:
     <a class="text-muted" href="http://hexo.io/" target="_blank">Hexo</a>,

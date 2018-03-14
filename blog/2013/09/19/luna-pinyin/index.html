@@ -33,9 +33,10 @@
   <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
-  <script src="/js/jquery-2.0.3.min.js"></script>
+  <script src="/js/jquery-1.12.4.min.js"></script>
   <script src="/js/jquery.cookie.js"></script>
   <script src="/js/jquery.t2s.js"></script>
+  <script src="/js/modernizr.js"></script>
 
   <!-- analytics -->
   <!-- _partial/post/google_analytics -->
@@ -136,11 +137,11 @@
 	<div class="mypage">
 	    <p>中秋之夜，可想在部落格上寫二句。</p>
 <p>於是 <code>vim ~/Library/Rime/squirrel.custom.yaml</code> 寫下</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">patch:</span></span><br><span class="line">  style/color_scheme: luna</span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">patch:</span></span><br><span class="line">  <span class="string">style/color_scheme:</span> <span class="string">luna</span></span><br></pre></td></tr></table></figure>
 <p>部署後，按 <code>Control+~</code> 切換到【朙月拼音】。</p>
 <p><img src="/images/mingyue-pinyin-2013-09-19.png" alt="此刻正在寫字的朙月拼音"></p>
 <a id="more"></a>
-<p>兩年前的中秋，【朙月拼音】<a href="https://code.google.com/p/rimeime/downloads/detail?name=luna-pinyin-dev-251.zip" target="_blank" rel="external">第一個版本</a>開發完成。</p>
+<p>兩年前的中秋，【朙月拼音】<a href="https://code.google.com/p/rimeime/downloads/detail?name=luna-pinyin-dev-251.zip" target="_blank" rel="noopener">第一個版本</a>開發完成。</p>
 <p>當此時，用 C++ 重寫的 librime 剛剛具備輸入法基礎框架及詞表查詢部份，搭配定名爲【小狼毫】的 Windows 輸入法前端程序，竟然真的可以打字了。</p>
 <p><img src="/images/mingyue-pinyin-sep-2011.jpg" alt="早期的朙月拼音"></p>
 <p>當此時，一輪明月，寄託了這小小的一份激動。</p>
@@ -238,7 +239,7 @@
     
     <!-- _partial/footer -->
 <p>
-  &copy; 2016 by 佛振@式恕堂
+  &copy; 2018 by 佛振@式恕堂
   &nbsp;
   <span class="text-muted">Powered by:
     <a class="text-muted" href="http://hexo.io/" target="_blank">Hexo</a>,

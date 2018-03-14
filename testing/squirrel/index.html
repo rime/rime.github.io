@@ -33,9 +33,10 @@
   <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
-  <script src="/js/jquery-2.0.3.min.js"></script>
+  <script src="/js/jquery-1.12.4.min.js"></script>
   <script src="/js/jquery.cookie.js"></script>
   <script src="/js/jquery.t2s.js"></script>
+  <script src="/js/modernizr.js"></script>
 
   <!-- analytics -->
   <!-- _partial/post/google_analytics -->
@@ -133,9 +134,9 @@
 	<!-- content -->
 	<div class="mypage">
 	    <p>RIME 主頁：<a href="http://rime.github.io">http://rime.github.io</a></p>
-<h2 id="鼠鬚管-0-9-26-2"><a href="#鼠鬚管-0-9-26-2" class="headerlink" title="鼠鬚管 0.9.26.2 "></a>鼠鬚管 0.9.26.2 <2014-12-23></2014-12-23></h2><p>下載：<a href="http://dl.bintray.com/lotem/rime/Squirrel-0.9.26.2.zip" target="_blank" rel="external">Bintray</a> | <a href="http://pan.baidu.com/s/1bELzg" target="_blank" rel="external">百度雲分享鏈接</a><br><small style="color:#999;">sha1: 8bd466d6219c6d145985afeb5f4999037a205dbc</small></p>
+<h2 id="鼠鬚管-0-9-26-2"><a href="#鼠鬚管-0-9-26-2" class="headerlink" title="鼠鬚管 0.9.26.2 "></a>鼠鬚管 0.9.26.2 <2014-12-23></2014-12-23></h2><p>下載：<a href="http://dl.bintray.com/lotem/rime/Squirrel-0.9.26.2.zip" target="_blank" rel="noopener">Bintray</a> | <a href="http://pan.baidu.com/s/1bELzg" target="_blank" rel="noopener">百度雲分享鏈接</a><br><small style="color:#999;">sha1: 8bd466d6219c6d145985afeb5f4999037a205dbc</small></p>
 <ul>
-<li>修復：安裝後輸入法在一些 app 中無法啓用 <a href="https://github.com/lotem/squirrel/issues/43" target="_blank" rel="external">#43</a></li>
+<li>修復：安裝後輸入法在一些 app 中無法啓用 <a href="https://github.com/lotem/squirrel/issues/43" target="_blank" rel="noopener">#43</a></li>
 </ul>
 <h2 id="鼠鬚管-0-9-26-1"><a href="#鼠鬚管-0-9-26-1" class="headerlink" title="鼠鬚管 0.9.26.1 "></a>鼠鬚管 0.9.26.1 <2014-12-22></2014-12-22></h2><ul>
 <li>修復：0.9.26 版本設置 <code>translator/enable_user_dict: false</code> 發生崩潰</li>
@@ -194,7 +195,7 @@
 <li>更新：librime 升級到 1.1</li>
 <li>新增：固定方案選單排列順序的選項 <code>default.yaml</code>: <code>switcher/fix_schema_list_order: true</code></li>
 <li>修復：正確匹配嵌套的“‘彎引號’”</li>
-<li>改進：碼表輸入法自動上屏及頂字上屏（<a href="https://gist.github.com/lotem/f879a020d56ef9b3b792" target="_blank" rel="external">示例</a>）<br><br>若有 <code>speller/auto_select: true</code>，則選項 <code>speller/max_code_length:</code> 限定第N碼無重碼自動上屏</li>
+<li>改進：碼表輸入法自動上屏及頂字上屏（<a href="https://gist.github.com/lotem/f879a020d56ef9b3b792" target="_blank" rel="noopener">示例</a>）<br><br>若有 <code>speller/auto_select: true</code>，則選項 <code>speller/max_code_length:</code> 限定第N碼無重碼自動上屏</li>
 <li>優化：爲詞組自動編碼時，限制因多音字而產生的組合數目，避免窮舉消耗過量資源</li>
 </ul>
 <p>【東風破】變更集</p>
@@ -209,7 +210,7 @@
 <li>變更：候選窗默認英文字體設爲 Lucida Grande，非嵌入模式中較爲美觀</li>
 <li>改進：高亮候選的背景色延伸到候選註釋區域，新增配色選項 <code>hilited_comment_text_color:</code></li>
 <li>改進：提示（碼表輸入法）大字符集開關狀態「通用／增廣」</li>
-<li>修復：<a href="https://github.com/lotem/rimeime/issues/509" target="_blank" rel="external">Issue 509</a> 打開方案選單時設定 <code>style/label_color</code> 被重置</li>
+<li>修復：<a href="https://github.com/lotem/rimeime/issues/509" target="_blank" rel="noopener">Issue 509</a> 打開方案選單時設定 <code>style/label_color</code> 被重置</li>
 </ul>
 <p>Rime 算法庫變更集</p>
 <ul>
@@ -218,7 +219,7 @@
 </ul>
 <p>【東風破】變更集</p>
 <ul>
-<li>優化：【粵拼】兼容<a href="http://zh.wikipedia.org/wiki/%E6%95%99%E8%82%B2%E5%AD%B8%E9%99%A2%E6%8B%BC%E9%9F%B3%E6%96%B9%E6%A1%88" target="_blank" rel="external">教育學院拼音方案</a></li>
+<li>優化：【粵拼】兼容<a href="http://zh.wikipedia.org/wiki/%E6%95%99%E8%82%B2%E5%AD%B8%E9%99%A2%E6%8B%BC%E9%9F%B3%E6%96%B9%E6%A1%88" target="_blank" rel="noopener">教育學院拼音方案</a></li>
 <li>更新：<code>symbols.yaml</code> 由 Patricivs 重新整理符號表</li>
 <li>更新：Emoji 提供更加豐富的繪文字</li>
 <li>更新：【八股文】【朙月拼音】【地球拼音】【中古全拼】修正錯別字、註音錯誤</li>
@@ -266,7 +267,7 @@
 <li>修復：多次按「.」鍵翻頁後繼續輸入，不應視爲網址而在編碼中插入「.」</li>
 <li>修復：開啓候選字的字符集過濾，導致有時不出現連打候選詞的 BUG</li>
 <li>更新：修訂【八股文】詞典、【朙月拼音】【地球拼音】【粵拼】【吳語】</li>
-<li>更新：2013款 <a href="https://github.com/lotem/rime-artworks/blob/master/rime-logo-2013/rime-logo.png" target="_blank" rel="external">Rime 輸入法圖標</a></li>
+<li>更新：2013款 <a href="https://github.com/lotem/rime-artworks/blob/master/rime-logo-2013/rime-logo.png" target="_blank" rel="noopener">Rime 輸入法圖標</a></li>
 </ul>
 <h2 id="鼠鬚管-0-9-20-4"><a href="#鼠鬚管-0-9-20-4" class="headerlink" title="鼠鬚管 0.9.20.4 "></a>鼠鬚管 0.9.20.4 <2013-07-25></2013-07-25></h2><ul>
 <li>修復：原生配色方案候選序號顏色不正確</li>
@@ -317,7 +318,7 @@
 </ul>
 <h2 id="鼠鬚管-0-9-17"><a href="#鼠鬚管-0-9-17" class="headerlink" title="鼠鬚管 0.9.17 "></a>鼠鬚管 0.9.17 <2013-01-31></2013-01-31></h2><ul>
 <li>改進：安裝完畢自動啓用鼠鬚管</li>
-<li>變更：Caps Lock 燈亮時默認輸出大寫字母 <a href="https://gist.github.com/2981316" target="_blank" rel="external">Gist</a></li>
+<li>變更：Caps Lock 燈亮時默認輸出大寫字母 <a href="https://gist.github.com/2981316" target="_blank" rel="noopener">Gist</a></li>
 <li>新增：支持設定候選行間距 <code>style/line_spacing:</code></li>
 <li>新增：支持並擊輸入；並擊速度選項 <code>chord_duration:</code><br><br>並擊輸入方案【宮保拼音】</li>
 <li>新增：無重碼自動上屏 <code>speller/auto_select:</code><br><br>輸入方案【倉頡·快打模式】</li>
@@ -350,7 +351,7 @@
 <li>修復：從 0.9.11 及更早的版本升級用戶詞典出錯<br><br>如果因此丟失詞彙，手動恢復的方法是：執行「同步用戶資料」</li>
 </ul>
 <h2 id="鼠鬚管-0-9-14"><a href="#鼠鬚管-0-9-14" class="headerlink" title="鼠鬚管 0.9.14 "></a>鼠鬚管 0.9.14 <2013-01-07></2013-01-07></h2><ul>
-<li>新增：同步用戶詞典，詳見 <a href="https://github.com/rime/home/wiki/UserGuide" target="_blank" rel="external">Wiki » UserGuide</a></li>
+<li>新增：同步用戶詞典，詳見 <a href="https://github.com/rime/home/wiki/UserGuide" target="_blank" rel="noopener">Wiki » UserGuide</a></li>
 <li>新增：上屏錯誤的詞組後立即按回退鍵（BackSpace）撤銷組詞</li>
 <li>改進：拼音輸入法中，按左方向鍵以音節爲單位移動光標</li>
 <li>修復：【地球拼音】不能以 - 鍵輸入第一聲</li>
@@ -407,7 +408,7 @@
 <li>更新：【朙月拼音】碼表，修正多音字</li>
 </ul>
 <h2 id="鼠鬚管-0-9-7"><a href="#鼠鬚管-0-9-7" class="headerlink" title="鼠鬚管 0.9.7 "></a>鼠鬚管 0.9.7 <2012-06-10></2012-06-10></h2><ul>
-<li>提供指定候選窗邊界高度、寬度的選項 <a href="https://gist.github.com/2290714" target="_blank" rel="external">Gist</a></li>
+<li>提供指定候選窗邊界高度、寬度的選項 <a href="https://gist.github.com/2290714" target="_blank" rel="noopener">Gist</a></li>
 <li>修復在 M$Office、BBEdit 等軟件中按Cmd鍵會清除選中文字的問題</li>
 <li>修復以 <code>rime_dict_manager</code> 導入文本碼表不生效的BUG（請升級該工具）；<br><br>部署時檢查並修復已存在於用戶詞典中的無效條目</li>
 <li>檢測到用戶詞典文件損壞時重建詞典並從備份中恢復資料</li>
@@ -489,7 +490,7 @@
     
     <!-- _partial/footer -->
 <p>
-  &copy; 2016 by 佛振@式恕堂
+  &copy; 2018 by 佛振@式恕堂
   &nbsp;
   <span class="text-muted">Powered by:
     <a class="text-muted" href="http://hexo.io/" target="_blank">Hexo</a>,
