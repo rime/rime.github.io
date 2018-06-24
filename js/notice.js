@@ -10,7 +10,7 @@ const notices = [
 (function maybeDisplayNotice() {
   let today = new Date();
   for (let entry of notices) {
-    let startDate = new Date(entry.start);
+    let startDate = new Date(entry.start.replace(/-/g,'/'));
     if (today < startDate) {
       continue;
     }
