@@ -1,0 +1,796 @@
+<!DOCTYPE HTML>
+<html>
+<!-- _partial/head -->
+<head>
+  <meta charset="utf-8">
+  
+  <title>【小狼毫】更新日誌 | RIME | 中州韻輸入法引擎</title>
+  <meta name="author" content="佛振@式恕堂">
+  
+  <meta name="description" content="Le blog de la Rime">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="【小狼毫】更新日誌"/>
+  <meta property="og:site_name" content="RIME | 中州韻輸入法引擎"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+    <link rel="alternative" href="/true" title="RIME | 中州韻輸入法引擎" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+
+  
+  <link rel="stylesheet" href="/css/bootstrap.flatly.min.css" media="screen" type="text/css">
+  
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/darktheme.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-1.12.4.min.js"></script>
+  <script src="/js/jquery.cookie.js"></script>
+  <script src="/js/jquery.t2s.js"></script>
+  <script src="/js/modernizr.js"></script>
+
+  <!-- analytics -->
+  <!-- _partial/post/google_analytics -->
+
+
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <!-- _partial/navigation -->
+<nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">RIME | 中州韻輸入法引擎</a>
+      <button id="btn-simplify" type="button" class="navbar-convert">簡</button>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/download" title="">
+			  <i class="fa fa-arrow-down"></i>下載
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/docs" title="">
+			  <i class="fa fa-question-circle"></i>幫助
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/code" title="">
+			  <i class="fa fa-github"></i>源碼
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/donate" title="">
+			  <i class="fa fa-heart"></i>捐贈
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/discuss" title="">
+			  <i class="fa fa-comments"></i>討論
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/blog" title="Rime::Blog">
+			  <i class="fa fa-pencil-square-o"></i>網誌
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  
+  <div class="container">
+    
+    <div class="content ">
+      <!-- page -->
+<!-- _partial/article -->
+
+<!-- _partial/post/title -->
+
+<div class="panel-heading">
+
+	
+  <!-- display as page -->
+		<div class="page-header">
+			<h1> 【小狼毫】更新日誌</h1>
+		</div>
+	
+
+</div>
+
+
+<div class="row page">
+	<!-- cols -->
+	
+	<div class="col-md-12">
+	
+
+	
+
+	<!-- content -->
+	<div class="mypage">
+	    <p><a name="0.14.3"></a></p>
+<h2 id="0-14-3-2019-06-22"><a href="#0-14-3-2019-06-22" class="headerlink" title="0.14.3 (2019-06-22)"></a>0.14.3 (2019-06-22)</h2><h4 id="主要更新"><a href="#主要更新" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
+<li>升級核心算法庫 <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md#153-2019-06-22" target="_blank" rel="noopener">librime 1.5.3</a><ul>
+<li>修復 <code>single_char_filter</code> 組件</li>
+<li>完善上游項目 <code>librime</code> 的全自動發佈流程，免去手工上傳構建結果的步驟</li>
+</ul>
+</li>
+</ul>
+<p><a name="0.14.2"></a></p>
+<h2 id="0-14-2-2019-06-17"><a href="#0-14-2-2019-06-17" class="headerlink" title="0.14.2 (2019-06-17)"></a>0.14.2 (2019-06-17)</h2><h4 id="主要更新-1"><a href="#主要更新-1" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
+<li>升級核心算法庫 <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md#152-2019-06-17" target="_blank" rel="noopener">librime 1.5.2</a><ul>
+<li>修復用戶詞的權重，穩定造句質量、平衡翻譯器優先級 <a href="https://github.com/rime/librime/issues/287" target="_blank" rel="noopener">librime#287</a></li>
+<li>建議 0.14.1 版本用家升級</li>
+</ul>
+</li>
+</ul>
+<p><a name="0.14.1"></a></p>
+<h2 id="0-14-1-2019-06-16"><a href="#0-14-1-2019-06-16" class="headerlink" title="0.14.1 (2019-06-16)"></a>0.14.1 (2019-06-16)</h2><h4 id="主要更新-2"><a href="#主要更新-2" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
+<li>升級核心算法庫 <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md#151-2019-06-16" target="_blank" rel="noopener">librime 1.5.1</a><ul>
+<li>修復未裝配語言模型時缺省的造句算法 (<a href="https://github.com/rime/weasel/issues/383" target="_blank" rel="noopener">weasel#383</a>)</li>
+</ul>
+</li>
+</ul>
+<p><a name="0.14.0"></a></p>
+<h2 id="0-14-0-2019-06-11"><a href="#0-14-0-2019-06-11" class="headerlink" title="0.14.0 (2019-06-11)"></a>0.14.0 (2019-06-11)</h2><h4 id="主要更新-3"><a href="#主要更新-3" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
+<li>升級核心算法庫 <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md#150-2019-06-06" target="_blank" rel="noopener">librime 1.5.0</a><ul>
+<li>遷移到VS2017構建工具；建設安全可靠的全自動構建、發佈流程</li>
+<li>通過更新第三方庫，修復userdb文件夾大量佔用磁盤空間的問題</li>
+<li>將Rime插件納入自動化構建流程。本次發行包含兩款插件：<ul>
+<li><a href="https://github.com/hchunhui/librime-lua" target="_blank" rel="noopener">librime-lua</a></li>
+<li><a href="https://github.com/lotem/librime-octagram" target="_blank" rel="noopener">librime-octagram</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>高清重製真彩輸入法狀態圖標</li>
+</ul>
+<h4 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h4><ul>
+<li><strong>ui:</strong>  high-res status icons; display larger icons in WeaselPanel (<a href="https://github.com/rime/weasel/commit/093fa80678422f972e7a7285060553eeedb0e591" target="_blank" rel="noopener">093fa806</a>)</li>
+</ul>
+<p><a name="0.13.0"></a></p>
+<h2 id="0-13-0-2019-01-28"><a href="#0-13-0-2019-01-28" class="headerlink" title="0.13.0 (2019-01-28)"></a>0.13.0 (2019-01-28)</h2><h4 id="主要更新-4"><a href="#主要更新-4" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
+<li>升級核心算法庫 <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md#140-2019-01-16" target="_blank" rel="noopener">librime 1.4.0</a><ul>
+<li>新增 <a href="https://github.com/rime/librime/pull/228" target="_blank" rel="noopener">拼寫糾錯</a> 選項<br>當前僅限 QWERTY 鍵盤佈局及使用 <code>script_translator</code> 的方案</li>
+<li>修復升級、部署數據時發生的若干錯誤</li>
+</ul>
+</li>
+<li>更換輸入法狀態圖標，適配高分辨率屏幕</li>
+</ul>
+<h4 id="Features-1"><a href="#Features-1" class="headerlink" title="Features"></a>Features</h4><ul>
+<li><strong>tsf:</strong>  register as GUID_TFCAT_TIPCAP_UIELEMENTENABLED (<a href="https://github.com/rime/weasel/commit/ae8769166ea50b319aa89460b60890d598c618c5" target="_blank" rel="noopener">ae876916</a>)</li>
+<li><strong>ui:</strong>  high-res icons (#324) (<a href="https://github.com/rime/weasel/commit/ad3e2027644f80c6a384b7730da20dd239e780af" target="_blank" rel="noopener">ad3e2027</a>)</li>
+</ul>
+<h4 id="Bug-Fixes"><a href="#Bug-Fixes" class="headerlink" title="Bug Fixes"></a>Bug Fixes</h4><ul>
+<li><strong>WeaselSetup.vcxproj:</strong>  Debug build linker options (<a href="https://github.com/rime/weasel/commit/eb885fe06ffd720d3de1101be2410a94bd3747c0" target="_blank" rel="noopener">eb885fe0</a>)</li>
+<li><strong>output/install.nsi:</strong>  bundle new yaml files from rime/rime-prelude (<a href="https://github.com/rime/weasel/commit/cba35e9b2c34d095b9ca1eb44e923e004cf23ddc" target="_blank" rel="noopener">cba35e9b</a>)</li>
+<li><strong>test:</strong>  Debug build (<a href="https://github.com/rime/weasel/commit/c771126c74fa1c4f91d4bfd8fb5ab8c16dcb7c4c" target="_blank" rel="noopener">c771126c</a>)</li>
+<li><strong>tsf:</strong>  set current page to 0 as page count is always 1 (<a href="https://github.com/rime/weasel/commit/5447f63bc7c9d0e31d7ba8ead1e1229938be276d" target="_blank" rel="noopener">5447f63b</a>)</li>
+</ul>
+<p><a name="0.12.0"></a></p>
+<h2 id="0-12-0-2018-11-12"><a href="#0-12-0-2018-11-12" class="headerlink" title="0.12.0  (2018-11-12)"></a>0.12.0  (2018-11-12)</h2><h4 id="主要更新-5"><a href="#主要更新-5" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
+<li>合併小狼毫與小狼毫（TSF）兩種輸入法</li>
+<li>合併32位與64位系統下的安裝程序</li>
+<li>使用系統的關閉輸入法功能（默認快捷鍵 Ctrl + Space）後，輸入法圖標將顯示禁用狀態</li>
+<li>修復一些情況下的崩潰問題</li>
+<li>升級核心算法庫 <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md#132-2018-11-12" target="_blank" rel="noopener">librime 1.3.2</a><ul>
+<li>允許多個翻譯器共用同一個詞典時的組詞，實現固定單字順序的形碼組詞(<a href="https://github.com/rime/librime/issues/184" target="_blank" rel="noopener">librime#184</a>)。</li>
+<li>新增 translator/always_show_comments 選項，允許始終顯示候選詞註解。</li>
+</ul>
+</li>
+</ul>
+<h4 id="Bug-Fixes-1"><a href="#Bug-Fixes-1" class="headerlink" title="Bug Fixes"></a>Bug Fixes</h4><ul>
+<li><strong>candidate:</strong> fix COM pointer reference (<a href="https://github.com/rime/weasel/commit/63d6d9a" target="_blank" rel="noopener">63d6d9a</a>)</li>
+<li><strong>ipc:</strong> eliminate some trivial warnings (<a href="https://github.com/rime/weasel/commit/dae945c" target="_blank" rel="noopener">dae945c</a>)</li>
+<li>fix constructor (<a href="https://github.com/rime/weasel/commit/b25f968" target="_blank" rel="noopener">b25f968</a>)</li>
+</ul>
+<h4 id="Features-2"><a href="#Features-2" class="headerlink" title="Features"></a>Features</h4><ul>
+<li><strong>compartment:</strong> show IME disabled on language bar (<a href="https://github.com/rime/weasel/issues/263" target="_blank" rel="noopener">#263</a>) (<a href="https://github.com/rime/weasel/commit/4015d18" target="_blank" rel="noopener">4015d18</a>)</li>
+<li><strong>install:</strong> combine IME and TSF (<a href="https://github.com/rime/weasel/issues/257" target="_blank" rel="noopener">#257</a>) (<a href="https://github.com/rime/weasel/commit/91cbd2c" target="_blank" rel="noopener">91cbd2c</a>)</li>
+<li><strong>tsf:</strong> get IME keyboard identifier by searching registry (<a href="https://github.com/rime/weasel/issues/272" target="_blank" rel="noopener">#272</a>) (<a href="https://github.com/rime/weasel/commit/b60b5b1" target="_blank" rel="noopener">b60b5b1</a>)</li>
+<li><strong>WeaselSetup:</strong> detect 64-bit on single 32-bit build (<a href="https://github.com/rime/weasel/issues/266" target="_blank" rel="noopener">#266</a>) (<a href="https://github.com/rime/weasel/commit/fb3ae0f" target="_blank" rel="noopener">fb3ae0f</a>)</li>
+</ul>
+<p><a name="0.11.1"></a></p>
+<h2 id="0-11-1-2018-04-26"><a href="#0-11-1-2018-04-26" class="headerlink" title="0.11.1 (2018-04-26)"></a>0.11.1 (2018-04-26)</h2><h4 id="主要更新-6"><a href="#主要更新-6" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
+<li>修復了在 Excel 中奇怪的輸入丟失問題（<a href="https://github.com/rime/weasel/issues/185" target="_blank" rel="noopener">#185</a>）</li>
+<li>功能鍵不再會觸發輸入焦點（<a href="https://github.com/rime/weasel/issues/194" target="_blank" rel="noopener">#194</a>、<a href="https://github.com/rime/weasel/issues/195" target="_blank" rel="noopener">#195</a>、<a href="https://github.com/rime/weasel/issues/204" target="_blank" rel="noopener">#204</a>）</li>
+<li>「獲取更多輸入方案」功能優化（<a href="https://github.com/rime/weasel/issues/180" target="_blank" rel="noopener">#180</a>）</li>
+<li>修復了後臺可能同時出現多個算法服務的問題（<a href="https://github.com/rime/weasel/issues/199" target="_blank" rel="noopener">#199</a>）</li>
+<li>恢復語言欄右鍵菜單中「用戶資料同步」一項</li>
+</ul>
+<h4 id="Bug-Fixes-2"><a href="#Bug-Fixes-2" class="headerlink" title="Bug Fixes"></a>Bug Fixes</h4><ul>
+<li><strong>server:</strong>  use kernel mutex to ensure single instance (#207) (<a href="https://github.com/rime/weasel/commit/bd0c4720669c61087dd930b968640c60a526ecb2" target="_blank" rel="noopener">bd0c4720</a>)</li>
+<li><strong>tsf:</strong><ul>
+<li>do not reset composition on document focus set (<a href="https://github.com/rime/weasel/commit/124fc9475c30963a9bbbf9a097b452b52e8ab658" target="_blank" rel="noopener">124fc947</a>)</li>
+<li>use <code>ITfContext::GetSelection</code> to get cursor position (<a href="https://github.com/rime/weasel/commit/5664481cc9ddd28db35c3155f7ddf83a55b65275" target="_blank" rel="noopener">5664481c</a>)</li>
+<li>recover sync option in TSF language bar menu (<a href="https://github.com/rime/weasel/commit/7a0a8cc2a3dd913ce34204d6e966b263af766f3b" target="_blank" rel="noopener">7a0a8cc2</a>)</li>
+</ul>
+</li>
+</ul>
+<h4 id="Features-3"><a href="#Features-3" class="headerlink" title="Features"></a>Features</h4><ul>
+<li><strong>build.bat:</strong>  build installer (<a href="https://github.com/rime/weasel/commit/e18117b7b42d5af0fbfa807e4c858c40206b4967" target="_blank" rel="noopener">e18117b7</a>)</li>
+<li><strong>installer:</strong>  bundle curl, update rime-install.bat, fixes #180 (<a href="https://github.com/rime/weasel/commit/2f3b283d6ef4aa0580d186e626dadb9e1030dfd5" target="_blank" rel="noopener">2f3b283d</a>)</li>
+<li><strong>rime-install.bat:</strong>  built-in ZIP package installer (<a href="https://github.com/rime/weasel/commit/739be9bc9ba08e294f51e1d7232407148ded716c" target="_blank" rel="noopener">739be9bc</a>)</li>
+</ul>
+<p><a name="0.11.0"></a></p>
+<h2 id="0-11-0-2018-04-07"><a href="#0-11-0-2018-04-07" class="headerlink" title="0.11.0 (2018-04-07)"></a>0.11.0 (2018-04-07)</h2><h4 id="主要更新-7"><a href="#主要更新-7" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
+<li>新增 <a href="https://github.com/rime/plum" target="_blank" rel="noopener">Rime 配置管理器</a>，通過「輸入法設定／獲取更多輸入方案」調用</li>
+<li>在輸入法語言欄顯示狀態切換按鈕（TSF 模式）</li>
+<li>修復多個前端兼容性問題</li>
+<li>新增配色主題「現代藍」<code>metroblue</code>、「幽能」<code>psionics</code></li>
+<li>安裝程序支持繁體中文介面</li>
+<li>修復 0.10 版升級安裝後，因用戶文件夾中保留舊文件、配置不生效的問題</li>
+<li>升級 0.9 版 <code>.kct</code> 格式的用戶詞典<br><strong>注意</strong>：僅此一個版本支持格式升級，請務必由 0.9 升級到 0.11，再安裝後續版本</li>
+</ul>
+<h4 id="Features-4"><a href="#Features-4" class="headerlink" title="Features"></a>Features</h4><ul>
+<li><strong>WeaselDeployer:</strong>  add Get Schemata button to run plum script (#174) (<a href="https://github.com/rime/weasel/commit/c786bb5ba2f1cc7e79b66f36d0190e61cd7233ae" target="_blank" rel="noopener">c786bb5b</a>)</li>
+<li><strong>build.bat:</strong>  customize PLATFORM_TOOLSET settings (<a href="https://github.com/rime/weasel/commit/c7a9a4fb530e0274450e4296cb0db2906d2f1fb4" target="_blank" rel="noopener">c7a9a4fb</a>)</li>
+<li><strong>config:</strong><ul>
+<li>enable customization of label format (<a href="https://github.com/rime/weasel/commit/76b08bae810735c5f1c8626ec39a7afd463f0269" target="_blank" rel="noopener">76b08bae</a>)</li>
+<li>alias <code>style/layout/border_width</code> to <code>style/layout/border</code> (<a href="https://github.com/rime/weasel/commit/013eefebaa4474e7814b6cfb6c905bcc12543a7f" target="_blank" rel="noopener">013eefeb</a>)</li>
+</ul>
+</li>
+<li><strong>install.nsi:</strong><ul>
+<li>add Traditional Chinese for installer (<a href="https://github.com/rime/weasel/commit/d1a9696a57dfc9e04c51899572e156fb1676f786" target="_blank" rel="noopener">d1a9696a</a>)</li>
+<li>upgrade to Modern UI 2 and prompt reboot (#128) (<a href="https://github.com/rime/weasel/commit/f59006f8d195ca848e45cd934f44b3318fb135c1" target="_blank" rel="noopener">f59006f8</a>)</li>
+</ul>
+</li>
+<li><strong>ipc:</strong>  specify user name for named pipe (<a href="https://github.com/rime/weasel/commit/2dfa5e1a63ee1c26ef983d25471682f87cc60b62" target="_blank" rel="noopener">2dfa5e1a</a>)</li>
+<li><strong>preset_color_schemes:</strong><ul>
+<li>add homepage featured color scheme <code>psionics</code> (<a href="https://github.com/rime/weasel/commit/89a0eb8b861b9b3f2abc42df65821254010b24ff" target="_blank" rel="noopener">89a0eb8b</a>)</li>
+<li>add metroblue color scheme (<a href="https://github.com/rime/weasel/commit/f43e2af608bde38a6d345ba540f4c37ec024853a" target="_blank" rel="noopener">f43e2af6</a>)</li>
+</ul>
+</li>
+<li><strong>submodules:</strong>  switch from rime/brise to rime/plum (<a href="https://github.com/rime/weasel/commit/f3ff5aa962a7b8cce2b74a5cb583a69cb8938e55" target="_blank" rel="noopener">f3ff5aa9</a>)</li>
+<li><strong>tsf:</strong><ul>
+<li>enable language bar button (#170) (<a href="https://github.com/rime/weasel/commit/2b660397950f348205e6a93bf44a46e4a72bcc81" target="_blank" rel="noopener">2b660397</a>)</li>
+<li>accomplish candidate UI interfaces (#156) (<a href="https://github.com/rime/weasel/commit/1f0ae7936fd495ecf4ff3ef162c0e38297d2d582" target="_blank" rel="noopener">1f0ae793</a>)</li>
+<li>fix candidate selecting in preview preedit mode (<a href="https://github.com/rime/weasel/commit/206efd692124339d0e256198360c1860c72cd807" target="_blank" rel="noopener">206efd69</a>)</li>
+<li>support user defined preedit display type (<a href="https://github.com/rime/weasel/commit/f76379b01abe9d3971d68e2e272067e0bb855cc9" target="_blank" rel="noopener">f76379b0</a>)</li>
+</ul>
+</li>
+<li><strong>weasel.yaml:</strong>  enable ascii_mode in console applications by default (<a href="https://github.com/rime/weasel/commit/28cdd09692f77e471784bf85ff7a19bc48e113f4" target="_blank" rel="noopener">28cdd096</a>)</li>
+</ul>
+<h4 id="Bug-Fixes-3"><a href="#Bug-Fixes-3" class="headerlink" title="Bug Fixes"></a>Bug Fixes</h4><ul>
+<li>fix defects according to Coverity Scan (<a href="https://github.com/rime/weasel/commit/526a91d2954492cc8e23c2c4c8def2a053af7c20" target="_blank" rel="noopener">526a91d2</a>)</li>
+<li>inline_preedit &amp;&amp; fullscreen causing dead lock when there’s no candidates. (<a href="https://github.com/rime/weasel/commit/deb0bb24b3f3aeaf73aef344968b7f15b471443f" target="_blank" rel="noopener">deb0bb24</a>)</li>
+<li><strong>RimeWithWeasel:</strong>  fix wild pointer (<a href="https://github.com/rime/weasel/commit/ae2e3c4a256fb9a2f7851c54114822d1bfbf0316" target="_blank" rel="noopener">ae2e3c4a</a>)</li>
+<li><strong>ServerImpl:</strong>  do finalization before exit process (<a href="https://github.com/rime/weasel/commit/b1bae01eb25c5e24e074807b7b3cb8a6d8401276" target="_blank" rel="noopener">b1bae01e</a>)</li>
+<li><strong>WeaselUI:</strong><ul>
+<li>specify default label format in constructor (<a href="https://github.com/rime/weasel/commit/4374d2440b99726894799861fb3bd5b93e73dec5" target="_blank" rel="noopener">4374d244</a>, closes <a href="https://github.com/rime/weasel/issues/147" target="_blank" rel="noopener">#147</a>)</li>
+<li>limit to subscript range when processing candidates (<a href="https://github.com/rime/weasel/commit/6b686c717bfab141469c3d48ec1c6acbeb79921e" target="_blank" rel="noopener">6b686c71</a>, closes <a href="https://github.com/rime/weasel/issues/121" target="_blank" rel="noopener">#121</a>)</li>
+</ul>
+</li>
+<li><strong>composition:</strong><ul>
+<li>improve compositions and edit sessions (#146) (<a href="https://github.com/rime/weasel/commit/fbdb66791da3291b740edf3c337032674e4377e8" target="_blank" rel="noopener">fbdb6679</a>)</li>
+<li>fix crashes in notebook with inline preedit (<a href="https://github.com/rime/weasel/commit/5e257088be823a2569609f0b3591af3a51d47a46" target="_blank" rel="noopener">5e257088</a>)</li>
+<li>fix crashes in notebook with inline preedit (<a href="https://github.com/rime/weasel/commit/892930cebc4235a0a1ef58803fe88c32ccc8b4e9" target="_blank" rel="noopener">892930ce</a>)</li>
+</ul>
+</li>
+<li><strong>install.bat:</strong>  run in elevate cmd; detach WeaselServer process (<a href="https://github.com/rime/weasel/commit/2194d9fbd7d0341fef94efdbe9268af8a6237438" target="_blank" rel="noopener">2194d9fb</a>)</li>
+<li><strong>ipc:</strong><ul>
+<li>add version check for security descriptor initialization (<a href="https://github.com/rime/weasel/commit/b97ccffe76a6abf3e353724ce0607d5dd97de6f2" target="_blank" rel="noopener">b97ccffe</a>, closes <a href="https://github.com/rime/weasel/issues/157" target="_blank" rel="noopener">#157</a>)</li>
+<li>grant access to IE protected mode (<a href="https://github.com/rime/weasel/commit/16c163a41d0afc9824723009ba8b9b9ba37b1c72" target="_blank" rel="noopener">16c163a4</a>)</li>
+<li>try to reconnect when failed (<a href="https://github.com/rime/weasel/commit/3c286b6a942769abf13188d88f9ab5e4c125807b" target="_blank" rel="noopener">3c286b6a</a>)</li>
+</ul>
+</li>
+<li><strong>librime:</strong>  make rime_api.h available in librime\build\include\ (<a href="https://github.com/rime/weasel/commit/3793e22c47b34c61d305ca80567dfdafe08b2302" target="_blank" rel="noopener">3793e22c</a>)</li>
+<li><strong>server:</strong>  postpone tray icon updating when focusing on explorer (<a href="https://github.com/rime/weasel/commit/45cf112099fa6db335cda06b1aaa0ae9c7975efe" target="_blank" rel="noopener">45cf1120</a>)</li>
+<li><strong>tsf:</strong><ul>
+<li>fix candidate behavior (<a href="https://github.com/rime/weasel/commit/9e2f9f17c059bf129c2c8b2561471670ea200dd7" target="_blank" rel="noopener">9e2f9f17</a>)</li>
+<li>fix <code>ITfCandidateListUIElement</code> implemention (<a href="https://github.com/rime/weasel/commit/9ce1fa87e6ef788e791e68193700e2ebdd950d20" target="_blank" rel="noopener">9ce1fa87</a>)</li>
+<li>use commmit text preview to show inline preview (<a href="https://github.com/rime/weasel/commit/b1d1ec43e132998ea8764d8dac2098a2b3d9a3e8" target="_blank" rel="noopener">b1d1ec43</a>)</li>
+</ul>
+</li>
+</ul>
+<p><a name="0.10.0"></a></p>
+<h2 id="小狼毫-0-10-0-2018-03-14"><a href="#小狼毫-0-10-0-2018-03-14" class="headerlink" title="小狼毫 0.10.0 (2018-03-14)"></a>小狼毫 0.10.0 (2018-03-14)</h2><h4 id="主要更新-8"><a href="#主要更新-8" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
+<li>兼容 Windows 8 ~ Windows 10</li>
+<li>支持高分辨率顯示屏</li>
+<li>介面風格選項<ul>
+<li>在內嵌編碼行預覽結果文字</li>
+<li>可指定候選序號的樣式</li>
+</ul>
+</li>
+<li>升級核心算法庫 <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md#130-2018-03-09" target="_blank" rel="noopener">librime 1.3.0</a><ul>
+<li>支持 YAML 節點引用，方便模塊化配置</li>
+<li>改進部署流程，在 <code>build</code> 子目錄集中存放生成的數據文件</li>
+</ul>
+</li>
+<li>精簡安裝包預裝的輸入方案，更多方案可由 <a href="https://github.com/rime/plum" target="_blank" rel="noopener">東風破</a> 取得</li>
+</ul>
+<h4 id="Features-5"><a href="#Features-5" class="headerlink" title="Features"></a>Features</h4><ul>
+<li><strong>build.bat:</strong>  customize PLATFORM_TOOLSET settings (<a href="https://github.com/rime/weasel/commit/c7a9a4fb530e0274450e4296cb0db2906d2f1fb4" target="_blank" rel="noopener">c7a9a4fb</a>)</li>
+<li><strong>config:</strong><ul>
+<li>enable customization of label format (<a href="https://github.com/rime/weasel/commit/76b08bae810735c5f1c8626ec39a7afd463f0269" target="_blank" rel="noopener">76b08bae</a>)</li>
+<li>alias <code>style/layout/border_width</code> to <code>style/layout/border</code> (<a href="https://github.com/rime/weasel/commit/013eefebaa4474e7814b6cfb6c905bcc12543a7f" target="_blank" rel="noopener">013eefeb</a>)</li>
+</ul>
+</li>
+<li><strong>tsf:</strong><ul>
+<li>fix candidate selecting in preview preedit mode (<a href="https://github.com/rime/weasel/commit/206efd692124339d0e256198360c1860c72cd807" target="_blank" rel="noopener">206efd69</a>)</li>
+<li>support user defined preedit display type (<a href="https://github.com/rime/weasel/commit/f76379b01abe9d3971d68e2e272067e0bb855cc9" target="_blank" rel="noopener">f76379b0</a>)</li>
+</ul>
+</li>
+</ul>
+<h4 id="Bug-Fixes-4"><a href="#Bug-Fixes-4" class="headerlink" title="Bug Fixes"></a>Bug Fixes</h4><ul>
+<li>Support High DPI Display <a href="https://github.com/rime/weasel/issues/28" target="_blank" rel="noopener">#28</a></li>
+<li><strong>WeaselUI:</strong>  limit to subscript range when processing candidates (<a href="https://github.com/rime/weasel/commit/6b686c717bfab141469c3d48ec1c6acbeb79921e" target="_blank" rel="noopener">6b686c71</a>, closes <a href="https://github.com/rime/weasel/issues/121" target="_blank" rel="noopener">#121</a>)</li>
+<li><strong>install.bat:</strong>  run in elevate cmd; detach WeaselServer process (<a href="https://github.com/rime/weasel/commit/2194d9fbd7d0341fef94efdbe9268af8a6237438" target="_blank" rel="noopener">2194d9fb</a>)</li>
+<li><strong>librime:</strong>  make rime_api.h available in librime\build\include\ (<a href="https://github.com/rime/weasel/commit/3793e22c47b34c61d305ca80567dfdafe08b2302" target="_blank" rel="noopener">3793e22c</a>)</li>
+<li><strong>tsf:</strong><ul>
+<li>Results of auto-selection cleared by subsequent manual selection <a href="https://github.com/rime/weasel/issues/107" target="_blank" rel="noopener">#107</a></li>
+<li>use commmit text preview to show inline preview (<a href="https://github.com/rime/weasel/commit/b1d1ec43e132998ea8764d8dac2098a2b3d9a3e8" target="_blank" rel="noopener">b1d1ec43</a>)</li>
+</ul>
+</li>
+</ul>
+<p><a name="0.9.30"></a></p>
+<h2 id="小狼毫-0-9-30-2014-04-01"><a href="#小狼毫-0-9-30-2014-04-01" class="headerlink" title="小狼毫 0.9.30 (2014-04-01)"></a>小狼毫 0.9.30 (2014-04-01)</h2><h4 id="Rime-算法庫變更集"><a href="#Rime-算法庫變更集" class="headerlink" title="Rime 算法庫變更集"></a>Rime 算法庫變更集</h4><ul>
+<li>新增：中西文切換方式 <code>clear</code>，切換時清除未完成的輸入</li>
+<li>改進：長按 Shift（或 Control）鍵不觸發中西文切換</li>
+<li>改進：並擊輸入，若按回車鍵則上屏按鍵對應的字符</li>
+<li>改進：支持對用戶設定中的列表元素打補靪，例如 <code>switcher/@0/reset: 1</code></li>
+<li>改進：缺少詞典源文件 <code>*.dict.yaml</code> 時利用固態詞典 <code>*.table.bin</code> 完成部署</li>
+<li>修復：自動組詞的詞典部署時未檢查【八股文】的變更，導致索引失效、候選字缺失</li>
+<li>修復：<code>comment_format</code> 會對候選註釋重複使用多次的BUG</li>
+</ul>
+<h4 id="【東風破】變更集"><a href="#【東風破】變更集" class="headerlink" title="【東風破】變更集"></a>【東風破】變更集</h4><ul>
+<li>新增：快捷鍵 <code>Control+.</code> 切換中西文標點</li>
+<li>更新：【八股文】【朙月拼音】【地球拼音】【五筆畫】</li>
+<li>改進：【朙月拼音·語句流】<code>/0</code> ~ <code>/10</code> 輸入數字符號</li>
+</ul>
+<p><a name="0.9.29.1"></a></p>
+<h2 id="小狼毫-0-9-29-1-2013-12-22"><a href="#小狼毫-0-9-29-1-2013-12-22" class="headerlink" title="小狼毫 0.9.29.1 (2013-12-22)"></a>小狼毫 0.9.29.1 (2013-12-22)</h2><h4 id="【小狼毫】變更集"><a href="#【小狼毫】變更集" class="headerlink" title="【小狼毫】變更集"></a>【小狼毫】變更集</h4><ul>
+<li>變更：不再支持 Windows XP SP2，因升級編譯器以支持 C++11</li>
+<li>修復：輸入語言選爲中文（臺灣）在 Windows 8 系統上出現多餘的輸入法選項</li>
+<li>修復：升級安裝後，外觀設定介面未及時顯示出新增的配色方案</li>
+<li>修復：配色方案 Google+ 的預覽圖</li>
+</ul>
+<h4 id="Rime-算法庫變更集-1"><a href="#Rime-算法庫變更集-1" class="headerlink" title="Rime 算法庫變更集"></a>Rime 算法庫變更集</h4><ul>
+<li>更新：librime 升級到 1.1</li>
+<li>新增：固定方案選單排列順序的選項 <code>default.yaml</code>: <code>switcher/fix_schema_list_order: true</code></li>
+<li>修復：正確匹配嵌套的“‘彎引號’”</li>
+<li>改進：碼表輸入法自動上屏及頂字上屏（<a href="https://gist.github.com/lotem/f879a020d56ef9b3b792" target="_blank" rel="noopener">示例</a>）<br/><br>  若有 <code>speller/auto_select: true</code>，則選項 <code>speller/max_code_length:</code> 限定第N碼無重碼自動上屏</li>
+<li>優化：爲詞組自動編碼時，限制因多音字而產生的組合數目，避免窮舉消耗過量資源</li>
+</ul>
+<h4 id="【東風破】變更集-1"><a href="#【東風破】變更集-1" class="headerlink" title="【東風破】變更集"></a>【東風破】變更集</h4><ul>
+<li>更新：【粵拼】匯入衆多粵語詞彙</li>
+<li>優化：調整部分異體字的字頻</li>
+</ul>
+<p><a name="0.9.28"></a></p>
+<h2 id="小狼毫-0-9-28"><a href="#小狼毫-0-9-28" class="headerlink" title="小狼毫 0.9.28 "></a>小狼毫 0.9.28 <2013-12-01></h2><h4 id="【小狼毫】變更集-1"><a href="#【小狼毫】變更集-1" class="headerlink" title="【小狼毫】變更集"></a>【小狼毫】變更集</h4><ul>
+<li>新增：一組配色方案，作者：P1461、Patricivs、skoj、五磅兔</li>
+<li>修復：<a href="https://code.google.com/p/rimeime/issues/detail?id=528" target="_blank" rel="noopener">Issue 528</a> Windows 7 IE11 文字無法上屏</li>
+<li>修復：<a href="https://code.google.com/p/rimeime/issues/detail?id=531" target="_blank" rel="noopener">Issue 531</a> Windows 8 卸載輸入法後在輸入法列表中有殘留項</li>
+<li>變更：註冊輸入法時同時啓用 IME、TSF 模式</li>
+</ul>
+<h4 id="Rime-算法庫變更集-2"><a href="#Rime-算法庫變更集-2" class="headerlink" title="Rime 算法庫變更集"></a>Rime 算法庫變更集</h4><ul>
+<li>更新：librime 升級到 1.0</li>
+<li>改進：<code>affix_segmentor</code> 支持向匹配到的代碼段添加標籤 <code>extra_tags</code></li>
+<li>修復：<code>table_translator</code> 按字符集過濾候選字，修正對 CJK-D 漢字的判斷</li>
+</ul>
+<h4 id="【東風破】變更集-2"><a href="#【東風破】變更集-2" class="headerlink" title="【東風破】變更集"></a>【東風破】變更集</h4><ul>
+<li>優化：【粵拼】兼容<a href="http://zh.wikipedia.org/wiki/%E6%95%99%E8%82%B2%E5%AD%B8%E9%99%A2%E6%8B%BC%E9%9F%B3%E6%96%B9%E6%A1%88" target="_blank" rel="noopener">教育學院拼音方案</a></li>
+<li>更新：<code>symbols.yaml</code> 由 Patricivs 重新整理符號表</li>
+<li>更新：Emoji 提供更加豐富的繪文字（需要字體支持）</li>
+<li>更新：【八股文】【朙月拼音】【地球拼音】【中古全拼】修正錯別字、註音錯誤</li>
+</ul>
+<p><a name="0.9.27"></a></p>
+<h2 id="小狼毫-0-9-27-2013-11-06"><a href="#小狼毫-0-9-27-2013-11-06" class="headerlink" title="小狼毫 0.9.27 (2013-11-06)"></a>小狼毫 0.9.27 (2013-11-06)</h2><h4 id="【小狼毫】變更集-2"><a href="#【小狼毫】變更集-2" class="headerlink" title="【小狼毫】變更集"></a>【小狼毫】變更集</h4><ul>
+<li>變更：動態鏈接 <code>rime.dll</code>，減小程序文件的體積</li>
+<li>修復：嘗試解決 Issue 487 避免服務進程以 SYSTEM 帳號執行</li>
+<li>新增：開始菜單項「安裝選項」，Vista 以降提示以管理員權限啓動</li>
+<li>優化：更換圖標，解決 Windows 8 TSF 圖標不清楚的問題</li>
+</ul>
+<h4 id="Rime-算法庫變更集-3"><a href="#Rime-算法庫變更集-3" class="headerlink" title="Rime 算法庫變更集"></a>Rime 算法庫變更集</h4><ul>
+<li>優化：同步用戶資料時自動備份自定義短語等 .txt 文件</li>
+<li>修復：【地球拼音】反查拼音失效的問題</li>
+<li>變更：編碼提示不再添加括弧（，）及逗號，可自行設定樣式</li>
+</ul>
+<h4 id="輸入方案設計支持"><a href="#輸入方案設計支持" class="headerlink" title="輸入方案設計支持"></a>輸入方案設計支持</h4><ul>
+<li>新增：<code>affix_segmentor</code> 分隔編碼的前綴、後綴</li>
+<li>改進：<code>translator</code> 支持匹配段落標籤</li>
+<li>改進：<code>simplifier</code> 支持多個實例，匹配段落標籤</li>
+<li>新增：<code>switches:</code> 輸入方案選項支持多選一</li>
+<li>新增：<code>reverse_lookup_filter</code> 爲候選字標註指定種類的輸入碼</li>
+</ul>
+<h4 id="【東風破】變更集-3"><a href="#【東風破】變更集-3" class="headerlink" title="【東風破】變更集"></a>【東風破】變更集</h4><ul>
+<li>更新：【粵拼】補充大量單字的註音</li>
+<li>更新：【朙月拼音】【地球拼音】導入 Unihan 讀音資料</li>
+<li>改進：【地球拼音】【注音】啓用自定義短語</li>
+<li>新增：【注音·臺灣正體】</li>
+<li>修復：【朙月拼音·簡化字】通過快捷鍵 <code>Control+Shift+4</code> 簡繁切換</li>
+<li>改進：【倉頡五代】開啓繁簡轉換時，提示簡化字對應的傳統漢字</li>
+<li>變更：間隔號採用「·」<code>U+00B7</code></li>
+</ul>
+<p><a name="0.9.26.1"></a></p>
+<h2 id="小狼毫-0-9-26-1-2013-10-09"><a href="#小狼毫-0-9-26-1-2013-10-09" class="headerlink" title="小狼毫 0.9.26.1 (2013-10-09)"></a>小狼毫 0.9.26.1 (2013-10-09)</h2><ul>
+<li>修復：從上一個版本升級【倉頡】輸入方案不會自動更新的問題</li>
+</ul>
+<p><a name="0.9.26"></a></p>
+<h2 id="小狼毫-0-9-26-2013-10-08"><a href="#小狼毫-0-9-26-2013-10-08" class="headerlink" title="小狼毫 0.9.26 (2013-10-08)"></a>小狼毫 0.9.26 (2013-10-08)</h2><ul>
+<li>新增：【倉頡】開啓自動造詞<br/><br>連續上屏的5字（依設定）以內的組合，或以連打方式上屏的短語，<br>按構詞規則記憶爲新詞組；再次輸入該詞組的編碼時，顯示「☯」標記</li>
+<li>變更：【五筆】開啓自動造詞；從碼表中刪除與一級簡碼重碼的鍵名字</li>
+<li>變更：【地球拼音】當以簡拼輸入時，爲5字以內候選標註完整帶調拼音</li>
+<li>新增：【五筆畫】輸入方案（<code>stroke</code>），取代 <code>stroke_simp</code></li>
+<li>新增：支持在輸入方案中設置介面樣式（<code>style:</code>）<br/><br>如字體、字號、橫排／直排等；配色方案除外</li>
+<li>修復：多次按「.」鍵翻頁後繼續輸入，不應視爲網址而在編碼中插入「.」</li>
+<li>修復：開啓候選字的字符集過濾，導致有時不出現連打候選詞的 BUG</li>
+<li>修復：<code>table_translator</code> 連打組詞時產生的內存泄漏（0.9.25.2）</li>
+<li>修復：爲所有用戶創建開始菜單項</li>
+<li>更新：修訂【八股文】詞典、【朙月拼音】【地球拼音】【粵拼】【吳語】</li>
+<li>更新：2013款 Rime 輸入法圖標</li>
+</ul>
+<p><a name="0.9.25.2"></a></p>
+<h2 id="小狼毫-0-9-25-2-2013-07-26"><a href="#小狼毫-0-9-25-2-2013-07-26" class="headerlink" title="小狼毫 0.9.25.2 (2013-07-26)"></a>小狼毫 0.9.25.2 (2013-07-26)</h2><ul>
+<li>改進：碼表輸入法連打，Shift+BackSpace 以字、詞爲單位回退</li>
+<li>修復：演示模式下開啓內嵌編碼行、查無候選字時程序卡死</li>
+</ul>
+<p><a name="0.9.25.1"></a></p>
+<h2 id="小狼毫-0-9-25-1-2013-07-25"><a href="#小狼毫-0-9-25-1-2013-07-25" class="headerlink" title="小狼毫 0.9.25.1 (2013-07-25)"></a>小狼毫 0.9.25.1 (2013-07-25)</h2><ul>
+<li>新增：開始菜單項「檢查新版本」，手動升級到最新測試版</li>
+<li>新增：【地球拼音】5 字內候選標註完整帶調拼音</li>
+</ul>
+<p><a name="0.9.25"></a></p>
+<h2 id="小狼毫-0-9-25-2013-07-24"><a href="#小狼毫-0-9-25-2013-07-24" class="headerlink" title="小狼毫 0.9.25 (2013-07-24)"></a>小狼毫 0.9.25 (2013-07-24)</h2><ul>
+<li>新增：演示模式（全屏的輸入窗口）<code>style/fullscreen: true</code></li>
+<li>新增：【倉頡】按快趣取碼規則生成常用詞組</li>
+<li>修復：【地球拼音】「-」鍵輸入第一聲失效的BUG</li>
+<li>更新：拼音、粵拼等輸入方案</li>
+<li>更新：<code>symbols.yaml</code> 增加一批特殊字符</li>
+</ul>
+<p><a name="0.9.24"></a></p>
+<h2 id="小狼毫-0-9-24-2013-07-04"><a href="#小狼毫-0-9-24-2013-07-04" class="headerlink" title="小狼毫 0.9.24 (2013-07-04)"></a>小狼毫 0.9.24 (2013-07-04)</h2><ul>
+<li>新增：支持全角模式</li>
+<li>更新：中古漢語【全拼】【三拼】輸入方案；三拼亦採用全拼詞典</li>
+<li>修復：大陸與臺灣異讀的字「微」「檔」「蝸」「垃圾」等</li>
+<li>修復：繁簡轉換錯詞「么么哒」</li>
+<li>新增：（輸入方案設計用）可設定對特定類型的候選詞不做繁簡轉換<br/><br>如不轉換反查字使用選項 <code>simplifier/excluded_types: [ reverse_lookup ]</code></li>
+<li>新增：（輸入方案設計用）干預多個 translator 之間的結果排序<br/><br>選項 <code>translator/initial_quality: 0</code></li>
+<li>修復：用戶詞典未能完整支持 <code>derive</code> 拼寫運算產生的歧義切分</li>
+</ul>
+<p><a name="0.9.23"></a></p>
+<h2 id="小狼毫-0-9-23-2013-06-09"><a href="#小狼毫-0-9-23-2013-06-09" class="headerlink" title="小狼毫 0.9.23 (2013-06-09)"></a>小狼毫 0.9.23 (2013-06-09)</h2><ul>
+<li>改進：方案選單按選用輸入方案的時間排列</li>
+<li>新增：快捷鍵 Control+Shift+1 切換至下一個輸入方案</li>
+<li>新增：快捷鍵 Control+Shift+2~5 切換輸入模式</li>
+<li>新增：初次安裝時由用戶指定輸入語言：中文（中國／臺灣）</li>
+<li>新增：可屏蔽符合 fuzz 拼寫規則的單字候選，僅以其輸入詞組<br/><br>選項 <code>translator/strict_spelling: true</code></li>
+<li>改進：綜合候選詞的詞頻和詞條質量比較不同 translator 的結果</li>
+<li>修復：自定義短語不應參與組詞</li>
+<li>修復：八股文錯詞及「鏈」字無法以簡化字組詞的 BUG</li>
+</ul>
+<p><a name="0.9.22.1"></a></p>
+<h2 id="小狼毫-0-9-22-1-2013-04-24"><a href="#小狼毫-0-9-22-1-2013-04-24" class="headerlink" title="小狼毫 0.9.22.1 (2013-04-24)"></a>小狼毫 0.9.22.1 (2013-04-24)</h2><ul>
+<li>修復：禁止自定義短語參與造句</li>
+<li>修復：GVim 裏進入命令模式或在插入模式換行錯使輸入法重置爲初始狀態</li>
+</ul>
+<p><a name="0.9.22"></a></p>
+<h2 id="小狼毫-0-9-22-2013-04-23"><a href="#小狼毫-0-9-22-2013-04-23" class="headerlink" title="小狼毫 0.9.22 (2013-04-23)"></a>小狼毫 0.9.22 (2013-04-23)</h2><ul>
+<li>新增：配色方案【曬經石】／Solarized Rock</li>
+<li>新增：Control+BackSpace 或 Shift+BackSpace 回退一個音節</li>
+<li>新增：固態詞典可引用多份碼表文件以實現分類詞庫</li>
+<li>新增：在輸入方案中加載翻譯器的多個具名實例</li>
+<li>新增：以選項 <code>translator/user_dict:</code> 指定用戶詞典的名稱</li>
+<li>新增：支持從用戶文件夾加載文本碼表作爲自定義短語詞典<br/><br>【朙月拼音】系列自動加載名爲 <code>custom_phrase.txt</code> 的碼表</li>
+<li>修復：繁簡轉換使無重碼自動上屏失效的 BUG</li>
+<li>修復：若非以 Caps Lock 鍵進入西文模式，<br/><br>按 Caps Lock 只切換大小寫，不返回中文模式</li>
+<li>變更：<code>r10n_translator</code> 更名爲 <code>script_translator</code>，舊名稱仍可使用</li>
+<li>變更：用戶詞典快照改爲文本格式</li>
+<li>改進：【八股文】導入《萌典》詞彙，並修正了不少錯詞</li>
+<li>改進：【倉頡五代】打單字時，以拉丁字母和倉頡字母並列顯示輸入碼</li>
+<li>改進：使自動生成的 YAML 文檔更合理地縮排、方便閱讀</li>
+<li>改進：碼表中 <code># no comments</code> 行之後不再識別註釋，以支持 <code>#</code> 作文字內容</li>
+<li>改進：檢測到因斷電造成用戶詞典損壞時，自動在後臺線程恢復數據文件</li>
+</ul>
+<p><a name="0.9.20"></a></p>
+<h2 id="小狼毫-0-9-20-2013-02-01"><a href="#小狼毫-0-9-20-2013-02-01" class="headerlink" title="小狼毫 0.9.20 (2013-02-01)"></a>小狼毫 0.9.20 (2013-02-01)</h2><ul>
+<li>變更：Caps Lock 燈亮時默認輸出大寫字母 <a href="https://gist.github.com/2981316" target="_blank" rel="noopener">Gist</a><br>升級安裝後若 Caps Lock 的表現不正確，請註銷並重新登錄</li>
+<li>新增：無重碼自動上屏 <code>speller/auto_select:</code><br/><br>輸入方案【倉頡·快打模式】</li>
+<li>改進：允許以空格做輸入碼，或作爲符號頂字上屏<br/><br><code>speller/use_space:</code>, <code>punctuator/use_space:</code></li>
+<li>改進：【注音】輸入方案以空格輸入第一聲（陰平）</li>
+<li>新增：特殊符號表 <code>symbols.yaml</code> 用法見↙</li>
+<li>改進：【朙月拼音·簡化字】以 <code>/ts</code> 等形式輸入特殊符號</li>
+<li>改進：標點符號註明〔全角〕〔半角〕</li>
+<li>優化：同步用戶資料時更聰明地備份用戶自定義的 YAML 文件</li>
+<li>修復：避免創建、使用不完整的詞典文件</li>
+<li>修復：糾正用戶詞典中無法調頻的受損詞條</li>
+<li>修復：用戶詞典管理／輸出詞典快照後定位文件出錯</li>
+<li>修復：TSF 內嵌輸入碼沒有反選效果、候選窗位置頻繁變化</li>
+</ul>
+<p><a name="0.9.19.1"></a></p>
+<h2 id="小狼毫-0-9-19-1-2013-01-16"><a href="#小狼毫-0-9-19-1-2013-01-16" class="headerlink" title="小狼毫 0.9.19.1 (2013-01-16)"></a>小狼毫 0.9.19.1 (2013-01-16)</h2><ul>
+<li>新增：Caps Lock 點亮時，切換到西文模式，輸出小寫字母<br/><br>選項 <code>ascii_composer/switch_key/Caps_Lock:</code></li>
+<li>修復：Control + 字母编辑键在临时西文模式下无效</li>
+<li>修復：用戶詞典有可能因讀取時 I/O 錯誤導致部份詞序無法調整</li>
+<li>改進：用戶詞典同步／合入快照的字頻合併算法</li>
+</ul>
+<p><a name="0.9.18.6"></a></p>
+<h2 id="小狼毫-0-9-18-6-2013-01-09"><a href="#小狼毫-0-9-18-6-2013-01-09" class="headerlink" title="小狼毫 0.9.18.6 (2013-01-09)"></a>小狼毫 0.9.18.6 (2013-01-09)</h2><ul>
+<li>修復：從 0.9.16 及以下版本升級用戶詞典出錯</li>
+</ul>
+<p><a name="0.9.18.5"></a></p>
+<h2 id="小狼毫-0-9-18-5-2013-01-07"><a href="#小狼毫-0-9-18-5-2013-01-07" class="headerlink" title="小狼毫 0.9.18.5 (2013-01-07)"></a>小狼毫 0.9.18.5 (2013-01-07)</h2><ul>
+<li>修復：含簡化字的候選詞不能以音節爲單位移動光標</li>
+<li>改進：同步用戶資料時也備份用戶修改的YAML文件</li>
+</ul>
+<p><a name="0.9.18"></a></p>
+<h2 id="小狼毫-0-9-18-2013-01-05"><a href="#小狼毫-0-9-18-2013-01-05" class="headerlink" title="小狼毫 0.9.18 (2013-01-05)"></a>小狼毫 0.9.18 (2013-01-05)</h2><ul>
+<li>新增：同步用戶詞典，詳見 <a href="https://code.google.com/p/rimeime/wiki/UserGuide" target="_blank" rel="noopener">Wiki » UserGuide</a></li>
+<li>新增：上屏錯誤的詞組後立即按回退鍵（BackSpace）撤銷組詞</li>
+<li>改進：拼音輸入法中，按左方向鍵以音節爲單位移動光標</li>
+<li>修復：【地球拼音】不能以 - 鍵輸入第一聲</li>
+</ul>
+<p><a name="0.9.17.1"></a></p>
+<h2 id="小狼毫-0-9-17-1-2012-12-25"><a href="#小狼毫-0-9-17-1-2012-12-25" class="headerlink" title="小狼毫 0.9.17.1 (2012-12-25)"></a>小狼毫 0.9.17.1 (2012-12-25)</h2><ul>
+<li>修復：設置爲默認輸入語言後再安裝，IME 註冊失敗</li>
+<li>修復：啓用托盤圖標的選項無效</li>
+<li>新增：從開始菜單訪問用戶文件夾的快捷方式</li>
+<li>修復：【小鶴雙拼】拼音 an 顯示錯誤</li>
+</ul>
+<p><a name="0.9.17"></a></p>
+<h2 id="小狼毫-0-9-17-2012-12-23"><a href="#小狼毫-0-9-17-2012-12-23" class="headerlink" title="小狼毫 0.9.17 (2012-12-23)"></a>小狼毫 0.9.17 (2012-12-23)</h2><ul>
+<li>新增：切換模式、輸入方案時，短暫顯示狀態圖標</li>
+<li>新增：隱藏托盤圖標，設定、部署、詞典管理請用開始菜單。<br/><br>配置項 <code>style/display_tray_icon:</code></li>
+<li>修復BUG：TSF 前端在 MS Office 裏不能正常上屏中文</li>
+<li>刪除：默認不啓用 TSF 前端，如有需要可在「文本服務與輸入語言」設置對話框添加。</li>
+<li>新增：分別以 <code>` &#39;</code> 標誌編碼反查的開始結束，例如 <code>`wbb&#39;yuepinyin</code></li>
+<li>改進：形碼與拼音混打的設定下，降低簡拼候選的優先級，以降低對逐鍵提示的干擾</li>
+<li>優化：控制用戶詞典文件大小，提高大容量（詞條數&gt;100,000）時的查詢速度</li>
+<li>刪除：因有用家向用戶詞典導入巨量詞條，故取消自動備份的功能，後續代之以用戶詞典同步</li>
+<li>修復：【小鶴雙拼】diao, tiao 等拼音回顯錯誤</li>
+<li>更新：【朙月拼音】【地球拼音】【粵拼】修正用戶反饋的註音錯誤</li>
+</ul>
+<p><a name="0.9.16"></a></p>
+<h2 id="小狼毫-0-9-16-2012-10-20"><a href="#小狼毫-0-9-16-2012-10-20" class="headerlink" title="小狼毫 0.9.16 (2012-10-20)"></a>小狼毫 0.9.16 (2012-10-20)</h2><ul>
+<li>新增：TSF 輸入法框架（測試階段）及嵌入式編碼行</li>
+<li>新增：支持 IE 8 ~ 10 的「保護模式」</li>
+<li>新增：識別 gVim 模式切換</li>
+<li>新增：開關碼表輸入法連打功能的設定項 <code>translator/enable_sentence:</code></li>
+<li>修復：「語句流」模式直接回車上屏不能記憶用戶詞組的BUG</li>
+<li>改進：部署時自動編譯輸入方案的自訂依賴項，如自選的反查碼</li>
+<li>改進：更精細的排版，修正註釋文字寬度、調整間距</li>
+<li>改進：未曾翻頁時按減號鍵，不上屏候選字及符號「-」以免誤操作</li>
+<li>變更：《注音》以逗號或句號（&lt;&gt; 鍵）上屏句子，書名號改用 [] 鍵</li>
+<li>更新：《朙月拼音》《地球拼音》《粵拼》，修正多音字</li>
+<li>更新：《上海吳語》《上海新派》，修正註音</li>
+<li>新增：寒寒豆作《蘇州吳語》輸入方案，方案標識爲 <code>soutzoe</code></li>
+<li>新增：配色方案【谷歌／Google】，skoj 作品</li>
+</ul>
+<p><a name="0.9.15"></a></p>
+<h2 id="小狼毫-0-9-15-2012-09-12"><a href="#小狼毫-0-9-15-2012-09-12" class="headerlink" title="小狼毫 0.9.15 (2012-09-12)"></a>小狼毫 0.9.15 (2012-09-12)</h2><ul>
+<li>新增：橫排候選欄——歡迎 wishstudio 同學加入開發！</li>
+<li>新增：綠色安裝工具 WeaselSetup，註冊輸入語言、自訂用戶目錄</li>
+<li>新增：碼表輸入法啓用用戶詞典、字頻調整</li>
+<li>優化：自動編譯輸入方案依賴項，如五筆·拼音的反查詞典</li>
+<li>修改：日誌系統改用glog，輸出到 <code>%TEMP%\rime.weasel.*</code></li>
+<li>修復：托盤圖標在重新登錄後不可見的BUG</li>
+<li>更新：【明月拼音】【粵拼】【吳語】修正註音錯誤、缺字</li>
+</ul>
+<p><a name="0.9.14.2"></a></p>
+<h2 id="小狼毫-0-9-14-2-2012-07-13"><a href="#小狼毫-0-9-14-2-2012-07-13" class="headerlink" title="小狼毫 0.9.14.2 (2012-07-13)"></a>小狼毫 0.9.14.2 (2012-07-13)</h2><ul>
+<li>重新編譯了 <code>opencc.dll</code> 安全軟件不吭氣了</li>
+</ul>
+<p><a name="0.9.14.1"></a></p>
+<h2 id="小狼毫-0-9-14-1-2012-07-07"><a href="#小狼毫-0-9-14-1-2012-07-07" class="headerlink" title="小狼毫 0.9.14.1 (2012-07-07)"></a>小狼毫 0.9.14.1 (2012-07-07)</h2><ul>
+<li>解決【中古全拼】不可用的問題</li>
+</ul>
+<p><a name="0.9.14"></a></p>
+<h2 id="小狼毫-0-9-14-2012-07-05"><a href="#小狼毫-0-9-14-2012-07-05" class="headerlink" title="小狼毫 0.9.14 (2012-07-05)"></a>小狼毫 0.9.14 (2012-07-05)</h2><ul>
+<li>介面採用新的 Rime logo，狀態圖示用較柔和的顏色</li>
+<li>新特性：碼表方案支持與反查碼混合輸入，無需切換或引導鍵</li>
+<li>新特性：碼表方案可在選單中使用字符集過濾開關</li>
+<li>新方案：【五筆86】衍生的【五筆·拼音】混合輸入</li>
+<li>新方案：《廣韻》音系的中古漢語全拼、三拼輸入法</li>
+<li>新方案：X-SAMPA 國際音標輸入法</li>
+<li>更新：【吳語】碼表，審定一些字詞的讀音，統一字形</li>
+<li>更新：【朙月拼音】碼表，修正多音字</li>
+<li>改進：當前設定的字體缺字時，使用系統後備字體顯示文字</li>
+<li>解決與MacType同時使用，Ext-B/C/D區文字排版不正確的問題</li>
+</ul>
+<p><a name="0.9.13"></a></p>
+<h2 id="小狼毫-0-9-13-2012-06-10"><a href="#小狼毫-0-9-13-2012-06-10" class="headerlink" title="小狼毫 0.9.13 (2012-06-10)"></a>小狼毫 0.9.13 (2012-06-10)</h2><ul>
+<li>編碼提示用淡墨來寫，亦可在配色方案中設定顏色</li>
+<li>新增多鍵並擊組件及輸入方案【宮保拼音】</li>
+<li>未經轉換的輸入如網址等不再顯示爲候選項</li>
+<li><code>default.custom.yaml</code>: <code>menu/page_size:</code> 設定全局頁候選數</li>
+<li>新增選項：導入【八股文】詞庫時限制詞語的長度、詞頻</li>
+<li>【倉頡】支持連續輸入多個字的編碼（階段成果，不會記憶詞組）</li>
+<li>【注音】改爲語句輸入風格，更接近臺灣用戶的習慣</li>
+<li>較少用的【筆順五碼】、【速記打字法】不再隨鼠鬚管發行</li>
+<li>修復「用戶詞典管理」導入文本碼表不生效的BUG；<br/><br>部署時檢查並修復已存在於用戶詞典中的無效條目</li>
+<li>檢測到用戶詞典文件損壞時，重建詞典並從備份中恢復資料</li>
+<li>修改BUG：簡拼 zhzh 因切分歧義使部分用戶詞失效</li>
+</ul>
+<p><a name="0.9.12"></a></p>
+<h2 id="小狼毫-0-9-12-2012-05-05"><a href="#小狼毫-0-9-12-2012-05-05" class="headerlink" title="小狼毫 0.9.12 (2012-05-05)"></a>小狼毫 0.9.12 (2012-05-05)</h2><ul>
+<li>用 Shift+Del 刪除已記入用戶詞典的詞條，詳見 Issue 117</li>
+<li>可選用Shift或Control爲中西文切換鍵，詳見 Issue 133</li>
+<li>數字後的句號鍵識別爲小數點、冒號鍵識別爲時分秒分隔符</li>
+<li>解決在QQ等應用程序中的定位問題</li>
+<li>支持設置爲系統默認輸入法</li>
+<li>支持多個Windows用戶（新用戶執行一次佈署後方可使用）</li>
+</ul>
+<p><a name="0.9.11"></a></p>
+<h2 id="小狼毫-0-9-11-2012-04-14"><a href="#小狼毫-0-9-11-2012-04-14" class="headerlink" title="小狼毫 0.9.11 (2012-04-14)"></a>小狼毫 0.9.11 (2012-04-14)</h2><ul>
+<li>使用 <code>express_editor</code> 的輸入方案中，數字、符號鍵直接上屏</li>
+<li>優化「方案選單」快捷鍵操作，連續按鍵選中下一個輸入方案</li>
+<li>輸入簡拼、模糊音時提示正音，【粵拼】【吳語】中默認開啓</li>
+<li>拼音反查支持預設的多音節詞、形碼反查可開啓編碼補全</li>
+<li>修復整句模式運用定長編碼頂字功能導致崩潰的問題</li>
+<li>修復碼表輸入法候選排序問題</li>
+<li>修復【朙月拼音】lo、yo 等音節的候選錯誤</li>
+<li>修復【地球拼音】聲調顯示不正確、部分字的註音缺失問題</li>
+<li>【五笔86】反查引導鍵改爲 z、反查詞典換用簡化字拼音</li>
+<li>更新【粵拼】詞典，調整常用粵字的排序、增補粵語常用詞</li>
+<li>新增輸入方案【小鶴雙拼】、【筆順五碼】</li>
+</ul>
+<p><a name="0.9.10"></a></p>
+<h2 id="小狼毫-0-9-10-2012-03-26"><a href="#小狼毫-0-9-10-2012-03-26" class="headerlink" title="小狼毫 0.9.10 (2012-03-26)"></a>小狼毫 0.9.10 (2012-03-26)</h2><ul>
+<li>記憶繁簡轉換、全／半角符號開關狀態</li>
+<li>支持定長編碼頂字上屏</li>
+<li>新增「用戶詞典管理」介面</li>
+<li>延遲加載繁簡轉換、編碼反查詞典，降低資源佔用</li>
+<li>純單字構詞時不調頻</li>
+<li>新增輸入方案【速成】，速成、倉頡詞句連打</li>
+<li>新增【智能ABC雙拼】、【速記打字法】</li>
+</ul>
+<p><a name="0.9.9"></a></p>
+<h2 id="小狼毫-0-9-9"><a href="#小狼毫-0-9-9" class="headerlink" title="小狼毫 0.9.9"></a>小狼毫 0.9.9</h2><ul>
+<li>新增「介面風格設定」，快速選擇預設的六款配色方案</li>
+<li>優化長句中字詞的動態調頻</li>
+<li>新增【注音】與【地球拼音】輸入方案</li>
+<li>支持自訂選詞按鍵</li>
+<li>修復編碼反查失效的BUG</li>
+<li>修改標點符號「間隔號」及「浪紋」</li>
+</ul>
+<p><a name="0.9.8"></a></p>
+<h2 id="小狼毫-0-9-8"><a href="#小狼毫-0-9-8" class="headerlink" title="小狼毫 0.9.8"></a>小狼毫 0.9.8</h2><ul>
+<li>新增「輸入方案選單」設定介面</li>
+<li>優化包含簡拼的音節切分</li>
+<li>修復部分用戶組詞無效的BUG</li>
+<li>新增預設輸入方案「MSPY雙拼」</li>
+</ul>
+<p><a name="0.9.7"></a></p>
+<h2 id="小狼毫-0-9-7"><a href="#小狼毫-0-9-7" class="headerlink" title="小狼毫 0.9.7"></a>小狼毫 0.9.7</h2><ul>
+<li>逐鍵提示、反查提示碼支持拼寫運算（如顯示倉頡字母等）</li>
+<li>重構部署工具；以 <code>*.custom.yaml</code> 文件持久保存自定義設置</li>
+<li>製作【粵拼】、【吳語】輸入方案「預發行版」</li>
+</ul>
+<p><a name="0.9.6"></a></p>
+<h2 id="小狼毫-0-9-6"><a href="#小狼毫-0-9-6" class="headerlink" title="小狼毫 0.9.6"></a>小狼毫 0.9.6</h2><ul>
+<li>關機時妥善保存數據，降低用戶詞庫損壞機率；執行定期備份</li>
+<li>新增基於【朙月拼音】的衍生方案：<ul>
+<li>【語句流】，整句輸入，空格分詞，回車上屏</li>
+<li>【雙拼】，兼容自然碼雙拼方案，演示拼寫運算常用技巧</li>
+</ul>
+</li>
+<li>修復BUG：簡拼「z h, c h, s h」的詞候選先於單字簡拼</li>
+<li>修復BUG：「拼寫運算」無法替換爲空串</li>
+<li>完善拼寫運算的錯誤日誌；清理調試日誌</li>
+</ul>
+<p><a name="0.9.5"></a></p>
+<h2 id="小狼毫-0-9-5"><a href="#小狼毫-0-9-5" class="headerlink" title="小狼毫 0.9.5"></a>小狼毫 0.9.5</h2><ul>
+<li>Rime 獨門絕活之「拼寫運算」</li>
+<li>升級【朙月拼音】，支持簡拼、糾錯；增設【簡化字】方案</li>
+<li>升級【倉頡五代】，以倉頡字母顯示編碼</li>
+<li>重修配色方案【碧水／Aqua】、【青天／Azure】</li>
+</ul>
+<p><a name="0.9.4"></a></p>
+<h2 id="小狼毫-0-9-4"><a href="#小狼毫-0-9-4" class="headerlink" title="小狼毫 0.9.4"></a>小狼毫 0.9.4</h2><ul>
+<li>增設編碼反查功能，預設方案以「`」爲反查的引導鍵</li>
+<li>修復Windows XP中西文狀態變更時的通知氣球</li>
+</ul>
+<p><a name="0.9.3"></a></p>
+<h2 id="小狼毫-0-9-3"><a href="#小狼毫-0-9-3" class="headerlink" title="小狼毫 0.9.3"></a>小狼毫 0.9.3</h2><ul>
+<li>新增預設輸入方案【五笔86】、【臺灣正體】拼音</li>
+<li>以托盤圖標表現輸入法狀態變更</li>
+<li>新增輸入法維護模式，更安全地進行部署作業</li>
+<li>優化中西文切換、自動識別小數、百分數、網址、郵箱</li>
+</ul>
+<p><a name="0.9.2"></a></p>
+<h2 id="小狼毫-0-9-2"><a href="#小狼毫-0-9-2" class="headerlink" title="小狼毫 0.9.2"></a>小狼毫 0.9.2</h2><ul>
+<li>增設半角標點符號</li>
+<li>增設Shift鍵切換中／西文模式</li>
+<li>繁簡轉換、左Shift切換中西文對當前輸入即時生效</li>
+<li>可自定義OpenCC異體字轉換字典</li>
+<li>提升碼表查詢效率，更新倉頡七萬字碼表</li>
+<li>增設托盤圖標，快速訪問配置管理工具</li>
+<li>改進安裝程序</li>
+</ul>
+<p><a name="0.9"></a></p>
+<h2 id="小狼毫-0-9"><a href="#小狼毫-0-9" class="headerlink" title="小狼毫 0.9"></a>小狼毫 0.9</h2><ul>
+<li>用C++重寫核心算法（階段成果）</li>
+<li>將輸入法介面從前端遷移到後臺服務進程</li>
+<li>兼容64位系統</li>
+</ul>
+<h2 id="小狼毫-0-1-0-3"><a href="#小狼毫-0-1-0-3" class="headerlink" title="小狼毫 0.1 ~ 0.3"></a>小狼毫 0.1 ~ 0.3</h2><ul>
+<li>以Python開發的實驗版本</li>
+<li>獨創「拼寫運算」技術</li>
+<li>預裝標調拼音、註音、粵拼、吳語等多種輸入方案</li>
+</ul>
+
+	</div>
+
+    
+
+	<!-- comment -->
+	<!-- _partial/post/comment -->
+
+
+
+	</div> <!-- col-md-9/col-md-12 -->
+
+	
+
+</div><!-- row -->
+
+
+    </div>
+    
+    <!-- _partial/footer -->
+<p>
+  &copy; 2021 by 佛振@式恕堂
+  &nbsp;
+  <span class="text-muted">Powered by:
+    <a class="text-muted" href="http://hexo.io/" target="_blank">Hexo</a>,
+    <a class="text-muted" href="http://github.com/yieme/hexo-theme-freewill/" target="_blank">Freewill</a>
+    &amp;
+    <a class="text-muted" href="http://bootswatch.com/" target="_blank">Bootswatch <small>v3.2</small></a>
+  </span>
+</p>
+ </footer>
+  </div> <!-- container-narrow -->
+  <!-- _partial/after_footer -->
+<a id="gotop" href="#">
+  <span>▲</span>
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+</body>
+</html>
