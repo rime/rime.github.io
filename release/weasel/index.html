@@ -135,126 +135,8 @@
 
 	<!-- content -->
 	<div class="mypage">
-	    <p><a name="0.15.0"></a></p>
-<h2 id="0-15-0-2023-06-06"><a href="#0-15-0-2023-06-06" class="headerlink" title="0.15.0 (2023-06-06)"></a><a href="https://github.com/rime/weasel/compare/0.15.0...0.14.3" target="_blank" rel="noopener">0.15.0</a> (2023-06-06)</h2><h4 id="安裝須知"><a href="#安裝須知" class="headerlink" title="安裝須知"></a>安裝須知</h4><p><strong>⚠️安裝小狼毫前請保存好文件資料，於安裝後重啓 Windows ，否則正在使用小狼毫的應用將會崩潰。</strong><br><strong>⚠️此版本的小狼毫需要使用 Windows 8.1 或更高版本的操作系統。</strong></p>
-<h4 id="主要更新"><a href="#主要更新" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
-<li>升級核心算法庫至 <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md#185-2023-02-05" target="_blank" rel="noopener">librime 1.8.5</a></li>
-<li>DPI 根據顯示器自動調整</li>
-<li>支持候選窗口等圓角顯示<ul>
-<li><code>style/layout/corner_radius: int</code></li>
-</ul>
-</li>
-<li>兼容鼠鬚管中高亮圓角參數<code>style/layout/hilited_corner_radius: int</code></li>
-<li>支持主題顏色中含有透明通道代碼, 支持格式 0xaabbggrr，0xbbggrr, 0xabgr, 0xbgr</li>
-<li>配色主題支持默認ABGR順序，或ARGB、RGBA順序<ul>
-<li><code>preset_color_schemes/color_scheme/color_format: &quot;argb&quot; | &quot;rgba&quot; | &quot;&quot;</code></li>
-</ul>
-</li>
-<li>支持編碼/高亮候選/普通候選/輸入窗口/候選邊框的陰影顏色繪製<ul>
-<li><code>style/layout/shadow_radius: int</code></li>
-<li><code>style/layout/shadow_offset_x: int</code></li>
-<li><code>style/layout/shadow_offset_y: int</code></li>
-<li><code>preset_color_schemes/color_scheme/shadow_color: color</code></li>
-<li><code>preset_color_schemes/color_scheme/nextpage_color: color</code></li>
-<li><code>preset_color_schemes/color_scheme/prevpage_color: color</code></li>
-<li><code>preset_color_schemes/color_scheme/candidate_back_color: color</code></li>
-<li><code>preset_color_schemes/color_scheme/candidate_shadow_color: color</code></li>
-<li><code>preset_color_schemes/color_scheme/candidate_border_color: color</code></li>
-<li><code>preset_color_schemes/color_scheme/hilited_shadow_color: color</code></li>
-<li><code>preset_color_schemes/color_scheme/hilited_candidate_shadow_color: color</code></li>
-<li><code>preset_color_schemes/color_scheme/hilited_candidate_border_color: color</code></li>
-<li><code>preset_color_schemes/color_scheme/hilited_mark_color: color</code></li>
-</ul>
-</li>
-<li>支持自定義標籤、註解字體及字號<ul>
-<li><code>style/label_font_face: string</code></li>
-<li><code>style/comment_font_face: string</code></li>
-<li><code>style/label_font_point: int</code></li>
-<li><code>style/comment_font_point: int</code></li>
-<li><code>style/layout/align_type: &quot;top&quot; | &quot;center&quot; | &quot;bottom&quot;</code></li>
-</ul>
-</li>
-<li>支持指定字符 Unicode 區間字體設定</li>
-<li>支持字重，字形風格設定<ul>
-<li><code>style/font_face: font_name[:start_code_point:end_code_point][:weight_set][:style_set][,font2...]</code><ul>
-<li>example: <code>&quot;Segoe UI Emoji:20:39:bold:italic, Segoe UI Emoji:1f51f:1f51f, Noto Color Emoji SVG:80, Arial:600:6ff, Segoe UI Emoji:80, LXGW Wenkai Narrow&quot;</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>支持自定义字体回退範圍、順序定义</li>
-<li>彩色字體支持<ul>
-<li>Windows 10 周年版前：需要使用 COLR 格式彩色字體</li>
-<li>Windows 11 ：可以使用 SVG 字體</li>
-</ul>
-</li>
-<li>新增豎直文字佈局<ul>
-<li><code>style/vertical_text: bool</code></li>
-<li><code>style/vertical_text_left_to_right: bool</code></li>
-<li><code>style/vertical_text_with_wrap: bool</code></li>
-</ul>
-</li>
-<li>新增豎直佈局vertical窗口上移時自動倒序排列<ul>
-<li><code>style/vertical_auto_reverse: bool</code></li>
-</ul>
-</li>
-<li>新增「天圓地方」佈局：由 margin 與 hilite_padding 確定, 當margin &lt;= hilite_padding時生效</li>
-<li>margin_x 或 margin_y 設置爲負值時，隱藏輸入窗口，不影響方案選單顯示</li>
-<li>新增 preedit_type: preview_all ，在輸入時將候選項顯示於 composition 中<ul>
-<li><code>style/preedit_type: &quot;composition&quot; | &quot;preview&quot; | &quot;preview_all&quot;</code></li>
-</ul>
-</li>
-<li>新增輸入法高亮提示標記<ul>
-<li><code>style/mark_text: string</code></li>
-</ul>
-</li>
-<li>新增輸入方案圖標顯示，可在語言欄中顯示，文件格式爲ico<ul>
-<li><code>schema/icon: string</code></li>
-<li><code>schema/ascii_icon: string</code></li>
-</ul>
-</li>
-<li>新增選項，允許在光標位置獲取失敗時於窗口左上角繪製候選框（而不是桌面左上角）<ul>
-<li><code>style/layout/enhanced_position: bool</code></li>
-</ul>
-</li>
-<li>新增鼠標點擊截圖到剪貼板功能</li>
-<li>新增選項，支持越長自動折行/換列顯示<ul>
-<li><code>style/layout/max_width: int</code></li>
-<li><code>style/layout/max_height: int</code></li>
-</ul>
-</li>
-<li>支持方案內設定配色<ul>
-<li><code>style/color_scheme: string</code></li>
-</ul>
-</li>
-<li>支持多行内容顯示，\r, \n, \r\n均支持</li>
-<li>支持方案內設定配色</li>
-<li>繪製性能提升</li>
-<li>composition 模式下新增下劃線顯示</li>
-<li>隨二進制文件提供調試符號</li>
-</ul>
-<h4 id="Bug-修復"><a href="#Bug-修復" class="headerlink" title="Bug 修復"></a>Bug 修復</h4><ul>
-<li>轉義日文鍵盤中特殊按鍵</li>
-<li>候選文字過長時崩潰</li>
-<li>修復用戶目錄下無 <code>default.custom.yaml</code> 或 <code>weasel.custom.yaml</code> 時，設定窗口無法彈出的問題</li>
-<li>方案中設定inline_preedit爲true時，部署後編碼末端出現異常符號</li>
-<li>部分應用無法輸入文字的問題</li>
-<li>修復部署時無顯示提示的問題</li>
-<li>修復中文路徑相關問題</li>
-<li>修復右鍵菜單打開程序目錄/用戶目錄時，資源管理器無響應的問題</li>
-<li>修復部分內存訪問問題</li>
-<li>修復操作系統 / WinGet 無法識別小狼毫版本號的問題</li>
-<li>修復 composition 模式下光標位置不正常的問題</li>
-<li>修復 Word 中小狼毫工作不正常的問題</li>
-<li>若干開發環境配置問題修復</li>
-</ul>
-<h4 id="已知問題"><a href="#已知問題" class="headerlink" title="已知問題"></a>已知問題</h4><ul>
-<li>部分應用仍存在輸入法無法輸入文字的問題</li>
-<li>WeaselServer 仍可能發生崩潰</li>
-<li>部分防病毒軟件可能誤報病毒</li>
-</ul>
-<p><a name="0.14.3"></a></p>
-<h2 id="0-14-3-2019-06-22"><a href="#0-14-3-2019-06-22" class="headerlink" title="0.14.3 (2019-06-22)"></a>0.14.3 (2019-06-22)</h2><h4 id="主要更新-1"><a href="#主要更新-1" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
+	    <p><a name="0.14.3"></a></p>
+<h2 id="0-14-3-2019-06-22"><a href="#0-14-3-2019-06-22" class="headerlink" title="0.14.3 (2019-06-22)"></a>0.14.3 (2019-06-22)</h2><h4 id="主要更新"><a href="#主要更新" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
 <li>升級核心算法庫 <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md#153-2019-06-22" target="_blank" rel="noopener">librime 1.5.3</a><ul>
 <li>修復 <code>single_char_filter</code> 組件</li>
 <li>完善上游項目 <code>librime</code> 的全自動發佈流程，免去手工上傳構建結果的步驟</li>
@@ -262,7 +144,7 @@
 </li>
 </ul>
 <p><a name="0.14.2"></a></p>
-<h2 id="0-14-2-2019-06-17"><a href="#0-14-2-2019-06-17" class="headerlink" title="0.14.2 (2019-06-17)"></a>0.14.2 (2019-06-17)</h2><h4 id="主要更新-2"><a href="#主要更新-2" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
+<h2 id="0-14-2-2019-06-17"><a href="#0-14-2-2019-06-17" class="headerlink" title="0.14.2 (2019-06-17)"></a>0.14.2 (2019-06-17)</h2><h4 id="主要更新-1"><a href="#主要更新-1" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
 <li>升級核心算法庫 <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md#152-2019-06-17" target="_blank" rel="noopener">librime 1.5.2</a><ul>
 <li>修復用戶詞的權重，穩定造句質量、平衡翻譯器優先級 <a href="https://github.com/rime/librime/issues/287" target="_blank" rel="noopener">librime#287</a></li>
 <li>建議 0.14.1 版本用家升級</li>
@@ -270,14 +152,14 @@
 </li>
 </ul>
 <p><a name="0.14.1"></a></p>
-<h2 id="0-14-1-2019-06-16"><a href="#0-14-1-2019-06-16" class="headerlink" title="0.14.1 (2019-06-16)"></a>0.14.1 (2019-06-16)</h2><h4 id="主要更新-3"><a href="#主要更新-3" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
+<h2 id="0-14-1-2019-06-16"><a href="#0-14-1-2019-06-16" class="headerlink" title="0.14.1 (2019-06-16)"></a>0.14.1 (2019-06-16)</h2><h4 id="主要更新-2"><a href="#主要更新-2" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
 <li>升級核心算法庫 <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md#151-2019-06-16" target="_blank" rel="noopener">librime 1.5.1</a><ul>
 <li>修復未裝配語言模型時缺省的造句算法 (<a href="https://github.com/rime/weasel/issues/383" target="_blank" rel="noopener">weasel#383</a>)</li>
 </ul>
 </li>
 </ul>
 <p><a name="0.14.0"></a></p>
-<h2 id="0-14-0-2019-06-11"><a href="#0-14-0-2019-06-11" class="headerlink" title="0.14.0 (2019-06-11)"></a>0.14.0 (2019-06-11)</h2><h4 id="主要更新-4"><a href="#主要更新-4" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
+<h2 id="0-14-0-2019-06-11"><a href="#0-14-0-2019-06-11" class="headerlink" title="0.14.0 (2019-06-11)"></a>0.14.0 (2019-06-11)</h2><h4 id="主要更新-3"><a href="#主要更新-3" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
 <li>升級核心算法庫 <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md#150-2019-06-06" target="_blank" rel="noopener">librime 1.5.0</a><ul>
 <li>遷移到VS2017構建工具；建設安全可靠的全自動構建、發佈流程</li>
 <li>通過更新第三方庫，修復userdb文件夾大量佔用磁盤空間的問題</li>
@@ -294,7 +176,7 @@
 <li><strong>ui:</strong>  high-res status icons; display larger icons in WeaselPanel (<a href="https://github.com/rime/weasel/commit/093fa80678422f972e7a7285060553eeedb0e591" target="_blank" rel="noopener">093fa806</a>)</li>
 </ul>
 <p><a name="0.13.0"></a></p>
-<h2 id="0-13-0-2019-01-28"><a href="#0-13-0-2019-01-28" class="headerlink" title="0.13.0 (2019-01-28)"></a>0.13.0 (2019-01-28)</h2><h4 id="主要更新-5"><a href="#主要更新-5" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
+<h2 id="0-13-0-2019-01-28"><a href="#0-13-0-2019-01-28" class="headerlink" title="0.13.0 (2019-01-28)"></a>0.13.0 (2019-01-28)</h2><h4 id="主要更新-4"><a href="#主要更新-4" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
 <li>升級核心算法庫 <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md#140-2019-01-16" target="_blank" rel="noopener">librime 1.4.0</a><ul>
 <li>新增 <a href="https://github.com/rime/librime/pull/228" target="_blank" rel="noopener">拼寫糾錯</a> 選項<br>當前僅限 QWERTY 鍵盤佈局及使用 <code>script_translator</code> 的方案</li>
 <li>修復升級、部署數據時發生的若干錯誤</li>
@@ -313,7 +195,7 @@
 <li><strong>tsf:</strong>  set current page to 0 as page count is always 1 (<a href="https://github.com/rime/weasel/commit/5447f63bc7c9d0e31d7ba8ead1e1229938be276d" target="_blank" rel="noopener">5447f63b</a>)</li>
 </ul>
 <p><a name="0.12.0"></a></p>
-<h2 id="0-12-0-2018-11-12"><a href="#0-12-0-2018-11-12" class="headerlink" title="0.12.0  (2018-11-12)"></a>0.12.0  (2018-11-12)</h2><h4 id="主要更新-6"><a href="#主要更新-6" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
+<h2 id="0-12-0-2018-11-12"><a href="#0-12-0-2018-11-12" class="headerlink" title="0.12.0  (2018-11-12)"></a>0.12.0  (2018-11-12)</h2><h4 id="主要更新-5"><a href="#主要更新-5" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
 <li>合併小狼毫與小狼毫（TSF）兩種輸入法</li>
 <li>合併32位與64位系統下的安裝程序</li>
 <li>使用系統的關閉輸入法功能（默認快捷鍵 Ctrl + Space）後，輸入法圖標將顯示禁用狀態</li>
@@ -336,7 +218,7 @@
 <li><strong>WeaselSetup:</strong> detect 64-bit on single 32-bit build (<a href="https://github.com/rime/weasel/issues/266" target="_blank" rel="noopener">#266</a>) (<a href="https://github.com/rime/weasel/commit/fb3ae0f" target="_blank" rel="noopener">fb3ae0f</a>)</li>
 </ul>
 <p><a name="0.11.1"></a></p>
-<h2 id="0-11-1-2018-04-26"><a href="#0-11-1-2018-04-26" class="headerlink" title="0.11.1 (2018-04-26)"></a>0.11.1 (2018-04-26)</h2><h4 id="主要更新-7"><a href="#主要更新-7" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
+<h2 id="0-11-1-2018-04-26"><a href="#0-11-1-2018-04-26" class="headerlink" title="0.11.1 (2018-04-26)"></a>0.11.1 (2018-04-26)</h2><h4 id="主要更新-6"><a href="#主要更新-6" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
 <li>修復了在 Excel 中奇怪的輸入丟失問題（<a href="https://github.com/rime/weasel/issues/185" target="_blank" rel="noopener">#185</a>）</li>
 <li>功能鍵不再會觸發輸入焦點（<a href="https://github.com/rime/weasel/issues/194" target="_blank" rel="noopener">#194</a>、<a href="https://github.com/rime/weasel/issues/195" target="_blank" rel="noopener">#195</a>、<a href="https://github.com/rime/weasel/issues/204" target="_blank" rel="noopener">#204</a>）</li>
 <li>「獲取更多輸入方案」功能優化（<a href="https://github.com/rime/weasel/issues/180" target="_blank" rel="noopener">#180</a>）</li>
@@ -358,7 +240,7 @@
 <li><strong>rime-install.bat:</strong>  built-in ZIP package installer (<a href="https://github.com/rime/weasel/commit/739be9bc9ba08e294f51e1d7232407148ded716c" target="_blank" rel="noopener">739be9bc</a>)</li>
 </ul>
 <p><a name="0.11.0"></a></p>
-<h2 id="0-11-0-2018-04-07"><a href="#0-11-0-2018-04-07" class="headerlink" title="0.11.0 (2018-04-07)"></a>0.11.0 (2018-04-07)</h2><h4 id="主要更新-8"><a href="#主要更新-8" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
+<h2 id="0-11-0-2018-04-07"><a href="#0-11-0-2018-04-07" class="headerlink" title="0.11.0 (2018-04-07)"></a>0.11.0 (2018-04-07)</h2><h4 id="主要更新-7"><a href="#主要更新-7" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
 <li>新增 <a href="https://github.com/rime/plum" target="_blank" rel="noopener">Rime 配置管理器</a>，通過「輸入法設定／獲取更多輸入方案」調用</li>
 <li>在輸入法語言欄顯示狀態切換按鈕（TSF 模式）</li>
 <li>修復多個前端兼容性問題</li>
@@ -429,7 +311,7 @@
 </li>
 </ul>
 <p><a name="0.10.0"></a></p>
-<h2 id="小狼毫-0-10-0-2018-03-14"><a href="#小狼毫-0-10-0-2018-03-14" class="headerlink" title="小狼毫 0.10.0 (2018-03-14)"></a>小狼毫 0.10.0 (2018-03-14)</h2><h4 id="主要更新-9"><a href="#主要更新-9" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
+<h2 id="小狼毫-0-10-0-2018-03-14"><a href="#小狼毫-0-10-0-2018-03-14" class="headerlink" title="小狼毫 0.10.0 (2018-03-14)"></a>小狼毫 0.10.0 (2018-03-14)</h2><h4 id="主要更新-8"><a href="#主要更新-8" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
 <li>兼容 Windows 8 ~ Windows 10</li>
 <li>支持高分辨率顯示屏</li>
 <li>介面風格選項<ul>
