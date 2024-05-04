@@ -136,6 +136,105 @@
 	<!-- content -->
 	<div class="mypage">
 	    <p><a name="0.16.2"></a></p>
+<h2 id="0-18-2024-05-14"><a href="#0-18-2024-05-14" class="headerlink" title="0.18 (2024-05-14)"></a>0.18 (2024-05-14)</h2><h4 id="主要功能更新"><a href="#主要功能更新" class="headerlink" title="主要功能更新"></a>主要功能更新</h4><ul>
+<li>現可設定非高亮候選項背景色：<ul>
+<li>以 <code>preset_color_schemes/xxx/candidate_back_color: 0xAABBGGRR</code> 設定，未設定則不啓用本功能</li>
+<li>以 <code>style/surrounding_extra_expansion</code> 控制非高亮候選背景大小，正數則相對高亮背景擴大，負數則相對高亮背景收縮，默認爲0</li>
+</ul>
+</li>
+<li>更稳定的介面渲染，尤其繪文字無論橫排豎排皆能穩定顯示，行高不會跳變</li>
+<li>支持鼠標操作：<ul>
+<li>鼠標懸浮則更改高亮候選，點擊則選定候選，滾輪和觸控板滑動則翻䈎</li>
+<li>點擊編碼區則可前後移動光標位置</li>
+</ul>
+</li>
+<li>其它介面改進：<ul>
+<li>解決候選框首次出現可能位於屏幕一角的問題</li>
+<li><code>style/border_height</code>、<code>style/border_width</code>、<code>style/line_spacing</code>、<code>style/spacing</code>現可正確處理負值</li>
+<li>字號可包含小數</li>
+<li>序號字號不同於候選字號時，序號居中</li>
+<li>可以<code>style/status_message_type</code>: <code>mix</code>(default) / <code>long</code> / <code>short</code>控制狀態改變時如何展示狀態標籤，默認短標籤優先，無短標籤則使用完整標籤，不再自動截取完整標籤首字，除非設爲<code>short</code></li>
+<li>以<code>style/memorize_size</code>: <code>true</code>/<code>false</code>控制候選標是否在接觸屏幕邊緣時有粘性</li>
+<li><code>style/alpha</code>可爲0，爲0則完全隱藏候選框</li>
+<li>以<code>style/shadow_size</code>設定高亮候選背景的陰影，默認爲0，即無陰影</li>
+<li>以<code>style/mutual_exclusive</code>: <code>true</code>/<code>false</code>控制半透明顏色是否互相疊加，默認爲<code>false</code>，即互相疊加</li>
+</ul>
+</li>
+<li><code>librime</code> 更新至1.11.2：<ul>
+<li>詳見 librime <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md" target="_blank" rel="noopener">更新紀錄</a>，含 1.9、1.10、1.11 三個主要版本更新</li>
+</ul>
+</li>
+<li>librime 插件現單獨構建，不再合併於 librime 內，本安裝包含 <code>lua</code>、<code>octagram</code>、<code>predict</code> 三個插件</li>
+<li>最低支持的系統應爲 13.0，14.0 以上系統經過較好測試</li>
+</ul>
+<h4 id="其它更新內容"><a href="#其它更新內容" class="headerlink" title="其它更新內容"></a>其它更新內容</h4><ul>
+<li>啓用CI自動構建</li>
+<li>應用 Clang 格式標準化</li>
+<li>更新已過時的方法</li>
+<li>支持沙盒機制</li>
+</ul>
+<h4 id="Main-Updates"><a href="#Main-Updates" class="headerlink" title="Main Updates"></a>Main Updates</h4><ul>
+<li>Surrounding high lights for all candidates:<ul>
+<li>Set <code>preset_color_schemes/xxx/candidate_back_color</code> to enable (Not specified unless explicitly defined)</li>
+<li><code>style/surrounding_extra_expansion</code> controls the relative size to the selected candidate’s surrounding block. Negative value means smaller, while positive means larger, default to 0.</li>
+</ul>
+</li>
+<li>More reliable text layout, especially in vertical mode, and with exotic characters like Emoji.</li>
+<li>Mouse interactions:<ul>
+<li>Hover over to change selection, click on any candidate to select, and swipe or scroll to change page</li>
+<li>Click in preedit area to change caret position</li>
+</ul>
+</li>
+<li>Other UI improvements:<ul>
+<li>Resolve a issue that Squirrel panel shows in corner on first launch</li>
+<li><code>style/border_height</code>, <code>style/border_width</code>, <code>style/line_spacing</code> and <code>style/spacing</code> can now be negative.</li>
+<li>All <code>font_size</code> accepts float number.</li>
+<li>Labels are vertically centered when using a different <code>label_font_size</code> from the main <code>font_size</code></li>
+<li>Add <code>style/status_message_type</code>: <code>mix(default) / long / short</code> to Handle abbrev status label when status updates</li>
+<li>Add <code>style/memorize_size: true/false</code> to control sticking panel width behavior </li>
+<li><code>style/alpha: 0</code> is now valid, setting so completely hides the panel</li>
+<li>Add <code>style/shadow_size</code> to specify shadow under selected candidate. Default to <code>0</code> with no shadow.</li>
+<li>Add <code>style/mutual_exclusive</code>: <code>true</code>/<code>false</code> to allow colors not stacking on each other. Default to <code>false</code></li>
+</ul>
+</li>
+<li><code>librime</code> updated to 1.11.2:<ul>
+<li>See librime <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md" target="_blank" rel="noopener">change log</a> for details, including 1.9, 1.10 and 1.11 major updates</li>
+</ul>
+</li>
+<li>librime plugins are built separately, no longer integrated inside librime library. This install package is compiled with <code>lua</code>, <code>octagram</code> and <code>predict</code> plugins</li>
+<li>Minimum OS supported should be 13.0, while 14.0+ is better tested</li>
+</ul>
+<h4 id="Other-Updates"><a href="#Other-Updates" class="headerlink" title="Other Updates"></a>Other Updates</h4><ul>
+<li>Adopts CI workflow</li>
+<li>Applies Clang linting</li>
+<li>Modernized several deprecated methods</li>
+<li>Supports sandbox</li>
+</ul>
+<h4 id="完整更新列表-Change-Log"><a href="#完整更新列表-Change-Log" class="headerlink" title="完整更新列表 Change Log"></a>完整更新列表 Change Log</h4><ul>
+<li>build: specify build target OS in makefile by @LEOYoon-Tsaw in <a href="https://github.com/rime/squirrel/pull/727" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/727</a></li>
+<li>Consolidated update to Squirrel by @LEOYoon-Tsaw in <a href="https://github.com/rime/squirrel/pull/749" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/749</a></li>
+<li>Update INSTALL.md: Fix script by @EdgarDegas in <a href="https://github.com/rime/squirrel/pull/800" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/800</a></li>
+<li>fix action-changelog.sh by @hezhizhen in <a href="https://github.com/rime/squirrel/pull/794" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/794</a></li>
+<li>Update weasel introduction in README.md by @determ1ne in <a href="https://github.com/rime/squirrel/pull/777" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/777</a></li>
+<li>Upgrade GitHub action to v4 by @Bambooin in <a href="https://github.com/rime/squirrel/pull/834" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/834</a></li>
+<li>chore: use macos 14 runner with M1 by @Bambooin in <a href="https://github.com/rime/squirrel/pull/835" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/835</a></li>
+<li>Add mac app sandbox support. by @ShikiSuen in <a href="https://github.com/rime/squirrel/pull/841" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/841</a></li>
+<li>Apply clang format by @Bambooin in <a href="https://github.com/rime/squirrel/pull/836" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/836</a></li>
+<li>fix: fix wrong git blame ignore by @Bambooin in <a href="https://github.com/rime/squirrel/pull/845" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/845</a></li>
+<li>replace deprecated API calls by @groverlynn in <a href="https://github.com/rime/squirrel/pull/846" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/846</a></li>
+<li>fix(SquirrelPanel): text shown in top-left corner by @lotem in <a href="https://github.com/rime/squirrel/pull/856" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/856</a></li>
+<li>deps: update librime to 1.11.0 by @ksqsf in <a href="https://github.com/rime/squirrel/pull/860" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/860</a></li>
+<li>build(ci): nightly release by @ksqsf in <a href="https://github.com/rime/squirrel/pull/861" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/861</a></li>
+<li>ci: disable nightly build in forked repos by @Bambooin in <a href="https://github.com/rime/squirrel/pull/862" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/862</a></li>
+</ul>
+<h4 id="新增貢獻者-New-Contributors"><a href="#新增貢獻者-New-Contributors" class="headerlink" title="新增貢獻者 New Contributors"></a>新增貢獻者 New Contributors</h4><ul>
+<li>@EdgarDegas made their first contribution in <a href="https://github.com/rime/squirrel/pull/800" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/800</a></li>
+<li>@hezhizhen made their first contribution in <a href="https://github.com/rime/squirrel/pull/794" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/794</a></li>
+<li>@determ1ne made their first contribution in <a href="https://github.com/rime/squirrel/pull/777" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/777</a></li>
+<li>@ksqsf made their first contribution in <a href="https://github.com/rime/squirrel/pull/860" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/860</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/rime/squirrel/compare/0.16.2...0.18" target="_blank" rel="noopener">https://github.com/rime/squirrel/compare/0.16.2...0.18</a></p>
+<p><a name="0.16.2"></a></p>
 <h2 id="0-16-2-2023-02-05"><a href="#0-16-2-2023-02-05" class="headerlink" title="0.16.2 (2023-02-05)"></a>0.16.2 (2023-02-05)</h2><h4 id="須知"><a href="#須知" class="headerlink" title="須知"></a>須知</h4><ul>
 <li>升級安裝後遇輸入法不可用，須手動重新添加 <a href="https://github.com/rime/squirrel/issues/704" target="_blank" rel="noopener">#704</a></li>
 </ul>
