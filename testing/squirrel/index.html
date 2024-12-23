@@ -16,7 +16,7 @@
   <meta property="og:site_name" content="RIME | 中州韻輸入法引擎"/>
 
   
-    <meta property="og:image" content="undefined"/>
+    <meta property="og:image" content=""/>
   
 
   
@@ -45,7 +45,7 @@
 
 
 
-<meta name="generator" content="Hexo 4.2.1"></head>
+<meta name="generator" content="Hexo 7.3.0"></head>
 
 <body>
   <!-- _partial/navigation -->
@@ -146,7 +146,7 @@
 </ul>
 </li>
 <li>Edge 瀏覧器默認行內編輯 (修 #906)</li>
-<li>日誌置於 $TMPDIR/rime.squirrel 內，以便查找</li>
+<li>日誌置於 $TMPDIR&#x2F;rime.squirrel 內，以便查找</li>
 </ul>
 <h4 id="Other-Updates"><a href="#Other-Updates" class="headerlink" title="Other Updates"></a>Other Updates</h4><ul>
 <li>Bug fixes:<ul>
@@ -158,9 +158,9 @@
 </ul>
 </li>
 <li>Edge defaults to inline mode (fix #906)</li>
-<li>Logs dir is now $TMPDIR/rime.squirrel for clarity</li>
+<li>Logs dir is now $TMPDIR&#x2F;rime.squirrel for clarity</li>
 </ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/rime/squirrel/compare/1.0.1...1.0.2" target="_blank" rel="noopener">https://github.com/rime/squirrel/compare/1.0.1...1.0.2</a></p>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/rime/squirrel/compare/1.0.1...1.0.2">https://github.com/rime/squirrel/compare/1.0.1...1.0.2</a></p>
 <p><a name="1.0.1"></a></p>
 <h2 id="1-0-1-2024-06-01"><a href="#1-0-1-2024-06-01" class="headerlink" title="1.0.1 (2024-06-01)"></a>1.0.1 (2024-06-01)</h2><h4 id="其它更新內容-1"><a href="#其它更新內容-1" class="headerlink" title="其它更新內容"></a>其它更新內容</h4><ul>
 <li>bug 修復<ul>
@@ -180,7 +180,7 @@
 </li>
 <li>Drop support for <code>style/horizontal</code> and <code>style/vertical</code></li>
 </ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/rime/squirrel/compare/1.0.0...1.0.1" target="_blank" rel="noopener">https://github.com/rime/squirrel/compare/1.0.0...1.0.1</a></p>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/rime/squirrel/compare/1.0.0...1.0.1">https://github.com/rime/squirrel/compare/1.0.0...1.0.1</a></p>
 <p><a name="1.0.0"></a></p>
 <h2 id="1-0-0-2024-05-30"><a href="#1-0-0-2024-05-30" class="headerlink" title="1.0.0 (2024-05-30)"></a>1.0.0 (2024-05-30)</h2><h4 id="主要功能更新"><a href="#主要功能更新" class="headerlink" title="主要功能更新"></a>主要功能更新</h4><ul>
 <li>純 Swift 重寫，代碼更易維護，更易讀，貢獻代碼的門檻更低。今天就來看看源代碼，嘗試動手吧！</li>
@@ -188,7 +188,7 @@
 <h4 id="其它更新內容-2"><a href="#其它更新內容-2" class="headerlink" title="其它更新內容"></a>其它更新內容</h4><ul>
 <li>UI 設置【<strong>敬請留意</strong>】<ul>
 <li><code>style/candidate_format</code> 格式修改爲 <code>&quot;[label]. [candidate] [comment]&quot;</code>，原格式仍能使用，但建議遷移至更靈活、直觀的新格式</li>
-<li><code>style/horizontal</code> 將徹底移除，雖然本版程序仍支持，但會被新控件的默認值覆蓋<br>請使用 <code>candidate_list_layout</code>: <code>stacked</code>/<code>linear</code> 和 <code>text_orientation</code>: <code>horizontal</code>/<code>vertical</code></li>
+<li><code>style/horizontal</code> 將徹底移除，雖然本版程序仍支持，但會被新控件的默認值覆蓋<br>請使用 <code>candidate_list_layout</code>: <code>stacked</code>&#x2F;<code>linear</code> 和 <code>text_orientation</code>: <code>horizontal</code>&#x2F;<code>vertical</code></li>
 <li><code>style/label_hilited_color</code> 已移除，請使用 <code>style/hilited_candidate_label_color</code></li>
 <li><code>native</code> 配色小幅修改，減小字號，更像原生輸入法</li>
 </ul>
@@ -211,7 +211,7 @@
 <h4 id="Other-Updates-2"><a href="#Other-Updates-2" class="headerlink" title="Other Updates"></a>Other Updates</h4><ul>
 <li>UI settings (<strong>Breaking Changes</strong>)<ul>
 <li><code>style/candidate_format</code> now updated to <code>&quot;[index]. [candidate] [comment]&quot;</code>, while the old format still works, please consider migrating to this more readable and flexible format at your convenience</li>
-<li><code>style/horizontal</code> will be dropped, it’s still supported but will be overwrite by the default values of new options.<br>Please adopt <code>candidate_list_layout</code>: <code>stacked</code>/<code>linear</code> and <code>text_orientation</code>: <code>horizontal</code>/<code>vertical</code></li>
+<li><code>style/horizontal</code> will be dropped, it’s still supported but will be overwrite by the default values of new options.<br>Please adopt <code>candidate_list_layout</code>: <code>stacked</code>&#x2F;<code>linear</code> and <code>text_orientation</code>: <code>horizontal</code>&#x2F;<code>vertical</code></li>
 <li><code>style/label_hilited_color</code> is removed, please use <code>style/hilited_candidate_label_color</code> instead</li>
 <li><code>native</code> color scheme is updated with smaller font size, to better match macOS builtin IME</li>
 </ul>
@@ -228,7 +228,7 @@
 </li>
 <li>librime: Use stdbool flavored API, for better Swift interoperation</li>
 </ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/rime/squirrel/compare/0.18...1.0.0" target="_blank" rel="noopener">https://github.com/rime/squirrel/compare/0.18...1.0.0</a></p>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/rime/squirrel/compare/0.18...1.0.0">https://github.com/rime/squirrel/compare/0.18...1.0.0</a></p>
 <p><a name="0.18"></a></p>
 <h2 id="0-18-2024-05-04"><a href="#0-18-2024-05-04" class="headerlink" title="0.18 (2024-05-04)"></a>0.18 (2024-05-04)</h2><h4 id="主要功能更新-1"><a href="#主要功能更新-1" class="headerlink" title="主要功能更新"></a>主要功能更新</h4><ul>
 <li>現可設定非高亮候選項背景色：<ul>
@@ -247,15 +247,15 @@
 <li><code>style/border_height</code>、<code>style/border_width</code>、<code>style/line_spacing</code>、<code>style/spacing</code>現可正確處理負值</li>
 <li>字號可包含小數</li>
 <li>序號字號不同於候選字號時，序號居中</li>
-<li>可以<code>style/status_message_type</code>: <code>mix</code>(default) / <code>long</code> / <code>short</code>控制狀態改變時如何展示狀態標籤，默認短標籤優先，無短標籤則使用完整標籤，不再自動截取完整標籤首字，除非設爲<code>short</code></li>
-<li>以<code>style/memorize_size</code>: <code>true</code>/<code>false</code>控制候選標是否在接觸屏幕邊緣時有粘性</li>
+<li>可以<code>style/status_message_type</code>: <code>mix</code>(default) &#x2F; <code>long</code> &#x2F; <code>short</code>控制狀態改變時如何展示狀態標籤，默認短標籤優先，無短標籤則使用完整標籤，不再自動截取完整標籤首字，除非設爲<code>short</code></li>
+<li>以<code>style/memorize_size</code>: <code>true</code>&#x2F;<code>false</code>控制候選標是否在接觸屏幕邊緣時有粘性</li>
 <li><code>style/alpha</code>可爲0，爲0則完全隱藏候選框</li>
 <li>以<code>style/shadow_size</code>設定高亮候選背景的陰影，默認爲0，即無陰影</li>
-<li>以<code>style/mutual_exclusive</code>: <code>true</code>/<code>false</code>控制半透明顏色是否互相疊加，默認爲<code>false</code>，即互相疊加</li>
+<li>以<code>style/mutual_exclusive</code>: <code>true</code>&#x2F;<code>false</code>控制半透明顏色是否互相疊加，默認爲<code>false</code>，即互相疊加</li>
 </ul>
 </li>
 <li><code>librime</code> 更新至1.11.2：<ul>
-<li>詳見 librime <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md" target="_blank" rel="noopener">更新紀錄</a>，含 1.9、1.10、1.11 三個主要版本更新</li>
+<li>詳見 librime <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md">更新紀錄</a>，含 1.9、1.10、1.11 三個主要版本更新</li>
 </ul>
 </li>
 <li>librime 插件現單獨構建，不再合併於 librime 內，本安裝包含 <code>lua</code>、<code>octagram</code>、<code>predict</code> 三個插件</li>
@@ -288,11 +288,11 @@
 <li>Add <code>style/memorize_size: true/false</code> to control sticking panel width behavior </li>
 <li><code>style/alpha: 0</code> is now valid, setting so completely hides the panel</li>
 <li>Add <code>style/shadow_size</code> to specify shadow under selected candidate. Default to <code>0</code> with no shadow.</li>
-<li>Add <code>style/mutual_exclusive</code>: <code>true</code>/<code>false</code> to allow colors not stacking on each other. Default to <code>false</code></li>
+<li>Add <code>style/mutual_exclusive</code>: <code>true</code>&#x2F;<code>false</code> to allow colors not stacking on each other. Default to <code>false</code></li>
 </ul>
 </li>
 <li><code>librime</code> updated to 1.11.2:<ul>
-<li>See librime <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md" target="_blank" rel="noopener">change log</a> for details, including 1.9, 1.10 and 1.11 major updates</li>
+<li>See librime <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md">change log</a> for details, including 1.9, 1.10 and 1.11 major updates</li>
 </ul>
 </li>
 <li>librime plugins are built separately, no longer integrated inside librime library. This install package is compiled with <code>lua</code>, <code>octagram</code> and <code>predict</code> plugins</li>
@@ -305,76 +305,76 @@
 <li>Supports sandbox</li>
 </ul>
 <h4 id="完整更新列表-Change-Log"><a href="#完整更新列表-Change-Log" class="headerlink" title="完整更新列表 Change Log"></a>完整更新列表 Change Log</h4><ul>
-<li>build: specify build target OS in makefile by @LEOYoon-Tsaw in <a href="https://github.com/rime/squirrel/pull/727" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/727</a></li>
-<li>Consolidated update to Squirrel by @LEOYoon-Tsaw in <a href="https://github.com/rime/squirrel/pull/749" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/749</a></li>
-<li>Update INSTALL.md: Fix script by @EdgarDegas in <a href="https://github.com/rime/squirrel/pull/800" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/800</a></li>
-<li>fix action-changelog.sh by @hezhizhen in <a href="https://github.com/rime/squirrel/pull/794" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/794</a></li>
-<li>Update weasel introduction in README.md by @determ1ne in <a href="https://github.com/rime/squirrel/pull/777" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/777</a></li>
-<li>Upgrade GitHub action to v4 by @Bambooin in <a href="https://github.com/rime/squirrel/pull/834" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/834</a></li>
-<li>chore: use macos 14 runner with M1 by @Bambooin in <a href="https://github.com/rime/squirrel/pull/835" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/835</a></li>
-<li>Add mac app sandbox support. by @ShikiSuen in <a href="https://github.com/rime/squirrel/pull/841" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/841</a></li>
-<li>Apply clang format by @Bambooin in <a href="https://github.com/rime/squirrel/pull/836" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/836</a></li>
-<li>fix: fix wrong git blame ignore by @Bambooin in <a href="https://github.com/rime/squirrel/pull/845" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/845</a></li>
-<li>replace deprecated API calls by @groverlynn in <a href="https://github.com/rime/squirrel/pull/846" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/846</a></li>
-<li>fix(SquirrelPanel): text shown in top-left corner by @lotem in <a href="https://github.com/rime/squirrel/pull/856" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/856</a></li>
-<li>deps: update librime to 1.11.0 by @ksqsf in <a href="https://github.com/rime/squirrel/pull/860" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/860</a></li>
-<li>build(ci): nightly release by @ksqsf in <a href="https://github.com/rime/squirrel/pull/861" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/861</a></li>
-<li>ci: disable nightly build in forked repos by @Bambooin in <a href="https://github.com/rime/squirrel/pull/862" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/862</a></li>
+<li>build: specify build target OS in makefile by @LEOYoon-Tsaw in <a href="https://github.com/rime/squirrel/pull/727">https://github.com/rime/squirrel/pull/727</a></li>
+<li>Consolidated update to Squirrel by @LEOYoon-Tsaw in <a href="https://github.com/rime/squirrel/pull/749">https://github.com/rime/squirrel/pull/749</a></li>
+<li>Update INSTALL.md: Fix script by @EdgarDegas in <a href="https://github.com/rime/squirrel/pull/800">https://github.com/rime/squirrel/pull/800</a></li>
+<li>fix action-changelog.sh by @hezhizhen in <a href="https://github.com/rime/squirrel/pull/794">https://github.com/rime/squirrel/pull/794</a></li>
+<li>Update weasel introduction in README.md by @determ1ne in <a href="https://github.com/rime/squirrel/pull/777">https://github.com/rime/squirrel/pull/777</a></li>
+<li>Upgrade GitHub action to v4 by @Bambooin in <a href="https://github.com/rime/squirrel/pull/834">https://github.com/rime/squirrel/pull/834</a></li>
+<li>chore: use macos 14 runner with M1 by @Bambooin in <a href="https://github.com/rime/squirrel/pull/835">https://github.com/rime/squirrel/pull/835</a></li>
+<li>Add mac app sandbox support. by @ShikiSuen in <a href="https://github.com/rime/squirrel/pull/841">https://github.com/rime/squirrel/pull/841</a></li>
+<li>Apply clang format by @Bambooin in <a href="https://github.com/rime/squirrel/pull/836">https://github.com/rime/squirrel/pull/836</a></li>
+<li>fix: fix wrong git blame ignore by @Bambooin in <a href="https://github.com/rime/squirrel/pull/845">https://github.com/rime/squirrel/pull/845</a></li>
+<li>replace deprecated API calls by @groverlynn in <a href="https://github.com/rime/squirrel/pull/846">https://github.com/rime/squirrel/pull/846</a></li>
+<li>fix(SquirrelPanel): text shown in top-left corner by @lotem in <a href="https://github.com/rime/squirrel/pull/856">https://github.com/rime/squirrel/pull/856</a></li>
+<li>deps: update librime to 1.11.0 by @ksqsf in <a href="https://github.com/rime/squirrel/pull/860">https://github.com/rime/squirrel/pull/860</a></li>
+<li>build(ci): nightly release by @ksqsf in <a href="https://github.com/rime/squirrel/pull/861">https://github.com/rime/squirrel/pull/861</a></li>
+<li>ci: disable nightly build in forked repos by @Bambooin in <a href="https://github.com/rime/squirrel/pull/862">https://github.com/rime/squirrel/pull/862</a></li>
 </ul>
 <h4 id="新增貢獻者-New-Contributors"><a href="#新增貢獻者-New-Contributors" class="headerlink" title="新增貢獻者 New Contributors"></a>新增貢獻者 New Contributors</h4><ul>
-<li>@EdgarDegas made their first contribution in <a href="https://github.com/rime/squirrel/pull/800" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/800</a></li>
-<li>@hezhizhen made their first contribution in <a href="https://github.com/rime/squirrel/pull/794" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/794</a></li>
-<li>@determ1ne made their first contribution in <a href="https://github.com/rime/squirrel/pull/777" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/777</a></li>
-<li>@ksqsf made their first contribution in <a href="https://github.com/rime/squirrel/pull/860" target="_blank" rel="noopener">https://github.com/rime/squirrel/pull/860</a></li>
+<li>@EdgarDegas made their first contribution in <a href="https://github.com/rime/squirrel/pull/800">https://github.com/rime/squirrel/pull/800</a></li>
+<li>@hezhizhen made their first contribution in <a href="https://github.com/rime/squirrel/pull/794">https://github.com/rime/squirrel/pull/794</a></li>
+<li>@determ1ne made their first contribution in <a href="https://github.com/rime/squirrel/pull/777">https://github.com/rime/squirrel/pull/777</a></li>
+<li>@ksqsf made their first contribution in <a href="https://github.com/rime/squirrel/pull/860">https://github.com/rime/squirrel/pull/860</a></li>
 </ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/rime/squirrel/compare/0.16.2...0.18" target="_blank" rel="noopener">https://github.com/rime/squirrel/compare/0.16.2...0.18</a></p>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/rime/squirrel/compare/0.16.2...0.18">https://github.com/rime/squirrel/compare/0.16.2...0.18</a></p>
 <p><a name="0.16.2"></a></p>
 <h2 id="0-16-2-2023-02-05"><a href="#0-16-2-2023-02-05" class="headerlink" title="0.16.2 (2023-02-05)"></a>0.16.2 (2023-02-05)</h2><h4 id="須知"><a href="#須知" class="headerlink" title="須知"></a>須知</h4><ul>
-<li>升級安裝後遇輸入法不可用，須手動重新添加 <a href="https://github.com/rime/squirrel/issues/704" target="_blank" rel="noopener">#704</a></li>
+<li>升級安裝後遇輸入法不可用，須手動重新添加 <a href="https://github.com/rime/squirrel/issues/704">#704</a></li>
 </ul>
 <h4 id="主要更新"><a href="#主要更新" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
-<li>更新 Rime 核心算法庫至 <a href="https://github.com/rime/librime/releases/tag/1.8.5" target="_blank" rel="noopener">1.8.5</a></li>
-<li>修復：橫向候選欄 Tab 鍵應當用作移動插入點 <a href="https://github.com/rime/librime/issues/609" target="_blank" rel="noopener">rime/librime#609</a></li>
-<li>修復：macOS Mojave 及以下版本單擊 Shift 等修飾鍵失效 <a href="https://github.com/rime/squirrel/issues/715" target="_blank" rel="noopener">#715</a></li>
-<li>修復：全新安裝只添加一個輸入法選項（簡體中文） <a href="https://github.com/rime/squirrel/issues/714" target="_blank" rel="noopener">#714</a></li>
+<li>更新 Rime 核心算法庫至 <a href="https://github.com/rime/librime/releases/tag/1.8.5">1.8.5</a></li>
+<li>修復：橫向候選欄 Tab 鍵應當用作移動插入點 <a href="https://github.com/rime/librime/issues/609">rime&#x2F;librime#609</a></li>
+<li>修復：macOS Mojave 及以下版本單擊 Shift 等修飾鍵失效 <a href="https://github.com/rime/squirrel/issues/715">#715</a></li>
+<li>修復：全新安裝只添加一個輸入法選項（簡體中文） <a href="https://github.com/rime/squirrel/issues/714">#714</a></li>
 </ul>
 <h4 id="Bug-Fixes"><a href="#Bug-Fixes" class="headerlink" title="Bug Fixes"></a>Bug Fixes</h4><ul>
-<li>modifier change event in older macOS (<a href="https://github.com/rime/squirrel/commit/5c2b7e64980b7e6b7eb3a8b392163ce89d244f37" target="_blank" rel="noopener">5c2b7e64</a>)</li>
-<li>install one input mode or keep previous ones (<a href="https://github.com/rime/squirrel/commit/3bc6c2c0edbb1adaa22e79da65c6f0116b164de7" target="_blank" rel="noopener">3bc6c2c0</a>)</li>
+<li>modifier change event in older macOS (<a href="https://github.com/rime/squirrel/commit/5c2b7e64980b7e6b7eb3a8b392163ce89d244f37">5c2b7e64</a>)</li>
+<li>install one input mode or keep previous ones (<a href="https://github.com/rime/squirrel/commit/3bc6c2c0edbb1adaa22e79da65c6f0116b164de7">3bc6c2c0</a>)</li>
 </ul>
 <p><a name="0.16.1"></a></p>
 <h2 id="0-16-1-2023-01-30"><a href="#0-16-1-2023-01-30" class="headerlink" title="0.16.1 (2023-01-30)"></a>0.16.1 (2023-01-30)</h2><h4 id="主要更新-1"><a href="#主要更新-1" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
-<li>更新 Rime 核心算法庫至 <a href="https://github.com/rime/librime/releases/tag/1.8.4" target="_blank" rel="noopener">1.8.4</a></li>
+<li>更新 Rime 核心算法庫至 <a href="https://github.com/rime/librime/releases/tag/1.8.4">1.8.4</a></li>
 <li>修復：橫向候選欄不響應左方向鍵移動插入點</li>
 </ul>
 <p><a name="0.16.0"></a></p>
 <h2 id="0-16-0-2023-01-30"><a href="#0-16-0-2023-01-30" class="headerlink" title="0.16.0 (2023-01-30)"></a>0.16.0 (2023-01-30)</h2><h4 id="主要更新-2"><a href="#主要更新-2" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
-<li>輸入狀態變化時顯示方案中設定的狀態名稱 <a href="https://github.com/rime/squirrel/pull/540" target="_blank" rel="noopener">#540</a></li>
-<li>修正繪文字行高 <a href="https://github.com/rime/squirrel/issues/559" target="_blank" rel="noopener">#559</a></li>
-<li>支持半透明視窗背景 <a href="https://github.com/rime/squirrel/pull/589" target="_blank" rel="noopener">#589</a></li>
-<li>由 GitHub Actions執行自動構建 <a href="https://github.com/rime/squirrel/pull/633" target="_blank" rel="noopener">#633</a></li>
-<li>將鼠鬚管的輸入語言註冊爲簡體中文及繁體中文 <a href="https://github.com/rime/squirrel/pull/648" target="_blank" rel="noopener">#648</a></li>
-<li>可指定使用任意一種系統鍵盤佈局 <a href="https://github.com/rime/squirrel/pull/687" target="_blank" rel="noopener">#687</a><br>例如： <code>squirrel.yaml:/keyboard_layout: USExtended</code></li>
-<li>區分左、右修飾鍵 <a href="https://github.com/rime/squirrel/pull/688" target="_blank" rel="noopener">#688</a></li>
-<li>支持以命令行方式同步用戶數據 <a href="https://github.com/rime/squirrel/pull/694" target="_blank" rel="noopener">#694</a><br>命令： <code>Squirrel --sync</code></li>
-<li>更新 Rime 核心算法庫至 <a href="https://github.com/rime/librime/releases/tag/1.8.3" target="_blank" rel="noopener">1.8.3</a></li>
+<li>輸入狀態變化時顯示方案中設定的狀態名稱 <a href="https://github.com/rime/squirrel/pull/540">#540</a></li>
+<li>修正繪文字行高 <a href="https://github.com/rime/squirrel/issues/559">#559</a></li>
+<li>支持半透明視窗背景 <a href="https://github.com/rime/squirrel/pull/589">#589</a></li>
+<li>由 GitHub Actions執行自動構建 <a href="https://github.com/rime/squirrel/pull/633">#633</a></li>
+<li>將鼠鬚管的輸入語言註冊爲簡體中文及繁體中文 <a href="https://github.com/rime/squirrel/pull/648">#648</a></li>
+<li>可指定使用任意一種系統鍵盤佈局 <a href="https://github.com/rime/squirrel/pull/687">#687</a><br>例如： <code>squirrel.yaml:/keyboard_layout: USExtended</code></li>
+<li>區分左、右修飾鍵 <a href="https://github.com/rime/squirrel/pull/688">#688</a></li>
+<li>支持以命令行方式同步用戶數據 <a href="https://github.com/rime/squirrel/pull/694">#694</a><br>命令： <code>Squirrel --sync</code></li>
+<li>更新 Rime 核心算法庫至 <a href="https://github.com/rime/librime/releases/tag/1.8.3">1.8.3</a></li>
 </ul>
 <p><a name="0.15.2"></a></p>
 <h2 id="0-15-2-2021-02-13"><a href="#0-15-2-2021-02-13" class="headerlink" title="0.15.2 (2021-02-13)"></a>0.15.2 (2021-02-13)</h2><h4 id="主要更新-3"><a href="#主要更新-3" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
 <li>切換到其他輸入法或鍵盤時提交未轉換的輸入</li>
-<li>修復工單 <a href="https://github.com/rime/squirrel/issues/513" target="_blank" rel="noopener">#513</a></li>
+<li>修復工單 <a href="https://github.com/rime/squirrel/issues/513">#513</a></li>
 <li>重製應用圖標，提升暗色背景下的可見度</li>
 </ul>
 <h4 id="Bug-Fixes-1"><a href="#Bug-Fixes-1" class="headerlink" title="Bug Fixes"></a>Bug Fixes</h4><ul>
-<li><strong>SquirrelInputController:</strong>  commit raw input when switching to other IME, closes #146 (<a href="https://github.com/rime/squirrel/commit/b875d194d9799ccc74453292c670fcca892799fa" target="_blank" rel="noopener">b875d194</a>)</li>
-<li><strong>SquirrelPanel:</strong>  use of uninitialized local variable linear, vertical (<a href="https://github.com/rime/squirrel/commit/e8b87a4f97994001c6889ecc1d43fa38e7589e66" target="_blank" rel="noopener">e8b87a4f</a>)</li>
+<li><strong>SquirrelInputController:</strong>  commit raw input when switching to other IME, closes #146 (<a href="https://github.com/rime/squirrel/commit/b875d194d9799ccc74453292c670fcca892799fa">b875d194</a>)</li>
+<li><strong>SquirrelPanel:</strong>  use of uninitialized local variable linear, vertical (<a href="https://github.com/rime/squirrel/commit/e8b87a4f97994001c6889ecc1d43fa38e7589e66">e8b87a4f</a>)</li>
 </ul>
 <h4 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h4><ul>
-<li><strong>RimeIcon:</strong>  updated app icon (<a href="https://github.com/rime/squirrel/commit/76d742b8ee271c24dae5f98251a93930e57279ec" target="_blank" rel="noopener">76d742b8</a>)</li>
+<li><strong>RimeIcon:</strong>  updated app icon (<a href="https://github.com/rime/squirrel/commit/76d742b8ee271c24dae5f98251a93930e57279ec">76d742b8</a>)</li>
 </ul>
 <p><a name="0.15.1"></a></p>
 <h2 id="0-15-1-2021-02-11"><a href="#0-15-1-2021-02-11" class="headerlink" title="0.15.1 (2021-02-11)"></a>0.15.1 (2021-02-11)</h2><h4 id="主要更新-4"><a href="#主要更新-4" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
-<li><p>升級核心算法庫 <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md#173-2021-02-11" target="_blank" rel="noopener">librime 1.7.3</a></p>
+<li><p>升級核心算法庫 <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md#173-2021-02-11">librime 1.7.3</a></p>
 <ul>
 <li>修復若干內存安全問題</li>
 <li>修復並擊輸入法回車鍵上屏字符按鍵序列</li>
@@ -382,27 +382,29 @@
 </li>
 <li><p>指定候選註釋文字的字體、字號 <code>style/comment_font_face</code>, <code>style/comment_font_point</code></p>
 </li>
-<li>修復無數字序號的候選樣式 <code>style/candidate_format</code></li>
-<li>優化界面代碼</li>
+<li><p>修復無數字序號的候選樣式 <code>style/candidate_format</code></p>
+</li>
+<li><p>優化界面代碼</p>
+</li>
 </ul>
 <h4 id="Performance"><a href="#Performance" class="headerlink" title="Performance"></a>Performance</h4><ul>
-<li><strong>SquirrelPanel:</strong>  decompose candidate_format when loading theme (<a href="https://github.com/rime/squirrel/commit/803f64218384b505cbea1289af85a2b65f8f83f5" target="_blank" rel="noopener">803f6421</a>, closes <a href="https://github.com/rime/squirrel/issues/516" target="_blank" rel="noopener">#516</a>)</li>
+<li><strong>SquirrelPanel:</strong>  decompose candidate_format when loading theme (<a href="https://github.com/rime/squirrel/commit/803f64218384b505cbea1289af85a2b65f8f83f5">803f6421</a>, closes <a href="https://github.com/rime/squirrel/issues/516">#516</a>)</li>
 </ul>
 <h4 id="Bug-Fixes-2"><a href="#Bug-Fixes-2" class="headerlink" title="Bug Fixes"></a>Bug Fixes</h4><ul>
-<li>avoid implicit lossy integer transform (<a href="https://github.com/rime/squirrel/commit/da4fcbf2b77ca8298eaa8043937ee2c98f95ee0f" target="_blank" rel="noopener">da4fcbf2</a>)</li>
+<li>avoid implicit lossy integer transform (<a href="https://github.com/rime/squirrel/commit/da4fcbf2b77ca8298eaa8043937ee2c98f95ee0f">da4fcbf2</a>)</li>
 <li><strong>SquirrelPanel:</strong><ul>
-<li>vertical glyph in comment text with smaller font (<a href="https://github.com/rime/squirrel/commit/c2e6f4347413a67278ab12eb388d5225e02e3fb1" target="_blank" rel="noopener">c2e6f434</a>, closes <a href="https://github.com/rime/squirrel/issues/522" target="_blank" rel="noopener">#522</a>)</li>
-<li>unspecified comment_font_point falls back to font_point (<a href="https://github.com/rime/squirrel/commit/8194d95a82554c453f84ff4dd30eaa51affd10ae" target="_blank" rel="noopener">8194d95a</a>)</li>
+<li>vertical glyph in comment text with smaller font (<a href="https://github.com/rime/squirrel/commit/c2e6f4347413a67278ab12eb388d5225e02e3fb1">c2e6f434</a>, closes <a href="https://github.com/rime/squirrel/issues/522">#522</a>)</li>
+<li>unspecified comment_font_point falls back to font_point (<a href="https://github.com/rime/squirrel/commit/8194d95a82554c453f84ff4dd30eaa51affd10ae">8194d95a</a>)</li>
 </ul>
 </li>
-<li><strong>SquirrelPanel.m:</strong>  error with candidate_format without the label part (<a href="https://github.com/rime/squirrel/commit/d2b839b6b5c415aa1cdd28e1ef7921949b90ee21" target="_blank" rel="noopener">d2b839b6</a>, closes <a href="https://github.com/rime/squirrel/issues/516" target="_blank" rel="noopener">#516</a>)</li>
+<li><strong>SquirrelPanel.m:</strong>  error with candidate_format without the label part (<a href="https://github.com/rime/squirrel/commit/d2b839b6b5c415aa1cdd28e1ef7921949b90ee21">d2b839b6</a>, closes <a href="https://github.com/rime/squirrel/issues/516">#516</a>)</li>
 </ul>
 <h4 id="Features-1"><a href="#Features-1" class="headerlink" title="Features"></a>Features</h4><ul>
-<li><strong>SquirrelPanel:</strong>  comment font config (#511) (<a href="https://github.com/rime/squirrel/commit/3d0ab6a209c31c0ac2b97bd8ab1bddcc269aa9bb" target="_blank" rel="noopener">3d0ab6a2</a>)</li>
+<li><strong>SquirrelPanel:</strong>  comment font config (#511) (<a href="https://github.com/rime/squirrel/commit/3d0ab6a209c31c0ac2b97bd8ab1bddcc269aa9bb">3d0ab6a2</a>)</li>
 </ul>
 <p><a name="0.15.0"></a></p>
 <h2 id="0-15-0-2021-02-06"><a href="#0-15-0-2021-02-06" class="headerlink" title="0.15.0 (2021-02-06)"></a>0.15.0 (2021-02-06)</h2><h4 id="主要更新-5"><a href="#主要更新-5" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
-<li><p>升級核心算法庫 <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md#171-2021-02-06" target="_blank" rel="noopener">librime 1.7.1</a></p>
+<li><p>升級核心算法庫 <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md#171-2021-02-06">librime 1.7.1</a></p>
 <ul>
 <li>遣詞造句性能提升40%</li>
 <li>支持拼音輸入法詞典擴展包</li>
@@ -421,7 +423,7 @@
 <li>新增外觀配置項 <code>border_color</code>, <code>preedit_back_color</code>, <code>base_offset</code>（文字基線調整）</li>
 <li>支持P3色域</li>
 <li>「系統配色」自動適應深淺色外觀，或由用家自選用於深色模式的配色方案</li>
-<li>新增明暗兩款Solarized配色方案<br><a href="https://github.com/rime/squirrel/blob/master/data/squirrel.yaml" target="_blank" rel="noopener"><code>squirrel.yaml</code></a>演示了P3色域、自選深淺系配色方案的用法</li>
+<li>新增明暗兩款Solarized配色方案<br><a href="https://github.com/rime/squirrel/blob/master/data/squirrel.yaml"><code>squirrel.yaml</code></a>演示了P3色域、自選深淺系配色方案的用法</li>
 </ul>
 </li>
 <li><p>修復及規避若干軟件兼容問題</p>
@@ -429,112 +431,112 @@
 </ul>
 <p><img src="https://github.com/rime/home/raw/master/images/squirrel-vertical-text-light.png" alt="有詩爲證"><br><img src="https://github.com/rime/home/raw/master/images/squirrel-vertical-text-dark.png" alt="有圖爲證"></p>
 <h4 id="Bug-Fixes-3"><a href="#Bug-Fixes-3" class="headerlink" title="Bug Fixes"></a>Bug Fixes</h4><ul>
-<li><strong>SquirrelInputController:</strong>  add back the Chrome address bar hack (<a href="https://github.com/rime/squirrel/commit/22ed91ea7d2c9807dedc8cd68709c82cdb3a5fd8" target="_blank" rel="noopener">22ed91ea</a>, closes <a href="https://github.com/rime/squirrel/issues/299" target="_blank" rel="noopener">#299</a>)</li>
+<li><strong>SquirrelInputController:</strong>  add back the Chrome address bar hack (<a href="https://github.com/rime/squirrel/commit/22ed91ea7d2c9807dedc8cd68709c82cdb3a5fd8">22ed91ea</a>, closes <a href="https://github.com/rime/squirrel/issues/299">#299</a>)</li>
 <li><strong>SquirrelPanel:</strong><ul>
-<li>properties custom getter got wrong names (<a href="https://github.com/rime/squirrel/commit/d509c7791d288722a6782cca8c9afd7d0b440db5" target="_blank" rel="noopener">d509c779</a>, closes <a href="https://github.com/rime/squirrel/issues/494" target="_blank" rel="noopener">#494</a>)</li>
-<li>label format after candidate repeats label before, Closes #489 (<a href="https://github.com/rime/squirrel/commit/d2c34107bdbec5767865582e4d217e546d576eca" target="_blank" rel="noopener">d2c34107</a>)</li>
-<li>native color scheme can only use semantic colors (<a href="https://github.com/rime/squirrel/commit/e6c695983e610bd78d8c43b033a4c3602b632730" target="_blank" rel="noopener">e6c69598</a>)</li>
-<li>reimplement blendColors, tune background color fraction to increase contrast (<a href="https://github.com/rime/squirrel/commit/9b890f60667c291216ff971b176534627f6a1cac" target="_blank" rel="noopener">9b890f60</a>)</li>
+<li>properties custom getter got wrong names (<a href="https://github.com/rime/squirrel/commit/d509c7791d288722a6782cca8c9afd7d0b440db5">d509c779</a>, closes <a href="https://github.com/rime/squirrel/issues/494">#494</a>)</li>
+<li>label format after candidate repeats label before, Closes #489 (<a href="https://github.com/rime/squirrel/commit/d2c34107bdbec5767865582e4d217e546d576eca">d2c34107</a>)</li>
+<li>native color scheme can only use semantic colors (<a href="https://github.com/rime/squirrel/commit/e6c695983e610bd78d8c43b033a4c3602b632730">e6c69598</a>)</li>
+<li>reimplement blendColors, tune background color fraction to increase contrast (<a href="https://github.com/rime/squirrel/commit/9b890f60667c291216ff971b176534627f6a1cac">9b890f60</a>)</li>
 </ul>
 </li>
-<li><strong>SquirrelPanel.m:</strong>  index out of bounds at drawSmoothLines() (<a href="https://github.com/rime/squirrel/commit/241b457fc0378c733ead8cb9352c156c12198cec" target="_blank" rel="noopener">241b457f</a>)</li>
+<li><strong>SquirrelPanel.m:</strong>  index out of bounds at drawSmoothLines() (<a href="https://github.com/rime/squirrel/commit/241b457fc0378c733ead8cb9352c156c12198cec">241b457f</a>)</li>
 <li><strong>build:</strong><ul>
-<li>exclude architecture arm64 (<a href="https://github.com/rime/squirrel/commit/51f62cf7e52d779f8721f2ffcf5fc2b6720155c3" target="_blank" rel="noopener">51f62cf7</a>)</li>
-<li>fix codesign error on Xcode11 (<a href="https://github.com/rime/squirrel/commit/1148664423ae1fc986df184ef2f794790cd31834" target="_blank" rel="noopener">11486644</a>)</li>
+<li>exclude architecture arm64 (<a href="https://github.com/rime/squirrel/commit/51f62cf7e52d779f8721f2ffcf5fc2b6720155c3">51f62cf7</a>)</li>
+<li>fix codesign error on Xcode11 (<a href="https://github.com/rime/squirrel/commit/1148664423ae1fc986df184ef2f794790cd31834">11486644</a>)</li>
 </ul>
 </li>
-<li><strong>data/squirrel.yaml:</strong><ul>
-<li>force inline in Chrome to work around bksp (<a href="https://github.com/rime/squirrel/commit/69112996441fdae1d1778ac9a32eb98f6a8e7841" target="_blank" rel="noopener">69112996</a>)</li>
-<li>force inline mode in Telegram app (<a href="https://github.com/rime/squirrel/commit/34f2d38216a7483ed8634da5de8409f6a3d7f542" target="_blank" rel="noopener">34f2d382</a>)</li>
+<li><strong>data&#x2F;squirrel.yaml:</strong><ul>
+<li>force inline in Chrome to work around bksp (<a href="https://github.com/rime/squirrel/commit/69112996441fdae1d1778ac9a32eb98f6a8e7841">69112996</a>)</li>
+<li>force inline mode in Telegram app (<a href="https://github.com/rime/squirrel/commit/34f2d38216a7483ed8634da5de8409f6a3d7f542">34f2d382</a>)</li>
 </ul>
 </li>
-<li><strong>squirrel.yaml:</strong>  unset default value for style/candidate_list_layout to fall back style/horizontal (<a href="https://github.com/rime/squirrel/commit/a9af33644ff6c5ab0b7ea90a2af6715f1113fd68" target="_blank" rel="noopener">a9af3364</a>)</li>
+<li><strong>squirrel.yaml:</strong>  unset default value for style&#x2F;candidate_list_layout to fall back style&#x2F;horizontal (<a href="https://github.com/rime/squirrel/commit/a9af33644ff6c5ab0b7ea90a2af6715f1113fd68">a9af3364</a>)</li>
 </ul>
 <h4 id="Features-2"><a href="#Features-2" class="headerlink" title="Features"></a>Features</h4><ul>
-<li><strong>SquirrelConfig:</strong>  support display P3 color space (<a href="https://github.com/rime/squirrel/commit/8ff5f8d024c034f2217c67cf8dc77aa47a5a7b34" target="_blank" rel="noopener">8ff5f8d0</a>)</li>
+<li><strong>SquirrelConfig:</strong>  support display P3 color space (<a href="https://github.com/rime/squirrel/commit/8ff5f8d024c034f2217c67cf8dc77aa47a5a7b34">8ff5f8d0</a>)</li>
 <li><strong>SquirrelInputController:</strong><ul>
-<li>app option <code>inline</code> forces inline mode (<a href="https://github.com/rime/squirrel/commit/699fee0fd2c9808667fd60426f1abc8c09d7ff8d" target="_blank" rel="noopener">699fee0f</a>)</li>
-<li>support chording with Control, Alt or Shift keys (<a href="https://github.com/rime/squirrel/commit/118aee617089b4c7a3e448a42ea0b4c65eae5895" target="_blank" rel="noopener">118aee61</a>)</li>
+<li>app option <code>inline</code> forces inline mode (<a href="https://github.com/rime/squirrel/commit/699fee0fd2c9808667fd60426f1abc8c09d7ff8d">699fee0f</a>)</li>
+<li>support chording with Control, Alt or Shift keys (<a href="https://github.com/rime/squirrel/commit/118aee617089b4c7a3e448a42ea0b4c65eae5895">118aee61</a>)</li>
 </ul>
 </li>
 <li><strong>SquirrelPanel:</strong><ul>
-<li>optimize window size for big/small text (<a href="https://github.com/rime/squirrel/commit/150c5533f8862b242e1837fb0b62e97429cbb2a3" target="_blank" rel="noopener">150c5533</a>)</li>
-<li>merge lyc/dark_mode, with slight modifications (<a href="https://github.com/rime/squirrel/commit/5a587fca16d7b6c842682f285949041871ed80bf" target="_blank" rel="noopener">5a587fca</a>, closes <a href="https://github.com/rime/squirrel/issues/449" target="_blank" rel="noopener">#449</a>)</li>
+<li>optimize window size for big&#x2F;small text (<a href="https://github.com/rime/squirrel/commit/150c5533f8862b242e1837fb0b62e97429cbb2a3">150c5533</a>)</li>
+<li>merge lyc&#x2F;dark_mode, with slight modifications (<a href="https://github.com/rime/squirrel/commit/5a587fca16d7b6c842682f285949041871ed80bf">5a587fca</a>, closes <a href="https://github.com/rime/squirrel/issues/449">#449</a>)</li>
 </ul>
 </li>
-<li><strong>app_options:</strong>  support the <code>vim_mode</code> app option (<a href="https://github.com/rime/squirrel/commit/08ed4f4590e17c969f1536b347bbe1f05737d4aa" target="_blank" rel="noopener">08ed4f45</a>, closes <a href="https://github.com/rime/squirrel/issues/124" target="_blank" rel="noopener">#124</a>)</li>
-<li><strong>data/squirrel.yaml:</strong>  solarized color schemes (<a href="https://github.com/rime/squirrel/commit/35b9ea76d2c3c4ce095bc838948ba43761022a12" target="_blank" rel="noopener">35b9ea76</a>)</li>
-<li><strong>ui:</strong>  vertical text orientation, rounded corner text with TextStorage, wrapping lone lines and border color (<a href="https://github.com/rime/squirrel/commit/c6c9302dcd537e0b72af729082390483bc3d07c0" target="_blank" rel="noopener">c6c9302d</a>)</li>
+<li><strong>app_options:</strong>  support the <code>vim_mode</code> app option (<a href="https://github.com/rime/squirrel/commit/08ed4f4590e17c969f1536b347bbe1f05737d4aa">08ed4f45</a>, closes <a href="https://github.com/rime/squirrel/issues/124">#124</a>)</li>
+<li><strong>data&#x2F;squirrel.yaml:</strong>  solarized color schemes (<a href="https://github.com/rime/squirrel/commit/35b9ea76d2c3c4ce095bc838948ba43761022a12">35b9ea76</a>)</li>
+<li><strong>ui:</strong>  vertical text orientation, rounded corner text with TextStorage, wrapping lone lines and border color (<a href="https://github.com/rime/squirrel/commit/c6c9302dcd537e0b72af729082390483bc3d07c0">c6c9302d</a>)</li>
 </ul>
 <p><a name="0.14.0"></a></p>
 <h2 id="0-14-0-2019-06-23"><a href="#0-14-0-2019-06-23" class="headerlink" title="0.14.0 (2019-06-23)"></a>0.14.0 (2019-06-23)</h2><h4 id="主要更新-6"><a href="#主要更新-6" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
-<li><p>升級核心算法庫 <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md#153-2019-06-22" target="_blank" rel="noopener">librime 1.5.3</a></p>
+<li><p>升級核心算法庫 <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md#153-2019-06-22">librime 1.5.3</a></p>
 <ul>
 <li>修復 <code>single_char_filter</code> 組件</li>
 </ul>
 </li>
 <li><p>建設安全、可靠、快速的全自動構建、發佈流程</p>
 </li>
-<li><p>安裝「八股文」語法數據庫（傳承字），可依照 <a href="https://github.com/lotem/rime-octagram-data" target="_blank" rel="noopener">配方</a> 在方案裏啓用</p>
+<li><p>安裝「八股文」語法數據庫（傳承字），可依照 <a href="https://github.com/lotem/rime-octagram-data">配方</a> 在方案裏啓用</p>
 </li>
 </ul>
 <h4 id="Features-3"><a href="#Features-3" class="headerlink" title="Features"></a>Features</h4><ul>
-<li><strong>package/add_data_files:</strong>  update xcode project to install all files under data/plum (<a href="https://github.com/rime/squirrel/commit/2ab1810e94b963df27e6fd2e399465ccdabba138" target="_blank" rel="noopener">2ab1810e</a>)</li>
-<li><strong>travis-ci:</strong>  fetch latest rime binaries in install script, install extra recipes (<a href="https://github.com/rime/squirrel/commit/027679d58974845a83a393a313bbd63462a795b1" target="_blank" rel="noopener">027679d5</a>)</li>
+<li><strong>package&#x2F;add_data_files:</strong>  update xcode project to install all files under data&#x2F;plum (<a href="https://github.com/rime/squirrel/commit/2ab1810e94b963df27e6fd2e399465ccdabba138">2ab1810e</a>)</li>
+<li><strong>travis-ci:</strong>  fetch latest rime binaries in install script, install extra recipes (<a href="https://github.com/rime/squirrel/commit/027679d58974845a83a393a313bbd63462a795b1">027679d5</a>)</li>
 </ul>
 <p><a name="0.13"></a></p>
 <h2 id="0-13-2019-06-17"><a href="#0-13-2019-06-17" class="headerlink" title="0.13 (2019-06-17)"></a>0.13 (2019-06-17)</h2><h4 id="主要更新-7"><a href="#主要更新-7" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
-<li><p>升級核心算法庫 <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md#152-2019-06-17" target="_blank" rel="noopener">librime 1.5.2</a></p>
+<li><p>升級核心算法庫 <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md#152-2019-06-17">librime 1.5.2</a></p>
 <ul>
-<li>修復用戶詞的權重，穩定造句質量、平衡翻譯器優先級 <a href="https://github.com/rime/librime/issues/287" target="_blank" rel="noopener">librime#287</a></li>
+<li>修復用戶詞的權重，穩定造句質量、平衡翻譯器優先級 <a href="https://github.com/rime/librime/issues/287">librime#287</a></li>
 </ul>
 </li>
-<li><p>安裝預設輸入方案集，避免大多數方案依賴問題 <a href="https://github.com/rime/squirrel/issues/279" target="_blank" rel="noopener">#279</a></p>
+<li><p>安裝預設輸入方案集，避免大多數方案依賴問題 <a href="https://github.com/rime/squirrel/issues/279">#279</a></p>
 </li>
 </ul>
 <h4 id="Features-4"><a href="#Features-4" class="headerlink" title="Features"></a>Features</h4><ul>
-<li><strong>plum:</strong>  bundle preset recipes (<a href="https://github.com/rime/squirrel/commit/7885c5fa6006e999c5a07ac1800e9afa15d629a8" target="_blank" rel="noopener">7885c5fa</a>)</li>
+<li><strong>plum:</strong>  bundle preset recipes (<a href="https://github.com/rime/squirrel/commit/7885c5fa6006e999c5a07ac1800e9afa15d629a8">7885c5fa</a>)</li>
 </ul>
 <p><a name="0.12.0"></a></p>
 <h2 id="0-12-0-2019-06-16"><a href="#0-12-0-2019-06-16" class="headerlink" title="0.12.0 (2019-06-16)"></a>0.12.0 (2019-06-16)</h2><h4 id="主要更新-8"><a href="#主要更新-8" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
-<li>升級核心算法庫 <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md#151-2019-06-16" target="_blank" rel="noopener">librime 1.5.1</a><ul>
+<li>升級核心算法庫 <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md#151-2019-06-16">librime 1.5.1</a><ul>
 <li>建設全自動構建、發佈流程</li>
 <li>更新第三方庫</li>
 <li>將Rime插件納入自動化構建流程。本次發行包含兩款插件：<ul>
-<li><a href="https://github.com/hchunhui/librime-lua" target="_blank" rel="noopener">lbrime-lua</a></li>
-<li><a href="https://github.com/lotem/librime-octagram" target="_blank" rel="noopener">librime-octagram</a></li>
+<li><a href="https://github.com/hchunhui/librime-lua">lbrime-lua</a></li>
+<li><a href="https://github.com/lotem/librime-octagram">librime-octagram</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 <h4 id="Bug-Fixes-4"><a href="#Bug-Fixes-4" class="headerlink" title="Bug Fixes"></a>Bug Fixes</h4><ul>
-<li><strong>squirrel.yaml:</strong>  duplicate YAML key in color scheme dust (<a href="https://github.com/rime/squirrel/commit/44a4d7ee3cad94c170616b7c8d9415a4f92c86d5" target="_blank" rel="noopener">44a4d7ee</a>)</li>
+<li><strong>squirrel.yaml:</strong>  duplicate YAML key in color scheme dust (<a href="https://github.com/rime/squirrel/commit/44a4d7ee3cad94c170616b7c8d9415a4f92c86d5">44a4d7ee</a>)</li>
 </ul>
 <h4 id="Features-5"><a href="#Features-5" class="headerlink" title="Features"></a>Features</h4><ul>
-<li><strong>squirrel.yaml:</strong>  udpate UI settings (<a href="https://github.com/rime/squirrel/commit/d8b1dc569cc2c168f0fc5e8240ff6e049142fc24" target="_blank" rel="noopener">d8b1dc56</a>)</li>
-<li><strong>travis-ci:</strong>  deploy release package (<a href="https://github.com/rime/squirrel/commit/c367b675bbca4f7e4467b71b9f42adbb888b77a5" target="_blank" rel="noopener">c367b675</a>)</li>
+<li><strong>squirrel.yaml:</strong>  udpate UI settings (<a href="https://github.com/rime/squirrel/commit/d8b1dc569cc2c168f0fc5e8240ff6e049142fc24">d8b1dc56</a>)</li>
+<li><strong>travis-ci:</strong>  deploy release package (<a href="https://github.com/rime/squirrel/commit/c367b675bbca4f7e4467b71b9f42adbb888b77a5">c367b675</a>)</li>
 </ul>
 <p><a name="0.11.0"></a></p>
 <h2 id="0-11-0-2019-01-21"><a href="#0-11-0-2019-01-21" class="headerlink" title="0.11.0 (2019-01-21)"></a>0.11.0 (2019-01-21)</h2><h4 id="主要更新-9"><a href="#主要更新-9" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
 <li>安裝完成要求退出登錄，以保證註冊輸入法生效</li>
 <li>修復升級、部署數據時發生的若干錯誤</li>
 <li>關閉候選窗對摸蝦未系統深色模式的自動適配，以消除多餘的黑色邊框</li>
-<li>新增 <a href="https://github.com/rime/librime/pull/228" target="_blank" rel="noopener">拼寫糾錯</a> 選項<br>當前僅限 QWERTY 鍵盤佈局及使用 <code>script_translator</code> 的方案</li>
+<li>新增 <a href="https://github.com/rime/librime/pull/228">拼寫糾錯</a> 選項<br>當前僅限 QWERTY 鍵盤佈局及使用 <code>script_translator</code> 的方案</li>
 </ul>
 <h4 id="Features-6"><a href="#Features-6" class="headerlink" title="Features"></a>Features</h4><ul>
-<li><strong>librime:</strong>  update to librime 1.4.0 (<a href="https://github.com/rime/squirrel/commit/1f07c63c51f60ea5514819c0f3a05c33ee9aba5d" target="_blank" rel="noopener">1f07c63c</a>)</li>
-<li><strong>pkg:</strong>  logout after install (<a href="https://github.com/rime/squirrel/commit/c84001ea4348b902543938d89d68306b1ea86b3f" target="_blank" rel="noopener">c84001ea</a>)</li>
-<li><strong>travis-ci:</strong>  add Travis CI automated build (<a href="https://github.com/rime/squirrel/commit/8855101c0d90c118d4d1d58b757d11d76354bcda" target="_blank" rel="noopener">8855101c</a>)</li>
+<li><strong>librime:</strong>  update to librime 1.4.0 (<a href="https://github.com/rime/squirrel/commit/1f07c63c51f60ea5514819c0f3a05c33ee9aba5d">1f07c63c</a>)</li>
+<li><strong>pkg:</strong>  logout after install (<a href="https://github.com/rime/squirrel/commit/c84001ea4348b902543938d89d68306b1ea86b3f">c84001ea</a>)</li>
+<li><strong>travis-ci:</strong>  add Travis CI automated build (<a href="https://github.com/rime/squirrel/commit/8855101c0d90c118d4d1d58b757d11d76354bcda">8855101c</a>)</li>
 </ul>
 <h4 id="Bug-Fixes-5"><a href="#Bug-Fixes-5" class="headerlink" title="Bug Fixes"></a>Bug Fixes</h4><ul>
-<li><strong>app:</strong>  opt out of dark mode (<a href="https://github.com/rime/squirrel/commit/083817cba5ccb1f5b9589b7e7a2fbeca4ec4d9dd" target="_blank" rel="noopener">083817cb</a>, closes <a href="https://github.com/rime/squirrel/issues/273" target="_blank" rel="noopener">#273</a>)</li>
+<li><strong>app:</strong>  opt out of dark mode (<a href="https://github.com/rime/squirrel/commit/083817cba5ccb1f5b9589b7e7a2fbeca4ec4d9dd">083817cb</a>, closes <a href="https://github.com/rime/squirrel/issues/273">#273</a>)</li>
 </ul>
 <p><a name="0.10.0"></a></p>
 <h2 id="0-10-0-2019-01-01"><a href="#0-10-0-2019-01-01" class="headerlink" title="0.10.0 (2019-01-01)"></a>0.10.0 (2019-01-01)</h2><h4 id="主要更新-10"><a href="#主要更新-10" class="headerlink" title="主要更新"></a>主要更新</h4><ul>
 <li>重新設計輸入法介面</li>
 <li>新增介面配色方案：<ul>
-<li>幽能／Psionics，作者：雨過之後、佛振，見於 <a href="https://rime.im">Rime 主頁</a> 效果圖</li>
+<li>幽能／Psionics，作者：雨過之後、佛振，見於 <a href="https://rime.im/">Rime 主頁</a> 效果圖</li>
 <li>純粹的形式／Purity of Form</li>
 <li>純粹的本質／Purity of Essence</li>
 <li>冷漠／Apathy, 作者：LIANG Hai</li>
@@ -544,46 +546,46 @@
 </li>
 <li>改進對全屏遊戲的兼容性</li>
 <li>修復了並擊輸入（chord-typing）的偶發錯誤</li>
-<li>升級核心算法庫 <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md#132-2018-11-12" target="_blank" rel="noopener">librime 1.3.2</a><ul>
+<li>升級核心算法庫 <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md#132-2018-11-12">librime 1.3.2</a><ul>
 <li>支持 YAML 節點引用，方便模塊化配置</li>
 <li>改進部署流程，在 <code>build</code> 子目錄集中存放生成的數據文件</li>
 </ul>
 </li>
-<li>精簡安裝包預裝的輸入方案，更多方案可由 <a href="https://github.com/rime/plum" target="_blank" rel="noopener">東風破</a> 取得</li>
+<li>精簡安裝包預裝的輸入方案，更多方案可由 <a href="https://github.com/rime/plum">東風破</a> 取得</li>
 </ul>
 <h4 id="Features-7"><a href="#Features-7" class="headerlink" title="Features"></a>Features</h4><ul>
-<li><strong>SquirrelPanel:</strong>  add mojave_dark theme and hilited_corner_radius option (<a href="https://github.com/rime/squirrel/commit/51a1c8c840cfc9093ad56777873c8a62abc4964f" target="_blank" rel="noopener">51a1c8c8</a>)</li>
-<li><strong>app icon:</strong>  update app icon (<a href="https://github.com/rime/squirrel/commit/593ca16ebc87852213348b55d1072d898af75ab6" target="_blank" rel="noopener">593ca16e</a>)</li>
-<li><strong>brise:</strong>  new preset configuration; disable prebuilding binary data during install (<a href="https://github.com/rime/squirrel/commit/43f4eb0a0f1551f385f517a24ba30ac364af2a8c" target="_blank" rel="noopener">43f4eb0a</a>)</li>
-<li><strong>chord:</strong>  Tab, BackSpace, Return can be used as chording keys (<a href="https://github.com/rime/squirrel/commit/997f15396615de4a3f65e5595ce1f5edf75263a1" target="_blank" rel="noopener">997f1539</a>)</li>
-<li><strong>data/squirrel.yaml:</strong>  add two more color schemes (<a href="https://github.com/rime/squirrel/commit/48b5138c53d30e433a5c4de95c7a366e51f94e2e" target="_blank" rel="noopener">48b5138c</a>)</li>
-<li><strong>install:</strong>  preload minimal rime data, fetch packages in postinstall script (<a href="https://github.com/rime/squirrel/commit/d2b174c9bbb263f1cf0953ddb4a607e68525e396" target="_blank" rel="noopener">d2b174c9</a>)</li>
-<li><strong>package:</strong>  make package &amp;&amp; make archive (<a href="https://github.com/rime/squirrel/commit/c350c086d7321157c955275bbc4cec02a7f9b9eb" target="_blank" rel="noopener">c350c086</a>)</li>
+<li><strong>SquirrelPanel:</strong>  add mojave_dark theme and hilited_corner_radius option (<a href="https://github.com/rime/squirrel/commit/51a1c8c840cfc9093ad56777873c8a62abc4964f">51a1c8c8</a>)</li>
+<li><strong>app icon:</strong>  update app icon (<a href="https://github.com/rime/squirrel/commit/593ca16ebc87852213348b55d1072d898af75ab6">593ca16e</a>)</li>
+<li><strong>brise:</strong>  new preset configuration; disable prebuilding binary data during install (<a href="https://github.com/rime/squirrel/commit/43f4eb0a0f1551f385f517a24ba30ac364af2a8c">43f4eb0a</a>)</li>
+<li><strong>chord:</strong>  Tab, BackSpace, Return can be used as chording keys (<a href="https://github.com/rime/squirrel/commit/997f15396615de4a3f65e5595ce1f5edf75263a1">997f1539</a>)</li>
+<li><strong>data&#x2F;squirrel.yaml:</strong>  add two more color schemes (<a href="https://github.com/rime/squirrel/commit/48b5138c53d30e433a5c4de95c7a366e51f94e2e">48b5138c</a>)</li>
+<li><strong>install:</strong>  preload minimal rime data, fetch packages in postinstall script (<a href="https://github.com/rime/squirrel/commit/d2b174c9bbb263f1cf0953ddb4a607e68525e396">d2b174c9</a>)</li>
+<li><strong>package:</strong>  make package &amp;&amp; make archive (<a href="https://github.com/rime/squirrel/commit/c350c086d7321157c955275bbc4cec02a7f9b9eb">c350c086</a>)</li>
 <li><strong>squirrel.yaml:</strong><ul>
-<li>add color schemes <code>purity_of_essence</code>, <code>apathy</code>, <code>dust</code> (<a href="https://github.com/rime/squirrel/commit/246a5797c49bd941fff80523523935dcf3c9a14d" target="_blank" rel="noopener">246a5797</a>)</li>
-<li>ascii mode by default in hyper.is (<a href="https://github.com/rime/squirrel/commit/bda9f48e9c49f2514b885e31cceca579204506c3" target="_blank" rel="noopener">bda9f48e</a>)</li>
+<li>add color schemes <code>purity_of_essence</code>, <code>apathy</code>, <code>dust</code> (<a href="https://github.com/rime/squirrel/commit/246a5797c49bd941fff80523523935dcf3c9a14d">246a5797</a>)</li>
+<li>ascii mode by default in hyper.is (<a href="https://github.com/rime/squirrel/commit/bda9f48e9c49f2514b885e31cceca579204506c3">bda9f48e</a>)</li>
 </ul>
 </li>
-<li><strong>submodules:</strong>  switch to /plum/ (<a href="https://github.com/rime/squirrel/commit/56e62287004b3f4579c966ed654d92e1dfc51f5e" target="_blank" rel="noopener">56e62287</a>)</li>
+<li><strong>submodules:</strong>  switch to &#x2F;plum&#x2F; (<a href="https://github.com/rime/squirrel/commit/56e62287004b3f4579c966ed654d92e1dfc51f5e">56e62287</a>)</li>
 </ul>
 <h4 id="Bug-Fixes-6"><a href="#Bug-Fixes-6" class="headerlink" title="Bug Fixes"></a>Bug Fixes</h4><ul>
 <li><strong>SquirrelPanel:</strong><ul>
-<li>highlight overlapping between adjacent candidates (<a href="https://github.com/rime/squirrel/commit/128c8f310e70112282d445aa3716774850fc846c" target="_blank" rel="noopener">128c8f31</a>)</li>
-<li>fix rounding errors and highlight rounding corners correctly (<a href="https://github.com/rime/squirrel/commit/026c6980b5b5899c2f0b2be2c61d315cc49552c9" target="_blank" rel="noopener">026c6980</a>, closes <a href="https://github.com/rime/squirrel/issues/240" target="_blank" rel="noopener">#240</a>)</li>
-<li>display panel on top level in the proper way (<a href="https://github.com/rime/squirrel/commit/cee5c5d70e523f4ab6c336dfd8941f7d7a7d3c35" target="_blank" rel="noopener">cee5c5d7</a>)</li>
+<li>highlight overlapping between adjacent candidates (<a href="https://github.com/rime/squirrel/commit/128c8f310e70112282d445aa3716774850fc846c">128c8f31</a>)</li>
+<li>fix rounding errors and highlight rounding corners correctly (<a href="https://github.com/rime/squirrel/commit/026c6980b5b5899c2f0b2be2c61d315cc49552c9">026c6980</a>, closes <a href="https://github.com/rime/squirrel/issues/240">#240</a>)</li>
+<li>display panel on top level in the proper way (<a href="https://github.com/rime/squirrel/commit/cee5c5d70e523f4ab6c336dfd8941f7d7a7d3c35">cee5c5d7</a>)</li>
 </ul>
 </li>
-<li><strong>chord input:</strong>  unfinished chord often caused by fast tap typing (<a href="https://github.com/rime/squirrel/commit/672af6c972fcb99e532b171488ef0a4a3f06e985" target="_blank" rel="noopener">672af6c9</a>)</li>
+<li><strong>chord input:</strong>  unfinished chord often caused by fast tap typing (<a href="https://github.com/rime/squirrel/commit/672af6c972fcb99e532b171488ef0a4a3f06e985">672af6c9</a>)</li>
 <li><strong>postinstall:</strong><ul>
-<li>Revert “fix(postinstall): run rime-install preset packages” (<a href="https://github.com/rime/squirrel/commit/f0a2f45bba81cafb5a67df09d4392750a38f0483" target="_blank" rel="noopener">f0a2f45b</a>, closes <a href="https://github.com/rime/squirrel/issues/262" target="_blank" rel="noopener">#262</a>)</li>
-<li>run rime-install preset packages (<a href="https://github.com/rime/squirrel/commit/de8f32a2c00c4fac4cd0a23b80722e3129477086" target="_blank" rel="noopener">de8f32a2</a>)</li>
-<li>run <code>Squirrel --install</code> as login user; do not update packages during installation (<a href="https://github.com/rime/squirrel/commit/66948afe6c50ef1a72a55abd505d2c8ceae4fe37" target="_blank" rel="noopener">66948afe</a>)</li>
+<li>Revert “fix(postinstall): run rime-install preset packages” (<a href="https://github.com/rime/squirrel/commit/f0a2f45bba81cafb5a67df09d4392750a38f0483">f0a2f45b</a>, closes <a href="https://github.com/rime/squirrel/issues/262">#262</a>)</li>
+<li>run rime-install preset packages (<a href="https://github.com/rime/squirrel/commit/de8f32a2c00c4fac4cd0a23b80722e3129477086">de8f32a2</a>)</li>
+<li>run <code>Squirrel --install</code> as login user; do not update packages during installation (<a href="https://github.com/rime/squirrel/commit/66948afe6c50ef1a72a55abd505d2c8ceae4fe37">66948afe</a>)</li>
 </ul>
 </li>
 </ul>
 <p><a name="0.9.26.2"></a></p>
 <h2 id="鼠鬚管-0-9-26-2-2014-12-23"><a href="#鼠鬚管-0-9-26-2-2014-12-23" class="headerlink" title="鼠鬚管 0.9.26.2 (2014-12-23)"></a>鼠鬚管 0.9.26.2 (2014-12-23)</h2><ul>
-<li>修復：安裝後輸入法在一些 app 中無法啓用 <a href="https://github.com/lotem/squirrel/issues/43" target="_blank" rel="noopener">#43</a></li>
+<li>修復：安裝後輸入法在一些 app 中無法啓用 <a href="https://github.com/lotem/squirrel/issues/43">#43</a></li>
 </ul>
 <p><a name="0.9.26.1"></a></p>
 <h2 id="鼠鬚管-0-9-26-1-2014-12-22"><a href="#鼠鬚管-0-9-26-1-2014-12-22" class="headerlink" title="鼠鬚管 0.9.26.1 (2014-12-22)"></a>鼠鬚管 0.9.26.1 (2014-12-22)</h2><ul>
@@ -610,7 +612,7 @@
 <h4 id="【東風破】變更集"><a href="#【東風破】變更集" class="headerlink" title="【東風破】變更集"></a>【東風破】變更集</h4><ul>
 <li>新增：OpenCC 1.0 詞典及配置文件，提供繁→簡、簡→繁轉換及臺灣、香港用字標準</li>
 <li>新增：【拼音加加】雙拼方案，標識爲 <code>double_pinyin_pyjj</code></li>
-<li>新增：【朙月拼音】【倉頡五代】用 <code>/a</code>、/1` 輸入特殊字符、數字</li>
+<li>新增：【朙月拼音】【倉頡五代】用 <code>/a</code>、&#x2F;1&#96; 輸入特殊字符、數字</li>
 <li>修復：【注音】省略聲調時，音節切分歧義處理不當</li>
 <li>優化：【宮保拼音】自動清除無效的按鍵組合</li>
 <li>優化：<code>symbols.yaml</code> 調整常用字符的順序</li>
@@ -639,7 +641,7 @@
 <li>更新：librime 升級到 1.1</li>
 <li>新增：固定方案選單排列順序的選項 <code>default.yaml</code>: <code>switcher/fix_schema_list_order: true</code></li>
 <li>修復：正確匹配嵌套的“‘彎引號’”</li>
-<li>改進：碼表輸入法自動上屏及頂字上屏（<a href="https://gist.github.com/lotem/f879a020d56ef9b3b792" target="_blank" rel="noopener">示例</a>）<br/><br>若有 <code>speller/auto_select: true</code>，則選項 <code>speller/max_code_length:</code> 限定第N碼無重碼自動上屏</li>
+<li>改進：碼表輸入法自動上屏及頂字上屏（<a href="https://gist.github.com/lotem/f879a020d56ef9b3b792">示例</a>）<br/><br>若有 <code>speller/auto_select: true</code>，則選項 <code>speller/max_code_length:</code> 限定第N碼無重碼自動上屏</li>
 <li>優化：爲詞組自動編碼時，限制因多音字而產生的組合數目，避免窮舉消耗過量資源</li>
 </ul>
 <h4 id="【東風破】變更集-2"><a href="#【東風破】變更集-2" class="headerlink" title="【東風破】變更集"></a>【東風破】變更集</h4><ul>
@@ -653,14 +655,14 @@
 <li>變更：候選窗默認英文字體設爲 Lucida Grande，非嵌入模式中較爲美觀</li>
 <li>改進：高亮候選的背景色延伸到候選註釋區域，新增配色選項 <code>hilited_comment_text_color:</code></li>
 <li>改進：提示（碼表輸入法）大字符集開關狀態「通用／增廣」</li>
-<li>修復：<a href="https://code.google.com/p/rimeime/issues/detail?id=509" target="_blank" rel="noopener">Issue 509</a> 打開方案選單時設定 <code>style/label_color</code> 被重置</li>
+<li>修復：<a href="https://code.google.com/p/rimeime/issues/detail?id=509">Issue 509</a> 打開方案選單時設定 <code>style/label_color</code> 被重置</li>
 </ul>
 <h4 id="Rime-算法庫變更集-3"><a href="#Rime-算法庫變更集-3" class="headerlink" title="Rime 算法庫變更集"></a>Rime 算法庫變更集</h4><ul>
 <li>更新：librime 升級到 1.0</li>
 <li>修復：<code>table_translator</code> 按字符集過濾候選字，修正對 CJK-D 漢字的判斷</li>
 </ul>
 <h4 id="【東風破】變更集-3"><a href="#【東風破】變更集-3" class="headerlink" title="【東風破】變更集"></a>【東風破】變更集</h4><ul>
-<li>優化：【粵拼】兼容<a href="http://zh.wikipedia.org/wiki/%E6%95%99%E8%82%B2%E5%AD%B8%E9%99%A2%E6%8B%BC%E9%9F%B3%E6%96%B9%E6%A1%88" target="_blank" rel="noopener">教育學院拼音方案</a></li>
+<li>優化：【粵拼】兼容<a href="http://zh.wikipedia.org/wiki/%E6%95%99%E8%82%B2%E5%AD%B8%E9%99%A2%E6%8B%BC%E9%9F%B3%E6%96%B9%E6%A1%88">教育學院拼音方案</a></li>
 <li>更新：<code>symbols.yaml</code> 由 Patricivs 重新整理符號表</li>
 <li>更新：Emoji 提供更加豐富的繪文字</li>
 <li>更新：【八股文】【朙月拼音】【地球拼音】【中古全拼】修正錯別字、註音錯誤</li>
@@ -764,7 +766,7 @@
 <p><a name="0.9.17"></a></p>
 <h2 id="鼠鬚管-0-9-17-2013-01-31"><a href="#鼠鬚管-0-9-17-2013-01-31" class="headerlink" title="鼠鬚管 0.9.17 (2013-01-31)"></a>鼠鬚管 0.9.17 (2013-01-31)</h2><ul>
 <li>改進：安裝完畢自動啓用鼠鬚管</li>
-<li>變更：Caps Lock 燈亮時默認輸出大寫字母 <a href="https://gist.github.com/2981316" target="_blank" rel="noopener">Gist</a></li>
+<li>變更：Caps Lock 燈亮時默認輸出大寫字母 <a href="https://gist.github.com/2981316">Gist</a></li>
 <li>新增：支持設定候選行間距 <code>style/line_spacing:</code></li>
 <li>新增：支持並擊輸入；並擊速度選項 <code>chord_duration:</code><br/><br>並擊輸入方案【宮保拼音】</li>
 <li>新增：無重碼自動上屏 <code>speller/auto_select:</code><br/><br>輸入方案【倉頡・快打模式】</li>
@@ -792,7 +794,7 @@
 <li>新增：Caps Lock 點亮時，切換到西文模式，輸出小寫字母<br/><br>選項 <code>ascii_composer/switch_key/Caps_Lock:</code></li>
 <li>新增：支持 Emacs 風格的編輯鍵 Control + 字母</li>
 <li>修復：一處內存泄漏</li>
-<li>修復：用戶詞典有可能因讀取時 I/O 錯誤導致部份詞序無法調整</li>
+<li>修復：用戶詞典有可能因讀取時 I&#x2F;O 錯誤導致部份詞序無法調整</li>
 </ul>
 <p><a name="0.9.14.5"></a></p>
 <h2 id="鼠鬚管-0-9-14-5-2013-01-10"><a href="#鼠鬚管-0-9-14-5-2013-01-10" class="headerlink" title="鼠鬚管 0.9.14.5 (2013-01-10)"></a>鼠鬚管 0.9.14.5 (2013-01-10)</h2><ul>
@@ -801,7 +803,7 @@
 </ul>
 <p><a name="0.9.14"></a></p>
 <h2 id="鼠鬚管-0-9-14-2013-01-07"><a href="#鼠鬚管-0-9-14-2013-01-07" class="headerlink" title="鼠鬚管 0.9.14 (2013-01-07)"></a>鼠鬚管 0.9.14 (2013-01-07)</h2><ul>
-<li>新增：同步用戶詞典，詳見 <a href="https://code.google.com/p/rimeime/wiki/UserGuide" target="_blank" rel="noopener">Wiki » UserGuide</a></li>
+<li>新增：同步用戶詞典，詳見 <a href="https://code.google.com/p/rimeime/wiki/UserGuide">Wiki » UserGuide</a></li>
 <li>新增：上屏錯誤的詞組後立即按回退鍵（BackSpace）撤銷組詞</li>
 <li>改進：拼音輸入法中，按左方向鍵以音節爲單位移動光標</li>
 <li>修復：【地球拼音】不能以 - 鍵輸入第一聲</li>
@@ -828,7 +830,7 @@
 <h2 id="鼠鬚管-0-9-11-2012-10-17"><a href="#鼠鬚管-0-9-11-2012-10-17" class="headerlink" title="鼠鬚管 0.9.11 (2012-10-17)"></a>鼠鬚管 0.9.11 (2012-10-17)</h2><ul>
 <li>修復：選中的輸入方案、繁簡轉換等選項關機時不會保存的BUG</li>
 <li>變更：爲免除困惑，在代碼編輯器中恢復中文狀態（MacVim 除外）</li>
-<li>變更：部署快捷鍵由 Cmd+Option+R 改爲 Control+Option+`</li>
+<li>變更：部署快捷鍵由 Cmd+Option+R 改爲 Control+Option+&#96;</li>
 <li>改進：部署時自動編譯輸入方案的自訂依賴項，如 emoji 表情</li>
 <li>改進：未曾翻頁時按減號鍵，不上屏候選字及符號「-」以免誤操作</li>
 <li>新增：開關碼表輸入法連打功能的設定項 <code>translator/enable_sentence</code></li>
@@ -865,7 +867,7 @@
 </ul>
 <p><a name="0.9.7"></a></p>
 <h2 id="鼠鬚管-0-9-7-2012-06-10"><a href="#鼠鬚管-0-9-7-2012-06-10" class="headerlink" title="鼠鬚管 0.9.7 (2012-06-10)"></a>鼠鬚管 0.9.7 (2012-06-10)</h2><ul>
-<li>提供指定候選窗邊界高度、寬度的選項 <a href="https://gist.github.com/2290714" target="_blank" rel="noopener">Gist</a></li>
+<li>提供指定候選窗邊界高度、寬度的選項 <a href="https://gist.github.com/2290714">Gist</a></li>
 <li>修復在 M$Office、BBEdit 等軟件中按Cmd鍵會清除選中文字的問題</li>
 <li>修復以 <code>rime_dict_manager</code> 導入文本碼表不生效的BUG（請升級該工具）；<br/><br>部署時檢查並修復已存在於用戶詞典中的無效條目</li>
 <li>檢測到用戶詞典文件損壞時重建詞典並從備份中恢復資料</li>
