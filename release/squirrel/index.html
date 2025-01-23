@@ -141,8 +141,42 @@
 
 	<!-- content -->
 	<div class="mypage">
-	    <p><a name="1.0.2"></a></p>
-<h2 id="1-0-2-2024-06-07"><a href="#1-0-2-2024-06-07" class="headerlink" title="1.0.2 (2024-06-07)"></a>1.0.2 (2024-06-07)</h2><h4 id="其它更新內容"><a href="#其它更新內容" class="headerlink" title="其它更新內容"></a>其它更新內容</h4><ul>
+	    <p><a name="1.0.3"></a></p>
+<h2 id="1-0-3-2025-01-23"><a href="#1-0-3-2025-01-23" class="headerlink" title="1.0.3 (2025-01-23)"></a>1.0.3 (2025-01-23)</h2><h4 id="主要功能更新"><a href="#主要功能更新" class="headerlink" title="主要功能更新"></a>主要功能更新</h4><ul>
+<li>新增翻䈎提示，以<code>style/show_paging: true/false</code>控制</li>
+<li><code>librime</code> 更新至1.13.0：<ul>
+<li>數字後標點優化，可用<code>punctuator/digit_separators</code>調整</li>
+<li><code>translator</code>可用多個<code>tag</code></li>
+<li>詳見 librime <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md">更新紀錄</a>，含 1.12、1.13 兩個主要版本更新</li>
+</ul>
+</li>
+</ul>
+<h4 id="其它更新內容"><a href="#其它更新內容" class="headerlink" title="其它更新內容"></a>其它更新內容</h4><ul>
+<li>bug 修復<ul>
+<li>自emoji面板切換後無法使用的問題</li>
+<li>每次開機重新布署的問題</li>
+</ul>
+</li>
+</ul>
+<h4 id="Major-Update"><a href="#Major-Update" class="headerlink" title="Major Update"></a>Major Update</h4><ul>
+<li>Added paging indicator, gated by <code>style/show_paging: true/false</code></li>
+<li>Update <code>librime</code> to 1.13.0:<ul>
+<li>Optimized punctuator after digits, customizable by <code>punctuator/digit_separators</code></li>
+<li>Allow <code>translator</code> to take multiple <code>tag</code>s</li>
+<li>See librime <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md">change log</a> for details, including 1.12 and 1.13 major updates</li>
+</ul>
+</li>
+</ul>
+<h4 id="Other-Updates"><a href="#Other-Updates" class="headerlink" title="Other Updates"></a>Other Updates</h4><ul>
+<li>Bug fixes:<ul>
+<li>IME unavailable after using emoji-selection panel</li>
+<li>Deploy upon every start-up regardless of changes</li>
+</ul>
+</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/rime/squirrel/compare/1.0.2...1.0.3">https://github.com/rime/squirrel/compare/1.0.2...1.0.3</a></p>
+<p><a name="1.0.2"></a></p>
+<h2 id="1-0-2-2024-06-07"><a href="#1-0-2-2024-06-07" class="headerlink" title="1.0.2 (2024-06-07)"></a>1.0.2 (2024-06-07)</h2><h4 id="其它更新內容-1"><a href="#其它更新內容-1" class="headerlink" title="其它更新內容"></a>其它更新內容</h4><ul>
 <li>bug 修復<ul>
 <li>未設定暗色主題時，配色不生效</li>
 <li>橫排時序號偏高</li>
@@ -154,7 +188,7 @@
 <li>Edge 瀏覧器默認行內編輯 (修 #906)</li>
 <li>日誌置於 $TMPDIR&#x2F;rime.squirrel 內，以便查找</li>
 </ul>
-<h4 id="Other-Updates"><a href="#Other-Updates" class="headerlink" title="Other Updates"></a>Other Updates</h4><ul>
+<h4 id="Other-Updates-1"><a href="#Other-Updates-1" class="headerlink" title="Other Updates"></a>Other Updates</h4><ul>
 <li>Bug fixes:<ul>
 <li><code>color_scheme</code> doesn’t apply in dark mode when <code>color_scheme_dark</code> is not set</li>
 <li>Label baseline too high in horizontal orientation</li>
@@ -168,7 +202,7 @@
 </ul>
 <p><strong>Full Changelog</strong>: <a href="https://github.com/rime/squirrel/compare/1.0.1...1.0.2">https://github.com/rime/squirrel/compare/1.0.1...1.0.2</a></p>
 <p><a name="1.0.1"></a></p>
-<h2 id="1-0-1-2024-06-01"><a href="#1-0-1-2024-06-01" class="headerlink" title="1.0.1 (2024-06-01)"></a>1.0.1 (2024-06-01)</h2><h4 id="其它更新內容-1"><a href="#其它更新內容-1" class="headerlink" title="其它更新內容"></a>其它更新內容</h4><ul>
+<h2 id="1-0-1-2024-06-01"><a href="#1-0-1-2024-06-01" class="headerlink" title="1.0.1 (2024-06-01)"></a>1.0.1 (2024-06-01)</h2><h4 id="其它更新內容-2"><a href="#其它更新內容-2" class="headerlink" title="其它更新內容"></a>其它更新內容</h4><ul>
 <li>bug 修復<ul>
 <li>不再注冊爲拉丁輸入法，修復 Caps Lock 切換輸入法時不能切換至西文的問題</li>
 <li>修復配色中的 candidate_list_layout, text_orientation 不生效問題</li>
@@ -177,7 +211,7 @@
 </li>
 <li>不再支持 <code>style/horizontal</code> 和 <code>style/vertical</code></li>
 </ul>
-<h4 id="Other-Updates-1"><a href="#Other-Updates-1" class="headerlink" title="Other Updates"></a>Other Updates</h4><ul>
+<h4 id="Other-Updates-2"><a href="#Other-Updates-2" class="headerlink" title="Other Updates"></a>Other Updates</h4><ul>
 <li>Bug fixes:<ul>
 <li>Remove Latn repertoire so that switching IME by Caps Lock can toggle Squirrel and Latin input</li>
 <li>Fix: candidate_list_layout, text_orientation do not take effect when put in color scheme</li>
@@ -188,10 +222,10 @@
 </ul>
 <p><strong>Full Changelog</strong>: <a href="https://github.com/rime/squirrel/compare/1.0.0...1.0.1">https://github.com/rime/squirrel/compare/1.0.0...1.0.1</a></p>
 <p><a name="1.0.0"></a></p>
-<h2 id="1-0-0-2024-05-30"><a href="#1-0-0-2024-05-30" class="headerlink" title="1.0.0 (2024-05-30)"></a>1.0.0 (2024-05-30)</h2><h4 id="主要功能更新"><a href="#主要功能更新" class="headerlink" title="主要功能更新"></a>主要功能更新</h4><ul>
+<h2 id="1-0-0-2024-05-30"><a href="#1-0-0-2024-05-30" class="headerlink" title="1.0.0 (2024-05-30)"></a>1.0.0 (2024-05-30)</h2><h4 id="主要功能更新-1"><a href="#主要功能更新-1" class="headerlink" title="主要功能更新"></a>主要功能更新</h4><ul>
 <li>純 Swift 重寫，代碼更易維護，更易讀，貢獻代碼的門檻更低。今天就來看看源代碼，嘗試動手吧！</li>
 </ul>
-<h4 id="其它更新內容-2"><a href="#其它更新內容-2" class="headerlink" title="其它更新內容"></a>其它更新內容</h4><ul>
+<h4 id="其它更新內容-3"><a href="#其它更新內容-3" class="headerlink" title="其它更新內容"></a>其它更新內容</h4><ul>
 <li>UI 設置【<strong>敬請留意</strong>】<ul>
 <li><code>style/candidate_format</code> 格式修改爲 <code>&quot;[label]. [candidate] [comment]&quot;</code>，原格式仍能使用，但建議遷移至更靈活、直觀的新格式</li>
 <li><code>style/horizontal</code> 將徹底移除，雖然本版程序仍支持，但會被新控件的默認值覆蓋<br>請使用 <code>candidate_list_layout</code>: <code>stacked</code>&#x2F;<code>linear</code> 和 <code>text_orientation</code>: <code>horizontal</code>&#x2F;<code>vertical</code></li>
@@ -211,10 +245,10 @@
 </li>
 <li>librime：使用 stdbool 後綴 API，以便與 Swift 更好橋接</li>
 </ul>
-<h4 id="Major-Update"><a href="#Major-Update" class="headerlink" title="Major Update"></a>Major Update</h4><ul>
+<h4 id="Major-Update-1"><a href="#Major-Update-1" class="headerlink" title="Major Update"></a>Major Update</h4><ul>
 <li>Migrated code to pure Swift, which is easier to code, read and learn. Build your own Squirrel today!</li>
 </ul>
-<h4 id="Other-Updates-2"><a href="#Other-Updates-2" class="headerlink" title="Other Updates"></a>Other Updates</h4><ul>
+<h4 id="Other-Updates-3"><a href="#Other-Updates-3" class="headerlink" title="Other Updates"></a>Other Updates</h4><ul>
 <li>UI settings (<strong>Breaking Changes</strong>)<ul>
 <li><code>style/candidate_format</code> now updated to <code>&quot;[index]. [candidate] [comment]&quot;</code>, while the old format still works, please consider migrating to this more readable and flexible format at your convenience</li>
 <li><code>style/horizontal</code> will be dropped, it’s still supported but will be overwrite by the default values of new options.<br>Please adopt <code>candidate_list_layout</code>: <code>stacked</code>&#x2F;<code>linear</code> and <code>text_orientation</code>: <code>horizontal</code>&#x2F;<code>vertical</code></li>
@@ -236,7 +270,7 @@
 </ul>
 <p><strong>Full Changelog</strong>: <a href="https://github.com/rime/squirrel/compare/0.18...1.0.0">https://github.com/rime/squirrel/compare/0.18...1.0.0</a></p>
 <p><a name="0.18"></a></p>
-<h2 id="0-18-2024-05-04"><a href="#0-18-2024-05-04" class="headerlink" title="0.18 (2024-05-04)"></a>0.18 (2024-05-04)</h2><h4 id="主要功能更新-1"><a href="#主要功能更新-1" class="headerlink" title="主要功能更新"></a>主要功能更新</h4><ul>
+<h2 id="0-18-2024-05-04"><a href="#0-18-2024-05-04" class="headerlink" title="0.18 (2024-05-04)"></a>0.18 (2024-05-04)</h2><h4 id="主要功能更新-2"><a href="#主要功能更新-2" class="headerlink" title="主要功能更新"></a>主要功能更新</h4><ul>
 <li>現可設定非高亮候選項背景色：<ul>
 <li>以 <code>preset_color_schemes/xxx/candidate_back_color: 0xAABBGGRR</code> 設定，未設定則不啓用本功能</li>
 <li>以 <code>style/surrounding_extra_expansion</code> 控制非高亮候選背景大小，正數則相對高亮背景擴大，負數則相對高亮背景收縮，默認爲0</li>
@@ -267,7 +301,7 @@
 <li>librime 插件現單獨構建，不再合併於 librime 內，本安裝包含 <code>lua</code>、<code>octagram</code>、<code>predict</code> 三個插件</li>
 <li>最低支持的系統應爲 13.0，14.0 以上系統經過較好測試</li>
 </ul>
-<h4 id="其它更新內容-3"><a href="#其它更新內容-3" class="headerlink" title="其它更新內容"></a>其它更新內容</h4><ul>
+<h4 id="其它更新內容-4"><a href="#其它更新內容-4" class="headerlink" title="其它更新內容"></a>其它更新內容</h4><ul>
 <li>啓用CI自動構建</li>
 <li>應用 Clang 格式標準化</li>
 <li>更新已過時的方法</li>
@@ -304,7 +338,7 @@
 <li>librime plugins are built separately, no longer integrated inside librime library. This install package is compiled with <code>lua</code>, <code>octagram</code> and <code>predict</code> plugins</li>
 <li>Minimum OS supported should be 13.0, while 14.0+ is better tested</li>
 </ul>
-<h4 id="Other-Updates-3"><a href="#Other-Updates-3" class="headerlink" title="Other Updates"></a>Other Updates</h4><ul>
+<h4 id="Other-Updates-4"><a href="#Other-Updates-4" class="headerlink" title="Other Updates"></a>Other Updates</h4><ul>
 <li>Adopts CI workflow</li>
 <li>Applies Clang linting</li>
 <li>Modernized several deprecated methods</li>
