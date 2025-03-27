@@ -6,11 +6,11 @@
     <description>小狼毫測試版 Appcast 更新頻道</description>
     <language>zh</language>
     <item>
-      <title>小狼毫 0.16.3.35.4b47310</title>
+      <title>小狼毫 0.16.3.36.c2beb41</title>
       <sparkle:releaseNotesLink>https://github.com/rime/weasel/releases/tag/latest</sparkle:releaseNotesLink>
-      <pubDate>Tue, 04 Mar 2025 18:33:28 +0800</pubDate>
-      <enclosure url="https://github.com/rime/weasel/releases/download/latest/weasel-0.16.3.35.4b47310-installer.exe"
-                 sparkle:version="0.16.3.35.4b47310"
+      <pubDate>Wed, 26 Mar 2025 10:05:08 +0800</pubDate>
+      <enclosure url="https://github.com/rime/weasel/releases/download/latest/weasel-0.16.3.36.c2beb41-installer.exe"
+                 sparkle:version="0.16.3.36.c2beb41"
                  type="application/octet-stream"/>
     </item>
   </channel>
