@@ -7,7 +7,7 @@
     <language>zh</language>
     <item>
       <title>小狼毫 0.17.3.0</title>
-      <sparkle:releaseNotesLink>http://rime.github.io/testing/weasel/</sparkle:releaseNotesLink>
+      <sparkle:releaseNotesLink>http://rime.github.io/testing/weasel/index.html</sparkle:releaseNotesLink>
       <pubDate>Sat, 24 May 2025 14:24:29 +0800</pubDate>
       <enclosure url="https://github.com/rime/weasel/releases/download/0.17.3/weasel-0.17.3.0-installer.exe"
                  sparkle:version="0.17.3.0"
