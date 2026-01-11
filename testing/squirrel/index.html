@@ -147,7 +147,29 @@
 
 	<!-- content -->
 	<div class="mypage">
-	    <p><a name="1.0.3"></a></p>
+	    <p><a name="1.1.0"></a></p>
+<h2 id="1-1-0-2026-01-11"><a href="#1-1-0-2026-01-11" class="headerlink" title="1.1.0 (2026-01-11)"></a>1.1.0 (2026-01-11)</h2><h3 id="Bug-修復-Bug-Fixes"><a href="#Bug-修復-Bug-Fixes" class="headerlink" title="Bug 修復 | Bug Fixes"></a>Bug 修復 | Bug Fixes</h3><ul>
+<li>boundary check to prevent crash (#1044)</li>
+<li>no index offset to an empty string (#1045)</li>
+<li>開啓 <code>inline_candidate</code> 選項後移動光標導致崩潰 (#1047)</li>
+<li>橫向候選詞列表末尾元素高亮區域渲染錯誤 (#1071)</li>
+</ul>
+<h3 id="主要功能更新-Major-Updates"><a href="#主要功能更新-Major-Updates" class="headerlink" title="主要功能更新 | Major Updates"></a>主要功能更新 | Major Updates</h3><ul>
+<li>「系統原生」風格 <code>native</code> 跟隨系統主題切換明暗色調；提高文字對比度</li>
+<li><code>librime</code> 更新至 1.16.0：<ul>
+<li>優化音節切分算法，調整簡拼、歧義切分路徑的權重</li>
+<li>修復糾錯候選排序權重以及與造句的策略衝突</li>
+<li>拼寫運算增設容錯規則 <code>derive/X/Y/correction</code></li>
+<li>輸入方案自動引用組件默認配置 <code>default:/&#123;navigator,selector&#125;</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="構建-Build"><a href="#構建-Build" class="headerlink" title="構建 | Build"></a>構建 | Build</h3><ul>
+<li>remove paths filter from release-ci for nightly builds</li>
+<li>fix sign_update call</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/rime/squirrel/compare/1.0.3...1.1.0">https://github.com/rime/squirrel/compare/1.0.3...1.1.0</a></p>
+<p><a name="1.0.3"></a></p>
 <h2 id="1-0-3-2025-01-23"><a href="#1-0-3-2025-01-23" class="headerlink" title="1.0.3 (2025-01-23)"></a>1.0.3 (2025-01-23)</h2><h4 id="主要功能更新"><a href="#主要功能更新" class="headerlink" title="主要功能更新"></a>主要功能更新</h4><ul>
 <li>新增翻䈎提示，以<code>style/show_paging: true/false</code>控制</li>
 <li><code>librime</code> 更新至1.13.0：<ul>
@@ -1002,7 +1024,7 @@
     
     <!-- _partial/footer -->
 <p>
-  &copy; 2025 by 佛振@式恕堂
+  &copy; 2026 by 佛振@式恕堂
   &nbsp;
   <span class="text-muted">Powered by:
     <a class="text-muted" href="http://hexo.io/" target="_blank">Hexo</a>,
