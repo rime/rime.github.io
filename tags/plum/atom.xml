@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+    <title>RIME | 中州韻輸入法引擎 - plum</title>
+    <subtitle>Le blog de la Rime</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://rime.im/tags/plum/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://rime.im"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2018-04-22T22:28:54+00:00</updated>
+    <id>https://rime.im/tags/plum/atom.xml</id>
+    <entry xml:lang="zh">
+        <title>新譜的 Rime 輸入法配置管理器</title>
+        <published>2018-04-22T22:28:54+00:00</published>
+        <updated>2018-04-22T22:28:54+00:00</updated>
+        
+        <author>
+          <name>
+            
+              佛振@式恕堂
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://rime.im/blog/rime-configuration-manager/"/>
+        <id>https://rime.im/blog/rime-configuration-manager/</id>
+        
+        <summary type="html">&lt;p&gt;〔首發於 &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.v2ex.com&#x2F;t&#x2F;445778&quot;&gt;V2EX&lt;&#x2F;a&gt;〕&lt;&#x2F;p&gt;
+&lt;p&gt;某最近的一個小作品，分享給 Rime 用家。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rime&#x2F;plum&quot;&gt;東風破 &#x2F;plum&#x2F;&lt;&#x2F;a&gt; 是個輕量級的、由 bash 腳本開發的 Rime 輸入法配置管理工具。&lt;br &#x2F;&gt;
+有望通過提供單行安裝腳本，收集、包裝「配方」，解決 Rime 用家通過統一介面、簡便地獲取輸入方案這個難題。
+並爲積累了一定經驗的用家提供了一個管理和分享配置的渠道。&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+</feed>

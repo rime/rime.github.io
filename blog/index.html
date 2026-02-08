@@ -1,378 +1,440 @@
-<!DOCTYPE HTML>
-<html>
-<!-- _partial/head -->
-<head>
-  <meta charset="utf-8">
-  
-  <title>思想用鍵盤表達 | 網誌 | RIME | 中州韻輸入法引擎</title>
-  <meta name="author" content="佛振@式恕堂">
-  
-  <meta name="description" content="Le blog de la Rime">
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="思想用鍵盤表達"/>
-  <meta property="og:site_name" content="RIME | 中州韻輸入法引擎"/>
+    
+    <title>
+        
+        
 
-  
-    <meta property="og:image" content=""/>
-  
+        
+        
+        網誌 |
+        
 
-  
-    <link rel="alternative" href="/atom.xml" title="RIME | 中州韻輸入法引擎" type="application/atom+xml">
-  
-  
+        
+        RIME | 中州韻輸入法引擎
+    </title>
+
+    
+    <meta name="author" content="佛振@式恕堂">
+
+    
+    
+    <meta name="description" content="Le blog de la Rime">
+    
+
+    
+    
+
+    
+    
+    <meta property="og:site_name" content="RIME | 中州韻輸入法引擎"/>
+
+    
+    
+
+    
+    
+    <link rel="alternate" href="/atom.xml" title="RIME | 中州韻輸入法引擎" type="application/atom+xml">
+    
+
     <link href="/favicon.png" rel="icon">
-  
 
-  
-  <link rel="stylesheet" href="/css/bootstrap.flatly.min.css" media="screen" type="text/css">
-  
-  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/darktheme.css" media="screen" type="text/css">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    
+    <link rel="stylesheet" href="/css/bootstrap.flatly.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/darktheme.css">
 
-  <script src="/js/jquery-1.12.4.min.js"></script>
-  <script src="/js/jquery.cookie.js"></script>
-  <script src="/js/jquery.t2s.js"></script>
-  <script src="/js/modernizr.js"></script>
+    
+    <script src="/js/jquery-1.12.4.min.js"></script>
+    <script src="/js/jquery.cookie.js"></script>
+    <script src="/js/jquery.t2s.js"></script>
+    <script src="/js/modernizr.js"></script>
+</head>
 
-  <!-- analytics -->
-  <!-- _partial/post/google_analytics -->
+    <body>
+        
 
-
-
-<meta name="generator" content="Hexo 7.3.0"></head>
-
-<body>
-  <!-- _partial/navigation -->
 <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
       <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-		<span class="sr-only">Toggle navigation</span>
+        <span class="sr-only">切換導航菜單</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-	  <a class="navbar-brand" href="/">RIME | 中州韻輸入法引擎</a>
+      <a class="navbar-brand" href="https:&#x2F;&#x2F;rime.im">RIME | 中州韻輸入法引擎</a>
       <button id="btn-simplify" type="button" class="navbar-convert">簡</button>
       <div class="collapse navbar-collapse nav-menu">
-		<ul class="nav navbar-nav">
-		  
-		  <li>
-			<a href="/download" title="">
-			  <i class="fa fa-arrow-down"></i>下載
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href="/recipes" title="">
-			  <i class="fa fa-flask"></i>配方
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href="/docs" title="">
-			  <i class="fa fa-question-circle"></i>幫助
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href="/code" title="">
-			  <i class="fa fa-github"></i>源碼
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href="/donate" title="">
-			  <i class="fa fa-heart"></i>捐贈
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href="/discuss" title="">
-			  <i class="fa fa-comments"></i>討論
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href="/blog" title="Rime::Blog">
-			  <i class="fa fa-pencil-square-o"></i>網誌
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href="/online" title="">
-			  <i class="fa fa-cloud"></i>體驗
-			</a>
-		  </li>
-		  
-		</ul>
+          <ul class="nav navbar-nav">
+              
+              <li>
+                  <a href="&#x2F;download" title="">
+                      <i class="fa fa-arrow-down"></i>下載
+                  </a>
+              </li>
+              
+              <li>
+                  <a href="&#x2F;recipes" title="">
+                      <i class="fa fa-flask"></i>配方
+                  </a>
+              </li>
+              
+              <li>
+                  <a href="&#x2F;docs" title="">
+                      <i class="fa fa-question-circle"></i>幫助
+                  </a>
+              </li>
+              
+              <li>
+                  <a href="&#x2F;code" title="">
+                      <i class="fa fa-github"></i>源碼
+                  </a>
+              </li>
+              
+              <li>
+                  <a href="&#x2F;donate" title="">
+                      <i class="fa fa-heart"></i>捐贈
+                  </a>
+              </li>
+              
+              <li>
+                  <a href="&#x2F;discuss" title="">
+                      <i class="fa fa-comments"></i>討論
+                  </a>
+              </li>
+              
+              <li>
+                  <a href="&#x2F;blog" title="Rime::Blog">
+                      <i class="fa fa-pencil-square-o"></i>網誌
+                  </a>
+              </li>
+              
+              <li>
+                  <a href="&#x2F;online" title="">
+                      <i class="fa fa-cloud"></i>體驗
+                  </a>
+              </li>
+              
+          </ul>
       </div>
     </div> <!-- container -->
 </nav>
 <div class="clearfix"></div>
 
-  
-  <div class="container">
-    
-    <div class="content ">
-      <!-- archive -->
 
-<!-- _partial/post/title -->
-
+        
+        
+        <div class="container">
+            <div class="content">
+                
 <div class="panel-heading">
-
-	
-  <!-- display as page -->
-		<div class="page-header">
-			<h1> <i class="fa fa-keyboard-o"></i>  思想用鍵盤表達</h1>
-		</div>
-	
-
+    <div class="page-header">
+        <h1><i class="fa fa-keyboard-o"></i> 網誌<small>｜思想用鍵盤表達</small></h1>
+    </div>
 </div>
 
-
-<!-- _partial/index -->
 <div class="row page">
+    
+    <div class="col-md-9">
+        <div class="mypage">
+            <div class="panel panel-default">
+                
+                
 
-	
-	<div class="col-md-9">
-	
+                
+                <div class="panel-heading">
+                    <h3 class="xtitle">
+                        <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;dongfengpo-zhuyinyuan&#x2F;" >東風破·注音緣：記一段 Rime 輸入法的神級往事</a>
+                        <span class="text-muted pull-right">
+                            <small>2026-01-27</small>
+                            <small style="padding-left:1em;">
+                                <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;dongfengpo-zhuyinyuan&#x2F;#comment">留言</a>
+                            </small>
+                        </span>
+                    </h3>
+                </div>
 
-		<div class="mypage">
+                
+                <div class="panel-body">
+                    <div class="row">
 
-			<!-- title and entry -->
-			<div class="panel panel-default">
-				
-					<!-- _partial/post/title -->
+                        
+                        
+                        <div class="col-md-12">
+                        
 
-<div class="panel-heading">
-
-	
-	<!-- display as entry -->
-		<h3 class="xtitle">
-			<a href="/blog/2026/01/27/dongfengpo-zhuyinyuan/" >東風破·注音緣：記一段 Rime 輸入法的神級往事</a>
-			<span class="text-muted pull-right">
-				<small> 2026-01-27 </small>
-				<small style="padding-left:1em;"><a href="/blog/2026/01/27/dongfengpo-zhuyinyuan/#comment">留言</a></small>
-			</span>
-		</h3>
-	
-
-</div>
-
-					<!-- _partial/post/entry -->
-<div class="panel-body">
-  <div class="row">
-  
-	<div class="col-md-12">
-	  
-	
-	  <p>十餘年前，BYVoid 在部落格中記述了與 Rime 作者佛振的一面之緣，震驚於其「手寫注音」的神技。<br>這份「緣、驚、愧」成了 Rime 發展史上一段佳話。</p>
-<h2 id="創作背景：緣·驚·愧"><a href="#創作背景：緣·驚·愧" class="headerlink" title="創作背景：緣·驚·愧"></a>創作背景：緣·驚·愧</h2><p>典出 BYVoid 名篇《<a href="https://byvoid.com/blog/recommend-rime/">推薦一個神級輸入法——Rime</a>》。</p>
+                            
+                            
+                            <p>十餘年前，BYVoid 在部落格中記述了與 Rime 作者佛振的一面之緣，震驚於其「手寫注音」的神技。<br />
+這份「緣、驚、愧」成了 Rime 發展史上一段佳話。</p>
+<h2 id="創作背景：緣·驚·愧">創作背景：緣·驚·愧</h2>
+<p>典出 BYVoid 名篇《<a rel="external" href="https://byvoid.com/blog/recommend-rime/">推薦一個神級輸入法——Rime</a>》。</p>
 <p>隨著最近 Rime 新版<strong>注音輸入方案</strong>開發完成，我不禁回想到那個開源輸入法初創的純粹年代。</p>
-<p>我用鍵盤彈奏這曲〈<a href="https://www.bilibili.com/video/BV1Evk2BPE6B/">東風破</a>〉，原是爲<a href="https://zh.wikipedia.org/wiki/%E8%98%AD%E8%8C%82">蘭茂</a>《<a href="https://zh.wikipedia.org/wiki/%E9%9F%BB%E7%95%A7%E6%98%93%E9%80%9A#%E8%81%B2%E6%AF%8D">早梅詩</a>》所寫。<br>如今，我以 BYVoid 的第一人稱視角重新填詞，重現當年那場大會上的驚鴻一瞥。</p>
-<h3 id="作品展示"><a href="#作品展示" class="headerlink" title="作品展示"></a>作品展示</h3><figure>
-  <p><figcaption>〈東風破·注音緣〉音軌試聽</figcaption></p>
-  <p><audio controls src="/media/東風破.mp3"></audio></p>
-</figure>
-	
-	</div>
-	
+<p>我用鍵盤彈奏這曲〈<a rel="external" href="https://www.bilibili.com/video/BV1Evk2BPE6B/">東風破</a>〉，原是爲<a rel="external" href="https://zh.wikipedia.org/wiki/%E8%98%AD%E8%8C%82">蘭茂</a>《<a rel="external" href="https://zh.wikipedia.org/wiki/%E9%9F%BB%E7%95%A7%E6%98%93%E9%80%9A#%E8%81%B2%E6%AF%8D">早梅詩</a>》所寫。<br />
+如今，我以 BYVoid 的第一人稱視角重新填詞，重現當年那場大會上的驚鴻一瞥。</p>
+<h3 id="作品展示">作品展示</h3>
 
-</div>
-	<a type="button" href="/blog/2026/01/27/dongfengpo-zhuyinyuan/#more" class="btn btn-default more">全文</a>
-</div>
+    
+    
+    
 
-				
-					<!-- _partial/post/title -->
 
-<div class="panel-heading">
-
-	
-	<!-- display as entry -->
-		<h3 class="xtitle">
-			<a href="/blog/2025/03/01/theme-music/" >Rime 主題曲</a>
-			<span class="text-muted pull-right">
-				<small> 2025-03-01 </small>
-				<small style="padding-left:1em;"><a href="/blog/2025/03/01/theme-music/#comment">留言</a></small>
-			</span>
-		</h3>
-	
-
-</div>
-
-					<!-- _partial/post/entry -->
-<div class="panel-body">
-  <div class="row">
-  
-	<div class="col-md-12">
-	  
-	
-	  <p>Rime 三部曲——中州韻、小狼毫、鼠鬚管。</p>
-<p>某有幸發起了 <a href="https://rime.im/">Rime 輸入法</a> 這款開源軟件，十幾年來備受用家關愛；<br>衆多編程高手和語文專家積極參與開發維護，方能持續更新、代碼不鏽。</p>
-<p>甲辰年末，某決計爲 Rime 輸入法題寫一首主題曲，<br>紀念這一來之不易的成就，勉勵輸入法開發者再譜新篇。</p>
 <figure>
-  <p><figcaption>中州韻輸入法主題曲</figcaption></p>
-  <p><audio controls src="/media/RIME_主題曲.mp3"></audio></p>
+    
+    <p>
+        <figcaption>〈東風破·注音緣〉音軌試聽</figcaption>
+    </p>
+    
+    <p>
+        <audio controls src="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;dongfengpo-zhuyinyuan&#x2F;東風破.mp3" preload="metadata">
+            您的瀏覽器不支持 audio 元素。
+        </audio>
+    </p>
 </figure>
+                            
 
-<p>若本站播放不流暢，請移步 <a href="https://www.bilibili.com/audio/am33746732">B 站備份</a>。</p>
-<p>曲調早有構思，無奈某是門外漢，全憑直覺在打譜軟件中點選，勉強拼湊成曲，但願拋磚引玉。<br>將曲譜上傳 <a href="https://github.com/lotem/rime-theme-music">開源網站</a>，以期行家裏手指點，修改潤色些許，哪敢奢求演繹續寫？</p>
-	
-	</div>
-	
+                        </div>
 
-</div>
-	<a type="button" href="/blog/2025/03/01/theme-music/#more" class="btn btn-default more">全文</a>
-</div>
+                        
+                        
 
-				
-					<!-- _partial/post/title -->
+                    </div>
+                    
+                    <a type="button" href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;dongfengpo-zhuyinyuan&#x2F;#more" class="btn btn-default more">全文</a>
+                </div>
 
-<div class="panel-heading">
+                
 
-	
-	<!-- display as entry -->
-		<h3 class="xtitle">
-			<a href="/blog/2018/04/22/rime-configuration-manager/" >新譜的 Rime 輸入法配置管理器</a>
-			<span class="text-muted pull-right">
-				<small> 2018-04-22 </small>
-				<small style="padding-left:1em;"><a href="/blog/2018/04/22/rime-configuration-manager/#comment">留言</a></small>
-			</span>
-		</h3>
-	
+                
+                <div class="panel-heading">
+                    <h3 class="xtitle">
+                        <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;theme-music&#x2F;" >Rime 主題曲</a>
+                        <span class="text-muted pull-right">
+                            <small>2025-03-01</small>
+                            <small style="padding-left:1em;">
+                                <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;theme-music&#x2F;#comment">留言</a>
+                            </small>
+                        </span>
+                    </h3>
+                </div>
 
-</div>
+                
+                <div class="panel-body">
+                    <div class="row">
 
-					<!-- _partial/post/entry -->
-<div class="panel-body">
-  <div class="row">
-  
-	<div class="col-md-12">
-	  
-	
-	  <p>〔首發於 <a href="https://www.v2ex.com/t/445778">V2EX</a>〕</p>
+                        
+                        
+                        <div class="col-md-12">
+                        
+
+                            
+                            
+                            <p>Rime 三部曲——中州韻、小狼毫、鼠鬚管。</p>
+<p>某有幸發起了 <a rel="external" href="https://rime.im">Rime 輸入法</a> 這款開源軟件，十幾年來備受用家關愛；<br />
+衆多編程高手和語文專家積極參與開發維護，方能持續更新、代碼不鏽。</p>
+<p>甲辰年末，某決計爲 Rime 輸入法題寫一首主題曲，<br />
+紀念這一來之不易的成就，勉勵輸入法開發者再譜新篇。</p>
+
+    
+    
+    
+
+
+<figure>
+    
+    <p>
+        <figcaption>中州韻輸入法主題曲</figcaption>
+    </p>
+    
+    <p>
+        <audio controls src="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;theme-music&#x2F;RIME_主題曲.mp3" preload="metadata">
+            您的瀏覽器不支持 audio 元素。
+        </audio>
+    </p>
+</figure>
+<p>若本站播放不流暢，請移步 <a rel="external" href="https://www.bilibili.com/audio/am33746732">B 站備份</a>。</p>
+<p>曲調早有構思，無奈某是門外漢，全憑直覺在打譜軟件中點選，勉強拼湊成曲，但願拋磚引玉。<br />
+將曲譜上傳 <a rel="external" href="https://github.com/lotem/rime-theme-music">開源網站</a>，以期行家裏手指點，修改潤色些許，哪敢奢求演繹續寫？</p>
+                            
+
+                        </div>
+
+                        
+                        
+
+                    </div>
+                    
+                    <a type="button" href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;theme-music&#x2F;#more" class="btn btn-default more">全文</a>
+                </div>
+
+                
+
+                
+                <div class="panel-heading">
+                    <h3 class="xtitle">
+                        <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;rime-configuration-manager&#x2F;" >新譜的 Rime 輸入法配置管理器</a>
+                        <span class="text-muted pull-right">
+                            <small>2018-04-22</small>
+                            <small style="padding-left:1em;">
+                                <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;rime-configuration-manager&#x2F;#comment">留言</a>
+                            </small>
+                        </span>
+                    </h3>
+                </div>
+
+                
+                <div class="panel-body">
+                    <div class="row">
+
+                        
+                        
+                        <div class="col-md-12">
+                        
+
+                            
+                            
+                            <p>〔首發於 <a rel="external" href="https://www.v2ex.com/t/445778">V2EX</a>〕</p>
 <p>某最近的一個小作品，分享給 Rime 用家。</p>
-<p><a href="https://github.com/rime/plum">東風破 &#x2F;plum&#x2F;</a> 是個輕量級的、由 bash 腳本開發的 Rime 輸入法配置管理工具。<br>有望通過提供單行安裝腳本，收集、包裝「配方」，解決 Rime 用家通過統一介面、簡便地獲取輸入方案這個難題。<br>並爲積累了一定經驗的用家提供了一個管理和分享配置的渠道。</p>
-	
-	</div>
-	
+<p><a rel="external" href="https://github.com/rime/plum">東風破 /plum/</a> 是個輕量級的、由 bash 腳本開發的 Rime 輸入法配置管理工具。<br />
+有望通過提供單行安裝腳本，收集、包裝「配方」，解決 Rime 用家通過統一介面、簡便地獲取輸入方案這個難題。
+並爲積累了一定經驗的用家提供了一個管理和分享配置的渠道。</p>
+                            
 
-</div>
-	<a type="button" href="/blog/2018/04/22/rime-configuration-manager/#more" class="btn btn-default more">全文</a>
-</div>
+                        </div>
 
-				
-					<!-- _partial/post/title -->
+                        
+                        
 
-<div class="panel-heading">
+                    </div>
+                    
+                    <a type="button" href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;rime-configuration-manager&#x2F;#more" class="btn btn-default more">全文</a>
+                </div>
 
-	
-	<!-- display as entry -->
-		<h3 class="xtitle">
-			<a href="/blog/2018/04/22/weasel-release-0-11/" >「小狼毫」輸入法更新，發佈 0.11 版</a>
-			<span class="text-muted pull-right">
-				<small> 2018-04-22 </small>
-				<small style="padding-left:1em;"><a href="/blog/2018/04/22/weasel-release-0-11/#comment">留言</a></small>
-			</span>
-		</h3>
-	
+                
 
-</div>
+                
+                <div class="panel-heading">
+                    <h3 class="xtitle">
+                        <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;weasel-release-0-11&#x2F;" >「小狼毫」輸入法更新，發佈 0.11 版</a>
+                        <span class="text-muted pull-right">
+                            <small>2018-04-22</small>
+                            <small style="padding-left:1em;">
+                                <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;weasel-release-0-11&#x2F;#comment">留言</a>
+                            </small>
+                        </span>
+                    </h3>
+                </div>
 
-					<!-- _partial/post/entry -->
-<div class="panel-body">
-  <div class="row">
-  
-	<div class="col-md-12">
-	  
-	
-	  <p>〔首發於 <a href="https://www.v2ex.com/t/445523">V2EX</a>〕</p>
-<p>感謝 <a href="https://github.com/Prcuvu">@Prcuvu</a> 和 <a href="https://github.com/nameoverflow">@nameoverflow</a> 兩位開發者的給力大修，以及 <a href="https://github.com/zhtw2013">道滿</a>、<a href="https://github.com/lotem">佛振</a>, <a href="https://github.com/osfans">@osfans</a> 等新老通字的配合，<a href="https://rime.im/download/#windows">小狼毫</a> 輸入法現已支持 Windows 8 ~ Windows 10 的「現代介面」，並添加了語言欄狀態圖標，完成多項兼容性改進，集成了 <a href="https://github.com/rime/plum">Rime 配置管理器</a>，還完善了工程配置、自動構建流程等開源協作的關鍵設施。</p>
-<p>雖然這軟件仍有諸多不足，可期待的是漸將朽壞的代碼重煥生機，開源社區的努力推動項目繼續演進，我等愛用者不由精神爲之一振。</p>
-<p>某身爲與「小狼毫」有不解之緣的初創者、<a href="https://rime.im/">Rime</a> 執鍵人兼資深玩家，難掩激動之情，連忙奔走相告。</p>
+                
+                <div class="panel-body">
+                    <div class="row">
 
-	
-	</div>
-	
+                        
+                        
+                        <div class="col-md-12">
+                        
 
-</div>
-	<a type="button" href="/blog/2018/04/22/weasel-release-0-11/#more" class="btn btn-default more">全文</a>
-</div>
+                            
+                            
+                            〔首發於 V2EX〕
+感謝 @Prcuvu 和 @nameoverflow 兩位開發者的給力大修，以及 道滿、佛振, @osfans 等新老通字的配合，小狼毫 輸入法現已支持 Windows 8 ~ Windows 10 的「現代介面」，並添加了語言欄狀態圖標，完成多項兼容性改進，集成了 Rime 配置管理器，還完善了工程配置、自動構建流程等開源協作的關鍵設施。
+雖然這軟件仍有諸多不足，可期待的是…
+                            
 
-				
-					<!-- _partial/post/title -->
+                        </div>
 
-<div class="panel-heading">
+                        
+                        
 
-	
-	<!-- display as entry -->
-		<h3 class="xtitle">
-			<a href="/blog/2016/04/14/qna-in-mtvu/" >山景答問</a>
-			<span class="text-muted pull-right">
-				<small> 2016-04-14 </small>
-				<small style="padding-left:1em;"><a href="/blog/2016/04/14/qna-in-mtvu/#comment">留言</a></small>
-			</span>
-		</h3>
-	
+                    </div>
+                    
+                    <a type="button" href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;weasel-release-0-11&#x2F;#more" class="btn btn-default more">全文</a>
+                </div>
 
-</div>
+                
 
-					<!-- _partial/post/entry -->
-<div class="panel-body">
-  <div class="row">
-  
-	<div class="col-md-12">
-	  
-	
-	  <h2 id="問與答"><a href="#問與答" class="headerlink" title="問與答"></a>問與答</h2><p>——「RIME」這個名字，還有「中州韻」「小狼毫」和「鼠鬚管」這些有趣的稱呼都是怎麼想出來的呢？方便的話可否講講這裏面的故事？</p>
+                
+                <div class="panel-heading">
+                    <h3 class="xtitle">
+                        <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;qna-in-mtvu&#x2F;" >山景答問</a>
+                        <span class="text-muted pull-right">
+                            <small>2016-04-14</small>
+                            <small style="padding-left:1em;">
+                                <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;qna-in-mtvu&#x2F;#comment">留言</a>
+                            </small>
+                        </span>
+                    </h3>
+                </div>
+
+                
+                <div class="panel-body">
+                    <div class="row">
+
+                        
+                        
+                        <div class="col-md-12">
+                        
+
+                            
+                            
+                            <h2 id="問與答">問與答</h2>
+<p>——「RIME」這個名字，還有「中州韻」「小狼毫」和「鼠鬚管」這些有趣的稱呼都是怎麼想出來的呢？方便的話可否講講這裏面的故事？</p>
 <p>——不起個好名，寫碼興致索然。</p>
-	
-	</div>
-	
+                            
 
-</div>
-	<a type="button" href="/blog/2016/04/14/qna-in-mtvu/#more" class="btn btn-default more">全文</a>
-</div>
+                        </div>
 
-				
-					<!-- _partial/post/title -->
+                        
+                        
 
-<div class="panel-heading">
+                    </div>
+                    
+                    <a type="button" href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;qna-in-mtvu&#x2F;#more" class="btn btn-default more">全文</a>
+                </div>
 
-	
-	<!-- display as entry -->
-		<h3 class="xtitle">
-			<a href="/blog/2013/11/24/screencasts/" >Rime Screencasts</a>
-			<span class="text-muted pull-right">
-				<small> 2013-11-24 </small>
-				<small style="padding-left:1em;"><a href="/blog/2013/11/24/screencasts/#comment">留言</a></small>
-			</span>
-		</h3>
-	
+                
 
-</div>
+                
+                <div class="panel-heading">
+                    <h3 class="xtitle">
+                        <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;2013-screencasts&#x2F;" >Rime 輸入法初創時期打字演示</a>
+                        <span class="text-muted pull-right">
+                            <small>2013-11-24</small>
+                            <small style="padding-left:1em;">
+                                <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;2013-screencasts&#x2F;#comment">留言</a>
+                            </small>
+                        </span>
+                    </h3>
+                </div>
 
-					<!-- _partial/post/entry -->
-<div class="panel-body">
-  <div class="row">
-  
-	<div class="col-md-12">
-	  
-	
-	  <p>最近錄製了一些<a href="https://rime.im/">Rime 輸入法</a>的打字視頻：</p>
+                
+                <div class="panel-body">
+                    <div class="row">
+
+                        
+                        
+                        <div class="col-md-12">
+                        
+
+                            
+                            
+                            <p>最近錄製了一些<a rel="external" href="https://rime.im">Rime 輸入法</a>的打字視頻：</p>
 <ul>
-<li><a href="#rime-con">重度輸入法控</a></li>
-<li><a href="#rime-middle-chinese">中古漢語拼音輸入「鼠鬚管」</a></li>
-<li><a href="#rime-jyutping-gongsaan">粵拼輸入　馬德鐘《江山》</a></li>
-<li><a href="#rime-chord-typing-yanhuayileng">注音並擊輸入　周杰倫《煙花易冷》</a></li>
-<li><a href="#rime-terra-pinyin-yunqushutu">地球拼音輸入　顧念之《運去殊途》</a></li>
-<li><a href="#rime-combo-pinyin-jingzhongchuanqi">宮保拼音並擊輸入《精忠傳奇》</a></li>
+<li><a href="https://rime.im/blog/2013-screencasts/#rime-con">重度輸入法控</a></li>
+<li><a href="https://rime.im/blog/2013-screencasts/#rime-middle-chinese">中古漢語拼音輸入「鼠鬚管」</a></li>
+<li><a href="https://rime.im/blog/2013-screencasts/#rime-jyutping-gongsaan">粵拼輸入　馬德鐘《江山》</a></li>
+<li><a href="https://rime.im/blog/2013-screencasts/#rime-chord-typing-yanhuayileng">注音並擊輸入　周杰倫《煙花易冷》</a></li>
+<li><a href="https://rime.im/blog/2013-screencasts/#rime-terra-pinyin-yunqushutu">地球拼音輸入　顧念之《運去殊途》</a></li>
+<li><a href="https://rime.im/blog/2013-screencasts/#rime-combo-pinyin-jingzhongchuanqi">宮保拼音並擊輸入《精忠傳奇》</a></li>
+<li><a href="https://rime.im/blog/2013-screencasts/#xinhuyuyoufeng">心湖雨又風</a></li>
+<li><a href="https://rime.im/blog/2013-screencasts/#cangjie-zhuanshi-fu">倉頡轉世賦</a></li>
+<li><a href="https://rime.im/blog/2013-screencasts/#zailu-yanhuayileng">越明年，再錄《煙花易冷》</a></li>
 </ul>
 <p>菜鳥俺用了這幾樣工具完成以上視頻的製作：</p>
 <ul>
@@ -382,287 +444,430 @@
 <li>VirtualDub 用於編輯視頻、轉碼</li>
 </ul>
 <p>哈，純粹地用於學習和研究輸入法。音樂的神碼版權問題，看官都莫要深究啦。</p>
-	
-	</div>
-	
+                            
 
-</div>
-	<a type="button" href="/blog/2013/11/24/screencasts/#more" class="btn btn-default more">全文</a>
-</div>
+                        </div>
 
-				
-					<!-- _partial/post/title -->
+                        
+                        
 
-<div class="panel-heading">
+                    </div>
+                    
+                    <a type="button" href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;2013-screencasts&#x2F;#more" class="btn btn-default more">全文</a>
+                </div>
 
-	
-	<!-- display as entry -->
-		<h3 class="xtitle">
-			<a href="/blog/2013/09/19/luna-pinyin/" >中秋與朙月拼音</a>
-			<span class="text-muted pull-right">
-				<small> 2013-09-19 </small>
-				<small style="padding-left:1em;"><a href="/blog/2013/09/19/luna-pinyin/#comment">留言</a></small>
-			</span>
-		</h3>
-	
+                
 
-</div>
+                
+                <div class="panel-heading">
+                    <h3 class="xtitle">
+                        <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;luna-pinyin&#x2F;" >中秋與朙月拼音</a>
+                        <span class="text-muted pull-right">
+                            <small>2013-09-19</small>
+                            <small style="padding-left:1em;">
+                                <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;luna-pinyin&#x2F;#comment">留言</a>
+                            </small>
+                        </span>
+                    </h3>
+                </div>
 
-					<!-- _partial/post/entry -->
-<div class="panel-body">
-  <div class="row">
-  
-	<div class="col-md-12">
-	  
-	
-	  <p>中秋之夜，可想在部落格上寫二句。</p>
+                
+                <div class="panel-body">
+                    <div class="row">
+
+                        
+                        
+                        <div class="col-md-12">
+                        
+
+                            
+                            
+                            <p>中秋之夜，可想在部落格上寫二句。</p>
 <p>於是 <code>vim ~/Library/Rime/squirrel.custom.yaml</code> 寫下</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">patch:</span></span><br><span class="line">  <span class="attr">style/color_scheme:</span> <span class="string">luna</span></span><br></pre></td></tr></table></figure>
-
+<pre class="giallo" style="color: #CDD6F4; background-color: #1E1E2E;"><code data-lang="yaml"><span class="giallo-l"><span style="color: #89B4FA;">patch</span><span style="color: #94E2D5;">:</span></span>
+<span class="giallo-l"><span style="color: #89B4FA;">  style/color_scheme</span><span style="color: #94E2D5;">:</span><span style="color: #A6E3A1;"> luna</span></span></code></pre>
 <p>部署後，按 <code>Control+~</code> 切換到【朙月拼音】。</p>
-<p><img src="/images/mingyue-pinyin-2013-09-19.png" alt="此刻正在寫字的朙月拼音"></p>
-	
-	</div>
-	
+<p><img src="https://rime.im/blog/luna-pinyin/mingyue-pinyin-2013-09-19.png" alt="此刻正在寫字的朙月拼音" /></p>
+                            
 
-</div>
-	<a type="button" href="/blog/2013/09/19/luna-pinyin/#more" class="btn btn-default more">全文</a>
-</div>
+                        </div>
 
-				
-					<!-- _partial/post/title -->
+                        
+                        
 
-<div class="panel-heading">
+                    </div>
+                    
+                    <a type="button" href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;luna-pinyin&#x2F;#more" class="btn btn-default more">全文</a>
+                </div>
 
-	
-	<!-- display as entry -->
-		<h3 class="xtitle">
-			<a href="/blog/2013/08/28/spelling-algebra-debugger/" >拼寫運算調試器</a>
-			<span class="text-muted pull-right">
-				<small> 2013-08-28 </small>
-				<small style="padding-left:1em;"><a href="/blog/2013/08/28/spelling-algebra-debugger/#comment">留言</a></small>
-			</span>
-		</h3>
-	
+                
 
-</div>
+                
+                <div class="panel-heading">
+                    <h3 class="xtitle">
+                        <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;spelling-algebra-debugger&#x2F;" >拼寫運算調試器</a>
+                        <span class="text-muted pull-right">
+                            <small>2013-08-28</small>
+                            <small style="padding-left:1em;">
+                                <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;spelling-algebra-debugger&#x2F;#comment">留言</a>
+                            </small>
+                        </span>
+                    </h3>
+                </div>
 
-					<!-- _partial/post/entry -->
-<div class="panel-body">
-  <div class="row">
-  
-	<div class="col-md-12">
-	  
-	
-	  <h1 id="問題"><a href="#問題" class="headerlink" title="問題"></a>問題</h1><p>拼音類輸入法，都有一個由固定數目音節碼組成的的音節表。<br>如漢語拼音以數百音節表達萬餘漢字。</p>
-<p>Rime 希望用家能自定義音節表，以及音節碼與文字的對應關係。<br>這通過編寫 Rime 詞典中的碼表來實現。如粵語、吳語等方言拼音的詞典，音節碼採用特定於該方言的拼寫方式。</p>
-<p>在使用中，可以通過不同的按鍵序列鍵入這些音節。<br>如拼音輸入法以音節中的聲母或首字母略代整個音節，稱「簡拼」；將聲、韻各以一字母代之，稱「雙拼」。</p>
+                
+                <div class="panel-body">
+                    <div class="row">
+
+                        
+                        
+                        <div class="col-md-12">
+                        
+
+                            
+                            
+                            <h1 id="問題">問題</h1>
+<p>拼音類輸入法，都有一個由固定數目音節碼組成的的音節表。<br />
+如漢語拼音以數百音節表達萬餘漢字。</p>
+<p>Rime 希望用家能自定義音節表，以及音節碼與文字的對應關係。<br />
+這通過編寫 Rime 詞典中的碼表來實現。如粵語、吳語等方言拼音的詞典，音節碼採用特定於該方言的拼寫方式。</p>
+<p>在使用中，可以通過不同的按鍵序列鍵入這些音節。<br />
+如拼音輸入法以音節中的聲母或首字母略代整個音節，稱「簡拼」；將聲、韻各以一字母代之，稱「雙拼」。</p>
 <p>Rime 希望這些不同的輸入形式是用家可以自定義的。如每一種雙拼方案，將按鍵映射到音節碼的方式皆不同。</p>
-<h1 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h1><p><a href="https://github.com/rime/home/wiki/SpellingAlgebra">拼寫運算／Spelling Algebra</a> 是 Rime 輸入法的一項獨創技術。<br>其思想是用一組規則描述輸入碼到音節碼的對應關係。</p>
+<h1 id="方案">方案</h1>
+<p><a rel="external" href="https://github.com/rime/home/wiki/SpellingAlgebra">拼寫運算／Spelling Algebra</a> 是 Rime 輸入法的一項獨創技術。<br />
+其思想是用一組規則描述輸入碼到音節碼的對應關係。</p>
 <p>拼寫運算規則基於正則表達式／regular expression，基本運算有轉寫、變形、派生、消除等。通過組合這幾種操作，完成由音節碼集合到輸入碼集合的投影。</p>
-<p>雖然有<a href="https://github.com/rime/home/wiki/SpellingAlgebra">文檔</a> 對算法作了解釋，又有 Rime 預設的輸入方案提供了多個用例，但是因爲算法本身十分複雜和抽象，編制拼寫運算規則及除錯仍有不小難度。</p>
-<h1 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h1><p>早早便發願，做一臺「拼寫運算調試器」。</p>
-<p>用他來演繹拼寫運算的過程，輸入碼如何推導出來便可一目瞭然。<br>又可用來做演示，幫助大家直觀地理解拼寫運算的原理和功用。</p>
+<p>雖然有<a rel="external" href="https://github.com/rime/home/wiki/SpellingAlgebra">文檔</a> 對算法作了解釋，又有 Rime 預設的輸入方案提供了多個用例，但是因爲算法本身十分複雜和抽象，編制拼寫運算規則及除錯仍有不小難度。</p>
+<h1 id="工具">工具</h1>
+<p>早早便發願，做一臺「拼寫運算調試器」。</p>
+<p>用他來演繹拼寫運算的過程，輸入碼如何推導出來便可一目瞭然。<br />
+又可用來做演示，幫助大家直觀地理解拼寫運算的原理和功用。</p>
 <p>近日，「拼寫運算調試器」預覽版出爐，預備將其納入「Rime 工具箱」，與輸入法設定工具一同發佈。</p>
-	
-	</div>
-	
+                            
 
-</div>
-	<a type="button" href="/blog/2013/08/28/spelling-algebra-debugger/#more" class="btn btn-default more">全文</a>
-</div>
+                        </div>
 
-				
-					<!-- _partial/post/title -->
+                        
+                        
 
-<div class="panel-heading">
+                    </div>
+                    
+                    <a type="button" href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;spelling-algebra-debugger&#x2F;#more" class="btn btn-default more">全文</a>
+                </div>
 
-	
-	<!-- display as entry -->
-		<h3 class="xtitle">
-			<a href="/blog/2013/04/28/hello-world/" >中州韻輸入法 思想用鍵盤表達</a>
-			<span class="text-muted pull-right">
-				<small> 2013-04-28 </small>
-				<small style="padding-left:1em;"><a href="/blog/2013/04/28/hello-world/#comment">留言</a></small>
-			</span>
-		</h3>
-	
+                
 
-</div>
+                
+                <div class="panel-heading">
+                    <h3 class="xtitle">
+                        <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;hello-world&#x2F;" >中州韻輸入法 思想用鍵盤表達</a>
+                        <span class="text-muted pull-right">
+                            <small>2013-04-28</small>
+                            <small style="padding-left:1em;">
+                                <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;hello-world&#x2F;#comment">留言</a>
+                            </small>
+                        </span>
+                    </h3>
+                </div>
 
-					<!-- _partial/post/entry -->
-<div class="panel-body">
-  <div class="row">
-  
-	<div class="col-md-12">
-	  
-	
-	  <p>寫輸入法的目的是更舒服地用鍵盤寫字。<br>而今博客開張了。<a href="https://rime.im/">Rime</a> 終於有了用武之地。</p>
+                
+                <div class="panel-body">
+                    <div class="row">
 
-	
-	</div>
-	
+                        
+                        
+                        <div class="col-md-12">
+                        
 
-</div>
-	<a type="button" href="/blog/2013/04/28/hello-world/#more" class="btn btn-default more">全文</a>
-</div>
+                            
+                            
+                            寫輸入法的目的是更舒服地用鍵盤寫字。
+而今博客開張了。Rime 終於有了用武之地。
 
-				
+                            
 
-			</div>
+                        </div>
 
-			<!-- pagination -->
-			<div>
-	  		<center>
-			<!-- _partial/index_pagination -->
-<div class="pagination">
-<ul class="pagination">
-	 
-</ul>
-</div>
+                        
+                        
 
-	  		</center>
-			</div>
-	</div>
+                    </div>
+                    
+                    <a type="button" href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;hello-world&#x2F;#more" class="btn btn-default more">全文</a>
+                </div>
 
-	</div> <!-- col-md-9 -->
+                
+            </div>
+        </div>
+    </div>
 
-	
-		<!-- _partial/sidebar -->
-<div class="col-md-3">
-	<div id="sidebar">
-	
-			<!-- _widget/search -->
-<div class="form-group has-success has-feedback">
-  <form action="//google.com/search" method="get" accept-charset="utf-8" >
-    <input type="search" name="q" results="0" placeholder="檢索" class="form-control">
-    <input type="hidden" name="q" value="site:rime.im">
-  </form>
-</div>
-
-		
-			<!-- _widget/category -->
-
-
-		
-			<!-- _widget/tagcloud -->
-
-	<div class="widget">
-		<h4>標籤雲</h4>
-		<ul class="tag_box inline list-unstyled">
-		
-			<li><a href="/tags/注音/">注音<span>1</span></a></li>
-		
-			<li><a href="/tags/release/">release<span>1</span></a></li>
-		
-			<li><a href="/tags/weasel/">weasel<span>1</span></a></li>
-		
-			<li><a href="/tags/plum/">plum<span>1</span></a></li>
-		
-			<li><a href="/tags/輸入法/">輸入法<span>1</span></a></li>
-		
-			<li><a href="/tags/音樂/">音樂<span>2</span></a></li>
-		
-			<li><a href="/tags/Rime/">Rime<span>1</span></a></li>
-		
-			<li><a href="/tags/QnA/">QnA<span>1</span></a></li>
-		
-		
-		</ul>
-	</div>
-
-
-		
-			<!-- _widget/recent_posts -->
-
-<div class="widget">
-  <h4>新作</h4>
-  <ul class="entry list-unstyled">
     
-      <li>
-        <a href="/blog/2026/01/27/dongfengpo-zhuyinyuan/" ><i class="fa fa-file-o"></i>東風破·注音緣：記一段 Rime 輸入法的神級往事</a>
-      </li>
-    
-      <li>
-        <a href="/blog/2025/03/01/theme-music/" ><i class="fa fa-file-o"></i>Rime 主題曲</a>
-      </li>
-    
-      <li>
-        <a href="/blog/2018/04/22/rime-configuration-manager/" ><i class="fa fa-file-o"></i>新譜的 Rime 輸入法配置管理器</a>
-      </li>
-    
-      <li>
-        <a href="/blog/2018/04/22/weasel-release-0-11/" ><i class="fa fa-file-o"></i>「小狼毫」輸入法更新，發佈 0.11 版</a>
-      </li>
-    
-      <li>
-        <a href="/blog/2016/04/14/qna-in-mtvu/" ><i class="fa fa-file-o"></i>山景答問</a>
-      </li>
-    
-  </ul>
-</div>
+    <div class="col-md-3">
+    <div id="sidebar">
 
+        
+        <div class="form-group has-success has-feedback">
+            <form action="//google.com/search" method="get" accept-charset="utf-8" target="_blank">
+                <input type="search" name="q" results="0" placeholder="檢索" class="form-control">
+                
+                <input type="hidden" name="q" value="site:rime.im">
+            </form>
+        </div>
 
-		
-			<!-- _widget/links -->
+        
+        
+        
+        
+        <div class="widget">
+            <h4>標籤雲</h4>
+            <ul class="tag_box inline list-unstyled">
+                
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;QnA&#x2F;">
+                        QnA<span>1</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;fool&#x2F;">
+                        fool<span>1</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;plum&#x2F;">
+                        plum<span>1</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;weasel&#x2F;">
+                        weasel<span>1</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;作品&#x2F;">
+                        作品<span>3</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;命名&#x2F;">
+                        命名<span>1</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;小狼毫&#x2F;">
+                        小狼毫<span>1</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;工具&#x2F;">
+                        工具<span>2</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;愚者&#x2F;">
+                        愚者<span>1</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;打字&#x2F;">
+                        打字<span>1</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;拼寫運算&#x2F;">
+                        拼寫運算<span>1</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;拼音&#x2F;">
+                        拼音<span>1</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;方案&#x2F;">
+                        方案<span>2</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;棄坑&#x2F;">
+                        棄坑<span>1</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;注音&#x2F;">
+                        注音<span>1</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;演示&#x2F;">
+                        演示<span>1</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;發佈&#x2F;">
+                        發佈<span>1</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;緣驚愧&#x2F;">
+                        緣驚愧<span>1</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;視頻&#x2F;">
+                        視頻<span>2</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;調試&#x2F;">
+                        調試<span>1</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;開發日誌&#x2F;">
+                        開發日誌<span>1</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;音樂&#x2F;">
+                        音樂<span>2</span>
+                    </a>
+                </li>
+                
 
-<div class="widget">
-	<h4>鏈接</h4>
-	<ul class="blogroll list-unstyled">
-	
-		<li><i class="fa fa-github"></i><a href="https://github.com/rime/home/wiki" title="" target="_blank"]);">Rime Wiki</a></li>
-	
-		<li><i class="fa fa-github"></i><a href="https://github.com/rime" title="Rime 開發者社區" target="_blank"]);">Rime @ Github</a></li>
-	
-		<li><i class="fa fa-github"></i><a href="https://github.com/lotem" title="Rime 初創開發者佛振" target="_blank"]);">佛振 @ Github</a></li>
-	
-	</ul>
-</div>
+                
+                
+            </ul>
+        </div>
+        
 
+        
+        
+        
+        
+        <div class="widget">
+            <h4>新作</h4>
+            <ul class="entry list-unstyled">
+                
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;dongfengpo-zhuyinyuan&#x2F;" title="東風破·注音緣：記一段 Rime 輸入法的神級往事">
+                        <i class="fa fa-file-o"></i> 東風破·注音緣：記一段 Rime 輸入法的神級往事
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;theme-music&#x2F;" title="Rime 主題曲">
+                        <i class="fa fa-file-o"></i> Rime 主題曲
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;rime-configuration-manager&#x2F;" title="新譜的 Rime 輸入法配置管理器">
+                        <i class="fa fa-file-o"></i> 新譜的 Rime 輸入法配置管理器
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;weasel-release-0-11&#x2F;" title="「小狼毫」輸入法更新，發佈 0.11 版">
+                        <i class="fa fa-file-o"></i> 「小狼毫」輸入法更新，發佈 0.11 版
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;qna-in-mtvu&#x2F;" title="山景答問">
+                        <i class="fa fa-file-o"></i> 山景答問
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        
 
-		
-	</div> <!-- sidebar -->
-</div> <!-- col-md-3 -->
-
-	
-
-</div> <!-- row-fluid -->
-
+        
+        
+        
+        
+        <div class="widget">
+            <h4>鏈接</h4>
+            <ul class="blogroll list-unstyled">
+                
+                <li>
+                    <i class="fa fa-github"></i>
+                    <a href="https:&#x2F;&#x2F;github.com&#x2F;rime&#x2F;home&#x2F;wiki" title="" target="_blank">
+                        Rime Wiki
+                    </a>
+                </li>
+                
+                <li>
+                    <i class="fa fa-github"></i>
+                    <a href="https:&#x2F;&#x2F;github.com&#x2F;rime" title="Rime 開發者社區" target="_blank">
+                        Rime @ Github
+                    </a>
+                </li>
+                
+                <li>
+                    <i class="fa fa-github"></i>
+                    <a href="https:&#x2F;&#x2F;github.com&#x2F;lotem" title="Rime 初創開發者佛振" target="_blank">
+                        佛振 @ Github
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        
 
     </div>
-    
-    <!-- _partial/footer -->
-<p>
-  &copy; 2026 by 佛振@式恕堂
-  &nbsp;
-  <span class="text-muted">Powered by:
-    <a class="text-muted" href="http://hexo.io/" target="_blank">Hexo</a>,
-    <a class="text-muted" href="http://github.com/yieme/hexo-theme-freewill/" target="_blank">Freewill</a>
-    &amp;
-    <a class="text-muted" href="http://bootswatch.com/" target="_blank">Bootswatch <small>v3.2</small></a>
-  </span>
-</p>
- </footer>
-  </div> <!-- container-narrow -->
-  <!-- _partial/after_footer -->
-<a id="gotop" href="#">
-  <span>▲</span>
-</a>
+</div>
 
-<script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
+</div>
+
+            </div>
+        </div>
+        
+
+        
+<div class="container">
+    <footer>
+        <p>
+            &copy; 2026 佛振@式恕堂
+            &nbsp;
+            <span class="text-muted">Powered by:
+                <a class="text-muted" href="https://www.getzola.org/" target="_blank">Zola</a>,
+                <a class="text-muted" href="http://github.com/yieme/hexo-theme-freewill/" target="_blank">Freewill</a>
+                &amp;
+                <a class="text-muted" href="http://bootswatch.com/" target="_blank">Bootswatch</a>
+            </span>
+        </p>
+    </footer>
+</div>
+
+        <a id="gotop" href="#" style="display:none;"><span>▲</span></a>
+
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/main.js"></script>
 
-
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-(function($){
-  $('.fancybox').fancybox();
-})(jQuery);
-</script>
-
-
-</body>
+    </body>
 </html>

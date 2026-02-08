@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+    <title>RIME | 中州韻輸入法引擎 - 方案</title>
+    <subtitle>Le blog de la Rime</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://rime.im/tags/方案/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://rime.im"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-01-27T22:00:00+00:00</updated>
+    <id>https://rime.im/tags/方案/atom.xml</id>
+    <entry xml:lang="zh">
+        <title>東風破·注音緣：記一段 Rime 輸入法的神級往事</title>
+        <published>2026-01-27T22:00:00+00:00</published>
+        <updated>2026-01-27T22:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              佛振@式恕堂
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://rime.im/blog/dongfengpo-zhuyinyuan/"/>
+        <id>https://rime.im/blog/dongfengpo-zhuyinyuan/</id>
+        
+        <summary type="html">&lt;p&gt;十餘年前，BYVoid 在部落格中記述了與 Rime 作者佛振的一面之緣，震驚於其「手寫注音」的神技。&lt;br &#x2F;&gt;
+這份「緣、驚、愧」成了 Rime 發展史上一段佳話。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;創作背景：緣·驚·愧&quot;&gt;創作背景：緣·驚·愧&lt;&#x2F;h2&gt;
+&lt;p&gt;典出 BYVoid 名篇《&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;byvoid.com&#x2F;blog&#x2F;recommend-rime&#x2F;&quot;&gt;推薦一個神級輸入法——Rime&lt;&#x2F;a&gt;》。&lt;&#x2F;p&gt;
+&lt;p&gt;隨著最近 Rime 新版&lt;strong&gt;注音輸入方案&lt;&#x2F;strong&gt;開發完成，我不禁回想到那個開源輸入法初創的純粹年代。&lt;&#x2F;p&gt;
+&lt;p&gt;我用鍵盤彈奏這曲〈&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1Evk2BPE6B&#x2F;&quot;&gt;東風破&lt;&#x2F;a&gt;〉，原是爲&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;zh.wikipedia.org&#x2F;wiki&#x2F;%E8%98%AD%E8%8C%82&quot;&gt;蘭茂&lt;&#x2F;a&gt;《&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;zh.wikipedia.org&#x2F;wiki&#x2F;%E9%9F%BB%E7%95%A7%E6%98%93%E9%80%9A#%E8%81%B2%E6%AF%8D&quot;&gt;早梅詩&lt;&#x2F;a&gt;》所寫。&lt;br &#x2F;&gt;
+如今，我以 BYVoid 的第一人稱視角重新填詞，重現當年那場大會上的驚鴻一瞥。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;作品展示&quot;&gt;作品展示&lt;&#x2F;h3&gt;
+
+    
+    
+    
+
+
+&lt;figure&gt;
+    
+    &lt;p&gt;
+        &lt;figcaption&gt;〈東風破·注音緣〉音軌試聽&lt;&#x2F;figcaption&gt;
+    &lt;&#x2F;p&gt;
+    
+    &lt;p&gt;
+        &lt;audio controls src=&quot;https:&amp;#x2F;&amp;#x2F;rime.im&amp;#x2F;blog&amp;#x2F;dongfengpo-zhuyinyuan&amp;#x2F;東風破.mp3&quot; preload=&quot;metadata&quot;&gt;
+            您的瀏覽器不支持 audio 元素。
+        &lt;&#x2F;audio&gt;
+    &lt;&#x2F;p&gt;
+&lt;&#x2F;figure&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="zh">
+        <title>中秋與朙月拼音</title>
+        <published>2013-09-19T21:25:33+00:00</published>
+        <updated>2013-09-19T21:25:33+00:00</updated>
+        
+        <author>
+          <name>
+            
+              佛振@式恕堂
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://rime.im/blog/luna-pinyin/"/>
+        <id>https://rime.im/blog/luna-pinyin/</id>
+        
+        <summary type="html">&lt;p&gt;中秋之夜，可想在部落格上寫二句。&lt;&#x2F;p&gt;
+&lt;p&gt;於是 &lt;code&gt;vim ~&#x2F;Library&#x2F;Rime&#x2F;squirrel.custom.yaml&lt;&#x2F;code&gt; 寫下&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #CDD6F4; background-color: #1E1E2E;&quot;&gt;&lt;code data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #89B4FA;&quot;&gt;patch&lt;&#x2F;span&gt;&lt;span style=&quot;color: #94E2D5;&quot;&gt;:&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #89B4FA;&quot;&gt;  style&#x2F;color_scheme&lt;&#x2F;span&gt;&lt;span style=&quot;color: #94E2D5;&quot;&gt;:&lt;&#x2F;span&gt;&lt;span style=&quot;color: #A6E3A1;&quot;&gt; luna&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;部署後，按 &lt;code&gt;Control+~&lt;&#x2F;code&gt; 切換到【朙月拼音】。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;luna-pinyin&#x2F;mingyue-pinyin-2013-09-19.png&quot; alt=&quot;此刻正在寫字的朙月拼音&quot; &#x2F;&gt;&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+</feed>

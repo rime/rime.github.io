@@ -146,7 +146,7 @@ body.fool-mode {
    ========================================================================== */
 
 .pagination {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .pagination a{
@@ -253,7 +253,7 @@ table tr th :last-child, table tr td :last-child { margin-bottom: 0; }
   overflow:hidden;
 }
 .tag_box li {
-  line-height:28px;
+  line-height: 33px;
 }
 .tag_box li i {
   opacity:0.9;
@@ -298,12 +298,12 @@ table tr th :last-child, table tr td :last-child { margin-bottom: 0; }
   content: '\f02d  ';
 }
 
-.archive-title-tag:before {
+.archive-title-tags:before {
   font-family: FontAwesome;
   content: '\f02c  ';
 }
 
-.archive-title-category:before {
+.archive-title-categories:before {
   font-family: FontAwesome;
   content: '\f07b  ';
 }

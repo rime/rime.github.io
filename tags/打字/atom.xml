@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+    <title>RIME | 中州韻輸入法引擎 - 打字</title>
+    <subtitle>Le blog de la Rime</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://rime.im/tags/打字/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://rime.im"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2013-11-24T11:25:24+00:00</updated>
+    <id>https://rime.im/tags/打字/atom.xml</id>
+    <entry xml:lang="zh">
+        <title>Rime 輸入法初創時期打字演示</title>
+        <published>2013-11-24T11:25:24+00:00</published>
+        <updated>2013-11-24T11:25:24+00:00</updated>
+        
+        <author>
+          <name>
+            
+              佛振@式恕堂
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://rime.im/blog/2013-screencasts/"/>
+        <id>https://rime.im/blog/2013-screencasts/</id>
+        
+        <summary type="html">&lt;p&gt;最近錄製了一些&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;rime.im&quot;&gt;Rime 輸入法&lt;&#x2F;a&gt;的打字視頻：&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;2013-screencasts&#x2F;#rime-con&quot;&gt;重度輸入法控&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;2013-screencasts&#x2F;#rime-middle-chinese&quot;&gt;中古漢語拼音輸入「鼠鬚管」&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;2013-screencasts&#x2F;#rime-jyutping-gongsaan&quot;&gt;粵拼輸入　馬德鐘《江山》&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;2013-screencasts&#x2F;#rime-chord-typing-yanhuayileng&quot;&gt;注音並擊輸入　周杰倫《煙花易冷》&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;2013-screencasts&#x2F;#rime-terra-pinyin-yunqushutu&quot;&gt;地球拼音輸入　顧念之《運去殊途》&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;2013-screencasts&#x2F;#rime-combo-pinyin-jingzhongchuanqi&quot;&gt;宮保拼音並擊輸入《精忠傳奇》&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;2013-screencasts&#x2F;#xinhuyuyoufeng&quot;&gt;心湖雨又風&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;2013-screencasts&#x2F;#cangjie-zhuanshi-fu&quot;&gt;倉頡轉世賦&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;2013-screencasts&#x2F;#zailu-yanhuayileng&quot;&gt;越明年，再錄《煙花易冷》&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;菜鳥俺用了這幾樣工具完成以上視頻的製作：&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;QuickTime Player 用於 OS X 上的屏幕錄像、錄音，以及簡單的視頻剪輯&lt;&#x2F;li&gt;
+&lt;li&gt;Open Broadcaster Software 用於 Windows 上的屏幕錄像、錄音&lt;&#x2F;li&gt;
+&lt;li&gt;GoldWave 用於編輯音頻、混音&lt;&#x2F;li&gt;
+&lt;li&gt;VirtualDub 用於編輯視頻、轉碼&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;哈，純粹地用於學習和研究輸入法。音樂的神碼版權問題，看官都莫要深究啦。&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+</feed>

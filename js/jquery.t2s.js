@@ -1,4 +1,4 @@
-/**
+﻿/**
  * jquery.t2s.js
  *
  * A Traditional Chinese to Simplified Chinese conversion library based on jquery-s2t and OpenCC data.

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+    <title>RIME | 中州韻輸入法引擎 - 音樂</title>
+    <subtitle>Le blog de la Rime</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://rime.im/tags/音樂/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://rime.im"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-01-27T22:00:00+00:00</updated>
+    <id>https://rime.im/tags/音樂/atom.xml</id>
+    <entry xml:lang="zh">
+        <title>東風破·注音緣：記一段 Rime 輸入法的神級往事</title>
+        <published>2026-01-27T22:00:00+00:00</published>
+        <updated>2026-01-27T22:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              佛振@式恕堂
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://rime.im/blog/dongfengpo-zhuyinyuan/"/>
+        <id>https://rime.im/blog/dongfengpo-zhuyinyuan/</id>
+        
+        <summary type="html">&lt;p&gt;十餘年前，BYVoid 在部落格中記述了與 Rime 作者佛振的一面之緣，震驚於其「手寫注音」的神技。&lt;br &#x2F;&gt;
+這份「緣、驚、愧」成了 Rime 發展史上一段佳話。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;創作背景：緣·驚·愧&quot;&gt;創作背景：緣·驚·愧&lt;&#x2F;h2&gt;
+&lt;p&gt;典出 BYVoid 名篇《&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;byvoid.com&#x2F;blog&#x2F;recommend-rime&#x2F;&quot;&gt;推薦一個神級輸入法——Rime&lt;&#x2F;a&gt;》。&lt;&#x2F;p&gt;
+&lt;p&gt;隨著最近 Rime 新版&lt;strong&gt;注音輸入方案&lt;&#x2F;strong&gt;開發完成，我不禁回想到那個開源輸入法初創的純粹年代。&lt;&#x2F;p&gt;
+&lt;p&gt;我用鍵盤彈奏這曲〈&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1Evk2BPE6B&#x2F;&quot;&gt;東風破&lt;&#x2F;a&gt;〉，原是爲&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;zh.wikipedia.org&#x2F;wiki&#x2F;%E8%98%AD%E8%8C%82&quot;&gt;蘭茂&lt;&#x2F;a&gt;《&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;zh.wikipedia.org&#x2F;wiki&#x2F;%E9%9F%BB%E7%95%A7%E6%98%93%E9%80%9A#%E8%81%B2%E6%AF%8D&quot;&gt;早梅詩&lt;&#x2F;a&gt;》所寫。&lt;br &#x2F;&gt;
+如今，我以 BYVoid 的第一人稱視角重新填詞，重現當年那場大會上的驚鴻一瞥。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;作品展示&quot;&gt;作品展示&lt;&#x2F;h3&gt;
+
+    
+    
+    
+
+
+&lt;figure&gt;
+    
+    &lt;p&gt;
+        &lt;figcaption&gt;〈東風破·注音緣〉音軌試聽&lt;&#x2F;figcaption&gt;
+    &lt;&#x2F;p&gt;
+    
+    &lt;p&gt;
+        &lt;audio controls src=&quot;https:&amp;#x2F;&amp;#x2F;rime.im&amp;#x2F;blog&amp;#x2F;dongfengpo-zhuyinyuan&amp;#x2F;東風破.mp3&quot; preload=&quot;metadata&quot;&gt;
+            您的瀏覽器不支持 audio 元素。
+        &lt;&#x2F;audio&gt;
+    &lt;&#x2F;p&gt;
+&lt;&#x2F;figure&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="zh">
+        <title>Rime 主題曲</title>
+        <published>2025-03-01T00:00:00+00:00</published>
+        <updated>2025-03-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              佛振@式恕堂
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://rime.im/blog/theme-music/"/>
+        <id>https://rime.im/blog/theme-music/</id>
+        
+        <summary type="html">&lt;p&gt;Rime 三部曲——中州韻、小狼毫、鼠鬚管。&lt;&#x2F;p&gt;
+&lt;p&gt;某有幸發起了 &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;rime.im&quot;&gt;Rime 輸入法&lt;&#x2F;a&gt; 這款開源軟件，十幾年來備受用家關愛；&lt;br &#x2F;&gt;
+衆多編程高手和語文專家積極參與開發維護，方能持續更新、代碼不鏽。&lt;&#x2F;p&gt;
+&lt;p&gt;甲辰年末，某決計爲 Rime 輸入法題寫一首主題曲，&lt;br &#x2F;&gt;
+紀念這一來之不易的成就，勉勵輸入法開發者再譜新篇。&lt;&#x2F;p&gt;
+
+    
+    
+    
+
+
+&lt;figure&gt;
+    
+    &lt;p&gt;
+        &lt;figcaption&gt;中州韻輸入法主題曲&lt;&#x2F;figcaption&gt;
+    &lt;&#x2F;p&gt;
+    
+    &lt;p&gt;
+        &lt;audio controls src=&quot;https:&amp;#x2F;&amp;#x2F;rime.im&amp;#x2F;blog&amp;#x2F;theme-music&amp;#x2F;RIME_主題曲.mp3&quot; preload=&quot;metadata&quot;&gt;
+            您的瀏覽器不支持 audio 元素。
+        &lt;&#x2F;audio&gt;
+    &lt;&#x2F;p&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;若本站播放不流暢，請移步 &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.bilibili.com&#x2F;audio&#x2F;am33746732&quot;&gt;B 站備份&lt;&#x2F;a&gt;。&lt;&#x2F;p&gt;
+&lt;p&gt;曲調早有構思，無奈某是門外漢，全憑直覺在打譜軟件中點選，勉強拼湊成曲，但願拋磚引玉。&lt;br &#x2F;&gt;
+將曲譜上傳 &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;lotem&#x2F;rime-theme-music&quot;&gt;開源網站&lt;&#x2F;a&gt;，以期行家裏手指點，修改潤色些許，哪敢奢求演繹續寫？&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+</feed>

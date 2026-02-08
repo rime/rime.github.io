@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+    <title>RIME | 中州韻輸入法引擎 - weasel</title>
+    <subtitle>Le blog de la Rime</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://rime.im/tags/weasel/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://rime.im"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2018-04-22T22:28:11+00:00</updated>
+    <id>https://rime.im/tags/weasel/atom.xml</id>
+    <entry xml:lang="zh">
+        <title>「小狼毫」輸入法更新，發佈 0.11 版</title>
+        <published>2018-04-22T22:28:11+00:00</published>
+        <updated>2018-04-22T22:28:11+00:00</updated>
+        
+        <author>
+          <name>
+            
+              佛振@式恕堂
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://rime.im/blog/weasel-release-0-11/"/>
+        <id>https://rime.im/blog/weasel-release-0-11/</id>
+        
+        <content type="html" xml:base="https://rime.im/blog/weasel-release-0-11/">&lt;p&gt;〔首發於 &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.v2ex.com&#x2F;t&#x2F;445523&quot;&gt;V2EX&lt;&#x2F;a&gt;〕&lt;&#x2F;p&gt;
+&lt;p&gt;感謝 &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Prcuvu&quot;&gt;@Prcuvu&lt;&#x2F;a&gt; 和 &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nameoverflow&quot;&gt;@nameoverflow&lt;&#x2F;a&gt; 兩位開發者的給力大修，以及 &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zhtw2013&quot;&gt;道滿&lt;&#x2F;a&gt;、&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;lotem&quot;&gt;佛振&lt;&#x2F;a&gt;, &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;osfans&quot;&gt;@osfans&lt;&#x2F;a&gt; 等新老通字的配合，&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;rime.im&#x2F;download&#x2F;#windows&quot;&gt;小狼毫&lt;&#x2F;a&gt; 輸入法現已支持 Windows 8 ~ Windows 10 的「現代介面」，並添加了語言欄狀態圖標，完成多項兼容性改進，集成了 &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rime&#x2F;plum&quot;&gt;Rime 配置管理器&lt;&#x2F;a&gt;，還完善了工程配置、自動構建流程等開源協作的關鍵設施。&lt;&#x2F;p&gt;
+&lt;p&gt;雖然這軟件仍有諸多不足，可期待的是漸將朽壞的代碼重煥生機，開源社區的努力推動項目繼續演進，我等愛用者不由精神爲之一振。&lt;&#x2F;p&gt;
+&lt;p&gt;某身爲與「小狼毫」有不解之緣的初創者、Rime 執鍵人兼資深玩家，難掩激動之情，連忙奔走相告。&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
