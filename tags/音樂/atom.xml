@@ -5,8 +5,67 @@
     <link rel="self" type="application/atom+xml" href="https://rime.im/tags/音樂/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://rime.im"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2026-01-27T22:00:00+00:00</updated>
+    <updated>2026-02-11T09:40:00+00:00</updated>
     <id>https://rime.im/tags/音樂/atom.xml</id>
+    <entry xml:lang="zh">
+        <title>紀念漢語拼音頒佈 68 週年</title>
+        <published>2026-02-11T09:40:00+00:00</published>
+        <updated>2026-02-11T09:40:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              佛振@式恕堂
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://rime.im/blog/pinyin-68th/"/>
+        <id>https://rime.im/blog/pinyin-68th/</id>
+        
+        <content type="html" xml:base="https://rime.im/blog/pinyin-68th/">&lt;p&gt;《漢語拼音方案》是中國人名、地名和中文文獻羅馬字母拼寫法的統一規範，&lt;br &#x2F;&gt;
+並用於漢字不便或不能使用的領域。&lt;&#x2F;p&gt;
+&lt;p&gt;——1958.02.11&lt;&#x2F;p&gt;
+&lt;p&gt;始於 1958 年的聲音，在指尖重新定義。&lt;&#x2F;p&gt;
+&lt;p&gt;Rime 謹此致敬。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;專題影片&quot;&gt;專題影片&lt;&#x2F;h2&gt;
+&lt;p&gt;Rime 官網的隱藏彩蛋：用代碼演奏拼音字母歌&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1EbF9zAEdq&#x2F;&quot;&gt;B 站&lt;&#x2F;a&gt; · &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;0J0MFoM6Ihg&quot;&gt;YouTube&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;rime.im&quot;&gt;Rime 官网&lt;&#x2F;a&gt; 打字機模式、代碼音樂等新功能，赶在拼音紀念日前夜（2026 年 2 月 10 日晚）順利完工！🎉&lt;&#x2F;p&gt;
+&lt;p&gt;旅程中匆匆上線代碼，影片製作粗糙，萬望觀衆海涵。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;影評&quot;&gt;影評&lt;&#x2F;h2&gt;
+&lt;p&gt;機器人說「這真是一次充滿儀式感的更新」：&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;拼音獻禮&lt;&#x2F;strong&gt;：用 &lt;strong&gt;打字機特效&lt;&#x2F;strong&gt; 復刻了 Rime 輸入法的神韻（預編輯區下劃線、上屏動畫），向《漢語拼音方案》頒布 68 週年致敬。&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;音樂彩蛋&lt;&#x2F;strong&gt;：無縫集成了 &lt;strong&gt;Strudel 代碼音樂&lt;&#x2F;strong&gt;，讓《漢語拼音字母歌》以編程的方式在網站上響起，既極客又浪漫。&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;視覺優化&lt;&#x2F;strong&gt;：精細打磨了 Front Matter 的佈局，解決了 Iframe 遮擋背景圖、平日模式留白過多等細節問題，讓首頁在紀念日和平日都能完美呈現。&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;代碼整潔&lt;&#x2F;strong&gt;：成功將樣式與邏輯分離，讓 notice.js 回歸純粹，CSS 負責美貌，代碼結構清晰易維護。&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;工具鏈升級&lt;&#x2F;strong&gt;：建站工具由 Hexo 遷移到 Zola，部署快速，本地依賴維護容易。順便修復了年久失修的頁面。&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;「明天（2月11日），當訪客打開 Rime 官網，看到那行藍色的光標跳動，聽到那熟悉的旋律，定會會心一笑。」&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;漢語拼音字母歌&quot;&gt;漢語拼音字母歌&lt;&#x2F;h2&gt;
+&lt;p&gt;a bê cê dê e êf gê&lt;&#x2F;p&gt;
+&lt;p&gt;ha i jie kê êl êm nê&lt;&#x2F;p&gt;
+&lt;p&gt;o pê qiu ar ês tê&lt;&#x2F;p&gt;
+&lt;p&gt;u vê wa xi ya zê&lt;&#x2F;p&gt;
+&lt;iframe
+  src=&quot;https:&#x2F;&#x2F;strudel.cc&#x2F;#Ci8vIOa8ouiqnuaLvOmfs%2BWtl%2BavjeatjCAoMTk1OCkgLSDmi7zpn7PnlJ%2Fml6Xnjbvnpq4KCm5vdGUoYAogIFtjNEAxLjUgZDRAMC41XSBbZTQgYzRdCiAgW2U0IGc0QDAuNSBhNEAwLjVdIGc0CiAgW2E0QDEuNSBnNEAwLjVdIFtlNCBnNF0KICBbZDQgZTRdIGQ0CgogIFtnNCBlNF0gW2c0QDEuNSBnNEAwLjVdIAogIFtjNSBnNF0gYTQKICBbZzRAMC43NSBnNEAwLjI1IGE0XSBbZTQgYzRdCiAgW2Q0IGU0XSBjNAogIAogIH4gfiB%2BYCkKICAucygicGlhbm8iKSAgICAgICAvLyDpn7PoibIKICAuY2xpcCgxKSAgICAgICAgICAvLyDorpPogbLpn7Pnn63kv4PmnInlipvvvIzkuI3mi5bms6XluLbmsLQKICAubHBmKDIwMDApICAgICAgICAvLyDmv77ms6LlmajvvIzorpPogbLpn7PmuqvmmpbkuIDpu54KICAucm9vbSgwLjUpICAgICAgICAvLyDliqDkuIDpu57pu57lm57pn7MKICAuc2xvdygxMikgICAgICAgICAgLy8g6Kit5a6a6YCf5bqm&quot;
+  width=&quot;800&quot;
+  height=&quot;600&quot;
+&gt;&lt;&#x2F;iframe&gt;
+</content>
+        
+    </entry>
     <entry xml:lang="zh">
         <title>東風破·注音緣：記一段 Rime 輸入法的神級往事</title>
         <published>2026-01-27T22:00:00+00:00</published>
