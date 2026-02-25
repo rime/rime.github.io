@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    
+    <title>
+        
+        
+
+        
+        
+        爲極簡分體鍵盤寫了個「動態適配指法」的粵拼並擊輸入法 |
+        
+
+        
+        RIME | 中州韻輸入法引擎
+    </title>
+
+    
+    <meta name="author" content="佛振@式恕堂">
+
+    
+    
+    <meta name="description" content="Le blog de la Rime">
+    
+
+    
+    
+    <meta name="keywords" content="客製化鍵盤, 人體工學鍵盤, 方案, 宮保粵拼, 並擊輸入, 拼寫運算, 前端開發, Rust, 開發實錄, 視頻">
+    
+
+    
+    
+    <meta property="og:title" content="爲極簡分體鍵盤寫了個「動態適配指法」的粵拼並擊輸入法"/>
+    
+    <meta property="og:site_name" content="RIME | 中州韻輸入法引擎"/>
+
+    
+    
+
+    
+    
+    <link rel="alternate" href="/atom.xml" title="RIME | 中州韻輸入法引擎" type="application/atom+xml">
+    
+
+    <link href="/favicon.png" rel="icon">
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.flatly.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/darktheme.css">
+
+    
+    <script src="/js/jquery-1.12.4.min.js"></script>
+    <script src="/js/jquery.cookie.js"></script>
+    <script src="/js/jquery.t2s.js"></script>
+    <script src="/js/modernizr.js"></script>
+</head>
+
+    <body>
+        
+
+<nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">切換導航菜單</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https:&#x2F;&#x2F;rime.im">RIME | 中州韻輸入法引擎</a>
+      <button id="btn-simplify" type="button" class="navbar-convert">簡</button>
+      <div class="collapse navbar-collapse nav-menu">
+          <ul class="nav navbar-nav">
+              
+              <li>
+                  <a href="&#x2F;download" title="">
+                      <i class="fa fa-arrow-down"></i>下載
+                  </a>
+              </li>
+              
+              <li>
+                  <a href="&#x2F;recipes" title="">
+                      <i class="fa fa-flask"></i>配方
+                  </a>
+              </li>
+              
+              <li>
+                  <a href="&#x2F;docs" title="">
+                      <i class="fa fa-question-circle"></i>幫助
+                  </a>
+              </li>
+              
+              <li>
+                  <a href="&#x2F;code" title="">
+                      <i class="fa fa-github"></i>源碼
+                  </a>
+              </li>
+              
+              <li>
+                  <a href="&#x2F;donate" title="">
+                      <i class="fa fa-heart"></i>捐贈
+                  </a>
+              </li>
+              
+              <li>
+                  <a href="&#x2F;discuss" title="">
+                      <i class="fa fa-comments"></i>討論
+                  </a>
+              </li>
+              
+              <li>
+                  <a href="&#x2F;blog" title="Rime::Blog">
+                      <i class="fa fa-pencil-square-o"></i>網誌
+                  </a>
+              </li>
+              
+              <li>
+                  <a href="&#x2F;online" title="">
+                      <i class="fa fa-cloud"></i>體驗
+                  </a>
+              </li>
+              
+          </ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+
+        
+        
+        <div class="container">
+            <div class="content">
+                
+<div class="panel-heading">
+    
+    <div class="page-header">
+        <h1>爲極簡分體鍵盤寫了個「動態適配指法」的粵拼並擊輸入法</h1>
+    </div>
+</div>
+
+<div class="row post">
+    
+    <div class="col-md-9">
+
+        
+        
+
+        
+        <div class="mypage">
+            <p><img src="https://rime.im/blog/combo-jyutping-sweep-layout/%E6%8C%87%E5%B0%96%E5%87%BA%E9%9E%98.png" alt="" /></p>
+<p>大家好，今天來分享一個最近折騰的開源業餘專案：宮保粵拼 × Ferris Sweep 軟硬體協同優化。</p>
+<p>如果你曾經嘗試過「並擊（Chording）」輸入法，你一定會發現一個痛點：<br />
+標準鍵盤的斜向錯列（Row-staggered）簡直是並擊的噩夢。<br />
+當你需要同時按下跨排的三個鍵時，手指的扭曲與肌肉牽扯不僅容易疲勞，還會嚴重拖慢效率。</p>
+<p>爲了解決這個物理極限，我做了兩件事：</p>
+<p>一、底層引擎（R²ime 微觀引擎）：</p>
+<p>基於 Rime 靈活的拼寫運算，開發了「宮保粵拼」。<br />
+它允許指法的泛化（例如不綁死絕對鍵位，而是基於相對位置並擊出 ⟨-ng⟩、⟨-m⟩ 等複雜韻尾）。</p>
+<p>二、視覺導航與動態優化（Typewriter）：</p>
+<p>寫了一個 Web 端的可視化模擬器。<br />
+它不僅用 CSS 完美復刻了 Ferris Sweep 的激進縱向錯列（Columnar Stagger）與拇指旋轉角度，<br />
+更核心的是，它會根據你當前的物理佈局，動態計算並提示最符合人體工學的「最佳並擊和弦」。</p>
+<p>舉個例子：</p>
+<span id="continue-reading"></span>
+<p>粵拼 ⟨ung⟩ 的並擊和弦原本是如下形狀。</p>
+<p><img src="https://rime.im/blog/combo-jyutping-sweep-layout/%E5%88%86%E9%9F%BB%E6%92%AE%E8%A6%81%E8%81%B2%E7%B4%90%E9%9F%BB%E9%83%A8.png" alt="" /></p>
+<p>做這個手勢，要右手食指夠位於上排的 <code>孤</code> 鍵（表示元音 ⟨u⟩），中指、無名指並擊中排的 <code>威</code> <code>德</code> 兩鍵（表示韻尾 ⟨-ng⟩），十分費力。</p>
+<p>在標準鍵盤上，演算法會將指法優化調整爲 <code>u-u-k</code>；</p>
+<p><img src="https://rime.im/blog/combo-jyutping-sweep-layout/%E6%A8%99%E6%BA%96%E9%8D%B5%E7%9B%A4-%E5%AE%AE%E4%BF%9D%E7%B2%B5%E6%8B%BC%E9%9F%BB%E6%AF%8D-ung.png" alt="" /></p>
+<p>切換到 Sweep 佈局，這項調整導致中指（<code>-u</code> 鍵）與無名指（<code>-k</code> 鍵）跨度極大，成爲一項「負優化」；</p>
+<p><img src="https://rime.im/blog/combo-jyutping-sweep-layout/Sweep-%E5%AE%AE%E4%BF%9D%E7%B2%B5%E6%8B%BC%E9%9F%BB%E6%AF%8D-ung-%E8%B2%A0%E5%84%AA%E5%8C%96.png" alt="" /></p>
+<p>因此算法根據按鍵的空間排列和並擊手勢的便利性，將提示優化爲直線型的和弦 <code>u-i-k</code>。</p>
+<p><img src="https://rime.im/blog/combo-jyutping-sweep-layout/Sweep-%E5%AE%AE%E4%BF%9D%E7%B2%B5%E6%8B%BC%E9%9F%BB%E6%AF%8D-ung.png" alt="" /></p>
+<p>再舉一例，輸入粵拼 ⟨in⟩：</p>
+<p>在標準鍵盤上，演算法會妥協提示 <code>i-u-t</code>；</p>
+<p><img src="https://rime.im/blog/combo-jyutping-sweep-layout/%E6%A8%99%E6%BA%96%E9%8D%B5%E7%9B%A4-%E5%AE%AE%E4%BF%9D%E7%B2%B5%E6%8B%BC%E9%9F%BB%E6%AF%8D-in.png" alt="" /></p>
+<p>但當你切換到 Sweep 佈局，系統會自動將提示優化爲接近完美直線的 <code>i-i-t</code>，徹底消滅手指的無效彎曲。</p>
+<p><img src="https://rime.im/blog/combo-jyutping-sweep-layout/Sweep-%E5%AE%AE%E4%BF%9D%E7%B2%B5%E6%8B%BC%E9%9F%BB%E6%AF%8D-in.png" alt="" /></p>
+<p>把冗長的粵拼音節壓縮成一次空間上的和弦，讓輸入法演算法主動去適應硬體的物理佈局。<br />
+重現世間無匹好兵器，歡迎大家來看看實測影片或親自上手體驗！</p>
+<p>📺 開發實錄與打字實測影片：
+<a rel="external" href="https://www.bilibili.com/video/BV1HGfrBaEtp/">B 站</a> | <a rel="external" href="https://youtu.be/jjzALE5EHZk">YouTube</a></p>
+<p>💻 在線打字體驗（Typewriter）：<a rel="external" href="https://rime.io/typewriter/combo_jyutping">https://rime.io/typewriter/combo_jyutping</a></p>
+<p>📦 Rime 配方倉庫：<a rel="external" href="https://github.com/lotem/rime-combo-jyutping">https://github.com/lotem/rime-combo-jyutping</a></p>
+<p>歡迎各位鍵盤玩家與 Rime 大佬交流指教！</p>
+
+        </div>
+
+        
+        <center>
+            <ul class="pagination">
+                
+                <li class="prev disabled"><a><i class="fa fa-arrow-circle-o-left"></i>後一篇</a></li>
+                
+                <li><a href="/blog"><i class="fa fa-book"></i>網誌</a></li>
+                
+                <li class="next"><a href="&#x2F;blog&#x2F;pinyin-68th&#x2F;" class="alignright next">前一篇<i class="fa fa-arrow-circle-o-right"></i></a></li>
+                
+            </ul>
+        </center>
+
+        
+        
+        <section id="comment">
+    <script src="https://giscus.app/client.js"
+            data-repo="rime/home"
+            data-repo-id="MDEwOlJlcG9zaXRvcnkzMTgwMzgxNA=="
+            data-category-id="MDE4OkRpc2N1c3Npb25DYXRlZ29yeTMyMDQxODEx"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="preferred_color_scheme"
+            data-lang="zh-CN"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async>
+    </script>
+</section>
+
+        
+    </div>
+
+    
+    <div class="col-md-3">
+
+        
+        
+        <div class="meta-widget">
+            <i class="fa fa-clock-o"></i>
+            2026-02-25
+        </div>
+        <div>
+            <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;combo-jyutping-sweep-layout&#x2F;#comment"><i class="fa fa-comments"></i> 留言</a>
+        </div>
+        
+
+        
+        
+        <div class="meta-widget">
+            <a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>
+            <ul id="tags" class="tag_box list-unstyled collapse in">
+                
+                <li>
+                    <a href="https://rime.im/tags/客製化鍵盤/">
+                        客製化鍵盤
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://rime.im/tags/人體工學鍵盤/">
+                        人體工學鍵盤
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://rime.im/tags/方案/">
+                        方案
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://rime.im/tags/宮保粵拼/">
+                        宮保粵拼
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://rime.im/tags/並擊輸入/">
+                        並擊輸入
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://rime.im/tags/拼寫運算/">
+                        拼寫運算
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://rime.im/tags/前端開發/">
+                        前端開發
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://rime.im/tags/Rust/">
+                        Rust
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://rime.im/tags/開發實錄/">
+                        開發實錄
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://rime.im/tags/視頻/">
+                        視頻
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        
+        
+
+        <hr>
+    </div>
+</div>
+
+            </div>
+        </div>
+        
+
+        
+<div class="container">
+    <footer>
+        <p>
+            &copy; 2026 佛振@式恕堂
+            &nbsp;
+            <span class="text-muted">Powered by:
+                <a class="text-muted" href="https://www.getzola.org/" target="_blank">Zola</a>,
+                <a class="text-muted" href="http://github.com/yieme/hexo-theme-freewill/" target="_blank">Freewill</a>
+                &amp;
+                <a class="text-muted" href="http://bootswatch.com/" target="_blank">Bootswatch</a>
+            </span>
+        </p>
+    </footer>
+</div>
+
+        <a id="gotop" href="#" style="display:none;"><span>▲</span></a>
+
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+
+    </body>
+</html>

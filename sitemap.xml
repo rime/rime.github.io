@@ -11,6 +11,10 @@
         <lastmod>2013-11-24T11:25:24</lastmod>
     </url>
     <url>
+        <loc>https://rime.im/blog/combo-jyutping-sweep-layout/</loc>
+        <lastmod>2026-02-25</lastmod>
+    </url>
+    <url>
         <loc>https://rime.im/blog/dongfengpo-zhuyinyuan/</loc>
         <lastmod>2026-01-27T22:00:00</lastmod>
     </url>
@@ -24,6 +28,9 @@
     </url>
     <url>
         <loc>https://rime.im/blog/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://rime.im/blog/page/2/</loc>
     </url>
     <url>
         <loc>https://rime.im/blog/pinyin-68th/</loc>
@@ -98,6 +105,9 @@
         <loc>https://rime.im/tags/QnA/</loc>
     </url>
     <url>
+        <loc>https://rime.im/tags/Rust/</loc>
+    </url>
+    <url>
         <loc>https://rime.im/tags/fool/</loc>
     </url>
     <url>
@@ -107,10 +117,25 @@
         <loc>https://rime.im/tags/weasel/</loc>
     </url>
     <url>
+        <loc>https://rime.im/tags/並擊輸入/</loc>
+    </url>
+    <url>
+        <loc>https://rime.im/tags/人體工學鍵盤/</loc>
+    </url>
+    <url>
         <loc>https://rime.im/tags/作品/</loc>
     </url>
     <url>
+        <loc>https://rime.im/tags/前端開發/</loc>
+    </url>
+    <url>
         <loc>https://rime.im/tags/命名/</loc>
+    </url>
+    <url>
+        <loc>https://rime.im/tags/客製化鍵盤/</loc>
+    </url>
+    <url>
+        <loc>https://rime.im/tags/宮保粵拼/</loc>
     </url>
     <url>
         <loc>https://rime.im/tags/小狼毫/</loc>
@@ -165,6 +190,9 @@
     </url>
     <url>
         <loc>https://rime.im/tags/調試/</loc>
+    </url>
+    <url>
+        <loc>https://rime.im/tags/開發實錄/</loc>
     </url>
     <url>
         <loc>https://rime.im/tags/開發日誌/</loc>

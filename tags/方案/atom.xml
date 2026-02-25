@@ -5,8 +5,40 @@
     <link rel="self" type="application/atom+xml" href="https://rime.im/tags/方案/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://rime.im"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2026-01-27T22:00:00+00:00</updated>
+    <updated>2026-02-25T00:00:00+00:00</updated>
     <id>https://rime.im/tags/方案/atom.xml</id>
+    <entry xml:lang="zh">
+        <title>爲極簡分體鍵盤寫了個「動態適配指法」的粵拼並擊輸入法</title>
+        <published>2026-02-25T00:00:00+00:00</published>
+        <updated>2026-02-25T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              佛振@式恕堂
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://rime.im/blog/combo-jyutping-sweep-layout/"/>
+        <id>https://rime.im/blog/combo-jyutping-sweep-layout/</id>
+        
+        <summary type="html">&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;combo-jyutping-sweep-layout&#x2F;%E6%8C%87%E5%B0%96%E5%87%BA%E9%9E%98.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;大家好，今天來分享一個最近折騰的開源業餘專案：宮保粵拼 × Ferris Sweep 軟硬體協同優化。&lt;&#x2F;p&gt;
+&lt;p&gt;如果你曾經嘗試過「並擊（Chording）」輸入法，你一定會發現一個痛點：&lt;br &#x2F;&gt;
+標準鍵盤的斜向錯列（Row-staggered）簡直是並擊的噩夢。&lt;br &#x2F;&gt;
+當你需要同時按下跨排的三個鍵時，手指的扭曲與肌肉牽扯不僅容易疲勞，還會嚴重拖慢效率。&lt;&#x2F;p&gt;
+&lt;p&gt;爲了解決這個物理極限，我做了兩件事：&lt;&#x2F;p&gt;
+&lt;p&gt;一、底層引擎（R²ime 微觀引擎）：&lt;&#x2F;p&gt;
+&lt;p&gt;基於 Rime 靈活的拼寫運算，開發了「宮保粵拼」。&lt;br &#x2F;&gt;
+它允許指法的泛化（例如不綁死絕對鍵位，而是基於相對位置並擊出 ⟨-ng⟩、⟨-m⟩ 等複雜韻尾）。&lt;&#x2F;p&gt;
+&lt;p&gt;二、視覺導航與動態優化（Typewriter）：&lt;&#x2F;p&gt;
+&lt;p&gt;寫了一個 Web 端的可視化模擬器。&lt;br &#x2F;&gt;
+它不僅用 CSS 完美復刻了 Ferris Sweep 的激進縱向錯列（Columnar Stagger）與拇指旋轉角度，&lt;br &#x2F;&gt;
+更核心的是，它會根據你當前的物理佈局，動態計算並提示最符合人體工學的「最佳並擊和弦」。&lt;&#x2F;p&gt;
+&lt;p&gt;舉個例子：&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
     <entry xml:lang="zh">
         <title>東風破·注音緣：記一段 Rime 輸入法的神級往事</title>
         <published>2026-01-27T22:00:00+00:00</published>
