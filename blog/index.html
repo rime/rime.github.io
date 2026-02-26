@@ -47,7 +47,6 @@
     <link rel="stylesheet" href="/css/bootstrap.flatly.min.css">
     <link rel="stylesheet" href="/css/font-awesome.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/highlight.css">
     <link rel="stylesheet" href="/css/darktheme.css">
 
     
@@ -145,6 +144,50 @@
         <div class="mypage">
             <div class="panel panel-default">
                 
+                
+
+                
+                <div class="panel-heading">
+                    <h3 class="xtitle">
+                        <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;combo-jyutping-code-refactor&#x2F;" >如何讓 lazy_static 裏的靜態配置擁有「動態響應」能力？——記一次輸入法引擎的架構重構</a>
+                        <span class="text-muted pull-right">
+                            <small>2026-02-26</small>
+                            <small style="padding-left:1em;">
+                                <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;combo-jyutping-code-refactor&#x2F;#comment">留言</a>
+                            </small>
+                        </span>
+                    </h3>
+                </div>
+
+                
+                <div class="panel-body">
+                    <div class="row">
+
+                        
+                        
+                        <div class="col-md-12">
+                        
+
+                            
+                            
+                            <p>大家好，前陣子我開源了一個爲 34 鍵分體鍵盤（Ferris Sweep）量身打造的粵拼並擊輸入法（宮保粵拼），並做了一個可視化的 Web 模擬器（基於 Rust + Leptos）。上一期發佈後，視覺效果不錯，但在底層架構上，我遇到了一個經典的 Rust 難題：如何讓編譯期就固定的靜態數據，根據前端的 UI 狀態進行動態切換？</p>
+<h3 id="❌_痛點與挑戰">❌ 痛點與挑戰</h3>
+<p>在 Rime 引擎的架構思維中，輸入方案（包含幾百條正則拼寫運算規則）通常是非常重的，所以我們習慣將其放在 <code>lazy_static!</code> 裏，擁有 <code>'static</code> 生命週期。</p>
+<p>但我的需求是：當用戶在前端下拉選單切換「實體鍵盤佈局」（如標準直列 -&gt; 縱向錯列）時，底層的方案定義必須動態替換對應的指法規則。如果直接把前端的 <code>AppState</code> 塞進底層，會造成嚴重的耦合；如果每次切換都重新實例化整個方案，效能開銷又太大。</p>
+<h3 id="✅_解法：依賴注入_(DI)_+_函數指針_+_Leptos_細粒度響應式追蹤">✅ 解法：依賴注入 (DI) + 函數指針 + Leptos 細粒度響應式追蹤</h3>
+<p>經過一番折騰，我找到了一條非常優雅且符合 Rust 哲學的路徑：</p>
+                            
+
+                        </div>
+
+                        
+                        
+
+                    </div>
+                    
+                    <a type="button" href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;combo-jyutping-code-refactor&#x2F;#more" class="btn btn-default more">全文</a>
+                </div>
+
                 
 
                 
@@ -583,8 +626,8 @@
                             
                             <p>中秋之夜，可想在部落格上寫二句。</p>
 <p>於是 <code>vim ~/Library/Rime/squirrel.custom.yaml</code> 寫下</p>
-<pre class="giallo" style="color: #CDD6F4; background-color: #1E1E2E;"><code data-lang="yaml"><span class="giallo-l"><span style="color: #89B4FA;">patch</span><span style="color: #94E2D5;">:</span></span>
-<span class="giallo-l"><span style="color: #89B4FA;">  style/color_scheme</span><span style="color: #94E2D5;">:</span><span style="color: #A6E3A1;"> luna</span></span></code></pre>
+<pre class="giallo" style="color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);"><code data-lang="yaml"><span class="giallo-l"><span style="color: light-dark(#22863A, #85E89D);">p</span><span style="color: light-dark(#22863A, #85E89D);">atch</span><span>:</span></span>
+<span class="giallo-l"><span style="color: light-dark(#22863A, #85E89D);">  s</span><span style="color: light-dark(#22863A, #85E89D);">tyle/color_scheme</span><span>:</span><span style="color: light-dark(#032F62, #9ECBFF);"> l</span><span style="color: light-dark(#032F62, #9ECBFF);">una</span></span></code></pre>
 <p>部署後，按 <code>Control+~</code> 切換到【朙月拼音】。</p>
 <p><img src="https://rime.im/blog/luna-pinyin/mingyue-pinyin-2013-09-19.png" alt="此刻正在寫字的朙月拼音" /></p>
                             
@@ -597,62 +640,6 @@
                     </div>
                     
                     <a type="button" href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;luna-pinyin&#x2F;#more" class="btn btn-default more">全文</a>
-                </div>
-
-                
-
-                
-                <div class="panel-heading">
-                    <h3 class="xtitle">
-                        <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;spelling-algebra-debugger&#x2F;" >拼寫運算調試器</a>
-                        <span class="text-muted pull-right">
-                            <small>2013-08-28</small>
-                            <small style="padding-left:1em;">
-                                <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;spelling-algebra-debugger&#x2F;#comment">留言</a>
-                            </small>
-                        </span>
-                    </h3>
-                </div>
-
-                
-                <div class="panel-body">
-                    <div class="row">
-
-                        
-                        
-                        <div class="col-md-12">
-                        
-
-                            
-                            
-                            <h1 id="問題">問題</h1>
-<p>拼音類輸入法，都有一個由固定數目音節碼組成的的音節表。<br />
-如漢語拼音以數百音節表達萬餘漢字。</p>
-<p>Rime 希望用家能自定義音節表，以及音節碼與文字的對應關係。<br />
-這通過編寫 Rime 詞典中的碼表來實現。如粵語、吳語等方言拼音的詞典，音節碼採用特定於該方言的拼寫方式。</p>
-<p>在使用中，可以通過不同的按鍵序列鍵入這些音節。<br />
-如拼音輸入法以音節中的聲母或首字母略代整個音節，稱「簡拼」；將聲、韻各以一字母代之，稱「雙拼」。</p>
-<p>Rime 希望這些不同的輸入形式是用家可以自定義的。如每一種雙拼方案，將按鍵映射到音節碼的方式皆不同。</p>
-<h1 id="方案">方案</h1>
-<p><a rel="external" href="https://github.com/rime/home/wiki/SpellingAlgebra">拼寫運算／Spelling Algebra</a> 是 Rime 輸入法的一項獨創技術。<br />
-其思想是用一組規則描述輸入碼到音節碼的對應關係。</p>
-<p>拼寫運算規則基於正則表達式／regular expression，基本運算有轉寫、變形、派生、消除等。通過組合這幾種操作，完成由音節碼集合到輸入碼集合的投影。</p>
-<p>雖然有<a rel="external" href="https://github.com/rime/home/wiki/SpellingAlgebra">文檔</a> 對算法作了解釋，又有 Rime 預設的輸入方案提供了多個用例，但是因爲算法本身十分複雜和抽象，編制拼寫運算規則及除錯仍有不小難度。</p>
-<h1 id="工具">工具</h1>
-<p>早早便發願，做一臺「拼寫運算調試器」。</p>
-<p>用他來演繹拼寫運算的過程，輸入碼如何推導出來便可一目瞭然。<br />
-又可用來做演示，幫助大家直觀地理解拼寫運算的原理和功用。</p>
-<p>近日，「拼寫運算調試器」預覽版出爐，預備將其納入「Rime 工具箱」，與輸入法設定工具一同發佈。</p>
-                            
-
-                        </div>
-
-                        
-                        
-
-                    </div>
-                    
-                    <a type="button" href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;spelling-algebra-debugger&#x2F;#more" class="btn btn-default more">全文</a>
                 </div>
 
                 
@@ -683,6 +670,12 @@
                 
                 
                 <li>
+                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;Leptos&#x2F;">
+                        Leptos<span>1</span>
+                    </a>
+                </li>
+                
+                <li>
                     <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;QnA&#x2F;">
                         QnA<span>1</span>
                     </a>
@@ -690,7 +683,7 @@
                 
                 <li>
                     <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;Rust&#x2F;">
-                        Rust<span>1</span>
+                        Rust<span>2</span>
                     </a>
                 </li>
                 
@@ -714,7 +707,7 @@
                 
                 <li>
                     <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;並擊輸入&#x2F;">
-                        並擊輸入<span>1</span>
+                        並擊輸入<span>2</span>
                     </a>
                 </li>
                 
@@ -750,7 +743,7 @@
                 
                 <li>
                     <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;宮保粵拼&#x2F;">
-                        宮保粵拼<span>1</span>
+                        宮保粵拼<span>2</span>
                     </a>
                 </li>
                 
@@ -786,7 +779,7 @@
                 
                 <li>
                     <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;拼寫運算&#x2F;">
-                        拼寫運算<span>2</span>
+                        拼寫運算<span>3</span>
                     </a>
                 </li>
                 
@@ -827,6 +820,12 @@
                 </li>
                 
                 <li>
+                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;狀態管理&#x2F;">
+                        狀態管理<span>1</span>
+                    </a>
+                </li>
+                
+                <li>
                     <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;發佈&#x2F;">
                         發佈<span>1</span>
                     </a>
@@ -850,22 +849,10 @@
                     </a>
                 </li>
                 
-                <li>
-                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;視頻&#x2F;">
-                        視頻<span>4</span>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;tags&#x2F;調試&#x2F;">
-                        調試<span>1</span>
-                    </a>
-                </li>
-                
 
                 
                 
-                <li><a href="/tags">...<span>33</span></a></li>
+                <li><a href="/tags">...<span>36</span></a></li>
                 
             </ul>
         </div>
@@ -879,6 +866,12 @@
             <h4>新作</h4>
             <ul class="entry list-unstyled">
                 
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;combo-jyutping-code-refactor&#x2F;" title="如何讓 lazy_static 裏的靜態配置擁有「動態響應」能力？——記一次輸入法引擎的架構重構">
+                        <i class="fa fa-file-o"></i> 如何讓 lazy_static 裏的靜態配置擁有「…
+                    </a>
+                </li>
                 
                 <li>
                     <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;combo-jyutping-sweep-layout&#x2F;" title="爲極簡分體鍵盤寫了個「動態適配指法」的粵拼並擊輸入法">
@@ -901,12 +894,6 @@
                 <li>
                     <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;theme-music&#x2F;" title="Rime 主題曲">
                         <i class="fa fa-file-o"></i> Rime 主題曲
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;rime-configuration-manager&#x2F;" title="新譜的 Rime 輸入法配置管理器">
-                        <i class="fa fa-file-o"></i> 新譜的 Rime 輸入法配置管理器
                     </a>
                 </li>
                 

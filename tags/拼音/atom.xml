@@ -52,8 +52,8 @@
         
         <summary type="html">&lt;p&gt;中秋之夜，可想在部落格上寫二句。&lt;&#x2F;p&gt;
 &lt;p&gt;於是 &lt;code&gt;vim ~&#x2F;Library&#x2F;Rime&#x2F;squirrel.custom.yaml&lt;&#x2F;code&gt; 寫下&lt;&#x2F;p&gt;
-&lt;pre class=&quot;giallo&quot; style=&quot;color: #CDD6F4; background-color: #1E1E2E;&quot;&gt;&lt;code data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #89B4FA;&quot;&gt;patch&lt;&#x2F;span&gt;&lt;span style=&quot;color: #94E2D5;&quot;&gt;:&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #89B4FA;&quot;&gt;  style&#x2F;color_scheme&lt;&#x2F;span&gt;&lt;span style=&quot;color: #94E2D5;&quot;&gt;:&lt;&#x2F;span&gt;&lt;span style=&quot;color: #A6E3A1;&quot;&gt; luna&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);&quot;&gt;&lt;code data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: light-dark(#22863A, #85E89D);&quot;&gt;p&lt;&#x2F;span&gt;&lt;span style=&quot;color: light-dark(#22863A, #85E89D);&quot;&gt;atch&lt;&#x2F;span&gt;&lt;span&gt;:&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: light-dark(#22863A, #85E89D);&quot;&gt;  s&lt;&#x2F;span&gt;&lt;span style=&quot;color: light-dark(#22863A, #85E89D);&quot;&gt;tyle&#x2F;color_scheme&lt;&#x2F;span&gt;&lt;span&gt;:&lt;&#x2F;span&gt;&lt;span style=&quot;color: light-dark(#032F62, #9ECBFF);&quot;&gt; l&lt;&#x2F;span&gt;&lt;span style=&quot;color: light-dark(#032F62, #9ECBFF);&quot;&gt;una&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;部署後，按 &lt;code&gt;Control+~&lt;&#x2F;code&gt; 切換到【朙月拼音】。&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;luna-pinyin&#x2F;mingyue-pinyin-2013-09-19.png&quot; alt=&quot;此刻正在寫字的朙月拼音&quot; &#x2F;&gt;&lt;&#x2F;p&gt;</summary>
         

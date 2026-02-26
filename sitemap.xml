@@ -11,6 +11,10 @@
         <lastmod>2013-11-24T11:25:24</lastmod>
     </url>
     <url>
+        <loc>https://rime.im/blog/combo-jyutping-code-refactor/</loc>
+        <lastmod>2026-02-26</lastmod>
+    </url>
+    <url>
         <loc>https://rime.im/blog/combo-jyutping-sweep-layout/</loc>
         <lastmod>2026-02-25</lastmod>
     </url>
@@ -102,6 +106,9 @@
         <loc>https://rime.im/tags/</loc>
     </url>
     <url>
+        <loc>https://rime.im/tags/Leptos/</loc>
+    </url>
+    <url>
         <loc>https://rime.im/tags/QnA/</loc>
     </url>
     <url>
@@ -174,6 +181,9 @@
         <loc>https://rime.im/tags/演示/</loc>
     </url>
     <url>
+        <loc>https://rime.im/tags/狀態管理/</loc>
+    </url>
+    <url>
         <loc>https://rime.im/tags/發佈/</loc>
     </url>
     <url>
@@ -199,6 +209,9 @@
     </url>
     <url>
         <loc>https://rime.im/tags/音樂/</loc>
+    </url>
+    <url>
+        <loc>https://rime.im/tags/響應式編程/</loc>
     </url>
     <url>
         <loc>https://rime.im/testing/squirrel/</loc>
