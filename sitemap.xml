@@ -27,6 +27,10 @@
         <lastmod>2013-04-28T15:01:49</lastmod>
     </url>
     <url>
+        <loc>https://rime.im/blog/leptos-async-resource-loading/</loc>
+        <lastmod>2026-03-01</lastmod>
+    </url>
+    <url>
         <loc>https://rime.im/blog/luna-pinyin/</loc>
         <lastmod>2013-09-19T21:25:33</lastmod>
     </url>
@@ -115,6 +119,9 @@
         <loc>https://rime.im/tags/Rust/</loc>
     </url>
     <url>
+        <loc>https://rime.im/tags/Wasm/</loc>
+    </url>
+    <url>
         <loc>https://rime.im/tags/fool/</loc>
     </url>
     <url>
@@ -182,6 +189,9 @@
     </url>
     <url>
         <loc>https://rime.im/tags/狀態管理/</loc>
+    </url>
+    <url>
+        <loc>https://rime.im/tags/異步處理/</loc>
     </url>
     <url>
         <loc>https://rime.im/tags/發佈/</loc>

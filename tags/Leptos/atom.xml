@@ -5,8 +5,29 @@
     <link rel="self" type="application/atom+xml" href="https://rime.im/tags/Leptos/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://rime.im"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2026-02-26T00:00:00+00:00</updated>
+    <updated>2026-03-01T00:00:00+00:00</updated>
     <id>https://rime.im/tags/Leptos/atom.xml</id>
+    <entry xml:lang="zh">
+        <title>記一次「翻車」的 Wasm 瘦身計劃，與 Leptos 異步架構實戰</title>
+        <published>2026-03-01T00:00:00+00:00</published>
+        <updated>2026-03-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              佛振@式恕堂
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://rime.im/blog/leptos-async-resource-loading/"/>
+        <id>https://rime.im/blog/leptos-async-resource-loading/</id>
+        
+        <summary type="html">&lt;p&gt;最近在用 Rust 和 Leptos 0.8 重構一款 Wasm 網頁端打字機&#x2F;輸入法應用。隨着內置的練習題（如宮保拼音、注音字根等打字範文）越來越多，我意識到：有些練習題打過一次就不常用了，一直硬編碼（Hardcode）塞在 Rust 原代碼裏，會讓編譯出來的 Wasm 執行檔無限膨脹。&lt;&#x2F;p&gt;
+&lt;p&gt;於是我動手進行了一場「Wasm 瘦身計劃」：將這些長文本全數抽離成獨立的 &lt;code&gt;.txt&lt;&#x2F;code&gt; 文件，通過 Trunk 構建到靜態目錄，並在客戶端使用 &lt;code&gt;gloo-net&lt;&#x2F;code&gt; 進行異步（Async）加載。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;結果，喜聞樂見的「翻車」了。&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
     <entry xml:lang="zh">
         <title>如何讓 lazy_static 裏的靜態配置擁有「動態響應」能力？——記一次輸入法引擎的架構重構</title>
         <published>2026-02-26T00:00:00+00:00</published>
