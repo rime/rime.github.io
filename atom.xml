@@ -4668,7 +4668,25 @@ refactorï(RimeWithWeasel) simplify color parsing function (&lt;a rel=&quot;exte
         &lt;&#x2F;audio&gt;
     &lt;&#x2F;p&gt;
 &lt;&#x2F;figure&gt;
-&lt;p&gt;若本站播放不流暢，請移步 &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.bilibili.com&#x2F;audio&#x2F;am33746732&quot;&gt;B 站備份&lt;&#x2F;a&gt;。&lt;&#x2F;p&gt;
+
+    
+    
+    
+
+
+&lt;figure&gt;
+    
+    &lt;p&gt;
+        &lt;figcaption&gt;中州韻輸入法主題曲　鋼琴版&lt;&#x2F;figcaption&gt;
+    &lt;&#x2F;p&gt;
+    
+    &lt;p&gt;
+        &lt;audio controls src=&quot;https:&amp;#x2F;&amp;#x2F;rime.im&amp;#x2F;blog&amp;#x2F;theme-music&amp;#x2F;RIME_主題曲_鋼琴版.mp3&quot; preload=&quot;metadata&quot;&gt;
+            您的瀏覽器不支持 audio 元素。
+        &lt;&#x2F;audio&gt;
+    &lt;&#x2F;p&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;若本站播放不流暢，請移步 B 站備份：&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.bilibili.com&#x2F;audio&#x2F;am1280271264&quot;&gt;合奏版&lt;&#x2F;a&gt; | &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.bilibili.com&#x2F;audio&#x2F;am33746732&quot;&gt;鋼琴版&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;曲調早有構思，無奈某是門外漢，全憑直覺在打譜軟件中點選，勉強拼湊成曲，但願拋磚引玉。&lt;br &#x2F;&gt;
 將曲譜上傳 &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;lotem&#x2F;rime-theme-music&quot;&gt;開源網站&lt;&#x2F;a&gt;，以期行家裏手指點，修改潤色些許，哪敢奢求演繹續寫？&lt;&#x2F;p&gt;</summary>
         
