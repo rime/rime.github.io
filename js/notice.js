@@ -68,7 +68,6 @@ const notices = [
         sequence: [
             // 格式：{ top: "首鈕", bottom: "末鈕", hanzi: "漢字" }
             // 不需要展示鍵面動畫，可以直接用單字輸出
-            { top: "", bottom: "", hanzi: "「" },
             { top: "首鈕〇七", bottom: "末鈕二三", hanzi: "人" },
             { top: "首鈕〇七", bottom: "末鈕二三", hanzi: "人" },
             { top: "首鈕一六", bottom: "末鈕一〇", hanzi: "可" },
@@ -78,7 +77,6 @@ const notices = [
             { top: "首鈕二五", bottom: "末鈕一〇", hanzi: "學" },
             { top: "首鈕一八", bottom: "末鈕二六", hanzi: "而" },
             { top: "首鈕二九", bottom: "末鈕一八", hanzi: "能" },
-            { top: "", bottom: "", hanzi: "」" },
             { top: "", bottom: "", hanzi: "——" },
             { top: "首鈕一二", bottom: "末鈕〇四", hanzi: "林" },
             { top: "首鈕三三", bottom: "末鈕〇五", hanzi: "語" },
