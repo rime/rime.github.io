@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+    <title>RIME | 中州韻輸入法引擎 - 倉頡</title>
+    <subtitle>Le blog de la Rime</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://rime.im/tags/倉頡/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://rime.im"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-05-10T00:00:00+00:00</updated>
+    <id>https://rime.im/tags/倉頡/atom.xml</id>
+    <entry xml:lang="zh">
+        <title>倉頡七曜並擊</title>
+        <published>2026-05-10T00:00:00+00:00</published>
+        <updated>2026-05-10T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              佛振@式恕堂
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://rime.im/blog/cangjie-lumiary-chords/"/>
+        <id>https://rime.im/blog/cangjie-lumiary-chords/</id>
+        
+        <summary type="html">&lt;p&gt;配方： ℞ &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;lotem&#x2F;rime-cangjie-luminary-chords&quot;&gt;lotem&#x2F;rime-cangjie-luminary-chords&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Rime 輸入方案：倉頡七曜並擊&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;簡介&quot;&gt;簡介&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;em&gt;並擊&lt;&#x2F;em&gt; （chord-typing）是指：同時按下鍵盤上的多個按鍵。&lt;&#x2F;p&gt;
+&lt;p&gt;本方案以倉頡五代編碼爲基礎，採用速成輸入法的首尾取碼方法，左右手同時擊發，各自擊出一個倉頡字母。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;指法演示&quot;&gt;指法演示&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1K5RCBNEPL&#x2F;&quot;&gt;並擊輸入倉頡碼，高鐵旅途練鍵，實機打字演示&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1T15L6ZEGs&#x2F;&quot;&gt;鍵道·破執　倉頡七曜並擊錄入&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;鍵盤佈局&quot;&gt;鍵盤佈局&lt;&#x2F;h3&gt;
+&lt;p&gt;倉頡七曜佈局，對應標準鍵盤字母區，左右手互爲鏡像。&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;人 心 手 口 卜    卜 口 手 心 人&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;金 木 水 火 土    土 火 水 木 金&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;竹 戈 中 一 弓    弓 一 中 戈 竹&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</summary>
+        
+    </entry>
+</feed>
