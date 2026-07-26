@@ -5,8 +5,44 @@
     <link rel="self" type="application/atom+xml" href="https://rime.im/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://rime.im"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2026-05-24T00:00:00+00:00</updated>
+    <updated>2026-07-24T00:00:00+00:00</updated>
     <id>https://rime.im/atom.xml</id>
+    <entry xml:lang="zh">
+        <title>［音樂專輯］中州曲韻</title>
+        <published>2026-07-24T00:00:00+00:00</published>
+        <updated>2026-07-24T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              佛振@式恕堂
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://rime.im/blog/zhongzhouquyun/"/>
+        <id>https://rime.im/blog/zhongzhouquyun/</id>
+        
+        <summary type="html">&lt;h2 id=&quot;式恕堂&quot;&gt;式恕堂&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;音樂視頻｜&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1pQLg6GEDv&#x2F;&quot;&gt;嗶哩嗶哩&lt;&#x2F;a&gt; · &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;LSZFnIn4uOE&quot;&gt;YouTube&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;鍵盤演奏｜&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1dSjQ6mELm&#x2F;&quot;&gt;嗶哩嗶哩&lt;&#x2F;a&gt; · &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;Pc-fi9llHCM&quot;&gt;YouTube&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;&#x2F;blog&#x2F;shishutang&#x2F;&quot;&gt;詞作 · 創作感言&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;河之南&quot;&gt;河之南&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;音樂視頻｜&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1UsGL6sEGA&#x2F;&quot;&gt;嗶哩嗶哩&lt;&#x2F;a&gt; · &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;CMvC91zaSmo&quot;&gt;YouTube&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;鍵盤演奏｜&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV14Kj86BEkx&#x2F;&quot;&gt;嗶哩嗶哩&lt;&#x2F;a&gt; · &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;wmPBzVc5jKE&quot;&gt;YouTube&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;&#x2F;blog&#x2F;hezhinan&#x2F;&quot;&gt;詞作 · 創作感言&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;東風破&quot;&gt;東風破&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;R²ime 預定主題曲&lt;&#x2F;li&gt;
+&lt;li&gt;鍵盤演奏｜&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1UggQ6XERc&#x2F;&quot;&gt;嗶哩嗶哩&lt;&#x2F;a&gt; · &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;lKwvpBAf2gQ&quot;&gt;YouTube&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;外傳 &lt;a href=&quot;&#x2F;blog&#x2F;dongfengpo-zhuyinyuan&#x2F;&quot;&gt;東風破 · 注音緣&lt;&#x2F;a&gt;：記一段 Rime 輸入法的神級往事&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;</summary>
+        
+    </entry>
     <entry xml:lang="zh">
         <title>「心中讚歎怎化鴻篇」｜黃河史詩原創《河之南》</title>
         <published>2026-05-24T00:00:00+00:00</published>
@@ -58,7 +94,7 @@
         
         <summary type="html">&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;shishutang&#x2F;%E5%BC%8F%E6%81%95%E5%A0%82.png&quot; alt=&quot;式恕堂&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;strong&gt;記錄短片&lt;&#x2F;strong&gt;｜&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1pQLg6GEDv&#x2F;&quot;&gt;嗶哩嗶哩&lt;&#x2F;a&gt; · &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;LSZFnIn4uOE&quot;&gt;YouTube&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;一曲琴鳴&lt;&#x2F;strong&gt;｜&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1dSjQ6mELm&#x2F;&quot;&gt;嗶哩嗶哩&lt;&#x2F;a&gt; · &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;pgeubRGJOmI&quot;&gt;YouTube&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;一曲琴鳴&lt;&#x2F;strong&gt;｜&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1dSjQ6mELm&#x2F;&quot;&gt;嗶哩嗶哩&lt;&#x2F;a&gt; · &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;Pc-fi9llHCM&quot;&gt;YouTube&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;五百年客屋大路偏南讓丈半 &lt;br &#x2F;&gt;
 十八世傳人不忘風骨作琴鳴&lt;&#x2F;p&gt;
