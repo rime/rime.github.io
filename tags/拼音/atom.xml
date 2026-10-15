@@ -13,25 +13,21 @@
         <updated>2026-02-11T09:40:00+00:00</updated>
         
         <author>
-          <name>
-            
-              佛振@式恕堂
-            
-          </name>
+          <name>佛振@式恕堂</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://rime.im/blog/pinyin-68th/"/>
         <id>https://rime.im/blog/pinyin-68th/</id>
         
-        <summary type="html">&lt;p&gt;《漢語拼音方案》是中國人名、地名和中文文獻羅馬字母拼寫法的統一規範，&lt;br &#x2F;&gt;
-並用於漢字不便或不能使用的領域。&lt;&#x2F;p&gt;
-&lt;p&gt;——1958.02.11&lt;&#x2F;p&gt;
-&lt;p&gt;始於 1958 年的聲音，在指尖重新定義。&lt;&#x2F;p&gt;
-&lt;p&gt;Rime 謹此致敬。&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;專題影片&quot;&gt;專題影片&lt;&#x2F;h2&gt;
-&lt;p&gt;Rime 官網的隱藏彩蛋：用代碼演奏拼音字母歌&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1EbF9zAEdq&#x2F;&quot;&gt;B 站&lt;&#x2F;a&gt; · &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;0J0MFoM6Ihg&quot;&gt;YouTube&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;rime.im&quot;&gt;Rime 官網&lt;&#x2F;a&gt; 打字機模式、代碼音樂等新功能，趕在拼音紀念日前夜（2026 年 2 月 10 日晚）順利完工！🎉&lt;&#x2F;p&gt;</summary>
+        <summary type="html">&lt;p&gt;《漢語拼音方案》是中國人名、地名和中文文獻羅馬字母拼寫法的統一規範，&lt;br /&gt;
+並用於漢字不便或不能使用的領域。&lt;/p&gt;
+&lt;p&gt;——1958.02.11&lt;/p&gt;
+&lt;p&gt;始於 1958 年的聲音，在指尖重新定義。&lt;/p&gt;
+&lt;p&gt;Rime 謹此致敬。&lt;/p&gt;
+&lt;h2 id=&quot;專題影片&quot;&gt;專題影片&lt;/h2&gt;
+&lt;p&gt;Rime 官網的隱藏彩蛋：用代碼演奏拼音字母歌&lt;/p&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https://www.bilibili.com/video/BV1EbF9zAEdq/&quot;&gt;B 站&lt;/a&gt; · &lt;a rel=&quot;external&quot; href=&quot;https://youtu.be/0J0MFoM6Ihg&quot;&gt;YouTube&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https://rime.im&quot;&gt;Rime 官網&lt;/a&gt; 打字機模式、代碼音樂等新功能，趕在拼音紀念日前夜（2026 年 2 月 10 日晚）順利完工！🎉&lt;/p&gt;</summary>
         
     </entry>
     <entry xml:lang="zh">
@@ -40,22 +36,18 @@
         <updated>2013-09-19T21:25:33+00:00</updated>
         
         <author>
-          <name>
-            
-              佛振@式恕堂
-            
-          </name>
+          <name>佛振@式恕堂</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://rime.im/blog/luna-pinyin/"/>
         <id>https://rime.im/blog/luna-pinyin/</id>
         
-        <summary type="html">&lt;p&gt;中秋之夜，可想在部落格上寫二句。&lt;&#x2F;p&gt;
-&lt;p&gt;於是 &lt;code&gt;vim ~&#x2F;Library&#x2F;Rime&#x2F;squirrel.custom.yaml&lt;&#x2F;code&gt; 寫下&lt;&#x2F;p&gt;
-&lt;pre class=&quot;giallo&quot; style=&quot;color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);&quot;&gt;&lt;code data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: light-dark(#22863A, #85E89D);&quot;&gt;p&lt;&#x2F;span&gt;&lt;span style=&quot;color: light-dark(#22863A, #85E89D);&quot;&gt;atch&lt;&#x2F;span&gt;&lt;span&gt;:&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: light-dark(#22863A, #85E89D);&quot;&gt;  s&lt;&#x2F;span&gt;&lt;span style=&quot;color: light-dark(#22863A, #85E89D);&quot;&gt;tyle&#x2F;color_scheme&lt;&#x2F;span&gt;&lt;span&gt;:&lt;&#x2F;span&gt;&lt;span style=&quot;color: light-dark(#032F62, #9ECBFF);&quot;&gt; l&lt;&#x2F;span&gt;&lt;span style=&quot;color: light-dark(#032F62, #9ECBFF);&quot;&gt;una&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;部署後，按 &lt;code&gt;Control+~&lt;&#x2F;code&gt; 切換到【朙月拼音】。&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;luna-pinyin&#x2F;mingyue-pinyin-2013-09-19.png&quot; alt=&quot;此刻正在寫字的朙月拼音&quot; &#x2F;&gt;&lt;&#x2F;p&gt;</summary>
+        <summary type="html">&lt;p&gt;中秋之夜，可想在部落格上寫二句。&lt;/p&gt;
+&lt;p&gt;於是 &lt;code&gt;vim ~/Library/Rime/squirrel.custom.yaml&lt;/code&gt; 寫下&lt;/p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);&quot; &gt;&lt;code data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: light-dark(#22863A, #85E89D);&quot;&gt;p&lt;/span&gt;&lt;span style=&quot;color: light-dark(#22863A, #85E89D);&quot;&gt;atch&lt;/span&gt;&lt;span&gt;:&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: light-dark(#22863A, #85E89D);&quot;&gt;  s&lt;/span&gt;&lt;span style=&quot;color: light-dark(#22863A, #85E89D);&quot;&gt;tyle/color_scheme&lt;/span&gt;&lt;span&gt;:&lt;/span&gt;&lt;span style=&quot;color: light-dark(#032F62, #9ECBFF);&quot;&gt; l&lt;/span&gt;&lt;span style=&quot;color: light-dark(#032F62, #9ECBFF);&quot;&gt;una&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;部署後，按 &lt;code&gt;Control+~&lt;/code&gt; 切換到【朙月拼音】。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://rime.im/blog/luna-pinyin/mingyue-pinyin-2013-09-19.png&quot; alt=&quot;此刻正在寫字的朙月拼音&quot; /&gt;&lt;/p&gt;</summary>
         
     </entry>
 </feed>

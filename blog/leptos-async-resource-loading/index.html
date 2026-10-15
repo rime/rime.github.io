@@ -71,55 +71,55 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="https:&#x2F;&#x2F;rime.im">RIME | 中州韻輸入法引擎</a>
+      <a class="navbar-brand" href="https://rime.im">RIME | 中州韻輸入法引擎</a>
       <button id="btn-simplify" type="button" class="navbar-convert">簡</button>
       <div class="collapse navbar-collapse nav-menu">
           <ul class="nav navbar-nav">
               
               <li>
-                  <a href="&#x2F;download" title="">
+                  <a href="/download" title="">
                       <i class="fa fa-arrow-down"></i>下載
                   </a>
               </li>
               
               <li>
-                  <a href="&#x2F;recipes" title="">
+                  <a href="/recipes" title="">
                       <i class="fa fa-flask"></i>配方
                   </a>
               </li>
               
               <li>
-                  <a href="&#x2F;docs" title="">
+                  <a href="/docs" title="">
                       <i class="fa fa-question-circle"></i>幫助
                   </a>
               </li>
               
               <li>
-                  <a href="&#x2F;code" title="">
+                  <a href="/code" title="">
                       <i class="fa fa-github"></i>源碼
                   </a>
               </li>
               
               <li>
-                  <a href="&#x2F;donate" title="">
+                  <a href="/donate" title="">
                       <i class="fa fa-heart"></i>捐贈
                   </a>
               </li>
               
               <li>
-                  <a href="&#x2F;discuss" title="">
+                  <a href="/discuss" title="">
                       <i class="fa fa-comments"></i>討論
                   </a>
               </li>
               
               <li>
-                  <a href="&#x2F;blog" title="Rime::Blog">
+                  <a href="/blog" title="Rime::Blog">
                       <i class="fa fa-pencil-square-o"></i>網誌
                   </a>
               </li>
               
               <li>
-                  <a href="&#x2F;online" title="">
+                  <a href="/online" title="">
                       <i class="fa fa-cloud"></i>體驗
                   </a>
               </li>
@@ -133,8 +133,7 @@
 
         
         
-        <div class="container">
-            <div class="content">
+
                 
 <div class="panel-heading">
     
@@ -163,7 +162,7 @@
 <h3 id="💥_踩坑一：Wasm_異步鎖死（Async_Lock_Poisoning）">💥 踩坑一：Wasm 異步鎖死（Async Lock Poisoning）</h3>
 <p>當我把加載邏輯改成異步後，程序在運行時突然觸發了 <code>unreachable</code> 崩潰。錯誤堆棧直指 Leptos 底層的 <code>RwLock::write</code>。</p>
 <p><strong>兇手是這段直覺但致命的代碼：</strong></p>
-<pre class="giallo" style="color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);"><code data-lang="rust"><span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">let</span><span> 目標作業內容 </span><span style="color: light-dark(#D73A49, #F97583);">=</span><span style="color: light-dark(#6F42C1, #B392F0);"> LocalResource</span><span style="color: light-dark(#D73A49, #F97583);">::</span><span style="color: light-dark(#6F42C1, #B392F0);">new</span><span>(</span><span style="color: light-dark(#D73A49, #F97583);">move</span><span style="color: light-dark(#D73A49, #F97583);"> |</span><span style="color: light-dark(#D73A49, #F97583);">|</span><span> {</span></span>
+<pre class="giallo" style="color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);" ><code data-lang="rust"><span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">let</span><span> 目標作業內容 </span><span style="color: light-dark(#D73A49, #F97583);">=</span><span style="color: light-dark(#6F42C1, #B392F0);"> LocalResource</span><span style="color: light-dark(#D73A49, #F97583);">::</span><span style="color: light-dark(#6F42C1, #B392F0);">new</span><span>(</span><span style="color: light-dark(#D73A49, #F97583);">move</span><span style="color: light-dark(#D73A49, #F97583);"> |</span><span style="color: light-dark(#D73A49, #F97583);">|</span><span> {</span></span>
 <span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">    let</span><span> 作業 </span><span style="color: light-dark(#D73A49, #F97583);">=</span><span> 當前作業</span><span style="color: light-dark(#D73A49, #F97583);">.</span><span style="color: light-dark(#6F42C1, #B392F0);">read</span><span>(</span><span>)</span><span>;</span><span style="color: light-dark(#6A737D, #6A737D);"> //</span><span style="color: light-dark(#6A737D, #6A737D);"> 🔴 取得讀寫鎖 (RwLockReadGuard)</span></span>
 <span class="giallo-l"></span>
 <span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">    async</span><span style="color: light-dark(#D73A49, #F97583);"> move</span><span> {</span><span style="color: light-dark(#6A737D, #6A737D);"> //</span><span style="color: light-dark(#6A737D, #6A737D);"> 🔴 讀取鎖被 move 進了異步代碼塊！</span></span>
@@ -178,7 +177,7 @@
 在 Wasm 單線程環境下，當把 <code>當前作業.read()</code> 產生的「讀取守衛（Read Guard）」帶入 <code>async move</code> 區塊並經歷了 <code>.await</code> 時，這個鎖就被掛起在背景了。如果用戶此時點擊 UI 觸發狀態更新（Write），系統發現讀取鎖還沒釋放，且單線程無法真正等待，就會直接 Panic 崩潰。</p>
 <p><strong>✅ 解決方案：將「取值」與「異步」物理隔離</strong>
 在進入異步區塊前，先深層複製出純數據，瞬間釋放信號鎖：</p>
-<pre class="giallo" style="color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);"><code data-lang="rust"><span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">let</span><span> 目標作業內容 </span><span style="color: light-dark(#D73A49, #F97583);">=</span><span style="color: light-dark(#6F42C1, #B392F0);"> LocalResource</span><span style="color: light-dark(#D73A49, #F97583);">::</span><span style="color: light-dark(#6F42C1, #B392F0);">new</span><span>(</span><span style="color: light-dark(#D73A49, #F97583);">move</span><span style="color: light-dark(#D73A49, #F97583);"> |</span><span style="color: light-dark(#D73A49, #F97583);">|</span><span> {</span></span>
+<pre class="giallo" style="color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);" ><code data-lang="rust"><span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">let</span><span> 目標作業內容 </span><span style="color: light-dark(#D73A49, #F97583);">=</span><span style="color: light-dark(#6F42C1, #B392F0);"> LocalResource</span><span style="color: light-dark(#D73A49, #F97583);">::</span><span style="color: light-dark(#6F42C1, #B392F0);">new</span><span>(</span><span style="color: light-dark(#D73A49, #F97583);">move</span><span style="color: light-dark(#D73A49, #F97583);"> |</span><span style="color: light-dark(#D73A49, #F97583);">|</span><span> {</span></span>
 <span class="giallo-l"><span style="color: light-dark(#6A737D, #6A737D);">    //</span><span style="color: light-dark(#6A737D, #6A737D);"> 🟢 同步獲取並複製數據，立刻釋放 Leptos 信號的讀取鎖！</span></span>
 <span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">    let</span><span> 獨立作業 </span><span style="color: light-dark(#D73A49, #F97583);">=</span><span> 當前作業</span><span style="color: light-dark(#D73A49, #F97583);">.</span><span style="color: light-dark(#6F42C1, #B392F0);">get</span><span>(</span><span>)</span><span>;</span><span> </span></span>
 <span class="giallo-l"></span>
@@ -190,7 +189,7 @@
 <span class="giallo-l"></span></code></pre><h3 id="🔄_踩坑二：路由同步的死循環與_read_untracked">🔄 踩坑二：路由同步的死循環與 <code>read_untracked</code></h3>
 <p>應用中需要讓 URL 的 <code>?drill=題號</code> 參數與內部的 <code>當前作業</code> 狀態雙向同步。如果沒寫好，極易引發「URL 改變 -&gt; 狀態更新 -&gt; URL 又被更新」的死循環。</p>
 <p>在 Leptos 0.8 中，我們利用全新的 <code>read_untracked()</code> API，結合 Rust 的衛語句（Guard Clause），寫出了性能與可讀性兼具的防禦性代碼：</p>
-<pre class="giallo" style="color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);"><code data-lang="rust"><span class="giallo-l"><span style="color: light-dark(#6F42C1, #B392F0);">Effect</span><span style="color: light-dark(#D73A49, #F97583);">::</span><span style="color: light-dark(#6F42C1, #B392F0);">new</span><span>(</span><span style="color: light-dark(#D73A49, #F97583);">move</span><span style="color: light-dark(#D73A49, #F97583);"> |</span><span style="color: light-dark(#D73A49, #F97583);">|</span><span> {</span></span>
+<pre class="giallo" style="color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);" ><code data-lang="rust"><span class="giallo-l"><span style="color: light-dark(#6F42C1, #B392F0);">Effect</span><span style="color: light-dark(#D73A49, #F97583);">::</span><span style="color: light-dark(#6F42C1, #B392F0);">new</span><span>(</span><span style="color: light-dark(#D73A49, #F97583);">move</span><span style="color: light-dark(#D73A49, #F97583);"> |</span><span style="color: light-dark(#D73A49, #F97583);">|</span><span> {</span></span>
 <span class="giallo-l"><span style="color: light-dark(#6A737D, #6A737D);">    //</span><span style="color: light-dark(#6A737D, #6A737D);"> 1. 取得 URL 參數，若無則提早結束，展平代碼層級</span></span>
 <span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">    let</span><span style="color: light-dark(#6F42C1, #B392F0);"> Some</span><span>(</span><span>目標題號</span><span>)</span><span style="color: light-dark(#D73A49, #F97583);"> =</span><span> state</span><span style="color: light-dark(#D73A49, #F97583);">.</span><span>drill</span><span style="color: light-dark(#D73A49, #F97583);">.</span><span style="color: light-dark(#6F42C1, #B392F0);">get</span><span>(</span><span>)</span><span style="color: light-dark(#D73A49, #F97583);"> else</span><span> {</span><span style="color: light-dark(#D73A49, #F97583);"> return</span><span> }</span><span>;</span></span>
 <span class="giallo-l"></span>
@@ -223,11 +222,11 @@
         <center>
             <ul class="pagination">
                 
-                <li class="prev"><a href="&#x2F;blog&#x2F;xu-qiu-shu-ru-zhi-ming-kuai&#x2F;" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>後一篇</a></li>
+                <li class="prev"><a href="/blog/xu-qiu-shu-ru-zhi-ming-kuai/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>後一篇</a></li>
                 
                 <li><a href="/blog"><i class="fa fa-book"></i>網誌</a></li>
                 
-                <li class="next"><a href="&#x2F;blog&#x2F;combo-jyutping-code-refactor&#x2F;" class="alignright next">前一篇<i class="fa fa-arrow-circle-o-right"></i></a></li>
+                <li class="next"><a href="/blog/combo-jyutping-code-refactor/" class="alignright next">前一篇<i class="fa fa-arrow-circle-o-right"></i></a></li>
                 
             </ul>
         </center>
@@ -265,7 +264,7 @@
             2026-03-01
         </div>
         <div>
-            <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;leptos-async-resource-loading&#x2F;#comment"><i class="fa fa-comments"></i> 留言</a>
+            <a href="https://rime.im/blog/leptos-async-resource-loading/#comment"><i class="fa fa-comments"></i> 留言</a>
         </div>
         
 
@@ -325,25 +324,25 @@
                 <ol class="toc-article">
                     
                     <li>
-                        <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;leptos-async-resource-loading&#x2F;#💥_踩坑一：Wasm_異步鎖死（Async_Lock_Poisoning）">💥 踩坑一：Wasm 異步鎖死（Async Lock Poisoning）</a>
+                        <a href="https://rime.im/blog/leptos-async-resource-loading/#💥_踩坑一：Wasm_異步鎖死（Async_Lock_Poisoning）">💥 踩坑一：Wasm 異步鎖死（Async Lock Poisoning）</a>
                         
                         
                     </li>
                     
                     <li>
-                        <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;leptos-async-resource-loading&#x2F;#🔄_踩坑二：路由同步的死循環與_read_untracked">🔄 踩坑二：路由同步的死循環與 read_untracked</a>
+                        <a href="https://rime.im/blog/leptos-async-resource-loading/#🔄_踩坑二：路由同步的死循環與_read_untracked">🔄 踩坑二：路由同步的死循環與 read_untracked</a>
                         
                         
                     </li>
                     
                     <li>
-                        <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;leptos-async-resource-loading&#x2F;#✨_意外的驚喜：渾然天成的「優雅降級」">✨ 意外的驚喜：渾然天成的「優雅降級」</a>
+                        <a href="https://rime.im/blog/leptos-async-resource-loading/#✨_意外的驚喜：渾然天成的「優雅降級」">✨ 意外的驚喜：渾然天成的「優雅降級」</a>
                         
                         
                     </li>
                     
                     <li>
-                        <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;leptos-async-resource-loading&#x2F;#總結">總結</a>
+                        <a href="https://rime.im/blog/leptos-async-resource-loading/#總結">總結</a>
                         
                         
                     </li>
@@ -357,8 +356,7 @@
     </div>
 </div>
 
-            </div>
-        </div>
+
         
 
         

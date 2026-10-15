@@ -13,32 +13,28 @@
         <updated>2026-05-10T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              佛振@式恕堂
-            
-          </name>
+          <name>佛振@式恕堂</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://rime.im/blog/cangjie-lumiary-chords/"/>
         <id>https://rime.im/blog/cangjie-lumiary-chords/</id>
         
-        <summary type="html">&lt;p&gt;配方： ℞ &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;lotem&#x2F;rime-cangjie-luminary-chords&quot;&gt;lotem&#x2F;rime-cangjie-luminary-chords&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;p&gt;Rime 輸入方案：倉頡七曜並擊&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;cangjie-lumiary-chords&#x2F;%E5%80%89%E9%A0%A1%E4%B8%83%E6%9B%9C%E4%B8%A6%E6%93%8A.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;簡介&quot;&gt;簡介&lt;&#x2F;h2&gt;
-&lt;p&gt;&lt;em&gt;並擊&lt;&#x2F;em&gt; （chord-typing）是指：同時按下鍵盤上的多個按鍵。&lt;&#x2F;p&gt;
-&lt;p&gt;本方案以倉頡五代編碼爲基礎，採用速成輸入法的首尾取碼方法，左右手同時擊發，各自擊出一個倉頡字母。&lt;&#x2F;p&gt;
-&lt;h3 id=&quot;指法演示&quot;&gt;指法演示&lt;&#x2F;h3&gt;
+        <summary type="html">&lt;p&gt;配方： ℞ &lt;a rel=&quot;external&quot; href=&quot;https://github.com/lotem/rime-cangjie-luminary-chords&quot;&gt;lotem/rime-cangjie-luminary-chords&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Rime 輸入方案：倉頡七曜並擊&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://rime.im/blog/cangjie-lumiary-chords/%E5%80%89%E9%A0%A1%E4%B8%83%E6%9B%9C%E4%B8%A6%E6%93%8A.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;簡介&quot;&gt;簡介&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;並擊&lt;/em&gt; （chord-typing）是指：同時按下鍵盤上的多個按鍵。&lt;/p&gt;
+&lt;p&gt;本方案以倉頡五代編碼爲基礎，採用速成輸入法的首尾取碼方法，左右手同時擊發，各自擊出一個倉頡字母。&lt;/p&gt;
+&lt;h3 id=&quot;指法演示&quot;&gt;指法演示&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1K5RCBNEPL&#x2F;&quot;&gt;並擊輸入倉頡碼，高鐵旅途練鍵，實機打字演示&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1T15L6ZEGs&#x2F;&quot;&gt;鍵道·破執　倉頡七曜並擊錄入&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3 id=&quot;鍵盤佈局&quot;&gt;鍵盤佈局&lt;&#x2F;h3&gt;
-&lt;p&gt;倉頡七曜佈局，對應標準鍵盤字母區，左右手互爲鏡像。&lt;&#x2F;p&gt;
-&lt;pre class=&quot;giallo&quot; style=&quot;color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;人 心 手 口 卜    卜 口 手 心 人&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;金 木 水 火 土    土 火 水 木 金&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;竹 戈 中 一 弓    弓 一 中 戈 竹&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</summary>
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https://www.bilibili.com/video/BV1K5RCBNEPL/&quot;&gt;並擊輸入倉頡碼，高鐵旅途練鍵，實機打字演示&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https://www.bilibili.com/video/BV1T15L6ZEGs/&quot;&gt;鍵道·破執　倉頡七曜並擊錄入&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;鍵盤佈局&quot;&gt;鍵盤佈局&lt;/h3&gt;
+&lt;p&gt;倉頡七曜佈局，對應標準鍵盤字母區，左右手互爲鏡像。&lt;/p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;人 心 手 口 卜    卜 口 手 心 人&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;金 木 水 火 土    土 火 水 木 金&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;竹 戈 中 一 弓    弓 一 中 戈 竹&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</summary>
         
     </entry>
     <entry xml:lang="zh">
@@ -47,25 +43,21 @@
         <updated>2026-02-11T09:40:00+00:00</updated>
         
         <author>
-          <name>
-            
-              佛振@式恕堂
-            
-          </name>
+          <name>佛振@式恕堂</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://rime.im/blog/pinyin-68th/"/>
         <id>https://rime.im/blog/pinyin-68th/</id>
         
-        <summary type="html">&lt;p&gt;《漢語拼音方案》是中國人名、地名和中文文獻羅馬字母拼寫法的統一規範，&lt;br &#x2F;&gt;
-並用於漢字不便或不能使用的領域。&lt;&#x2F;p&gt;
-&lt;p&gt;——1958.02.11&lt;&#x2F;p&gt;
-&lt;p&gt;始於 1958 年的聲音，在指尖重新定義。&lt;&#x2F;p&gt;
-&lt;p&gt;Rime 謹此致敬。&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;專題影片&quot;&gt;專題影片&lt;&#x2F;h2&gt;
-&lt;p&gt;Rime 官網的隱藏彩蛋：用代碼演奏拼音字母歌&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1EbF9zAEdq&#x2F;&quot;&gt;B 站&lt;&#x2F;a&gt; · &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;0J0MFoM6Ihg&quot;&gt;YouTube&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;rime.im&quot;&gt;Rime 官網&lt;&#x2F;a&gt; 打字機模式、代碼音樂等新功能，趕在拼音紀念日前夜（2026 年 2 月 10 日晚）順利完工！🎉&lt;&#x2F;p&gt;</summary>
+        <summary type="html">&lt;p&gt;《漢語拼音方案》是中國人名、地名和中文文獻羅馬字母拼寫法的統一規範，&lt;br /&gt;
+並用於漢字不便或不能使用的領域。&lt;/p&gt;
+&lt;p&gt;——1958.02.11&lt;/p&gt;
+&lt;p&gt;始於 1958 年的聲音，在指尖重新定義。&lt;/p&gt;
+&lt;p&gt;Rime 謹此致敬。&lt;/p&gt;
+&lt;h2 id=&quot;專題影片&quot;&gt;專題影片&lt;/h2&gt;
+&lt;p&gt;Rime 官網的隱藏彩蛋：用代碼演奏拼音字母歌&lt;/p&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https://www.bilibili.com/video/BV1EbF9zAEdq/&quot;&gt;B 站&lt;/a&gt; · &lt;a rel=&quot;external&quot; href=&quot;https://youtu.be/0J0MFoM6Ihg&quot;&gt;YouTube&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https://rime.im&quot;&gt;Rime 官網&lt;/a&gt; 打字機模式、代碼音樂等新功能，趕在拼音紀念日前夜（2026 年 2 月 10 日晚）順利完工！🎉&lt;/p&gt;</summary>
         
     </entry>
     <entry xml:lang="zh">
@@ -74,36 +66,32 @@
         <updated>2013-11-24T11:25:24+00:00</updated>
         
         <author>
-          <name>
-            
-              佛振@式恕堂
-            
-          </name>
+          <name>佛振@式恕堂</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://rime.im/blog/2013-screencasts/"/>
         <id>https://rime.im/blog/2013-screencasts/</id>
         
-        <summary type="html">&lt;p&gt;最近錄製了一些&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;rime.im&quot;&gt;Rime 輸入法&lt;&#x2F;a&gt;的打字視頻：&lt;&#x2F;p&gt;
+        <summary type="html">&lt;p&gt;最近錄製了一些&lt;a rel=&quot;external&quot; href=&quot;https://rime.im&quot;&gt;Rime 輸入法&lt;/a&gt;的打字視頻：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;2013-screencasts&#x2F;#rime-con&quot;&gt;重度輸入法控&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;2013-screencasts&#x2F;#rime-middle-chinese&quot;&gt;中古漢語拼音輸入「鼠鬚管」&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;2013-screencasts&#x2F;#rime-jyutping-gongsaan&quot;&gt;粵拼輸入　馬德鐘《江山》&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;2013-screencasts&#x2F;#rime-chord-typing-yanhuayileng&quot;&gt;注音並擊輸入　周杰倫《煙花易冷》&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;2013-screencasts&#x2F;#rime-terra-pinyin-yunqushutu&quot;&gt;地球拼音輸入　顧念之《運去殊途》&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;2013-screencasts&#x2F;#rime-combo-pinyin-jingzhongchuanqi&quot;&gt;宮保拼音並擊輸入《精忠傳奇》&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;2013-screencasts&#x2F;#xinhuyuyoufeng&quot;&gt;心湖雨又風&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;2013-screencasts&#x2F;#cangjie-zhuanshi-fu&quot;&gt;倉頡轉世賦&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;2013-screencasts&#x2F;#zailu-yanhuayileng&quot;&gt;越明年，再錄《煙花易冷》&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;p&gt;菜鳥俺用了這幾樣工具完成以上視頻的製作：&lt;&#x2F;p&gt;
+&lt;li&gt;&lt;a href=&quot;https://rime.im/blog/2013-screencasts/#rime-con&quot;&gt;重度輸入法控&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://rime.im/blog/2013-screencasts/#rime-middle-chinese&quot;&gt;中古漢語拼音輸入「鼠鬚管」&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://rime.im/blog/2013-screencasts/#rime-jyutping-gongsaan&quot;&gt;粵拼輸入　馬德鐘《江山》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://rime.im/blog/2013-screencasts/#rime-chord-typing-yanhuayileng&quot;&gt;注音並擊輸入　周杰倫《煙花易冷》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://rime.im/blog/2013-screencasts/#rime-terra-pinyin-yunqushutu&quot;&gt;地球拼音輸入　顧念之《運去殊途》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://rime.im/blog/2013-screencasts/#rime-combo-pinyin-jingzhongchuanqi&quot;&gt;宮保拼音並擊輸入《精忠傳奇》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://rime.im/blog/2013-screencasts/#xinhuyuyoufeng&quot;&gt;心湖雨又風&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://rime.im/blog/2013-screencasts/#cangjie-zhuanshi-fu&quot;&gt;倉頡轉世賦&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://rime.im/blog/2013-screencasts/#zailu-yanhuayileng&quot;&gt;越明年，再錄《煙花易冷》&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;菜鳥俺用了這幾樣工具完成以上視頻的製作：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;QuickTime Player 用於 OS X 上的屏幕錄像、錄音，以及簡單的視頻剪輯&lt;&#x2F;li&gt;
-&lt;li&gt;Open Broadcaster Software 用於 Windows 上的屏幕錄像、錄音&lt;&#x2F;li&gt;
-&lt;li&gt;GoldWave 用於編輯音頻、混音&lt;&#x2F;li&gt;
-&lt;li&gt;VirtualDub 用於編輯視頻、轉碼&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;p&gt;哈，純粹地用於學習和研究輸入法。音樂的神碼版權問題，看官都莫要深究啦。&lt;&#x2F;p&gt;</summary>
+&lt;li&gt;QuickTime Player 用於 OS X 上的屏幕錄像、錄音，以及簡單的視頻剪輯&lt;/li&gt;
+&lt;li&gt;Open Broadcaster Software 用於 Windows 上的屏幕錄像、錄音&lt;/li&gt;
+&lt;li&gt;GoldWave 用於編輯音頻、混音&lt;/li&gt;
+&lt;li&gt;VirtualDub 用於編輯視頻、轉碼&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;哈，純粹地用於學習和研究輸入法。音樂的神碼版權問題，看官都莫要深究啦。&lt;/p&gt;</summary>
         
     </entry>
 </feed>

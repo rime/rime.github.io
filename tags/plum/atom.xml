@@ -13,21 +13,17 @@
         <updated>2018-04-22T22:28:54+00:00</updated>
         
         <author>
-          <name>
-            
-              佛振@式恕堂
-            
-          </name>
+          <name>佛振@式恕堂</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://rime.im/blog/rime-configuration-manager/"/>
         <id>https://rime.im/blog/rime-configuration-manager/</id>
         
-        <summary type="html">&lt;p&gt;〔首發於 &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.v2ex.com&#x2F;t&#x2F;445778&quot;&gt;V2EX&lt;&#x2F;a&gt;〕&lt;&#x2F;p&gt;
-&lt;p&gt;某最近的一個小作品，分享給 Rime 用家。&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rime&#x2F;plum&quot;&gt;東風破 &#x2F;plum&#x2F;&lt;&#x2F;a&gt; 是個輕量級的、由 bash 腳本開發的 Rime 輸入法配置管理工具。&lt;br &#x2F;&gt;
+        <summary type="html">&lt;p&gt;〔首發於 &lt;a rel=&quot;external&quot; href=&quot;https://www.v2ex.com/t/445778&quot;&gt;V2EX&lt;/a&gt;〕&lt;/p&gt;
+&lt;p&gt;某最近的一個小作品，分享給 Rime 用家。&lt;/p&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https://github.com/rime/plum&quot;&gt;東風破 /plum/&lt;/a&gt; 是個輕量級的、由 bash 腳本開發的 Rime 輸入法配置管理工具。&lt;br /&gt;
 有望通過提供單行安裝腳本，收集、包裝「配方」，解決 Rime 用家通過統一介面、簡便地獲取輸入方案這個難題。
-並爲積累了一定經驗的用家提供了一個管理和分享配置的渠道。&lt;&#x2F;p&gt;</summary>
+並爲積累了一定經驗的用家提供了一個管理和分享配置的渠道。&lt;/p&gt;</summary>
         
     </entry>
 </feed>

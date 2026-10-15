@@ -13,22 +13,18 @@
         <updated>2026-02-26T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              佛振@式恕堂
-            
-          </name>
+          <name>佛振@式恕堂</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://rime.im/blog/combo-jyutping-code-refactor/"/>
         <id>https://rime.im/blog/combo-jyutping-code-refactor/</id>
         
-        <summary type="html">&lt;p&gt;大家好，前陣子我開源了一個爲 34 鍵分體鍵盤（Ferris Sweep）量身打造的粵拼並擊輸入法（宮保粵拼），並做了一個可視化的 Web 模擬器（基於 Rust + Leptos）。上一期發佈後，視覺效果不錯，但在底層架構上，我遇到了一個經典的 Rust 難題：如何讓編譯期就固定的靜態數據，根據前端的 UI 狀態進行動態切換？&lt;&#x2F;p&gt;
-&lt;h3 id=&quot;❌_痛點與挑戰&quot;&gt;❌ 痛點與挑戰&lt;&#x2F;h3&gt;
-&lt;p&gt;在 Rime 引擎的架構思維中，輸入方案（包含幾百條正則拼寫運算規則）通常是非常重的，所以我們習慣將其放在 &lt;code&gt;lazy_static!&lt;&#x2F;code&gt; 裏，擁有 &lt;code&gt;&#x27;static&lt;&#x2F;code&gt; 生命週期。&lt;&#x2F;p&gt;
-&lt;p&gt;但我的需求是：當用戶在前端下拉選單切換「實體鍵盤佈局」（如標準直列 -&amp;gt; 縱向錯列）時，底層的方案定義必須動態替換對應的指法規則。如果直接把前端的 &lt;code&gt;AppState&lt;&#x2F;code&gt; 塞進底層，會造成嚴重的耦合；如果每次切換都重新實例化整個方案，效能開銷又太大。&lt;&#x2F;p&gt;
-&lt;h3 id=&quot;✅_解法：依賴注入_(DI)_+_函數指針_+_Leptos_細粒度響應式追蹤&quot;&gt;✅ 解法：依賴注入 (DI) + 函數指針 + Leptos 細粒度響應式追蹤&lt;&#x2F;h3&gt;
-&lt;p&gt;經過一番折騰，我找到了一條非常優雅且符合 Rust 哲學的路徑：&lt;&#x2F;p&gt;</summary>
+        <summary type="html">&lt;p&gt;大家好，前陣子我開源了一個爲 34 鍵分體鍵盤（Ferris Sweep）量身打造的粵拼並擊輸入法（宮保粵拼），並做了一個可視化的 Web 模擬器（基於 Rust + Leptos）。上一期發佈後，視覺效果不錯，但在底層架構上，我遇到了一個經典的 Rust 難題：如何讓編譯期就固定的靜態數據，根據前端的 UI 狀態進行動態切換？&lt;/p&gt;
+&lt;h3 id=&quot;❌_痛點與挑戰&quot;&gt;❌ 痛點與挑戰&lt;/h3&gt;
+&lt;p&gt;在 Rime 引擎的架構思維中，輸入方案（包含幾百條正則拼寫運算規則）通常是非常重的，所以我們習慣將其放在 &lt;code&gt;lazy_static!&lt;/code&gt; 裏，擁有 &lt;code&gt;&#39;static&lt;/code&gt; 生命週期。&lt;/p&gt;
+&lt;p&gt;但我的需求是：當用戶在前端下拉選單切換「實體鍵盤佈局」（如標準直列 -&amp;gt; 縱向錯列）時，底層的方案定義必須動態替換對應的指法規則。如果直接把前端的 &lt;code&gt;AppState&lt;/code&gt; 塞進底層，會造成嚴重的耦合；如果每次切換都重新實例化整個方案，效能開銷又太大。&lt;/p&gt;
+&lt;h3 id=&quot;✅_解法：依賴注入_(DI)_+_函數指針_+_Leptos_細粒度響應式追蹤&quot;&gt;✅ 解法：依賴注入 (DI) + 函數指針 + Leptos 細粒度響應式追蹤&lt;/h3&gt;
+&lt;p&gt;經過一番折騰，我找到了一條非常優雅且符合 Rust 哲學的路徑：&lt;/p&gt;</summary>
         
     </entry>
     <entry xml:lang="zh">
@@ -37,30 +33,26 @@
         <updated>2026-02-25T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              佛振@式恕堂
-            
-          </name>
+          <name>佛振@式恕堂</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://rime.im/blog/combo-jyutping-sweep-layout/"/>
         <id>https://rime.im/blog/combo-jyutping-sweep-layout/</id>
         
-        <summary type="html">&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;combo-jyutping-sweep-layout&#x2F;%E6%8C%87%E5%B0%96%E5%87%BA%E9%9E%98.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
-&lt;p&gt;大家好，今天來分享一個最近折騰的開源業餘專案：宮保粵拼 × Ferris Sweep 軟硬體協同優化。&lt;&#x2F;p&gt;
-&lt;p&gt;如果你曾經嘗試過「並擊（Chording）」輸入法，你一定會發現一個痛點：&lt;br &#x2F;&gt;
-標準鍵盤的斜向錯列（Row-staggered）簡直是並擊的噩夢。&lt;br &#x2F;&gt;
-當你需要同時按下跨排的三個鍵時，手指的扭曲與肌肉牽扯不僅容易疲勞，還會嚴重拖慢效率。&lt;&#x2F;p&gt;
-&lt;p&gt;爲了解決這個物理極限，我做了兩件事：&lt;&#x2F;p&gt;
-&lt;p&gt;一、底層引擎（R²ime 微觀引擎）：&lt;&#x2F;p&gt;
-&lt;p&gt;基於 Rime 靈活的拼寫運算，開發了「宮保粵拼」。&lt;br &#x2F;&gt;
-它允許指法的泛化（例如不綁死絕對鍵位，而是基於相對位置並擊出 ⟨-ng⟩、⟨-m⟩ 等複雜韻尾）。&lt;&#x2F;p&gt;
-&lt;p&gt;二、視覺導航與動態優化（Typewriter）：&lt;&#x2F;p&gt;
-&lt;p&gt;寫了一個 Web 端的可視化模擬器。&lt;br &#x2F;&gt;
-它不僅用 CSS 完美復刻了 Ferris Sweep 的激進縱向錯列（Columnar Stagger）與拇指旋轉角度，&lt;br &#x2F;&gt;
-更核心的是，它會根據你當前的物理佈局，動態計算並提示最符合人體工學的「最佳並擊和弦」。&lt;&#x2F;p&gt;
-&lt;p&gt;舉個例子：&lt;&#x2F;p&gt;</summary>
+        <summary type="html">&lt;p&gt;&lt;img src=&quot;https://rime.im/blog/combo-jyutping-sweep-layout/%E6%8C%87%E5%B0%96%E5%87%BA%E9%9E%98.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;大家好，今天來分享一個最近折騰的開源業餘專案：宮保粵拼 × Ferris Sweep 軟硬體協同優化。&lt;/p&gt;
+&lt;p&gt;如果你曾經嘗試過「並擊（Chording）」輸入法，你一定會發現一個痛點：&lt;br /&gt;
+標準鍵盤的斜向錯列（Row-staggered）簡直是並擊的噩夢。&lt;br /&gt;
+當你需要同時按下跨排的三個鍵時，手指的扭曲與肌肉牽扯不僅容易疲勞，還會嚴重拖慢效率。&lt;/p&gt;
+&lt;p&gt;爲了解決這個物理極限，我做了兩件事：&lt;/p&gt;
+&lt;p&gt;一、底層引擎（R²ime 微觀引擎）：&lt;/p&gt;
+&lt;p&gt;基於 Rime 靈活的拼寫運算，開發了「宮保粵拼」。&lt;br /&gt;
+它允許指法的泛化（例如不綁死絕對鍵位，而是基於相對位置並擊出 ⟨-ng⟩、⟨-m⟩ 等複雜韻尾）。&lt;/p&gt;
+&lt;p&gt;二、視覺導航與動態優化（Typewriter）：&lt;/p&gt;
+&lt;p&gt;寫了一個 Web 端的可視化模擬器。&lt;br /&gt;
+它不僅用 CSS 完美復刻了 Ferris Sweep 的激進縱向錯列（Columnar Stagger）與拇指旋轉角度，&lt;br /&gt;
+更核心的是，它會根據你當前的物理佈局，動態計算並提示最符合人體工學的「最佳並擊和弦」。&lt;/p&gt;
+&lt;p&gt;舉個例子：&lt;/p&gt;</summary>
         
     </entry>
 </feed>

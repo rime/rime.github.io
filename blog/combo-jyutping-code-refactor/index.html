@@ -71,55 +71,55 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="https:&#x2F;&#x2F;rime.im">RIME | 中州韻輸入法引擎</a>
+      <a class="navbar-brand" href="https://rime.im">RIME | 中州韻輸入法引擎</a>
       <button id="btn-simplify" type="button" class="navbar-convert">簡</button>
       <div class="collapse navbar-collapse nav-menu">
           <ul class="nav navbar-nav">
               
               <li>
-                  <a href="&#x2F;download" title="">
+                  <a href="/download" title="">
                       <i class="fa fa-arrow-down"></i>下載
                   </a>
               </li>
               
               <li>
-                  <a href="&#x2F;recipes" title="">
+                  <a href="/recipes" title="">
                       <i class="fa fa-flask"></i>配方
                   </a>
               </li>
               
               <li>
-                  <a href="&#x2F;docs" title="">
+                  <a href="/docs" title="">
                       <i class="fa fa-question-circle"></i>幫助
                   </a>
               </li>
               
               <li>
-                  <a href="&#x2F;code" title="">
+                  <a href="/code" title="">
                       <i class="fa fa-github"></i>源碼
                   </a>
               </li>
               
               <li>
-                  <a href="&#x2F;donate" title="">
+                  <a href="/donate" title="">
                       <i class="fa fa-heart"></i>捐贈
                   </a>
               </li>
               
               <li>
-                  <a href="&#x2F;discuss" title="">
+                  <a href="/discuss" title="">
                       <i class="fa fa-comments"></i>討論
                   </a>
               </li>
               
               <li>
-                  <a href="&#x2F;blog" title="Rime::Blog">
+                  <a href="/blog" title="Rime::Blog">
                       <i class="fa fa-pencil-square-o"></i>網誌
                   </a>
               </li>
               
               <li>
-                  <a href="&#x2F;online" title="">
+                  <a href="/online" title="">
                       <i class="fa fa-cloud"></i>體驗
                   </a>
               </li>
@@ -133,8 +133,7 @@
 
         
         
-        <div class="container">
-            <div class="content">
+
                 
 <div class="panel-heading">
     
@@ -163,7 +162,7 @@
 <li>輕量級環境上下文</li>
 </ol>
 <p>我沒有把整個 <code>AppState</code> 傳給底層，而是抽取了一個全都是 <code>Copy</code> 屬性、包裝着 Leptos Signal 的環境結構體：</p>
-<pre class="giallo" style="color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);"><code data-lang="rust"><span class="giallo-l"><span>#</span><span>[</span><span>derive</span><span>(</span><span style="color: light-dark(#6F42C1, #B392F0);">Clone</span><span>,</span><span style="color: light-dark(#6F42C1, #B392F0);"> Copy</span><span>)</span><span>]</span></span>
+<pre class="giallo" style="color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);" ><code data-lang="rust"><span class="giallo-l"><span>#</span><span>[</span><span>derive</span><span>(</span><span style="color: light-dark(#6F42C1, #B392F0);">Clone</span><span>,</span><span style="color: light-dark(#6F42C1, #B392F0);"> Copy</span><span>)</span><span>]</span></span>
 <span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">pub</span><span style="color: light-dark(#D73A49, #F97583);"> struct</span><span> 輸入方案環境 </span><span>{</span></span>
 <span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">    pub</span><span> 已選配列</span><span style="color: light-dark(#D73A49, #F97583);">:</span><span style="color: light-dark(#6F42C1, #B392F0);"> Signal</span><span>&lt;</span><span style="color: light-dark(#6F42C1, #B392F0);">Option</span><span>&lt;</span><span>配列</span><span>&gt;</span><span>&gt;</span><span>,</span></span>
 <span class="giallo-l"><span>}</span></span></code></pre>
@@ -172,7 +171,7 @@
 </ol>
 <p>我把 <code>lazy_static</code> 裏原本寫死的方案實例，改成了接收環境參數的函數指針 <code>fn(輸入方案環境) -&gt; 輸入方案定義&lt;'static&gt;</code>。
 這完全沒有破壞 'static 的生命週期，只是把「組裝」的過程延遲到了執行期。</p>
-<pre class="giallo" style="color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);"><code data-lang="rust"><span class="giallo-l"><span style="color: light-dark(#6F42C1, #B392F0);">lazy_static!</span><span> {</span></span>
+<pre class="giallo" style="color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);" ><code data-lang="rust"><span class="giallo-l"><span style="color: light-dark(#6F42C1, #B392F0);">lazy_static!</span><span> {</span></span>
 <span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">    pub</span><span style="color: light-dark(#D73A49, #F97583);"> static</span><span style="color: light-dark(#D73A49, #F97583);"> ref</span><span> 方案選單</span><span style="color: light-dark(#D73A49, #F97583);">:</span><span style="color: light-dark(#6F42C1, #B392F0);"> Vec</span><span>&lt;</span><span>(</span><span>方案選項</span><span>,</span><span style="color: light-dark(#D73A49, #F97583);"> fn</span><span>(</span><span>輸入方案環境</span><span>)</span><span style="color: light-dark(#D73A49, #F97583);"> -&gt;</span><span> 輸入方案定義</span><span>&lt;</span><span>&#39;</span><span style="color: light-dark(#6F42C1, #B392F0);">static</span><span>&gt;</span><span>)</span><span>&gt;</span><span style="color: light-dark(#D73A49, #F97583);"> =</span><span style="color: light-dark(#6F42C1, #B392F0);"> vec!</span><span>[</span></span>
 <span class="giallo-l"><span>        (</span><span>方案選項</span><span style="color: light-dark(#D73A49, #F97583);">::</span><span>宮保粵拼</span><span>,</span><span> 宮保粵拼輸入方案</span><span>)</span><span>,</span><span style="color: light-dark(#6A737D, #6A737D);"> //</span><span style="color: light-dark(#6A737D, #6A737D);"> 傳入函數指針</span></span>
 <span class="giallo-l"><span style="color: light-dark(#6A737D, #6A737D);">        //</span><span style="color: light-dark(#6A737D, #6A737D);"> ...</span></span>
@@ -183,7 +182,7 @@
 </ol>
 <p>外層的派發器變得極度「無腦」，只負責透傳 <code>環境</code>。只有真正關心硬件佈局的 <code>宮保粵拼</code> 模組，纔會在內部 讀取 Signal 的值（觸發依賴收集）。</p>
 <p>這樣一來，外層的 <code>theory.rs</code> 只是在無腦透傳上下文，完全不與 UI 狀態耦合；而當用戶在前端切換佈局時，Leptos 的響應式系統會精準定位到這個具體的方案生成函數，自動觸發重新求值，完成動態裝配。</p>
-<pre class="giallo" style="color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);"><code data-lang="rust"><span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">pub</span><span style="color: light-dark(#D73A49, #F97583);"> fn</span><span> 宮保粵拼輸入方案</span><span>(</span><span>環境</span><span style="color: light-dark(#D73A49, #F97583);">:</span><span> 輸入方案環境</span><span>)</span><span style="color: light-dark(#D73A49, #F97583);"> -&gt;</span><span> 輸入方案定義</span><span>&lt;</span><span>&#39;</span><span style="color: light-dark(#6F42C1, #B392F0);">static</span><span>&gt;</span><span> {</span></span>
+<pre class="giallo" style="color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);" ><code data-lang="rust"><span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">pub</span><span style="color: light-dark(#D73A49, #F97583);"> fn</span><span> 宮保粵拼輸入方案</span><span>(</span><span>環境</span><span style="color: light-dark(#D73A49, #F97583);">:</span><span> 輸入方案環境</span><span>)</span><span style="color: light-dark(#D73A49, #F97583);"> -&gt;</span><span> 輸入方案定義</span><span>&lt;</span><span>&#39;</span><span style="color: light-dark(#6F42C1, #B392F0);">static</span><span>&gt;</span><span> {</span></span>
 <span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">    let</span><span> 是縱版 </span><span style="color: light-dark(#D73A49, #F97583);">=</span><span style="color: light-dark(#6F42C1, #B392F0);"> matches!</span><span>(</span><span>環境</span><span style="color: light-dark(#D73A49, #F97583);">.</span><span>已選配列</span><span>(</span><span>)</span><span>,</span><span style="color: light-dark(#6F42C1, #B392F0);"> Some</span><span>(</span><span>配列</span><span style="color: light-dark(#D73A49, #F97583);">::</span><span>縱向錯列分體</span><span>)</span><span>)</span><span>;</span></span>
 <span class="giallo-l"><span style="color: light-dark(#6A737D, #6A737D);">    //</span><span style="color: light-dark(#6A737D, #6A737D);"> ... 動態回傳組裝好的結構體</span></span>
 <span class="giallo-l"><span>}</span></span></code></pre><h3 id="🎉_成果">🎉 成果</h3>
@@ -199,11 +198,11 @@
         <center>
             <ul class="pagination">
                 
-                <li class="prev"><a href="&#x2F;blog&#x2F;leptos-async-resource-loading&#x2F;" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>後一篇</a></li>
+                <li class="prev"><a href="/blog/leptos-async-resource-loading/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>後一篇</a></li>
                 
                 <li><a href="/blog"><i class="fa fa-book"></i>網誌</a></li>
                 
-                <li class="next"><a href="&#x2F;blog&#x2F;combo-jyutping-sweep-layout&#x2F;" class="alignright next">前一篇<i class="fa fa-arrow-circle-o-right"></i></a></li>
+                <li class="next"><a href="/blog/combo-jyutping-sweep-layout/" class="alignright next">前一篇<i class="fa fa-arrow-circle-o-right"></i></a></li>
                 
             </ul>
         </center>
@@ -241,7 +240,7 @@
             2026-02-26
         </div>
         <div>
-            <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;combo-jyutping-code-refactor&#x2F;#comment"><i class="fa fa-comments"></i> 留言</a>
+            <a href="https://rime.im/blog/combo-jyutping-code-refactor/#comment"><i class="fa fa-comments"></i> 留言</a>
         </div>
         
 
@@ -319,19 +318,19 @@
                 <ol class="toc-article">
                     
                     <li>
-                        <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;combo-jyutping-code-refactor&#x2F;#❌_痛點與挑戰">❌ 痛點與挑戰</a>
+                        <a href="https://rime.im/blog/combo-jyutping-code-refactor/#❌_痛點與挑戰">❌ 痛點與挑戰</a>
                         
                         
                     </li>
                     
                     <li>
-                        <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;combo-jyutping-code-refactor&#x2F;#✅_解法：依賴注入_(DI)_+_函數指針_+_Leptos_細粒度響應式追蹤">✅ 解法：依賴注入 (DI) + 函數指針 + Leptos 細粒度響應式追蹤</a>
+                        <a href="https://rime.im/blog/combo-jyutping-code-refactor/#✅_解法：依賴注入_(DI)_+_函數指針_+_Leptos_細粒度響應式追蹤">✅ 解法：依賴注入 (DI) + 函數指針 + Leptos 細粒度響應式追蹤</a>
                         
                         
                     </li>
                     
                     <li>
-                        <a href="https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;combo-jyutping-code-refactor&#x2F;#🎉_成果">🎉 成果</a>
+                        <a href="https://rime.im/blog/combo-jyutping-code-refactor/#🎉_成果">🎉 成果</a>
                         
                         
                     </li>
@@ -345,8 +344,7 @@
     </div>
 </div>
 
-            </div>
-        </div>
+
         
 
         

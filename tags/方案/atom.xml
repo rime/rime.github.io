@@ -13,32 +13,28 @@
         <updated>2026-05-10T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              佛振@式恕堂
-            
-          </name>
+          <name>佛振@式恕堂</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://rime.im/blog/cangjie-lumiary-chords/"/>
         <id>https://rime.im/blog/cangjie-lumiary-chords/</id>
         
-        <summary type="html">&lt;p&gt;配方： ℞ &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;lotem&#x2F;rime-cangjie-luminary-chords&quot;&gt;lotem&#x2F;rime-cangjie-luminary-chords&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;p&gt;Rime 輸入方案：倉頡七曜並擊&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;cangjie-lumiary-chords&#x2F;%E5%80%89%E9%A0%A1%E4%B8%83%E6%9B%9C%E4%B8%A6%E6%93%8A.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;簡介&quot;&gt;簡介&lt;&#x2F;h2&gt;
-&lt;p&gt;&lt;em&gt;並擊&lt;&#x2F;em&gt; （chord-typing）是指：同時按下鍵盤上的多個按鍵。&lt;&#x2F;p&gt;
-&lt;p&gt;本方案以倉頡五代編碼爲基礎，採用速成輸入法的首尾取碼方法，左右手同時擊發，各自擊出一個倉頡字母。&lt;&#x2F;p&gt;
-&lt;h3 id=&quot;指法演示&quot;&gt;指法演示&lt;&#x2F;h3&gt;
+        <summary type="html">&lt;p&gt;配方： ℞ &lt;a rel=&quot;external&quot; href=&quot;https://github.com/lotem/rime-cangjie-luminary-chords&quot;&gt;lotem/rime-cangjie-luminary-chords&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Rime 輸入方案：倉頡七曜並擊&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://rime.im/blog/cangjie-lumiary-chords/%E5%80%89%E9%A0%A1%E4%B8%83%E6%9B%9C%E4%B8%A6%E6%93%8A.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;簡介&quot;&gt;簡介&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;並擊&lt;/em&gt; （chord-typing）是指：同時按下鍵盤上的多個按鍵。&lt;/p&gt;
+&lt;p&gt;本方案以倉頡五代編碼爲基礎，採用速成輸入法的首尾取碼方法，左右手同時擊發，各自擊出一個倉頡字母。&lt;/p&gt;
+&lt;h3 id=&quot;指法演示&quot;&gt;指法演示&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1K5RCBNEPL&#x2F;&quot;&gt;並擊輸入倉頡碼，高鐵旅途練鍵，實機打字演示&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1T15L6ZEGs&#x2F;&quot;&gt;鍵道·破執　倉頡七曜並擊錄入&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3 id=&quot;鍵盤佈局&quot;&gt;鍵盤佈局&lt;&#x2F;h3&gt;
-&lt;p&gt;倉頡七曜佈局，對應標準鍵盤字母區，左右手互爲鏡像。&lt;&#x2F;p&gt;
-&lt;pre class=&quot;giallo&quot; style=&quot;color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;人 心 手 口 卜    卜 口 手 心 人&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;金 木 水 火 土    土 火 水 木 金&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;竹 戈 中 一 弓    弓 一 中 戈 竹&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</summary>
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https://www.bilibili.com/video/BV1K5RCBNEPL/&quot;&gt;並擊輸入倉頡碼，高鐵旅途練鍵，實機打字演示&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https://www.bilibili.com/video/BV1T15L6ZEGs/&quot;&gt;鍵道·破執　倉頡七曜並擊錄入&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;鍵盤佈局&quot;&gt;鍵盤佈局&lt;/h3&gt;
+&lt;p&gt;倉頡七曜佈局，對應標準鍵盤字母區，左右手互爲鏡像。&lt;/p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;人 心 手 口 卜    卜 口 手 心 人&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;金 木 水 火 土    土 火 水 木 金&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;竹 戈 中 一 弓    弓 一 中 戈 竹&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</summary>
         
     </entry>
     <entry xml:lang="zh">
@@ -47,30 +43,26 @@
         <updated>2026-02-25T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              佛振@式恕堂
-            
-          </name>
+          <name>佛振@式恕堂</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://rime.im/blog/combo-jyutping-sweep-layout/"/>
         <id>https://rime.im/blog/combo-jyutping-sweep-layout/</id>
         
-        <summary type="html">&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;combo-jyutping-sweep-layout&#x2F;%E6%8C%87%E5%B0%96%E5%87%BA%E9%9E%98.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
-&lt;p&gt;大家好，今天來分享一個最近折騰的開源業餘專案：宮保粵拼 × Ferris Sweep 軟硬體協同優化。&lt;&#x2F;p&gt;
-&lt;p&gt;如果你曾經嘗試過「並擊（Chording）」輸入法，你一定會發現一個痛點：&lt;br &#x2F;&gt;
-標準鍵盤的斜向錯列（Row-staggered）簡直是並擊的噩夢。&lt;br &#x2F;&gt;
-當你需要同時按下跨排的三個鍵時，手指的扭曲與肌肉牽扯不僅容易疲勞，還會嚴重拖慢效率。&lt;&#x2F;p&gt;
-&lt;p&gt;爲了解決這個物理極限，我做了兩件事：&lt;&#x2F;p&gt;
-&lt;p&gt;一、底層引擎（R²ime 微觀引擎）：&lt;&#x2F;p&gt;
-&lt;p&gt;基於 Rime 靈活的拼寫運算，開發了「宮保粵拼」。&lt;br &#x2F;&gt;
-它允許指法的泛化（例如不綁死絕對鍵位，而是基於相對位置並擊出 ⟨-ng⟩、⟨-m⟩ 等複雜韻尾）。&lt;&#x2F;p&gt;
-&lt;p&gt;二、視覺導航與動態優化（Typewriter）：&lt;&#x2F;p&gt;
-&lt;p&gt;寫了一個 Web 端的可視化模擬器。&lt;br &#x2F;&gt;
-它不僅用 CSS 完美復刻了 Ferris Sweep 的激進縱向錯列（Columnar Stagger）與拇指旋轉角度，&lt;br &#x2F;&gt;
-更核心的是，它會根據你當前的物理佈局，動態計算並提示最符合人體工學的「最佳並擊和弦」。&lt;&#x2F;p&gt;
-&lt;p&gt;舉個例子：&lt;&#x2F;p&gt;</summary>
+        <summary type="html">&lt;p&gt;&lt;img src=&quot;https://rime.im/blog/combo-jyutping-sweep-layout/%E6%8C%87%E5%B0%96%E5%87%BA%E9%9E%98.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;大家好，今天來分享一個最近折騰的開源業餘專案：宮保粵拼 × Ferris Sweep 軟硬體協同優化。&lt;/p&gt;
+&lt;p&gt;如果你曾經嘗試過「並擊（Chording）」輸入法，你一定會發現一個痛點：&lt;br /&gt;
+標準鍵盤的斜向錯列（Row-staggered）簡直是並擊的噩夢。&lt;br /&gt;
+當你需要同時按下跨排的三個鍵時，手指的扭曲與肌肉牽扯不僅容易疲勞，還會嚴重拖慢效率。&lt;/p&gt;
+&lt;p&gt;爲了解決這個物理極限，我做了兩件事：&lt;/p&gt;
+&lt;p&gt;一、底層引擎（R²ime 微觀引擎）：&lt;/p&gt;
+&lt;p&gt;基於 Rime 靈活的拼寫運算，開發了「宮保粵拼」。&lt;br /&gt;
+它允許指法的泛化（例如不綁死絕對鍵位，而是基於相對位置並擊出 ⟨-ng⟩、⟨-m⟩ 等複雜韻尾）。&lt;/p&gt;
+&lt;p&gt;二、視覺導航與動態優化（Typewriter）：&lt;/p&gt;
+&lt;p&gt;寫了一個 Web 端的可視化模擬器。&lt;br /&gt;
+它不僅用 CSS 完美復刻了 Ferris Sweep 的激進縱向錯列（Columnar Stagger）與拇指旋轉角度，&lt;br /&gt;
+更核心的是，它會根據你當前的物理佈局，動態計算並提示最符合人體工學的「最佳並擊和弦」。&lt;/p&gt;
+&lt;p&gt;舉個例子：&lt;/p&gt;</summary>
         
     </entry>
     <entry xml:lang="zh">
@@ -79,42 +71,30 @@
         <updated>2026-01-27T22:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              佛振@式恕堂
-            
-          </name>
+          <name>佛振@式恕堂</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://rime.im/blog/dongfengpo-zhuyinyuan/"/>
         <id>https://rime.im/blog/dongfengpo-zhuyinyuan/</id>
         
-        <summary type="html">&lt;p&gt;十餘年前，BYVoid 在部落格中記述了與 Rime 作者佛振的一面之緣，震驚於其「手寫注音」的神技。&lt;br &#x2F;&gt;
-這份「緣、驚、愧」成了 Rime 發展史上一段佳話。&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;創作背景：緣·驚·愧&quot;&gt;創作背景：緣·驚·愧&lt;&#x2F;h2&gt;
-&lt;p&gt;典出 BYVoid 名篇《&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;byvoid.com&#x2F;blog&#x2F;recommend-rime&#x2F;&quot;&gt;推薦一個神級輸入法——Rime&lt;&#x2F;a&gt;》。&lt;&#x2F;p&gt;
-&lt;p&gt;隨著最近 Rime 新版&lt;strong&gt;注音輸入方案&lt;&#x2F;strong&gt;開發完成，我不禁回想到那個開源輸入法初創的純粹年代。&lt;&#x2F;p&gt;
-&lt;p&gt;我用鍵盤彈奏這曲〈&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1Evk2BPE6B&#x2F;&quot;&gt;東風破&lt;&#x2F;a&gt;〉，原是爲&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;zh.wikipedia.org&#x2F;wiki&#x2F;%E8%98%AD%E8%8C%82&quot;&gt;蘭茂&lt;&#x2F;a&gt;《&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;zh.wikipedia.org&#x2F;wiki&#x2F;%E9%9F%BB%E7%95%A7%E6%98%93%E9%80%9A#%E8%81%B2%E6%AF%8D&quot;&gt;早梅詩&lt;&#x2F;a&gt;》所寫。&lt;br &#x2F;&gt;
-如今，我以 BYVoid 的第一人稱視角重新填詞，重現當年那場大會上的驚鴻一瞥。&lt;&#x2F;p&gt;
-&lt;h3 id=&quot;作品展示&quot;&gt;作品展示&lt;&#x2F;h3&gt;
-
-    
-    
-    
-
-
+        <summary type="html">&lt;p&gt;十餘年前，BYVoid 在部落格中記述了與 Rime 作者佛振的一面之緣，震驚於其「手寫注音」的神技。&lt;br /&gt;
+這份「緣、驚、愧」成了 Rime 發展史上一段佳話。&lt;/p&gt;
+&lt;h2 id=&quot;創作背景：緣·驚·愧&quot;&gt;創作背景：緣·驚·愧&lt;/h2&gt;
+&lt;p&gt;典出 BYVoid 名篇《&lt;a rel=&quot;external&quot; href=&quot;https://byvoid.com/blog/recommend-rime/&quot;&gt;推薦一個神級輸入法——Rime&lt;/a&gt;》。&lt;/p&gt;
+&lt;p&gt;隨著最近 Rime 新版&lt;strong&gt;注音輸入方案&lt;/strong&gt;開發完成，我不禁回想到那個開源輸入法初創的純粹年代。&lt;/p&gt;
+&lt;p&gt;我用鍵盤彈奏這曲〈&lt;a rel=&quot;external&quot; href=&quot;https://www.bilibili.com/video/BV1Evk2BPE6B/&quot;&gt;東風破&lt;/a&gt;〉，原是爲&lt;a rel=&quot;external&quot; href=&quot;https://zh.wikipedia.org/wiki/%E8%98%AD%E8%8C%82&quot;&gt;蘭茂&lt;/a&gt;《&lt;a rel=&quot;external&quot; href=&quot;https://zh.wikipedia.org/wiki/%E9%9F%BB%E7%95%A7%E6%98%93%E9%80%9A#%E8%81%B2%E6%AF%8D&quot;&gt;早梅詩&lt;/a&gt;》所寫。&lt;br /&gt;
+如今，我以 BYVoid 的第一人稱視角重新填詞，重現當年那場大會上的驚鴻一瞥。&lt;/p&gt;
+&lt;h3 id=&quot;作品展示&quot;&gt;作品展示&lt;/h3&gt;
 &lt;figure&gt;
-    
-    &lt;p&gt;
-        &lt;figcaption&gt;〈東風破·注音緣〉音軌試聽&lt;&#x2F;figcaption&gt;
-    &lt;&#x2F;p&gt;
-    
-    &lt;p&gt;
-        &lt;audio controls src=&quot;https:&amp;#x2F;&amp;#x2F;rime.im&amp;#x2F;blog&amp;#x2F;dongfengpo-zhuyinyuan&amp;#x2F;東風破.mp3&quot; preload=&quot;metadata&quot;&gt;
-            您的瀏覽器不支持 audio 元素。
-        &lt;&#x2F;audio&gt;
-    &lt;&#x2F;p&gt;
-&lt;&#x2F;figure&gt;</summary>
+&lt;pre class=&quot;giallo&quot; style=&quot;color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;&amp;lt;p&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    &amp;lt;figcaption&amp;gt;〈東風破·注音緣〉音軌試聽&amp;lt;/figcaption&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;&amp;lt;p&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    &amp;lt;audio controls src=&amp;quot;東風破.mp3&amp;quot; preload=&amp;quot;metadata&amp;quot;&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;        您的瀏覽器不支持 audio 元素。&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    &amp;lt;/audio&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</summary>
         
     </entry>
     <entry xml:lang="zh">
@@ -123,22 +103,18 @@
         <updated>2013-09-19T21:25:33+00:00</updated>
         
         <author>
-          <name>
-            
-              佛振@式恕堂
-            
-          </name>
+          <name>佛振@式恕堂</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://rime.im/blog/luna-pinyin/"/>
         <id>https://rime.im/blog/luna-pinyin/</id>
         
-        <summary type="html">&lt;p&gt;中秋之夜，可想在部落格上寫二句。&lt;&#x2F;p&gt;
-&lt;p&gt;於是 &lt;code&gt;vim ~&#x2F;Library&#x2F;Rime&#x2F;squirrel.custom.yaml&lt;&#x2F;code&gt; 寫下&lt;&#x2F;p&gt;
-&lt;pre class=&quot;giallo&quot; style=&quot;color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);&quot;&gt;&lt;code data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: light-dark(#22863A, #85E89D);&quot;&gt;p&lt;&#x2F;span&gt;&lt;span style=&quot;color: light-dark(#22863A, #85E89D);&quot;&gt;atch&lt;&#x2F;span&gt;&lt;span&gt;:&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: light-dark(#22863A, #85E89D);&quot;&gt;  s&lt;&#x2F;span&gt;&lt;span style=&quot;color: light-dark(#22863A, #85E89D);&quot;&gt;tyle&#x2F;color_scheme&lt;&#x2F;span&gt;&lt;span&gt;:&lt;&#x2F;span&gt;&lt;span style=&quot;color: light-dark(#032F62, #9ECBFF);&quot;&gt; l&lt;&#x2F;span&gt;&lt;span style=&quot;color: light-dark(#032F62, #9ECBFF);&quot;&gt;una&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;部署後，按 &lt;code&gt;Control+~&lt;&#x2F;code&gt; 切換到【朙月拼音】。&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;luna-pinyin&#x2F;mingyue-pinyin-2013-09-19.png&quot; alt=&quot;此刻正在寫字的朙月拼音&quot; &#x2F;&gt;&lt;&#x2F;p&gt;</summary>
+        <summary type="html">&lt;p&gt;中秋之夜，可想在部落格上寫二句。&lt;/p&gt;
+&lt;p&gt;於是 &lt;code&gt;vim ~/Library/Rime/squirrel.custom.yaml&lt;/code&gt; 寫下&lt;/p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);&quot; &gt;&lt;code data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: light-dark(#22863A, #85E89D);&quot;&gt;p&lt;/span&gt;&lt;span style=&quot;color: light-dark(#22863A, #85E89D);&quot;&gt;atch&lt;/span&gt;&lt;span&gt;:&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: light-dark(#22863A, #85E89D);&quot;&gt;  s&lt;/span&gt;&lt;span style=&quot;color: light-dark(#22863A, #85E89D);&quot;&gt;tyle/color_scheme&lt;/span&gt;&lt;span&gt;:&lt;/span&gt;&lt;span style=&quot;color: light-dark(#032F62, #9ECBFF);&quot;&gt; l&lt;/span&gt;&lt;span style=&quot;color: light-dark(#032F62, #9ECBFF);&quot;&gt;una&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;部署後，按 &lt;code&gt;Control+~&lt;/code&gt; 切換到【朙月拼音】。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://rime.im/blog/luna-pinyin/mingyue-pinyin-2013-09-19.png&quot; alt=&quot;此刻正在寫字的朙月拼音&quot; /&gt;&lt;/p&gt;</summary>
         
     </entry>
 </feed>

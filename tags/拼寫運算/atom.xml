@@ -13,22 +13,18 @@
         <updated>2026-02-26T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              佛振@式恕堂
-            
-          </name>
+          <name>佛振@式恕堂</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://rime.im/blog/combo-jyutping-code-refactor/"/>
         <id>https://rime.im/blog/combo-jyutping-code-refactor/</id>
         
-        <summary type="html">&lt;p&gt;大家好，前陣子我開源了一個爲 34 鍵分體鍵盤（Ferris Sweep）量身打造的粵拼並擊輸入法（宮保粵拼），並做了一個可視化的 Web 模擬器（基於 Rust + Leptos）。上一期發佈後，視覺效果不錯，但在底層架構上，我遇到了一個經典的 Rust 難題：如何讓編譯期就固定的靜態數據，根據前端的 UI 狀態進行動態切換？&lt;&#x2F;p&gt;
-&lt;h3 id=&quot;❌_痛點與挑戰&quot;&gt;❌ 痛點與挑戰&lt;&#x2F;h3&gt;
-&lt;p&gt;在 Rime 引擎的架構思維中，輸入方案（包含幾百條正則拼寫運算規則）通常是非常重的，所以我們習慣將其放在 &lt;code&gt;lazy_static!&lt;&#x2F;code&gt; 裏，擁有 &lt;code&gt;&#x27;static&lt;&#x2F;code&gt; 生命週期。&lt;&#x2F;p&gt;
-&lt;p&gt;但我的需求是：當用戶在前端下拉選單切換「實體鍵盤佈局」（如標準直列 -&amp;gt; 縱向錯列）時，底層的方案定義必須動態替換對應的指法規則。如果直接把前端的 &lt;code&gt;AppState&lt;&#x2F;code&gt; 塞進底層，會造成嚴重的耦合；如果每次切換都重新實例化整個方案，效能開銷又太大。&lt;&#x2F;p&gt;
-&lt;h3 id=&quot;✅_解法：依賴注入_(DI)_+_函數指針_+_Leptos_細粒度響應式追蹤&quot;&gt;✅ 解法：依賴注入 (DI) + 函數指針 + Leptos 細粒度響應式追蹤&lt;&#x2F;h3&gt;
-&lt;p&gt;經過一番折騰，我找到了一條非常優雅且符合 Rust 哲學的路徑：&lt;&#x2F;p&gt;</summary>
+        <summary type="html">&lt;p&gt;大家好，前陣子我開源了一個爲 34 鍵分體鍵盤（Ferris Sweep）量身打造的粵拼並擊輸入法（宮保粵拼），並做了一個可視化的 Web 模擬器（基於 Rust + Leptos）。上一期發佈後，視覺效果不錯，但在底層架構上，我遇到了一個經典的 Rust 難題：如何讓編譯期就固定的靜態數據，根據前端的 UI 狀態進行動態切換？&lt;/p&gt;
+&lt;h3 id=&quot;❌_痛點與挑戰&quot;&gt;❌ 痛點與挑戰&lt;/h3&gt;
+&lt;p&gt;在 Rime 引擎的架構思維中，輸入方案（包含幾百條正則拼寫運算規則）通常是非常重的，所以我們習慣將其放在 &lt;code&gt;lazy_static!&lt;/code&gt; 裏，擁有 &lt;code&gt;&#39;static&lt;/code&gt; 生命週期。&lt;/p&gt;
+&lt;p&gt;但我的需求是：當用戶在前端下拉選單切換「實體鍵盤佈局」（如標準直列 -&amp;gt; 縱向錯列）時，底層的方案定義必須動態替換對應的指法規則。如果直接把前端的 &lt;code&gt;AppState&lt;/code&gt; 塞進底層，會造成嚴重的耦合；如果每次切換都重新實例化整個方案，效能開銷又太大。&lt;/p&gt;
+&lt;h3 id=&quot;✅_解法：依賴注入_(DI)_+_函數指針_+_Leptos_細粒度響應式追蹤&quot;&gt;✅ 解法：依賴注入 (DI) + 函數指針 + Leptos 細粒度響應式追蹤&lt;/h3&gt;
+&lt;p&gt;經過一番折騰，我找到了一條非常優雅且符合 Rust 哲學的路徑：&lt;/p&gt;</summary>
         
     </entry>
     <entry xml:lang="zh">
@@ -37,30 +33,26 @@
         <updated>2026-02-25T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              佛振@式恕堂
-            
-          </name>
+          <name>佛振@式恕堂</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://rime.im/blog/combo-jyutping-sweep-layout/"/>
         <id>https://rime.im/blog/combo-jyutping-sweep-layout/</id>
         
-        <summary type="html">&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rime.im&#x2F;blog&#x2F;combo-jyutping-sweep-layout&#x2F;%E6%8C%87%E5%B0%96%E5%87%BA%E9%9E%98.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
-&lt;p&gt;大家好，今天來分享一個最近折騰的開源業餘專案：宮保粵拼 × Ferris Sweep 軟硬體協同優化。&lt;&#x2F;p&gt;
-&lt;p&gt;如果你曾經嘗試過「並擊（Chording）」輸入法，你一定會發現一個痛點：&lt;br &#x2F;&gt;
-標準鍵盤的斜向錯列（Row-staggered）簡直是並擊的噩夢。&lt;br &#x2F;&gt;
-當你需要同時按下跨排的三個鍵時，手指的扭曲與肌肉牽扯不僅容易疲勞，還會嚴重拖慢效率。&lt;&#x2F;p&gt;
-&lt;p&gt;爲了解決這個物理極限，我做了兩件事：&lt;&#x2F;p&gt;
-&lt;p&gt;一、底層引擎（R²ime 微觀引擎）：&lt;&#x2F;p&gt;
-&lt;p&gt;基於 Rime 靈活的拼寫運算，開發了「宮保粵拼」。&lt;br &#x2F;&gt;
-它允許指法的泛化（例如不綁死絕對鍵位，而是基於相對位置並擊出 ⟨-ng⟩、⟨-m⟩ 等複雜韻尾）。&lt;&#x2F;p&gt;
-&lt;p&gt;二、視覺導航與動態優化（Typewriter）：&lt;&#x2F;p&gt;
-&lt;p&gt;寫了一個 Web 端的可視化模擬器。&lt;br &#x2F;&gt;
-它不僅用 CSS 完美復刻了 Ferris Sweep 的激進縱向錯列（Columnar Stagger）與拇指旋轉角度，&lt;br &#x2F;&gt;
-更核心的是，它會根據你當前的物理佈局，動態計算並提示最符合人體工學的「最佳並擊和弦」。&lt;&#x2F;p&gt;
-&lt;p&gt;舉個例子：&lt;&#x2F;p&gt;</summary>
+        <summary type="html">&lt;p&gt;&lt;img src=&quot;https://rime.im/blog/combo-jyutping-sweep-layout/%E6%8C%87%E5%B0%96%E5%87%BA%E9%9E%98.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;大家好，今天來分享一個最近折騰的開源業餘專案：宮保粵拼 × Ferris Sweep 軟硬體協同優化。&lt;/p&gt;
+&lt;p&gt;如果你曾經嘗試過「並擊（Chording）」輸入法，你一定會發現一個痛點：&lt;br /&gt;
+標準鍵盤的斜向錯列（Row-staggered）簡直是並擊的噩夢。&lt;br /&gt;
+當你需要同時按下跨排的三個鍵時，手指的扭曲與肌肉牽扯不僅容易疲勞，還會嚴重拖慢效率。&lt;/p&gt;
+&lt;p&gt;爲了解決這個物理極限，我做了兩件事：&lt;/p&gt;
+&lt;p&gt;一、底層引擎（R²ime 微觀引擎）：&lt;/p&gt;
+&lt;p&gt;基於 Rime 靈活的拼寫運算，開發了「宮保粵拼」。&lt;br /&gt;
+它允許指法的泛化（例如不綁死絕對鍵位，而是基於相對位置並擊出 ⟨-ng⟩、⟨-m⟩ 等複雜韻尾）。&lt;/p&gt;
+&lt;p&gt;二、視覺導航與動態優化（Typewriter）：&lt;/p&gt;
+&lt;p&gt;寫了一個 Web 端的可視化模擬器。&lt;br /&gt;
+它不僅用 CSS 完美復刻了 Ferris Sweep 的激進縱向錯列（Columnar Stagger）與拇指旋轉角度，&lt;br /&gt;
+更核心的是，它會根據你當前的物理佈局，動態計算並提示最符合人體工學的「最佳並擊和弦」。&lt;/p&gt;
+&lt;p&gt;舉個例子：&lt;/p&gt;</summary>
         
     </entry>
     <entry xml:lang="zh">
@@ -69,34 +61,30 @@
         <updated>2013-08-28T20:01:17+00:00</updated>
         
         <author>
-          <name>
-            
-              佛振@式恕堂
-            
-          </name>
+          <name>佛振@式恕堂</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://rime.im/blog/spelling-algebra-debugger/"/>
         <id>https://rime.im/blog/spelling-algebra-debugger/</id>
         
-        <summary type="html">&lt;h1 id=&quot;問題&quot;&gt;問題&lt;&#x2F;h1&gt;
-&lt;p&gt;拼音類輸入法，都有一個由固定數目音節碼組成的的音節表。&lt;br &#x2F;&gt;
-如漢語拼音以數百音節表達萬餘漢字。&lt;&#x2F;p&gt;
-&lt;p&gt;Rime 希望用家能自定義音節表，以及音節碼與文字的對應關係。&lt;br &#x2F;&gt;
-這通過編寫 Rime 詞典中的碼表來實現。如粵語、吳語等方言拼音的詞典，音節碼採用特定於該方言的拼寫方式。&lt;&#x2F;p&gt;
-&lt;p&gt;在使用中，可以通過不同的按鍵序列鍵入這些音節。&lt;br &#x2F;&gt;
-如拼音輸入法以音節中的聲母或首字母略代整個音節，稱「簡拼」；將聲、韻各以一字母代之，稱「雙拼」。&lt;&#x2F;p&gt;
-&lt;p&gt;Rime 希望這些不同的輸入形式是用家可以自定義的。如每一種雙拼方案，將按鍵映射到音節碼的方式皆不同。&lt;&#x2F;p&gt;
-&lt;h1 id=&quot;方案&quot;&gt;方案&lt;&#x2F;h1&gt;
-&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rime&#x2F;home&#x2F;wiki&#x2F;SpellingAlgebra&quot;&gt;拼寫運算／Spelling Algebra&lt;&#x2F;a&gt; 是 Rime 輸入法的一項獨創技術。&lt;br &#x2F;&gt;
-其思想是用一組規則描述輸入碼到音節碼的對應關係。&lt;&#x2F;p&gt;
-&lt;p&gt;拼寫運算規則基於正則表達式／regular expression，基本運算有轉寫、變形、派生、消除等。通過組合這幾種操作，完成由音節碼集合到輸入碼集合的投影。&lt;&#x2F;p&gt;
-&lt;p&gt;雖然有&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rime&#x2F;home&#x2F;wiki&#x2F;SpellingAlgebra&quot;&gt;文檔&lt;&#x2F;a&gt; 對算法作了解釋，又有 Rime 預設的輸入方案提供了多個用例，但是因爲算法本身十分複雜和抽象，編制拼寫運算規則及除錯仍有不小難度。&lt;&#x2F;p&gt;
-&lt;h1 id=&quot;工具&quot;&gt;工具&lt;&#x2F;h1&gt;
-&lt;p&gt;早早便發願，做一臺「拼寫運算調試器」。&lt;&#x2F;p&gt;
-&lt;p&gt;用他來演繹拼寫運算的過程，輸入碼如何推導出來便可一目瞭然。&lt;br &#x2F;&gt;
-又可用來做演示，幫助大家直觀地理解拼寫運算的原理和功用。&lt;&#x2F;p&gt;
-&lt;p&gt;近日，「拼寫運算調試器」預覽版出爐，預備將其納入「Rime 工具箱」，與輸入法設定工具一同發佈。&lt;&#x2F;p&gt;</summary>
+        <summary type="html">&lt;h1 id=&quot;問題&quot;&gt;問題&lt;/h1&gt;
+&lt;p&gt;拼音類輸入法，都有一個由固定數目音節碼組成的的音節表。&lt;br /&gt;
+如漢語拼音以數百音節表達萬餘漢字。&lt;/p&gt;
+&lt;p&gt;Rime 希望用家能自定義音節表，以及音節碼與文字的對應關係。&lt;br /&gt;
+這通過編寫 Rime 詞典中的碼表來實現。如粵語、吳語等方言拼音的詞典，音節碼採用特定於該方言的拼寫方式。&lt;/p&gt;
+&lt;p&gt;在使用中，可以通過不同的按鍵序列鍵入這些音節。&lt;br /&gt;
+如拼音輸入法以音節中的聲母或首字母略代整個音節，稱「簡拼」；將聲、韻各以一字母代之，稱「雙拼」。&lt;/p&gt;
+&lt;p&gt;Rime 希望這些不同的輸入形式是用家可以自定義的。如每一種雙拼方案，將按鍵映射到音節碼的方式皆不同。&lt;/p&gt;
+&lt;h1 id=&quot;方案&quot;&gt;方案&lt;/h1&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https://github.com/rime/home/wiki/SpellingAlgebra&quot;&gt;拼寫運算／Spelling Algebra&lt;/a&gt; 是 Rime 輸入法的一項獨創技術。&lt;br /&gt;
+其思想是用一組規則描述輸入碼到音節碼的對應關係。&lt;/p&gt;
+&lt;p&gt;拼寫運算規則基於正則表達式／regular expression，基本運算有轉寫、變形、派生、消除等。通過組合這幾種操作，完成由音節碼集合到輸入碼集合的投影。&lt;/p&gt;
+&lt;p&gt;雖然有&lt;a rel=&quot;external&quot; href=&quot;https://github.com/rime/home/wiki/SpellingAlgebra&quot;&gt;文檔&lt;/a&gt; 對算法作了解釋，又有 Rime 預設的輸入方案提供了多個用例，但是因爲算法本身十分複雜和抽象，編制拼寫運算規則及除錯仍有不小難度。&lt;/p&gt;
+&lt;h1 id=&quot;工具&quot;&gt;工具&lt;/h1&gt;
+&lt;p&gt;早早便發願，做一臺「拼寫運算調試器」。&lt;/p&gt;
+&lt;p&gt;用他來演繹拼寫運算的過程，輸入碼如何推導出來便可一目瞭然。&lt;br /&gt;
+又可用來做演示，幫助大家直觀地理解拼寫運算的原理和功用。&lt;/p&gt;
+&lt;p&gt;近日，「拼寫運算調試器」預覽版出爐，預備將其納入「Rime 工具箱」，與輸入法設定工具一同發佈。&lt;/p&gt;</summary>
         
     </entry>
 </feed>
