@@ -152,16 +152,8 @@
 &lt;p&gt;我用鍵盤彈奏這曲〈&lt;a rel=&quot;external&quot; href=&quot;https://www.bilibili.com/video/BV1Evk2BPE6B/&quot;&gt;東風破&lt;/a&gt;〉，原是爲&lt;a rel=&quot;external&quot; href=&quot;https://zh.wikipedia.org/wiki/%E8%98%AD%E8%8C%82&quot;&gt;蘭茂&lt;/a&gt;《&lt;a rel=&quot;external&quot; href=&quot;https://zh.wikipedia.org/wiki/%E9%9F%BB%E7%95%A7%E6%98%93%E9%80%9A#%E8%81%B2%E6%AF%8D&quot;&gt;早梅詩&lt;/a&gt;》所寫。&lt;br /&gt;
 如今，我以 BYVoid 的第一人稱視角重新填詞，重現當年那場大會上的驚鴻一瞥。&lt;/p&gt;
 &lt;h3 id=&quot;作品展示&quot;&gt;作品展示&lt;/h3&gt;
-&lt;figure&gt;
-&lt;pre class=&quot;giallo&quot; style=&quot;color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;&amp;lt;p&amp;gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    &amp;lt;figcaption&amp;gt;〈東風破·注音緣〉音軌試聽&amp;lt;/figcaption&amp;gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;&amp;lt;p&amp;gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    &amp;lt;audio controls src=&amp;quot;東風破.mp3&amp;quot; preload=&amp;quot;metadata&amp;quot;&amp;gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;        您的瀏覽器不支持 audio 元素。&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    &amp;lt;/audio&amp;gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</summary>
+&lt;figure&gt;&lt;p&gt;&lt;figcaption&gt;〈東風破·注音緣〉音軌試聽&lt;/figcaption&gt;&lt;/p&gt;&lt;p&gt;&lt;audio controls src=&quot;東風破.mp3&quot; preload=&quot;metadata&quot;&gt;您的瀏覽器不支持 audio 元素。&lt;/audio&gt;&lt;/p&gt;
+&lt;/figure&gt;</summary>
         
     </entry>
     <entry xml:lang="zh">
@@ -181,38 +173,12 @@
 衆多編程高手和語文專家積極參與開發維護，方能持續更新、代碼不鏽。&lt;/p&gt;
 &lt;p&gt;甲辰年末，某決計爲 Rime 輸入法題寫一首主題曲，&lt;br /&gt;
 紀念這一來之不易的成就，勉勵輸入法開發者再譜新篇。&lt;/p&gt;
-&lt;figure&gt;
-&lt;pre class=&quot;giallo&quot; style=&quot;color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;&amp;lt;p&amp;gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    &amp;lt;figcaption&amp;gt;中州韻輸入法主題曲&amp;lt;/figcaption&amp;gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;&amp;lt;p&amp;gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    &amp;lt;audio controls src=&amp;quot;RIME_主題曲.mp3&amp;quot; preload=&amp;quot;metadata&amp;quot;&amp;gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;        您的瀏覽器不支持 audio 元素。&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    &amp;lt;/audio&amp;gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-&lt;figure&gt;
-&lt;pre class=&quot;giallo&quot; style=&quot;color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;&amp;lt;p&amp;gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    &amp;lt;figcaption&amp;gt;中州韻輸入法主題曲　鋼琴版&amp;lt;/figcaption&amp;gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;&amp;lt;p&amp;gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    &amp;lt;audio controls src=&amp;quot;RIME_主題曲_鋼琴版.mp3&amp;quot; preload=&amp;quot;metadata&amp;quot;&amp;gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;        您的瀏覽器不支持 audio 元素。&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    &amp;lt;/audio&amp;gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-&lt;p&gt;若本站播放不流暢，請移步 B 站備份：&lt;a rel=&quot;external&quot; href=&quot;https://www.bilibili.com/audio/am1280271264&quot;&gt;合奏版&lt;/a&gt; | &lt;a rel=&quot;external&quot; href=&quot;https://www.bilibili.com/audio/am33746732&quot;&gt;鋼琴版&lt;/a&gt;&lt;/p&gt;
+&lt;figure&gt;&lt;p&gt;&lt;figcaption&gt;中州韻輸入法主題曲&lt;/figcaption&gt;&lt;/p&gt;&lt;p&gt;&lt;audio controls src=&quot;RIME_主題曲.mp3&quot; preload=&quot;metadata&quot;&gt;您的瀏覽器不支持 audio 元素。&lt;/audio&gt;&lt;/p&gt;
+&lt;/figure&gt;
+&lt;figure&gt;&lt;p&gt;&lt;figcaption&gt;中州韻輸入法主題曲　鋼琴版&lt;/figcaption&gt;&lt;/p&gt;&lt;p&gt;&lt;audio controls src=&quot;RIME_主題曲_鋼琴版.mp3&quot; preload=&quot;metadata&quot;&gt;您的瀏覽器不支持 audio 元素。&lt;/audio&gt;&lt;/p&gt;
+&lt;/figure&gt;
 &lt;p&gt;曲調早有構思，無奈某是門外漢，全憑直覺在打譜軟件中點選，勉強拼湊成曲，但願拋磚引玉。&lt;br /&gt;
-將曲譜上傳 &lt;a rel=&quot;external&quot; href=&quot;https://github.com/lotem/rime-theme-music&quot;&gt;開源網站&lt;/a&gt;，以期行家裏手指點，修改潤色些許，哪敢奢求演繹續寫？&lt;/p&gt;
-&lt;h2 id=&quot;後記：構思中的原作出爐&quot;&gt;後記：構思中的原作出爐&lt;/h2&gt;
-&lt;p&gt;這首 Rime 主題曲借用了多年來構思的樂曲旋律。&lt;br /&gt;
-構思中的原作題目宏大，因此詞作一直未能完成。&lt;/p&gt;
-&lt;p&gt;而今，填詞、編曲的思路逐漸齊備，又有電腦參謀建議，兩首詞曲終於出爐。&lt;br /&gt;
-請欣賞——&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;式恕堂｜&lt;a rel=&quot;external&quot; href=&quot;https://www.bilibili.com/video/BV1pQLg6GEDv/&quot;&gt;音樂視頻&lt;/a&gt;｜&lt;a href=&quot;/blog/shishutang/&quot;&gt;詞作 · 創作感言&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;河之南｜&lt;a rel=&quot;external&quot; href=&quot;https://www.bilibili.com/video/BV1UsGL6sEGA/&quot;&gt;音樂視頻&lt;/a&gt;｜&lt;a href=&quot;/blog/hezhinan/&quot;&gt;詞作 · 創作感言&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary>
+將曲譜上傳 &lt;a rel=&quot;external&quot; href=&quot;https://github.com/lotem/rime-theme-music&quot;&gt;開源網站&lt;/a&gt;，以期行家裏手指點，修改潤色些許，哪敢奢求演繹續寫？&lt;/p&gt;</summary>
         
     </entry>
 </feed>

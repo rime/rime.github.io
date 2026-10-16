@@ -27,16 +27,8 @@
 &lt;p&gt;我用鍵盤彈奏這曲〈&lt;a rel=&quot;external&quot; href=&quot;https://www.bilibili.com/video/BV1Evk2BPE6B/&quot;&gt;東風破&lt;/a&gt;〉，原是爲&lt;a rel=&quot;external&quot; href=&quot;https://zh.wikipedia.org/wiki/%E8%98%AD%E8%8C%82&quot;&gt;蘭茂&lt;/a&gt;《&lt;a rel=&quot;external&quot; href=&quot;https://zh.wikipedia.org/wiki/%E9%9F%BB%E7%95%A7%E6%98%93%E9%80%9A#%E8%81%B2%E6%AF%8D&quot;&gt;早梅詩&lt;/a&gt;》所寫。&lt;br /&gt;
 如今，我以 BYVoid 的第一人稱視角重新填詞，重現當年那場大會上的驚鴻一瞥。&lt;/p&gt;
 &lt;h3 id=&quot;作品展示&quot;&gt;作品展示&lt;/h3&gt;
-&lt;figure&gt;
-&lt;pre class=&quot;giallo&quot; style=&quot;color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;&amp;lt;p&amp;gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    &amp;lt;figcaption&amp;gt;〈東風破·注音緣〉音軌試聽&amp;lt;/figcaption&amp;gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;&amp;lt;p&amp;gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    &amp;lt;audio controls src=&amp;quot;東風破.mp3&amp;quot; preload=&amp;quot;metadata&amp;quot;&amp;gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;        您的瀏覽器不支持 audio 元素。&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    &amp;lt;/audio&amp;gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</summary>
+&lt;figure&gt;&lt;p&gt;&lt;figcaption&gt;〈東風破·注音緣〉音軌試聽&lt;/figcaption&gt;&lt;/p&gt;&lt;p&gt;&lt;audio controls src=&quot;東風破.mp3&quot; preload=&quot;metadata&quot;&gt;您的瀏覽器不支持 audio 元素。&lt;/audio&gt;&lt;/p&gt;
+&lt;/figure&gt;</summary>
         
     </entry>
 </feed>
