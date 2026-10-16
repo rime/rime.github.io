@@ -5,8 +5,31 @@
     <link rel="self" type="application/atom+xml" href="https://rime.im/tags/音樂/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://rime.im"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2026-07-24T00:00:00+00:00</updated>
+    <updated>2026-10-16T00:00:00+00:00</updated>
     <id>https://rime.im/tags/音樂/atom.xml</id>
+    <entry xml:lang="zh">
+        <title>訪歐陽寺：譜得新調和舊詩</title>
+        <published>2026-10-16T00:00:00+00:00</published>
+        <updated>2026-10-16T00:00:00+00:00</updated>
+        
+        <author>
+          <name>佛振@式恕堂</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://rime.im/blog/fang-ou-yang-si/"/>
+        <id>https://rime.im/blog/fang-ou-yang-si/</id>
+        
+        <summary type="html">&lt;h2 id=&quot;神遊與踐約&quot;&gt;神遊與踐約&lt;/h2&gt;
+&lt;p&gt;清明&lt;a href=&quot;/blog/shu-xu-guan&quot;&gt;神遊&lt;/a&gt;既畢，心曲未歇。歲次丙午仲秋，復製慢板弦歌，親赴新鄭歐陽文忠公陵園伏案敬呈。&lt;/p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: center&quot;&gt;昔日神遊・虛境構想&lt;/th&gt;&lt;th style=&quot;text-align: center&quot;&gt;今秋實訪・真跡印證&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https://rime.im/blog/fang-ou-yang-si/shen-you.jpg&quot; alt=&quot;神遊歐陽寺&quot; /&gt;&lt;/td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https://rime.im/blog/fang-ou-yang-si/xu-shi-jiao-hui.jpg&quot; alt=&quot;步履重疊 虛實於此交會&quot; /&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;「步履重疊，虛實於此交會。」&lt;/strong&gt; &lt;br /&gt;
+當初依託想像畫下的立足點，終在金秋時節，真真切切踏在了同一方土地上。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+        
+    </entry>
     <entry xml:lang="zh">
         <title>［音樂專輯］中州曲韻</title>
         <published>2026-07-24T00:00:00+00:00</published>
