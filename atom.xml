@@ -4867,7 +4867,7 @@ refactorï(RimeWithWeasel) simplify color parsing function (&lt;a rel=&quot;exte
 &lt;h2 id=&quot;小狼毫_Weasel&quot;&gt;小狼毫 &lt;small&gt;Weasel&lt;/small&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https://github.com/rime/weasel/releases/latest&quot;&gt;小狼毫 0.17.0&lt;/a&gt;〔&lt;a rel=&quot;external&quot; href=&quot;https://github.com/rime/weasel/releases/download/0.17.0/weasel-0.17.0.0-installer.exe&quot;&gt;下載&lt;/a&gt;〕〔&lt;a href=&quot;/release/weasel/&quot;&gt;更新日誌&lt;/a&gt;〕〔&lt;a rel=&quot;external&quot; href=&quot;https://github.com/rime/weasel/releases&quot;&gt;歷史版本&lt;/a&gt;〕&lt;br /&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https://github.com/rime/weasel/releases/tag/0.17.4&quot;&gt;小狼毫 0.17.4&lt;/a&gt;〔&lt;a rel=&quot;external&quot; href=&quot;https://github.com/rime/weasel/releases/download/0.17.4/weasel-0.17.4.0-installer.exe&quot;&gt;下載&lt;/a&gt;〕〔&lt;a href=&quot;/release/weasel/&quot;&gt;更新日誌&lt;/a&gt;〕〔&lt;a rel=&quot;external&quot; href=&quot;https://github.com/rime/weasel/releases&quot;&gt;歷史版本&lt;/a&gt;〕&lt;br /&gt;
 適用於 Windows 8.1, Windows 10, Windows 11&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -4883,11 +4883,11 @@ refactorï(RimeWithWeasel) simplify color parsing function (&lt;a rel=&quot;exte
 &lt;h2 id=&quot;鼠鬚管_Squirrel&quot;&gt;鼠鬚管 &lt;small&gt;Squirrel&lt;/small&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https://github.com/rime/squirrel/releases/latest&quot;&gt;鼠鬚管 1.1.2&lt;/a&gt;〔&lt;a rel=&quot;external&quot; href=&quot;https://github.com/rime/squirrel/releases/download/1.1.2/Squirrel-1.1.2.pkg&quot;&gt;下載&lt;/a&gt;〕〔&lt;a href=&quot;/release/squirrel/&quot;&gt;更新日誌&lt;/a&gt;〕〔&lt;a rel=&quot;external&quot; href=&quot;https://github.com/rime/squirrel/releases&quot;&gt;歷史版本&lt;/a&gt;〕&lt;br /&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https://github.com/rime/squirrel/releases/tag/1.1.2&quot;&gt;鼠鬚管 1.1.2&lt;/a&gt;〔&lt;a rel=&quot;external&quot; href=&quot;https://github.com/rime/squirrel/releases/download/1.1.2/Squirrel-1.1.2.pkg&quot;&gt;下載&lt;/a&gt;〕〔&lt;a href=&quot;/release/squirrel/&quot;&gt;更新日誌&lt;/a&gt;〕〔&lt;a rel=&quot;external&quot; href=&quot;https://github.com/rime/squirrel/releases&quot;&gt;歷史版本&lt;/a&gt;〕&lt;br /&gt;
 適用於 macOS 13.0+&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https://github.com/rime/squirrel/releases/0.16.2&quot;&gt;鼠鬚管 0.16.2&lt;/a&gt;〔&lt;a rel=&quot;external&quot; href=&quot;https://github.com/rime/squirrel/releases/download/0.16.2/Squirrel-0.16.2.zip&quot;&gt;下載&lt;/a&gt;〕&lt;br /&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https://github.com/rime/squirrel/releases/tag/0.16.2&quot;&gt;鼠鬚管 0.16.2&lt;/a&gt;〔&lt;a rel=&quot;external&quot; href=&quot;https://github.com/rime/squirrel/releases/download/0.16.2/Squirrel-0.16.2.zip&quot;&gt;下載&lt;/a&gt;〕&lt;br /&gt;
 適用於 macOS 10.9+ (不再更新)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -4915,7 +4915,7 @@ refactorï(RimeWithWeasel) simplify color parsing function (&lt;a rel=&quot;exte
 &lt;h1 id=&quot;在線輸入法&quot;&gt;&lt;a name=&quot;web&quot;&gt;在線輸入法&lt;/a&gt;&lt;/h1&gt;
 &lt;h2 id=&quot;My_RIME&quot;&gt;My RIME&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;（第三方軟件）&lt;/em&gt; &lt;a rel=&quot;external&quot; href=&quot;https://github.com/LibreService/my_rime&quot;&gt;My RIME&lt;/a&gt;：自由開源在線中文輸入法。&lt;/p&gt;
-&lt;hr/&gt;
+&lt;hr /&gt;
 &lt;h2 id=&quot;下一步：選擇輸入方案&quot;&gt;下一步：選擇輸入方案&lt;/h2&gt;
 &lt;h3 id=&quot;使用方案選單&quot;&gt;使用方案選單&lt;/h3&gt;
 &lt;p&gt;下載、安裝完成後，試試：&lt;br /&gt;
@@ -4923,18 +4923,16 @@ refactorï(RimeWithWeasel) simplify color parsing function (&lt;a rel=&quot;exte
 &lt;p&gt;您可通過方案選單切換已經安裝的輸入方案。〔&lt;a rel=&quot;external&quot; href=&quot;https://github.com/rime/home/wiki/UserGuide&quot;&gt;說明書&lt;/a&gt;〕&lt;/p&gt;
 &lt;h3 id=&quot;安裝更多輸入方案&quot;&gt;安裝更多輸入方案&lt;/h3&gt;
 &lt;p&gt;通過 &lt;a rel=&quot;external&quot; href=&quot;https://github.com/rime/plum&quot;&gt;/plum/&lt;/a&gt; 配置管理器獲取並安裝輸入方案。詳見〔&lt;a href=&quot;/recipes&quot;&gt;配方&lt;/a&gt;〕。&lt;/p&gt;
-&lt;hr/&gt;
+&lt;hr /&gt;
 &lt;h2 id=&quot;再一步：學習如何_DIY&quot;&gt;再一步：學習如何 DIY&lt;/h2&gt;
 &lt;p&gt;這篇《&lt;a rel=&quot;external&quot; href=&quot;https://github.com/rime/home/wiki/CustomizationGuide&quot;&gt;定製指南&lt;/a&gt;》，相信能解答您的不少疑問。&lt;/p&gt;
 &lt;p&gt;熟悉了基本的定製方法以後，如果需要製作自己的輸入方案，請進階閱讀《&lt;a rel=&quot;external&quot; href=&quot;https://github.com/rime/home/wiki/RimeWithSchemata&quot;&gt;Rime 輸入方案設計書&lt;/a&gt;》。&lt;/p&gt;
-&lt;hr/&gt;
+&lt;hr /&gt;
 &lt;h2 id=&quot;敬告_Rime_用家&quot;&gt;敬告 Rime 用家&lt;/h2&gt;
 &lt;p&gt;請您知曉：&lt;/p&gt;
-&lt;ul style=&quot;list-style-type: &#39;※ &#39;;&quot;&gt;
-&lt;li&gt;本品是按照 GPL 授權條款發佈的自由軟件，您可嘗試按照本站提供的指南自行編譯安裝。&lt;/li&gt;
-&lt;li&gt;輸入法是一種有較高權限的系統軟件，所以一些 Windows 安全防護軟件會在輸入法安裝過程中彈出提示，需要選擇「允許繼續操作」方可正確安裝。&lt;/li&gt;
-&lt;li&gt;〔小狼毫〕的開發與發佈均在受保護的環境中完成。如果使用過程中，您系統中某種“安全”軟件稱「發現木馬」，那麼此種情形將考驗您的判斷力。&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;※ 本品是按照 GPL 授權條款發佈的自由軟件，您可嘗試按照本站提供的指南自行編譯安裝。&lt;br /&gt;
+※ 輸入法屬於系統底層軟件，部分安全防護軟件在安裝或註冊服務時可能彈出提示，需選擇「允許」方可正常安裝。&lt;br /&gt;
+※ 若安全防護軟件報告威脅，請務必先確認安裝檔來自官方發佈頁（可比對 Checksum 校驗值）；若疑慮未能排除，請暫停安裝並向維護者反饋，切勿在來源未明時忽略警示。&lt;/p&gt;
 </content>
         
     </entry>
