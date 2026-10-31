@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+    <title>RIME | 中州韻輸入法引擎 - 中州韻</title>
+    <subtitle>Le blog de la Rime</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://rime.im/tags/中州韻/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://rime.im"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-10-30T00:00:00+00:00</updated>
+    <id>https://rime.im/tags/中州韻/atom.xml</id>
+    <entry xml:lang="zh">
+        <title>《扶搖引》(Envole-moi) 中州韻古風填詞與套色木刻影音誌</title>
+        <published>2026-10-30T00:00:00+00:00</published>
+        <updated>2026-10-30T00:00:00+00:00</updated>
+        
+        <author>
+          <name>佛振@式恕堂</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://rime.im/blog/fu-yao-yin/"/>
+        <id>https://rime.im/blog/fu-yao-yin/</id>
+        
+        <summary type="html">&lt;p&gt;原作《Envole-moi》，乃法蘭西樂師高德曼（Jean-Jacques Goldman）經典名曲。開篇以「午夜高塔下萬籟俱寂、黑夜掩蓋破敗街區」起興，講述身處愚昧與不公泥沼中的青年，立誓以知識翻越高牆、改變宿命的渴望。(« À coup de livres, je franchirai tous ces murs »)&lt;/p&gt;
+&lt;p&gt;今居戎氏御電腦、依《中原音韻》蕭豪韻填詞，取《莊子·逍遙遊》「摶扶搖而上者九萬里」之意，演爲《扶搖引》。並假虛擬歌聲合成（ACE Studio）合樂，融合二十幅實景攝影轉印套色木刻版畫與北宋傳世畫卷《千里江山圖》《瑞鶴圖》，借現代聲畫技術演繹西曲東漸之變，聊供同好切磋遣興。&lt;/p&gt;</summary>
+        
+    </entry>
+</feed>
