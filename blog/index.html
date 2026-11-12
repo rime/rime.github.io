@@ -151,6 +151,51 @@
                 
                 <div class="panel-heading">
                     <h3 class="xtitle">
+                        <a href="https://rime.im/blog/jiu-zhang-ji/" >九張機·中州新韻</a>
+                        <span class="text-muted pull-right">
+                            <small>2026-11-11</small>
+                            <small style="padding-left:1em;">
+                                <a href="https://rime.im/blog/jiu-zhang-ji/#comment">留言</a>
+                            </small>
+                        </span>
+                    </h3>
+                </div>
+
+                
+                <div class="panel-body">
+                    <div class="row">
+
+                        
+                        
+                        <div class="col-md-12">
+                        
+
+                            
+                            
+                            <blockquote>
+<p>五張機，紛紜鍵紐總歸齊。八方樞要咸由我，指梢調度，綱舉目張，莫使令行遲。</p>
+</blockquote>
+<p>在打字機的鍵音與織布機的機杼聲之間，存在着一種奇妙的同構——<br />
+都是指尖在維度受限的陣列上穿梭，織就思想與語言的錦繡。</p>
+<p>織工受限於機杼寬窄，方有經緯穿梭之精微；打字者受限於廿七鍵陣，乃有宮保並擊之奇思。</p>
+<p>此曲借宋代樂府《九張機》之織造機杼，詠新一代輸入法引擎 R²ime 的微觀架構，品鑑聲律美學。</p>
+                            
+
+                        </div>
+
+                        
+                        
+
+                    </div>
+                    
+                    <a type="button" href="https://rime.im/blog/jiu-zhang-ji/#continue-reading" class="btn btn-default more">全文</a>
+                </div>
+
+                
+
+                
+                <div class="panel-heading">
+                    <h3 class="xtitle">
                         <a href="https://rime.im/blog/fu-yao-yin/" >《扶搖引》(Envole-moi) 中州韻古風填詞與套色木刻影音誌</a>
                         <span class="text-muted pull-right">
                             <small>2026-10-30</small>
@@ -571,50 +616,6 @@
                 </div>
 
                 
-
-                
-                <div class="panel-heading">
-                    <h3 class="xtitle">
-                        <a href="https://rime.im/blog/combo-jyutping-code-refactor/" >如何讓 lazy_static 裏的靜態配置擁有「動態響應」能力？——記一次輸入法引擎的架構重構</a>
-                        <span class="text-muted pull-right">
-                            <small>2026-02-26</small>
-                            <small style="padding-left:1em;">
-                                <a href="https://rime.im/blog/combo-jyutping-code-refactor/#comment">留言</a>
-                            </small>
-                        </span>
-                    </h3>
-                </div>
-
-                
-                <div class="panel-body">
-                    <div class="row">
-
-                        
-                        
-                        <div class="col-md-12">
-                        
-
-                            
-                            
-                            <p>大家好，前陣子我開源了一個爲 34 鍵分體鍵盤（Ferris Sweep）量身打造的粵拼並擊輸入法（宮保粵拼），並做了一個可視化的 Web 模擬器（基於 Rust + Leptos）。上一期發佈後，視覺效果不錯，但在底層架構上，我遇到了一個經典的 Rust 難題：如何讓編譯期就固定的靜態數據，根據前端的 UI 狀態進行動態切換？</p>
-<h3 id="❌_痛點與挑戰">❌ 痛點與挑戰</h3>
-<p>在 Rime 引擎的架構思維中，輸入方案（包含幾百條正則拼寫運算規則）通常是非常重的，所以我們習慣將其放在 <code>lazy_static!</code> 裏，擁有 <code>'static</code> 生命週期。</p>
-<p>但我的需求是：當用戶在前端下拉選單切換「實體鍵盤佈局」（如標準直列 -&gt; 縱向錯列）時，底層的方案定義必須動態替換對應的指法規則。如果直接把前端的 <code>AppState</code> 塞進底層，會造成嚴重的耦合；如果每次切換都重新實例化整個方案，效能開銷又太大。</p>
-<h3 id="✅_解法：依賴注入_(DI)_+_函數指針_+_Leptos_細粒度響應式追蹤">✅ 解法：依賴注入 (DI) + 函數指針 + Leptos 細粒度響應式追蹤</h3>
-<p>經過一番折騰，我找到了一條非常優雅且符合 Rust 哲學的路徑：</p>
-                            
-
-                        </div>
-
-                        
-                        
-
-                    </div>
-                    
-                    <a type="button" href="https://rime.im/blog/combo-jyutping-code-refactor/#continue-reading" class="btn btn-default more">全文</a>
-                </div>
-
-                
             </div>
 
             
@@ -674,6 +675,12 @@
                 </li>
                 
                 <li>
+                    <a href="https://rime.im/tags/R2ime/">
+                        R2ime<span>1</span>
+                    </a>
+                </li>
+                
+                <li>
                     <a href="https://rime.im/tags/Rust/">
                         Rust<span>3</span>
                     </a>
@@ -717,7 +724,7 @@
                 
                 <li>
                     <a href="https://rime.im/tags/中州韻/">
-                        中州韻<span>1</span>
+                        中州韻<span>2</span>
                     </a>
                 </li>
                 
@@ -794,6 +801,12 @@
                 </li>
                 
                 <li>
+                    <a href="https://rime.im/tags/宮保拼音/">
+                        宮保拼音<span>1</span>
+                    </a>
+                </li>
+                
+                <li>
                     <a href="https://rime.im/tags/宮保粵拼/">
                         宮保粵拼<span>2</span>
                     </a>
@@ -829,22 +842,10 @@
                     </a>
                 </li>
                 
-                <li>
-                    <a href="https://rime.im/tags/彩蛋/">
-                        彩蛋<span>2</span>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="https://rime.im/tags/愚者/">
-                        愚者<span>1</span>
-                    </a>
-                </li>
-                
 
                 
                 
-                <li><a href="/tags">...<span>71</span></a></li>
+                <li><a href="/tags">...<span>74</span></a></li>
                 
             </ul>
         </div>
@@ -858,6 +859,12 @@
             <h4>新作</h4>
             <ul class="entry list-unstyled">
                 
+                
+                <li>
+                    <a href="https://rime.im/blog/jiu-zhang-ji/" title="">
+                        <i class="fa fa-file-o"></i> 九張機·中州新韻
+                    </a>
+                </li>
                 
                 <li>
                     <a href="https://rime.im/blog/fu-yao-yin/" title="">
@@ -880,12 +887,6 @@
                 <li>
                     <a href="https://rime.im/blog/hezhinan/" title="">
                         <i class="fa fa-file-o"></i> 「心中讚歎怎化鴻篇」｜黃河史詩原創《河之南》
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="https://rime.im/blog/shishutang/" title="">
-                        <i class="fa fa-file-o"></i> 原創詞曲與二胡琴鳴：【式恕堂】音畫合輯
                     </a>
                 </li>
                 
