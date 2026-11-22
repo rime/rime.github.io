@@ -5,7 +5,7 @@
     <link rel="self" type="application/atom+xml" href="https://rime.im/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://rime.im"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2026-11-11T00:00:00+00:00</updated>
+    <updated>2026-11-22T00:00:00+00:00</updated>
     <id>https://rime.im/atom.xml</id>
     <entry xml:lang="zh">
         <title>九張機·中州新韻</title>
@@ -70,7 +70,7 @@
     <entry xml:lang="zh">
         <title>［音樂專輯］中州曲韻</title>
         <published>2026-07-24T00:00:00+00:00</published>
-        <updated>2026-07-24T00:00:00+00:00</updated>
+        <updated>2026-11-22T00:00:00+00:00</updated>
         
         <author>
           <name>佛振@式恕堂</name>
@@ -79,24 +79,8 @@
         <link rel="alternate" type="text/html" href="https://rime.im/blog/zhongzhouquyun/"/>
         <id>https://rime.im/blog/zhongzhouquyun/</id>
         
-        <summary type="html">&lt;h2 id=&quot;式恕堂&quot;&gt;式恕堂&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;音樂視頻｜&lt;a rel=&quot;external&quot; href=&quot;https://www.bilibili.com/video/BV1pQLg6GEDv/&quot;&gt;嗶哩嗶哩&lt;/a&gt; · &lt;a rel=&quot;external&quot; href=&quot;https://youtu.be/LSZFnIn4uOE&quot;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;鍵盤演奏｜&lt;a rel=&quot;external&quot; href=&quot;https://www.bilibili.com/video/BV1dSjQ6mELm/&quot;&gt;嗶哩嗶哩&lt;/a&gt; · &lt;a rel=&quot;external&quot; href=&quot;https://youtu.be/NU5pXUSx7is&quot;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/blog/shishutang/&quot;&gt;詞作 · 創作感言&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;河之南&quot;&gt;河之南&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;音樂視頻｜&lt;a rel=&quot;external&quot; href=&quot;https://www.bilibili.com/video/BV1UsGL6sEGA/&quot;&gt;嗶哩嗶哩&lt;/a&gt; · &lt;a rel=&quot;external&quot; href=&quot;https://youtu.be/CMvC91zaSmo&quot;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;鍵盤演奏｜&lt;a rel=&quot;external&quot; href=&quot;https://www.bilibili.com/video/BV14Kj86BEkx/&quot;&gt;嗶哩嗶哩&lt;/a&gt; · &lt;a rel=&quot;external&quot; href=&quot;https://youtu.be/DyOJRW1WJq4&quot;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/blog/hezhinan/&quot;&gt;詞作 · 創作感言&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;東風破&quot;&gt;東風破&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;R²ime 預定主題曲&lt;/li&gt;
-&lt;li&gt;鍵盤演奏｜&lt;a rel=&quot;external&quot; href=&quot;https://www.bilibili.com/video/BV1UggQ6XERc/&quot;&gt;嗶哩嗶哩&lt;/a&gt; · &lt;a rel=&quot;external&quot; href=&quot;https://youtu.be/lKwvpBAf2gQ&quot;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;外傳 &lt;a href=&quot;/blog/dongfengpo-zhuyinyuan/&quot;&gt;東風破 · 注音緣&lt;/a&gt;：記一段 Rime 輸入法的神級往事&lt;/li&gt;
-&lt;/ul&gt;</summary>
+        <summary type="html">&lt;p&gt;夫樂者，心之動也；聲者，形之表也。昔人謂「聲成文，謂之音」，而「中州」二字，於我輩而言，既是大河之南、嵩嶽之麓的故土原鄉，亦是方寸鍵盤之上、一敲一擊間流淌不息的漢語字韻。&lt;/p&gt;
+&lt;p&gt;囧氏自滎澤索須河畔之故居起筆，歷中州萬里山河，轉入案頭混元編碼之巧思，織就新一代引擎經緯，終作摶風凌霄之長嘯。全輯五曲，皆以傳統五聲「羽調式」爲脈，貫穿絲竹與虛擬伶工之聲，聊記此間歲月與心志。&lt;/p&gt;</summary>
         
     </entry>
     <entry xml:lang="zh">
